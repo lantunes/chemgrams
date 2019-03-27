@@ -1,0 +1,13 @@
+.idea/
+*.pyc
+*-checkpoint.ipynb
+.DS_Store
+*.log
+.sublime-project
+.project
+.pydevproject
+*.pdf
+.env
+src/
+.settings
+.vscode
