@@ -87,6 +87,26 @@ class TestDeepSMILESTokenizer(unittest.TestCase):
         self.assertEqual(tokens[3], DeepSMILESToken("plain_atom", "O", 8))
         self.assertEqual(tokens[4], DeepSMILESToken("plain_atom", "C", 9))
 
+    def test_chlorine(self):
+        tokenizer = DeepSMILESTokenizer("ClCC%(113)OC")
+        tokens = tokenizer.get_tokens()
+        self.assertEqual(tokens[0], DeepSMILESToken("plain_atom", "Cl", 0))
+        self.assertEqual(tokens[1], DeepSMILESToken("plain_atom", "C", 2))
+        self.assertEqual(tokens[2], DeepSMILESToken("plain_atom", "C", 3))
+        self.assertEqual(tokens[3], DeepSMILESToken("ring_size", "%(113)", 4))
+        self.assertEqual(tokens[4], DeepSMILESToken("plain_atom", "O", 10))
+        self.assertEqual(tokens[5], DeepSMILESToken("plain_atom", "C", 11))
+
+    def test_bromine(self):
+        tokenizer = DeepSMILESTokenizer("BrCC%(113)OC")
+        tokens = tokenizer.get_tokens()
+        self.assertEqual(tokens[0], DeepSMILESToken("plain_atom", "Br", 0))
+        self.assertEqual(tokens[1], DeepSMILESToken("plain_atom", "C", 2))
+        self.assertEqual(tokens[2], DeepSMILESToken("plain_atom", "C", 3))
+        self.assertEqual(tokens[3], DeepSMILESToken("ring_size", "%(113)", 4))
+        self.assertEqual(tokens[4], DeepSMILESToken("plain_atom", "O", 10))
+        self.assertEqual(tokens[5], DeepSMILESToken("plain_atom", "C", 11))
+
     def test_bonds(self):
         tokenizer = DeepSMILESTokenizer("CC/C=C/C-CC#N")
         tokens = tokenizer.get_tokens()

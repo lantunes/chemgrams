@@ -50,7 +50,7 @@ class DeepSMILESTokenizer:
             escaped += (re.escape(atom),)
         formal_atom_group = "(?P<formal_atom>%s)" % '|'.join(escaped)
 
-        plain_atom_group = "(?P<plain_atom>[B,b,C,c,O,o,N,n,S,s,P,p,F,Cl,Br,I])"
+        plain_atom_group = "(?P<plain_atom>Cl|Br|B|b|C|c|O|o|N|n|S|s|P|p|F|I)"
 
         bonds = ("=", "\\", "/", "-", "#", ":", ".")
         escaped = ()
