@@ -22,9 +22,16 @@ if __name__ == '__main__':
         extracted = DeepSMILESLanguageModelUtils.extract(generated)
         tokenized = DeepSMILESTokenizer(extracted)
         len_reward = len(tokenized.get_tokens()) / (text_length - 1)  # provide more reward for longer text sequences
+
         perplexity = lm.perplexity(text)
         perplexity_reward = perplexity / (1 + perplexity)
-        return (perplexity_reward*0.5) + (len_reward*0.5)
+
+        decoded = DeepSMILESLanguageModelUtils.decode(generated)
+        smiles = DeepSMILESLanguageModelUtils.sanitize(decoded)
+        mol = Chem.MolFromSmiles(smiles)
+        logp_score = -MolLogP(mol) / 10  # squash the magnitude of logp a bit
+
+        return (perplexity_reward*0.33) + (len_reward*0.33) + (logp_score*0.34)
 
     mcts = LanguageModelMCTS(lm, width, text_length, eval_function)
     state = start_state
@@ -40,4 +47,6 @@ if __name__ == '__main__':
     decoded = DeepSMILESLanguageModelUtils.decode(generated_text)
     smiles = DeepSMILESLanguageModelUtils.sanitize(decoded)
 
-    print("SMILES: %s" % smiles)
+    mol = Chem.MolFromSmiles(smiles)
+    logp = MolLogP(mol)
+    print("SMILES: %s, logP: %s" % (smiles, logp))
