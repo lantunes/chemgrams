@@ -1,22 +1,30 @@
-import deepsmiles
+from rdkit import Chem
+from rdkit.Chem.Crippen import MolLogP
 
-from chemgrams import DeepSMILESLanguageModelUtils
-
-
-converter = deepsmiles.Converter(rings=True, branches=True)
+from chemgrams import *
 
 lm = DeepSMILESLanguageModelUtils.get_lm("models/chembl_25_deepsmiles_lm_5gram_190330.pkl")
 
-generated = lm.generate(num_chars=15, text_seed="<M>")
+current_best_score = None
+current_best_smiles = None
+beats_current = lambda score: score < current_best_score
 
-print(generated)
+for i in range(1000):
+    generated = lm.generate(num_chars=25, text_seed="<M>")
+    try:
+        decoded = DeepSMILESLanguageModelUtils.decode(generated)
+        sanitized = DeepSMILESLanguageModelUtils.sanitize(decoded)
 
-generated = generated.split("</M>")[0]  # keep only the text generated up until the termination character
+        mol = Chem.MolFromSmiles(sanitized)
+        logp_score = MolLogP(mol)
 
-print(generated)
+        print("successful: %s , score: %s" % (sanitized, str(logp_score)))
 
-decoded = converter.decode(generated)
+        if current_best_score is None or beats_current(logp_score):
+            current_best_score = logp_score
+            current_best_smiles = sanitized
 
-sanitized = DeepSMILESLanguageModelUtils.sanitize(decoded)
+    except Exception as e:
+        pass
 
-print(sanitized)
+print("best: %s , score: %s" % (current_best_smiles, str(current_best_score)))
