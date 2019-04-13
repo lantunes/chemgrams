@@ -37,3 +37,24 @@ $ conda install -c openbabel openbabel
 
 $ conda install -c conda-forge rdkit
 ```
+
+5. Install KenLM (on OSX):
+
+```
+$ brew install cmake boost eigen
+
+$ git clone https://github.com/kpu/kenlm.git
+
+$ cd kenlm
+
+$ mkdir -p build && cd build
+
+$ cmake ..
+
+$ make -j 4
+
+$ source activate chemgrams_env
+
+$ pip install https://github.com/kpu/kenlm/archive/master.zip
+
+``
