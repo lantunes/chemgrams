@@ -8,9 +8,20 @@ if __name__ == '__main__':
     lm = DeepSMILESLanguageModelUtils.get_lm("models/chembl_25_deepsmiles_lm_5gram_190330.pkl")
 
     num_simulations = 1000
-    width = 3
+    width = 6
     text_length = 25
     start_state = ["<M>"]
+
+    # # maximizing logP
+    # logp_max = 10.143
+    # logp_min = -3.401
+    # factor = 1
+
+    # minimizing logP
+    logp_min = -10.143
+    logp_max = 3.401
+    factor = -1
+
 
     def eval_function(text):
         generated = ''.join(text)
@@ -19,9 +30,9 @@ if __name__ == '__main__':
             DeepSMILESLanguageModelUtils.sanitize(decoded)
         except Exception:
             return 0
-        extracted = DeepSMILESLanguageModelUtils.extract(generated)
-        tokenized = DeepSMILESTokenizer(extracted)
-        len_reward = len(tokenized.get_tokens()) / (text_length - 1)  # provide more reward for longer text sequences
+        # extracted = DeepSMILESLanguageModelUtils.extract(generated)
+        # tokenized = DeepSMILESTokenizer(extracted)
+        # len_reward = len(tokenized.get_tokens()) / (text_length - 1)  # provide more reward for longer text sequences
 
         perplexity = lm.perplexity(text)
         perplexity_reward = perplexity / (1 + perplexity)
@@ -29,11 +40,13 @@ if __name__ == '__main__':
         decoded = DeepSMILESLanguageModelUtils.decode(generated)
         smiles = DeepSMILESLanguageModelUtils.sanitize(decoded)
         mol = Chem.MolFromSmiles(smiles)
-        logp_score = -MolLogP(mol) / 10  # squash the magnitude of logp a bit
+        logp = factor * MolLogP(mol)
+        logp_score = (logp - logp_min)/(logp_max - logp_min)  # normalize logP between 0 and 1
 
-        return (perplexity_reward*0.33) + (len_reward*0.33) + (logp_score*0.34)
+        return (logp_score * 0.5) + (perplexity_reward * 0.5)
 
-    mcts = LanguageModelMCTS(lm, width, text_length, eval_function)
+    # mcts = LanguageModelMCTS(lm, width, text_length, eval_function)
+    mcts = LanguageModelMCTSWithPUCT(lm, width, text_length, eval_function, cpuct=5)
     state = start_state
 
     print("beginning search...")

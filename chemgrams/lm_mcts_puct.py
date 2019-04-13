@@ -80,13 +80,14 @@ class _Node:
         self.untried_moves, self.child_weight_map = self._get_child_states()
 
     def _get_child_states(self):
-        top_n_tokens_with_weights = self._lm.top_n_vocab_with_weights(self._width, self.state[-self._lm.order() + 1:])
         child_states = []
         child_state_weight_map = {}
-        for i in range(len(top_n_tokens_with_weights[0])):
-            child_state = self.state + [top_n_tokens_with_weights[0][i]]
-            child_states.append(child_state)
-            child_state_weight_map[''.join(child_state)] = top_n_tokens_with_weights[1][i]
+        if len(self.state) < self._text_length:
+            top_n_tokens_with_weights = self._lm.top_n_vocab_with_weights(self._width, self.state[-self._lm.order() + 1:])
+            for i in range(len(top_n_tokens_with_weights[0])):
+                child_state = self.state + [top_n_tokens_with_weights[0][i]]
+                child_states.append(child_state)
+                child_state_weight_map[''.join(child_state)] = top_n_tokens_with_weights[1][i]
         return child_states, child_state_weight_map
 
     def _average_value(self):

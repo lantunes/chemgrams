@@ -79,10 +79,11 @@ class _Node:
         self.untried_moves = self._get_child_states()
 
     def _get_child_states(self):
-        top_n_tokens = self._lm.top_n_vocab(self._width, self.state[-self._lm.order() + 1:])
         child_states = []
-        for token in top_n_tokens:
-            child_states.append(self.state + [token])
+        if len(self.state) < self._text_length:
+            top_n_tokens = self._lm.top_n_vocab(self._width, self.state[-self._lm.order() + 1:])
+            for token in top_n_tokens:
+                child_states.append(self.state + [token])
         return child_states
 
     def _average_value(self):
