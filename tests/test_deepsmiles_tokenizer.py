@@ -9,14 +9,6 @@ THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 class TestDeepSMILESTokenizer(unittest.TestCase):
 
-    def test_it(self):
-        smi = "O=C(Nc1cc(Nc2c(Cl)cccc2NCc2ccc(Cl)cc2Cl)c2ccccc2c1OC(F)F)c1cccc2ccccc12"
-        converter = ds.Converter(rings=True, branches=True)
-        canonical = pybel.readstring("smi", smi).write("can").strip()
-        deepsmiles = converter.encode(canonical)
-        tokenizer = DeepSMILESTokenizer(deepsmiles)
-        print(len(tokenizer.get_tokens()))
-
     def test_can_tokenize_deepsmiles(self):
         with open(os.path.join(THIS_DIR, 'resources', 'smiles.txt'), 'r') as content_file:
             lines = content_file.readlines()

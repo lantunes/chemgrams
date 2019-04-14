@@ -1,4 +1,3 @@
-from rdkit import Chem
 from rdkit.Chem.Crippen import MolLogP
 
 from chemgrams import *
