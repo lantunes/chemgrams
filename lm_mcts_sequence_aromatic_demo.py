@@ -4,10 +4,10 @@ from rdkit import Chem
 if __name__ == '__main__':
 
     print("loading language model...")
-    # lm = DeepSMILESLanguageModelUtils.get_lm("models/chembl_25_deepsmiles_lm_5gram_190330.pkl")
+    # lm = DeepSMILESLanguageModelUtils.get_lm("models/chembl_25_deepsmiles_nltklm_5gram_190330.pkl")
 
     vocab = get_arpa_vocab('models/chembl_25_deepsmiles_klm_6gram_190413.arpa')
-    lm = DeepSMILESKenLM('models/chembl_25_deepsmiles_klm_6gram_190413.klm', vocab)
+    lm = KenLMDeepSMILESLanguageModel('models/chembl_25_deepsmiles_klm_6gram_190413.klm', vocab)
 
     num_simulations = 1000
     width = 3
@@ -31,7 +31,7 @@ if __name__ == '__main__':
                 num_aromatic_atoms += 1
         return num_aromatic_atoms / 23
 
-    mcts = LanguageModelMCTS(lm, width, text_length, eval_function)
+    mcts = LanguageModelMCTSWithUCB1(lm, width, text_length, eval_function)
     state = start_state
 
     print("beginning search...")

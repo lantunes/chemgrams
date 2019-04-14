@@ -8,7 +8,7 @@ from deepsmiles import Converter
 from .deepsmiles_tokenizer import DeepSMILESTokenizer
 
 
-class DeepSMILESLanguageModel:
+class NLTKDeepSMILESLanguageModel:
     def __init__(self, smiles_corpus, n=3):
         self._converter = Converter(rings=True, branches=True)
         tokens = []

@@ -3,7 +3,7 @@ from rdkit.Chem.Crippen import MolLogP
 
 from chemgrams import *
 
-lm = DeepSMILESLanguageModelUtils.get_lm("models/chembl_25_deepsmiles_lm_5gram_190330.pkl")
+lm = DeepSMILESLanguageModelUtils.get_lm("models/chembl_25_deepsmiles_nltklm_5gram_190330.pkl")
 
 current_best_score = None
 current_best_smiles = None

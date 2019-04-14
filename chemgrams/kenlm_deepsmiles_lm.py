@@ -5,7 +5,7 @@ import numpy as np
 from .deepsmiles_tokenizer import DeepSMILESTokenizer
 
 
-class DeepSMILESKenLM:
+class KenLMDeepSMILESLanguageModel:
     def __init__(self, kenlm_bin_path, vocab):
         self._lm = kenlm.Model(kenlm_bin_path)
         self._vocab = vocab

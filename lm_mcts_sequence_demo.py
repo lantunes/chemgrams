@@ -3,7 +3,7 @@ from chemgrams import *
 if __name__ == '__main__':
 
     print("loading language model...")
-    lm = DeepSMILESLanguageModelUtils.get_lm("models/chembl_25_deepsmiles_lm_5gram_190330.pkl")
+    lm = DeepSMILESLanguageModelUtils.get_lm("models/chembl_25_deepsmiles_nltklm_5gram_190330.pkl")
 
     num_simulations = 1000
     width = 3
@@ -21,7 +21,7 @@ if __name__ == '__main__':
         tokenized = DeepSMILESTokenizer(extracted)
         return len(tokenized.get_tokens()) / (text_length - 1)  # provide more reward for longer text sequences
 
-    mcts = LanguageModelMCTS(lm, width, text_length, eval_function)
+    mcts = LanguageModelMCTSWithUCB1(lm, width, text_length, eval_function)
     state = start_state
 
     print("beginning search...")

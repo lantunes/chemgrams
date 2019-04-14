@@ -5,7 +5,7 @@ from rdkit import Chem
 if __name__ == '__main__':
 
     print("loading language model...")
-    lm = DeepSMILESLanguageModelUtils.get_lm("models/chembl_25_deepsmiles_lm_5gram_190330.pkl")
+    lm = DeepSMILESLanguageModelUtils.get_lm("models/chembl_25_deepsmiles_nltklm_5gram_190330.pkl")
 
     num_simulations = 1000
     width = 6
@@ -45,7 +45,7 @@ if __name__ == '__main__':
 
         return (logp_score * 0.5) + (perplexity_reward * 0.5)
 
-    # mcts = LanguageModelMCTS(lm, width, text_length, eval_function)
+    # mcts = LanguageModelMCTSWithUCB1(lm, width, text_length, eval_function)
     mcts = LanguageModelMCTSWithPUCT(lm, width, text_length, eval_function, cpuct=5)
     state = start_state
 

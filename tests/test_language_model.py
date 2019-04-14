@@ -1,15 +1,15 @@
 import unittest
-from chemgrams import DeepSMILESLanguageModel
+from chemgrams import NLTKDeepSMILESLanguageModel
 import os
 import pickle
 
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
-class TestDeepSMILESLanguageModel(unittest.TestCase):
+class TestNLTKDeepSMILESLanguageModel(unittest.TestCase):
 
     def test_tokenize(self):
-        lm = DeepSMILESLanguageModel([])
+        lm = NLTKDeepSMILESLanguageModel([])
 
         tokens = lm.tokenize("<M>CC%(113)OC</M>")
         self.assertEqual(['<M>', 'C', 'C', '%(113)', 'O', 'C', '</M>'], tokens)
@@ -56,8 +56,8 @@ class TestDeepSMILESLanguageModel(unittest.TestCase):
 
     def _get_lm(self):
         """
-        Returns a trigram DeepSMILESLanguageModel trained on ~74,000 DeepSMILES strings.
-        :return: a DeepSMILESLanguageModel
+        Returns a trigram NLTKDeepSMILESLanguageModel trained on ~74,000 DeepSMILES strings.
+        :return: a NLTKDeepSMILESLanguageModel
         """
         with open(os.path.join(THIS_DIR, 'resources', 'lm.pkl'), 'rb') as pickle_in:
             lm = pickle.load(pickle_in)
