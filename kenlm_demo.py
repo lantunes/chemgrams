@@ -3,8 +3,11 @@ from rdkit.Chem.Crippen import MolLogP
 from chemgrams import *
 
 
-vocab = get_arpa_vocab('models/chembl_25_deepsmiles_klm_5gram_190413.arpa')
-lm = DeepSMILESKenLM('models/chembl_25_deepsmiles_klm_5gram_190413.klm', vocab)
+# vocab = get_arpa_vocab('models/chembl_25_deepsmiles_klm_5gram_190413.arpa')
+# lm = DeepSMILESKenLM('models/chembl_25_deepsmiles_klm_5gram_190413.klm', vocab)
+
+vocab = get_arpa_vocab('models/chembl_25_deepsmiles_klm_6gram_190413.arpa')
+lm = DeepSMILESKenLM('models/chembl_25_deepsmiles_klm_6gram_190413.klm', vocab)
 
 print(lm.score('C', '<s>CCCCCCC'))
 print(lm.score('c', '<s>CCCCCCC'))

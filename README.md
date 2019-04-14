@@ -21,6 +21,8 @@ $ source activate chemgrams_env
 
 $ pip install deepsmiles
 
+$ pip install networkx
+
 $ which python3
 /Users/me/anaconda/envs/chemgrams_env/bin/python3
 
@@ -53,6 +55,7 @@ $ cmake ..
 
 $ make -j 4
 
+# if not in chemgrams_env
 $ source activate chemgrams_env
 
 $ pip install https://github.com/kpu/kenlm/archive/master.zip
