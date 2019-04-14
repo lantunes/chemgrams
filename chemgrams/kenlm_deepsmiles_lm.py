@@ -113,14 +113,17 @@ class KenLMDeepSMILESLanguageModel:
         context = self._tokenize_context(text_seed)
         if num_chars == 0:
             return context
-        symbols = []
-        probs = []
-        for v in self._vocab:
-            symbols.append(v)
-            probs.append(self.score(v, context))
-        sampled = np.random.choice(symbols, p=self._normalize(probs))
-        generated = self.generate(num_chars=num_chars-1, text_seed=context + [sampled])
-        return ''.join(generated)
+        if context is None or len(context) == 0:
+            context = ['<s>']
+            num_chars -= 1
+        while num_chars > 0 and context[-1] != '</s>':
+            context += [self._select_next_randomly(context)]
+            num_chars -= 1
+        return ''.join(context)
+
+    def _select_next_randomly(self, context):
+        top_n_tokens = self.top_n_vocab_with_weights(len(self._vocab), context[-self.order() + 1:])
+        return np.random.choice(top_n_tokens[0], p=top_n_tokens[1])
 
     def order(self):
         return self._n
