@@ -8,17 +8,17 @@ class LanguageModelMCTSWithUCB1Terminating:
     """
     The tree expansion stops at nodes with states ending with a terminating symbol (such as '</s>').
     """
-    def __init__(self, language_model, width, text_length, eval_function, terminating_symbol, c=sqrt(2)):
+    def __init__(self, language_model, width, max_depth, eval_function, terminating_symbol, c=sqrt(2)):
         self._lm = language_model
         self._width = width
-        self._text_length = text_length
+        self._max_depth = max_depth
         self._eval_function = eval_function
         self._best_sequence = None
         self._c = c
         self._terminating_symbol = terminating_symbol
 
     def search(self, state, num_simulations):
-        root_node = _Node(state, self._lm, self._width, self._text_length, self._c, self._terminating_symbol)
+        root_node = _Node(state, self._lm, self._width, self._max_depth, self._c, self._terminating_symbol)
 
         # Perform simulations
         for i in range(num_simulations):
@@ -31,11 +31,11 @@ class LanguageModelMCTSWithUCB1Terminating:
             # Expand
             if node.has_untried_moves():
                 move_state = node.select_untried_move()
-                node = node.add_child(move_state, self._lm, self._width, self._text_length, self._c, self._terminating_symbol)
+                node = node.add_child(move_state, self._lm, self._width, self._max_depth, self._c, self._terminating_symbol)
 
             # Rollout
             rollout_state = list(node.state)
-            while len(rollout_state) < self._text_length and rollout_state[-1] != self._terminating_symbol:
+            while len(rollout_state) < self._max_depth and rollout_state[-1] != self._terminating_symbol:
                 rollout_state += [self._select_next_move_randomly(rollout_state, self._lm, self._width)]
 
             # Backpropagate
@@ -70,13 +70,13 @@ class LanguageModelMCTSWithUCB1Terminating:
 
 
 class _Node:
-    def __init__(self, state, language_model, width, text_length, c, terminating_symbol, parent=None):
+    def __init__(self, state, language_model, width, max_depth, c, terminating_symbol, parent=None):
         self.state = state
         self._c = c
         self._terminating_symbol = terminating_symbol
         self._lm = language_model
         self._width = width
-        self._text_length = text_length
+        self._max_depth = max_depth
         self.wins = 0.0
         self.visits = 0.0
         self.parent = parent
@@ -85,7 +85,7 @@ class _Node:
 
     def _get_child_states(self):
         child_states = []
-        if len(self.state) < self._text_length and self.state[-1] != self._terminating_symbol:
+        if len(self.state) < self._max_depth and self.state[-1] != self._terminating_symbol:
             top_n_tokens = self._lm.top_n_vocab(self._width, self.state[-self._lm.order() + 1:])
             for token in top_n_tokens:
                 child_states.append(self.state + [token])
@@ -100,8 +100,8 @@ class _Node:
     def select_untried_move(self):
         return random.choice(self.untried_moves)
 
-    def add_child(self, child_state, language_model, width, text_length, c, terminating_symbol):
-        child = _Node(child_state, language_model, width, text_length, c, terminating_symbol, parent=self)
+    def add_child(self, child_state, language_model, width, max_depth, c, terminating_symbol):
+        child = _Node(child_state, language_model, width, max_depth, c, terminating_symbol, parent=self)
         self.children.append(child)
         self.untried_moves.remove(child_state)
         return child
