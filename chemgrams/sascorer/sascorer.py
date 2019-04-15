@@ -19,7 +19,7 @@ from __future__ import print_function
 
 from rdkit import Chem
 from rdkit.Chem import rdMolDescriptors
-from rdkit.six.moves import cPickle
+import pickle as cPickle
 from rdkit.six import iteritems
 
 import math
