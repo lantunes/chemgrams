@@ -5,7 +5,7 @@ from rdkit import Chem
 if __name__ == '__main__':
 
     print("loading language model...")
-    lm = DeepSMILESLanguageModelUtils.get_lm("models/chembl_25_deepsmiles_nltklm_5gram_190330.pkl")
+    lm = DeepSMILESLanguageModelUtils.get_lm("../models/chembl_25_deepsmiles_nltklm_5gram_190330.pkl")
 
     num_simulations = 1000
     width = 3
@@ -24,7 +24,10 @@ if __name__ == '__main__':
         len_reward = len(tokenized.get_tokens()) / (text_length - 1)  # provide more reward for longer text sequences
         perplexity = lm.perplexity(text)
         perplexity_reward = perplexity / (1 + perplexity)
-        return (perplexity_reward*0.5) + (len_reward*0.5)
+        score = (perplexity_reward*0.5) + (len_reward*0.5)
+
+        print("%s, %s" % (generated, str(score)))
+        return score
 
     mcts = LanguageModelMCTSWithUCB1(lm, width, text_length, eval_function)
     state = start_state

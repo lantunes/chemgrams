@@ -4,24 +4,21 @@ from rdkit import Chem
 if __name__ == '__main__':
 
     print("loading language model...")
-    # lm = DeepSMILESLanguageModelUtils.get_lm("models/chembl_25_deepsmiles_nltklm_5gram_190330.pkl")
-
-    vocab = get_arpa_vocab('models/chembl_25_deepsmiles_klm_6gram_190413.arpa')
-    lm = KenLMDeepSMILESLanguageModel('models/chembl_25_deepsmiles_klm_6gram_190413.klm', vocab)
+    lm = DeepSMILESLanguageModelUtils.get_lm("../models/chembl_25_deepsmiles_nltklm_5gram_190330.pkl")
 
     num_simulations = 1000
     width = 3
     text_length = 25
-    start_state = ["<s>"]
+    start_state = ["<M>"]
 
     def eval_function(text):
         generated = ''.join(text)
         try:
-            decoded = DeepSMILESLanguageModelUtils.decode(generated, start='<s>', end='</s>')
+            decoded = DeepSMILESLanguageModelUtils.decode(generated)
             DeepSMILESLanguageModelUtils.sanitize(decoded)
         except Exception:
             return 0
-        decoded = DeepSMILESLanguageModelUtils.decode(generated, start='<s>', end='</s>')
+        decoded = DeepSMILESLanguageModelUtils.decode(generated)
         smiles = DeepSMILESLanguageModelUtils.sanitize(decoded)
         mol = Chem.MolFromSmiles(smiles)
         num_atoms = mol.GetNumAtoms()
@@ -29,7 +26,15 @@ if __name__ == '__main__':
         for i in range(num_atoms):
             if mol.GetAtomWithIdx(i).GetIsAromatic():
                 num_aromatic_atoms += 1
-        return num_aromatic_atoms / 23
+        arom_reward = num_aromatic_atoms / 23
+
+        perplexity = lm.perplexity(text)
+        perplexity_reward = perplexity / (1 + perplexity)
+
+        score = (perplexity_reward * 0.5) + (arom_reward * 0.5)
+
+        print("%s, %s" % (generated, str(score)))
+        return score
 
     mcts = LanguageModelMCTSWithUCB1(lm, width, text_length, eval_function)
     state = start_state
@@ -42,7 +47,7 @@ if __name__ == '__main__':
     generated_text = ''.join(best[0])
     print("generated text: %s (score: %s, perplexity: %s)" % (generated_text, str(best[1]), lm.perplexity(generated_text)))
 
-    decoded = DeepSMILESLanguageModelUtils.decode(generated_text, start='<s>', end='</s>')
+    decoded = DeepSMILESLanguageModelUtils.decode(generated_text)
     smiles = DeepSMILESLanguageModelUtils.sanitize(decoded)
 
     print("SMILES: %s" % smiles)

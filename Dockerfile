@@ -47,8 +47,13 @@ RUN cmake .. && \
     /opt/conda/envs/chemgrams_env/bin/pip install networkx
 
 WORKDIR /root
-RUN wget -O chemgrams.zip https://github.com/lantunes/chemgrams/archive/master.zip && \
-    unzip chemgrams.zip -d chemgrams
+COPY chemgrams/ chemgrams/chemgrams/
+COPY examples/ chemgrams/examples/
+COPY models/ chemgrams/models/
+COPY resources/ chemgrams/resources/
+COPY setup.py chemgrams/
 
-WORKDIR /root/chemgrams/chemgrams-master
+WORKDIR /root/chemgrams
+RUN /opt/conda/envs/chemgrams_env/bin/python setup.py install
+
 CMD [ "/bin/bash" ]

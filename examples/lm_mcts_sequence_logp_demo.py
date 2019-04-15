@@ -6,10 +6,10 @@ from rdkit import Chem
 if __name__ == '__main__':
 
     print("loading language model...")
-    # lm = DeepSMILESLanguageModelUtils.get_lm("models/chembl_25_deepsmiles_nltklm_5gram_190330.pkl")
+    # lm = DeepSMILESLanguageModelUtils.get_lm("../models/chembl_25_deepsmiles_nltklm_5gram_190330.pkl")
 
-    vocab = get_arpa_vocab('models/chembl_25_deepsmiles_klm_6gram_190413.arpa')
-    lm = KenLMDeepSMILESLanguageModel('models/chembl_25_deepsmiles_klm_6gram_190413.klm', vocab)
+    vocab = get_arpa_vocab('../models/chembl_25_deepsmiles_klm_6gram_190413.arpa')
+    lm = KenLMDeepSMILESLanguageModel('../models/chembl_25_deepsmiles_klm_6gram_190413.klm', vocab)
 
     num_simulations = 1000
     width = 3
@@ -45,7 +45,10 @@ if __name__ == '__main__':
         logp = factor * MolLogP(mol)
         logp_score = (logp - logp_min)/(logp_max - logp_min)  # normalize logP between 0 and 1
 
-        return logp_score # (logp_score * 0.5) + (len_score * 0.5)
+        score = logp_score # (logp_score * 0.5) + (len_score * 0.5)
+
+        print("%s, %s" % (generated, str(score)))
+        return score
 
     # mcts = LanguageModelMCTSWithUCB1(lm, width, text_length, eval_function)
     mcts = LanguageModelMCTSWithPUCT(lm, width, text_length, eval_function, cpuct=5)

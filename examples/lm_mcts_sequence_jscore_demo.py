@@ -11,17 +11,18 @@ if __name__ == '__main__':
 
     print("loading language model...")
 
-    vocab = get_arpa_vocab('models/chemts_250k_deepsmiles_klm_6gram_190414.arpa')
-    lm = KenLMDeepSMILESLanguageModel('models/chemts_250k_deepsmiles_klm_6gram_190414.klm', vocab)
+    vocab = get_arpa_vocab('../models/chemts_250k_deepsmiles_klm_6gram_190414.arpa')
+    lm = KenLMDeepSMILESLanguageModel('../models/chemts_250k_deepsmiles_klm_6gram_190414.klm', vocab)
 
-    num_simulations = 1000000
+    num_simulations = 1500000
     width = 12
     max_depth = 100
     start_state = ["<s>"]
+    c = 2
 
-    sa_scores = np.loadtxt(os.path.join(THIS_DIR, 'resources', 'chemts_sa_scores.txt'))
-    logp_values = np.loadtxt(os.path.join(THIS_DIR, 'resources', 'chemts_logp_values.txt'))
-    cycle_scores = np.loadtxt(os.path.join(THIS_DIR, 'resources', 'chemts_cycle_scores.txt'))
+    sa_scores = np.loadtxt(os.path.join(THIS_DIR, '..', 'resources', 'chemts_sa_scores.txt'))
+    logp_values = np.loadtxt(os.path.join(THIS_DIR, '..', 'resources', 'chemts_logp_values.txt'))
+    cycle_scores = np.loadtxt(os.path.join(THIS_DIR, '..', 'resources', 'chemts_cycle_scores.txt'))
     jscorer = JScorer.init(sa_scores, logp_values, cycle_scores)
 
     def eval_function(text):
@@ -33,9 +34,12 @@ if __name__ == '__main__':
             return -1.0
 
         jscore = jscorer.score(smiles)
-        return jscore / (1 + np.abs(jscore))
+        score = jscore / (1 + np.abs(jscore))
 
-    mcts = LanguageModelMCTSWithPUCTTerminating(lm, width, max_depth, eval_function, cpuct=5, terminating_symbol='</s>')
+        print("%s, %s" % (generated, str(score)))
+        return score
+
+    mcts = LanguageModelMCTSWithPUCTTerminating(lm, width, max_depth, eval_function, cpuct=c, terminating_symbol='</s>')
     state = start_state
 
     print("beginning search...")

@@ -42,10 +42,6 @@ class LanguageModelMCTSWithUCB1:
                 node.wins += score
                 node = node.parent
 
-            #
-            print("%s, %s" % (''.join(rollout_state), str(score)))
-            #
-
             self._store_best(rollout_state, score)
 
         # return the move that was most visited
