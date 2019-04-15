@@ -4,7 +4,7 @@ Chemgrams
 N-gram language models of DeepSMILES strings, combined with MCTS.
 
 
-## Setup
+## Setup On OSX
 
 1. Download Open Babel from its original source (https://github.com/openbabel/openbabel)
 
@@ -60,4 +60,32 @@ $ source activate chemgrams_env
 
 $ pip install https://github.com/kpu/kenlm/archive/master.zip
 
-``
+```
+
+
+### Docker Image
+
+To build the Docker image:
+```
+$ docker build -t chemgrams .
+```
+
+To start a container and open a bash shell into it:
+```
+$ docker run --rm -it chemgrams /bin/bash
+```
+
+To start a container in the background:
+```
+$ docker run --name chemgrams_bash --rm -d -t chemgrams
+```
+
+To stop the container:
+```
+$ docker stop chemgrams
+```
+
+To run a command on the container:
+```
+$ docker exec chemgrams_bash python lm_mcts_sequence_jscore_demo.py
+```
