@@ -1,9 +1,13 @@
 from chemgrams import *
 from rdkit import Chem
+from rdkit.RDLogger import logger
+
+logger = logger()
+
 
 if __name__ == '__main__':
 
-    print("loading language model...")
+    logger.info("loading language model...")
     # lm = DeepSMILESLanguageModelUtils.get_lm("../models/chembl_25_deepsmiles_nltklm_5gram_190330.pkl")
 
     vocab = get_arpa_vocab('../models/chembl_25_deepsmiles_klm_6gram_190413.arpa')
@@ -32,21 +36,21 @@ if __name__ == '__main__':
 
         score = num_aromatic_atoms / 23
 
-        print("%s, %s" % (generated, str(score)))
+        logger.info("%s, %s" % (generated, str(score)))
         return score
 
     mcts = LanguageModelMCTSWithUCB1(lm, width, text_length, eval_function)
     state = start_state
 
-    print("beginning search...")
+    logger.info("beginning search...")
     mcts.search(state, num_simulations)
 
     best = mcts.get_best_sequence()
 
     generated_text = ''.join(best[0])
-    print("generated text: %s (score: %s, perplexity: %s)" % (generated_text, str(best[1]), lm.perplexity(generated_text)))
+    logger.info("generated text: %s (score: %s, perplexity: %s)" % (generated_text, str(best[1]), lm.perplexity(generated_text)))
 
     decoded = DeepSMILESLanguageModelUtils.decode(generated_text, start='<s>', end='</s>')
     smiles = DeepSMILESLanguageModelUtils.sanitize(decoded)
 
-    print("SMILES: %s" % smiles)
+    logger.info("SMILES: %s" % smiles)

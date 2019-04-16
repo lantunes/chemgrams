@@ -1,10 +1,13 @@
+from rdkit.RDLogger import logger
+
 from chemgrams import *
-from rdkit.Chem.Crippen import MolLogP
-from rdkit import Chem
+
+logger = logger()
+
 
 if __name__ == '__main__':
 
-    print("loading language model...")
+    logger.info("loading language model...")
     lm = DeepSMILESLanguageModelUtils.get_lm("../models/chembl_25_deepsmiles_nltklm_5gram_190330.pkl")
 
     num_simulations = 1000
@@ -26,21 +29,21 @@ if __name__ == '__main__':
         perplexity_reward = perplexity / (1 + perplexity)
         score = (perplexity_reward*0.5) + (len_reward*0.5)
 
-        print("%s, %s" % (generated, str(score)))
+        logger.info("%s, %s" % (generated, str(score)))
         return score
 
     mcts = LanguageModelMCTSWithUCB1(lm, width, text_length, eval_function)
     state = start_state
 
-    print("beginning search...")
+    logger.info("beginning search...")
     mcts.search(state, num_simulations)
 
     best = mcts.get_best_sequence()
 
     generated_text = ''.join(best[0])
-    print("generated text: %s (score: %s, perplexity: %s)" % (generated_text, str(best[1]), lm.perplexity(generated_text)))
+    logger.info("generated text: %s (score: %s, perplexity: %s)" % (generated_text, str(best[1]), lm.perplexity(generated_text)))
 
     decoded = DeepSMILESLanguageModelUtils.decode(generated_text)
     smiles = DeepSMILESLanguageModelUtils.sanitize(decoded)
 
-    print("SMILES: %s" % smiles)
+    logger.info("SMILES: %s" % smiles)

@@ -1,15 +1,16 @@
 import os
 import time
-
 from chemgrams import *
 from chemgrams.jscorer import JScorer
+from rdkit.RDLogger import logger
 
+logger = logger()
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 if __name__ == '__main__':
 
-    print("loading language model...")
+    logger.info("loading language model...")
 
     vocab = get_arpa_vocab('../models/chemts_250k_deepsmiles_klm_6gram_190414.arpa')
     lm = KenLMDeepSMILESLanguageModel('../models/chemts_250k_deepsmiles_klm_6gram_190414.klm', vocab)
@@ -36,20 +37,20 @@ if __name__ == '__main__':
         jscore = jscorer.score(smiles)
         score = jscore / (1 + np.abs(jscore))
 
-        print("%s, %s" % (generated, str(score)))
+        logger.info("%s, %s" % (generated, str(score)))
         return score
 
     mcts = LanguageModelMCTSWithPUCTTerminating(lm, width, max_depth, eval_function, cpuct=c, terminating_symbol='</s>')
     state = start_state
 
-    print("beginning search...")
+    logger.info("beginning search...")
     start = time.time()
     mcts.search(state, num_simulations)
     end = time.time()
 
     best = mcts.get_best_sequence()
     generated_text = ''.join(best[0])
-    print("generated text: %s" % generated_text)
+    logger.info("generated text: %s" % generated_text)
     decoded = DeepSMILESLanguageModelUtils.decode(generated_text, start='<s>', end='</s>')
     smiles = DeepSMILESLanguageModelUtils.sanitize(decoded)
-    print("SMILES: %s, J: %s (%s seconds)" % (smiles, jscorer.score(smiles), str((end - start))))
+    logger.info("SMILES: %s, J: %s (%s seconds)" % (smiles, jscorer.score(smiles), str((end - start))))

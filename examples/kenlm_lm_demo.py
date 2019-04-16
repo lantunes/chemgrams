@@ -1,8 +1,12 @@
-import time
 import os
+import time
+
+from rdkit.RDLogger import logger
+
 from chemgrams import *
 from chemgrams.jscorer import JScorer
 
+logger = logger()
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
@@ -27,7 +31,7 @@ for i in range(100000):
 
         jscore = jscorer.score(sanitized)
 
-        print("successful: %s , score: %s" % (sanitized, str(jscore)))
+        logger.info("successful: %s , score: %s" % (sanitized, str(jscore)))
 
         if current_best_score is None or beats_current(jscore):
             current_best_score = jscore
@@ -37,4 +41,4 @@ for i in range(100000):
         pass
 end = time.time()
 
-print("best: %s , score: %s (%s seconds)" % (current_best_smiles, str(current_best_score), str((end - start))))
+logger.info("best: %s , score: %s (%s seconds)" % (current_best_smiles, str(current_best_score), str((end - start))))

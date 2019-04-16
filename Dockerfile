@@ -56,4 +56,5 @@ COPY setup.py chemgrams/
 WORKDIR /root/chemgrams
 RUN /opt/conda/envs/chemgrams_env/bin/python setup.py install
 
-CMD [ "/bin/bash" ]
+WORKDIR /root/chemgrams/examples
+CMD [ "/opt/conda/envs/chemgrams_env/bin/python", "kenlm_lm_demo.py" ]

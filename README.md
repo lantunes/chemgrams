@@ -70,22 +70,12 @@ To build the Docker image:
 $ docker build -t chemgrams .
 ```
 
-To start a container and open a bash shell into it:
+To start a container:
 ```
-$ docker run --rm -it chemgrams /bin/bash
-```
-
-To start a container in the background:
-```
-$ docker run --name chemgrams_bash --rm -d -t chemgrams
+$ docker run --name chemgrams_bash --rm chemgrams
 ```
 
 To stop the container:
 ```
 $ docker stop chemgrams
-```
-
-To run a command on the container:
-```
-$ docker exec chemgrams_bash python lm_mcts_sequence_jscore_demo.py
 ```

@@ -1,7 +1,9 @@
 from rdkit.Chem.Crippen import MolLogP
+from rdkit.RDLogger import logger
 
 from chemgrams import *
 
+logger = logger()
 lm = DeepSMILESLanguageModelUtils.get_lm("../models/chembl_25_deepsmiles_nltklm_5gram_190330.pkl")
 
 current_best_score = None
@@ -17,7 +19,7 @@ for i in range(1000):
         mol = Chem.MolFromSmiles(sanitized)
         logp_score = MolLogP(mol)
 
-        print("successful: %s , score: %s" % (sanitized, str(logp_score)))
+        logger.info("successful: %s , score: %s" % (sanitized, str(logp_score)))
 
         if current_best_score is None or beats_current(logp_score):
             current_best_score = logp_score
@@ -26,4 +28,4 @@ for i in range(1000):
     except Exception as e:
         pass
 
-print("best: %s , score: %s" % (current_best_smiles, str(current_best_score)))
+logger.info("best: %s , score: %s" % (current_best_smiles, str(current_best_score)))
