@@ -2,6 +2,8 @@ from rdkit.Chem.Crippen import MolLogP
 from rdkit.RDLogger import logger
 
 from chemgrams import *
+from rdkit import rdBase
+rdBase.DisableLog('rdApp.error')
 
 logger = logger()
 lm = DeepSMILESLanguageModelUtils.get_lm("../models/chembl_25_deepsmiles_nltklm_5gram_190330.pkl")

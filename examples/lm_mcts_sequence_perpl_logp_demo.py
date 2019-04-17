@@ -2,6 +2,8 @@ from chemgrams import *
 from rdkit.Chem.Crippen import MolLogP
 from rdkit import Chem
 from rdkit.RDLogger import logger
+from rdkit import rdBase
+rdBase.DisableLog('rdApp.error')
 
 logger = logger()
 

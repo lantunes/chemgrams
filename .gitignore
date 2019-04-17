@@ -12,3 +12,4 @@ src/
 .settings
 .vscode
 models/
+out/

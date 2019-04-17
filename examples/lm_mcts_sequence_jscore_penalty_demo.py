@@ -17,16 +17,18 @@ if __name__ == '__main__':
     vocab = get_arpa_vocab('../models/chemts_250k_deepsmiles_klm_6gram_190414.arpa')
     lm = KenLMDeepSMILESLanguageModel('../models/chemts_250k_deepsmiles_klm_6gram_190414.klm', vocab)
 
-    num_simulations = 1500000
-    width = 12
+    num_simulations = 1000
+    width = 24
     max_depth = 100
     start_state = ["<s>"]
-    c = 2
+    c = 5
 
     sa_scores = np.loadtxt(os.path.join(THIS_DIR, '..', 'resources', 'chemts_sa_scores.txt'))
     logp_values = np.loadtxt(os.path.join(THIS_DIR, '..', 'resources', 'chemts_logp_values.txt'))
     cycle_scores = np.loadtxt(os.path.join(THIS_DIR, '..', 'resources', 'chemts_cycle_scores.txt'))
     jscorer = JScorer.init(sa_scores, logp_values, cycle_scores)
+
+    all_smiles = {}
 
     def eval_function(text):
         generated = ''.join(text)
@@ -36,10 +38,16 @@ if __name__ == '__main__':
         except Exception:
             return -1.0
 
-        jscore = jscorer.score(smiles)
-        score = jscore / (1 + np.abs(jscore))
+        global all_smiles
 
-        logger.info("%s, %s" % (generated, str(score)))
+        if smiles in all_smiles:
+            score = -1.0
+        else:
+            jscore = jscorer.score(smiles)
+            score = jscore / (1 + np.abs(jscore))
+            all_smiles[smiles] = jscore
+
+        logger.info("%s, %s" % (smiles, str(score)))
         return score
 
     mcts = LanguageModelMCTSWithPUCTTerminating(lm, width, max_depth, eval_function, cpuct=c, terminating_symbol='</s>')
@@ -56,3 +64,7 @@ if __name__ == '__main__':
     decoded = DeepSMILESLanguageModelUtils.decode(generated_text, start='<s>', end='</s>')
     smiles = DeepSMILESLanguageModelUtils.sanitize(decoded)
     logger.info("SMILES: %s, J: %s (%s seconds)" % (smiles, jscorer.score(smiles), str((end - start))))
+
+    all_best = reversed(list(reversed(sorted(all_smiles.items(), key=lambda kv: kv[1])))[:5])
+    for i, ab in enumerate(all_best):
+        logger.info("%d. %s, %s" % (5-i, ab[0], str(ab[1])))

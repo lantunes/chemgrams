@@ -15,6 +15,6 @@ setup(name="chemgrams",
       url='http://github.com/lantunes/chemgrams',
       author="Luis M. Antunes",
       author_email="lantunes@gmail.com",
-      packages=["chemgrams", "chemgrams.jscorer", "chemgrams.sascorer"],
+      packages=["chemgrams", "chemgrams.jscorer", "chemgrams.sascorer", "chemgrams.qedscorer"],
       python_requires='>3.5.2',
       install_requires=["nltk == 3.4", "deepsmiles", "networkx"])

@@ -1,7 +1,7 @@
 import os
 import time
 from chemgrams import *
-from chemgrams.jscorer import JScorer
+from chemgrams.qedscorer import QEDScorer
 from rdkit.RDLogger import logger
 from rdkit import rdBase
 rdBase.DisableLog('rdApp.error')
@@ -17,16 +17,15 @@ if __name__ == '__main__':
     vocab = get_arpa_vocab('../models/chemts_250k_deepsmiles_klm_6gram_190414.arpa')
     lm = KenLMDeepSMILESLanguageModel('../models/chemts_250k_deepsmiles_klm_6gram_190414.klm', vocab)
 
-    num_simulations = 1500000
-    width = 12
+    num_simulations = 100000
+    width = 24
     max_depth = 100
     start_state = ["<s>"]
-    c = 2
+    c = 5
 
-    sa_scores = np.loadtxt(os.path.join(THIS_DIR, '..', 'resources', 'chemts_sa_scores.txt'))
-    logp_values = np.loadtxt(os.path.join(THIS_DIR, '..', 'resources', 'chemts_logp_values.txt'))
-    cycle_scores = np.loadtxt(os.path.join(THIS_DIR, '..', 'resources', 'chemts_cycle_scores.txt'))
-    jscorer = JScorer.init(sa_scores, logp_values, cycle_scores)
+    qedscorer = QEDScorer()
+
+    all_smiles = {}
 
     def eval_function(text):
         generated = ''.join(text)
@@ -36,10 +35,16 @@ if __name__ == '__main__':
         except Exception:
             return -1.0
 
-        jscore = jscorer.score(smiles)
-        score = jscore / (1 + np.abs(jscore))
+        global all_smiles
 
-        logger.info("%s, %s" % (generated, str(score)))
+        if smiles in all_smiles:
+            score = -1.0
+        else:
+            qedscore = qedscorer.score(smiles)
+            score = qedscore / (1 + np.abs(qedscore))
+            all_smiles[smiles] = qedscore
+
+        logger.info("%s, %s" % (smiles, str(score)))
         return score
 
     mcts = LanguageModelMCTSWithPUCTTerminating(lm, width, max_depth, eval_function, cpuct=c, terminating_symbol='</s>')
@@ -55,4 +60,8 @@ if __name__ == '__main__':
     logger.info("generated text: %s" % generated_text)
     decoded = DeepSMILESLanguageModelUtils.decode(generated_text, start='<s>', end='</s>')
     smiles = DeepSMILESLanguageModelUtils.sanitize(decoded)
-    logger.info("SMILES: %s, J: %s (%s seconds)" % (smiles, jscorer.score(smiles), str((end - start))))
+    logger.info("SMILES: %s, J: %s (%s seconds)" % (smiles, qedscorer.score(smiles), str((end - start))))
+
+    all_best = reversed(list(reversed(sorted(all_smiles.items(), key=lambda kv: kv[1])))[:5])
+    for i, ab in enumerate(all_best):
+        print("%d. %s, %s" % (5-i, ab[0], str(ab[1])))

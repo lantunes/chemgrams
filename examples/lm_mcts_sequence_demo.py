@@ -1,5 +1,7 @@
 from chemgrams import *
 from rdkit.RDLogger import logger
+from rdkit import rdBase
+rdBase.DisableLog('rdApp.error')
 
 logger = logger()
 
