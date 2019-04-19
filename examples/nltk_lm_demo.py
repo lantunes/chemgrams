@@ -4,6 +4,7 @@ from rdkit.RDLogger import logger
 from chemgrams import *
 from rdkit import rdBase
 rdBase.DisableLog('rdApp.error')
+rdBase.DisableLog('rdApp.warning')
 
 logger = logger()
 lm = DeepSMILESLanguageModelUtils.get_lm("../models/chembl_25_deepsmiles_nltklm_5gram_190330.pkl")

@@ -3,6 +3,7 @@ from rdkit import Chem
 from rdkit.RDLogger import logger
 from rdkit import rdBase
 rdBase.DisableLog('rdApp.error')
+rdBase.DisableLog('rdApp.warning')
 
 logger = logger()
 

@@ -5,6 +5,7 @@ from chemgrams.jscorer import JScorer
 from rdkit.RDLogger import logger
 from rdkit import rdBase
 rdBase.DisableLog('rdApp.error')
+rdBase.DisableLog('rdApp.warning')
 
 logger = logger()
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))

@@ -7,6 +7,7 @@ from chemgrams import *
 from chemgrams.jscorer import JScorer
 from rdkit import rdBase
 rdBase.DisableLog('rdApp.error')
+rdBase.DisableLog('rdApp.warning')
 
 logger = get_logger('chemgrams.log')
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -55,8 +56,8 @@ for i in range(3000000): # ~8 hours
     except Exception as e:
         pass
 
-    if i % 50000 == 0:
-        logger.info("--iteration: %d--" % i)
+    if (i+1) % 50000 == 0:
+        logger.info("--iteration: %d--" % (i+1))
         logger.info("num valid: %d" % num_valid)
         log_top_best(all_smiles, 5, logger)
 
