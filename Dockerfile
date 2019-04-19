@@ -57,4 +57,4 @@ WORKDIR /root/chemgrams
 RUN /opt/conda/envs/chemgrams_env/bin/python setup.py install
 
 WORKDIR /root/chemgrams/examples
-CMD [ "/opt/conda/envs/chemgrams_env/bin/python", "kenlm_lm_demo.py" ]
+CMD [ "/opt/conda/envs/chemgrams_env/bin/python", "lm_mcts_sequence_jscore_penalty_demo.py" ]

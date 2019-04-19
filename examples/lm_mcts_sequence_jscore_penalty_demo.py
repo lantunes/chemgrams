@@ -13,9 +13,11 @@ THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 if __name__ == '__main__':
 
+    logger.info(os.path.basename(__file__))
     logger.info("KenLMDeepSMILESLanguageModel('../models/chemts_250k_deepsmiles_klm_6gram_190414.klm', vocab)")
     logger.info("width = 24, max_depth = 100, start_state = ['<s>'], c = 5")
     logger.info("score: -1.0 if invalid; -1.0 if seen previously; J/(1+abs(J)) if valid")
+    logger.info("LanguageModelMCTSWithPUCTTerminating")
     logger.info("JScorer")
 
     logger.info("loading language model...")
@@ -39,7 +41,7 @@ if __name__ == '__main__':
     i = 0
 
     def log_best(n, all_best, n_valid, lggr):
-        if n % 50000 == 0:
+        if n % 10000 == 0:
             lggr.info("--iteration: %d--" % n)
             lggr.info("num valid: %d" % n_valid)
             log_top_best(all_best, 5, lggr)
