@@ -2,11 +2,11 @@ import os
 import time
 from chemgrams import *
 from chemgrams.jscorer import JScorer
-from rdkit.RDLogger import logger
+from chemgrams.logger import get_logger, log_top_best
 from rdkit import rdBase
 rdBase.DisableLog('rdApp.error')
 
-logger = logger()
+logger = get_logger('chemgrams.log')
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
@@ -45,9 +45,9 @@ if __name__ == '__main__':
         else:
             jscore = jscorer.score(smiles)
             score = jscore / (1 + np.abs(jscore))
-            all_smiles[smiles] = jscore
+            all_smiles[smiles] = (jscore, generated)
 
-        logger.info("%s, %s" % (smiles, str(score)))
+        logger.debug("%s, %s" % (smiles, str(score)))
         return score
 
     mcts = LanguageModelMCTSWithPUCTTerminating(lm, width, max_depth, eval_function, cpuct=c, terminating_symbol='</s>')
@@ -65,6 +65,4 @@ if __name__ == '__main__':
     smiles = DeepSMILESLanguageModelUtils.sanitize(decoded)
     logger.info("SMILES: %s, J: %s (%s seconds)" % (smiles, jscorer.score(smiles), str((end - start))))
 
-    all_best = reversed(list(reversed(sorted(all_smiles.items(), key=lambda kv: kv[1])))[:5])
-    for i, ab in enumerate(all_best):
-        logger.info("%d. %s, %s" % (5-i, ab[0], str(ab[1])))
+    log_top_best(all_smiles, 5, logger)

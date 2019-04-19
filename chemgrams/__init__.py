@@ -1,4 +1,3 @@
-from .nltk_deepsmiles_lm import *
 from .deepsmiles_tokenizer import *
 from .lm_mcts_ucb1 import *
 from .lm_utils import *
@@ -8,3 +7,4 @@ from .kenlm_deepsmiles_lm import *
 from .basic_mcts import *
 from .lm_mcts_puct_term import *
 from .lm_mcts_ucb1_term import *
+from .nltk_deepsmiles_lm import *
