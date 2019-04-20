@@ -23,7 +23,7 @@ Comparison against GB-GA (https://pubs.rsc.org/en/content/articlelanding/2019/sc
 | Chemgrams   | 12.44 ± 0.49   | ~2.1 million  | 6 hours    |
 
 Example of a generated molecule (*J* = 12.47):
-<img src="https://raw.githubusercontent.com/lantunes/chemgrams/master/resources/generated_example.png" width="25%"/>
+<img src="https://raw.githubusercontent.com/lantunes/chemgrams/master/resources/generated_example.png" width="100%"/>
 
 ## Setup On OSX
 
