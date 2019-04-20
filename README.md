@@ -3,6 +3,15 @@ Chemgrams
 
 N-gram language models of DeepSMILES strings, combined with MCTS.
 
+Comparison against ChemTS ([https://arxiv.org/abs/1710.00616]):
+
+| Method              | 2h           | 4h           | 6h           |  8h         |  Molecules/Min   |
+|---------------------|:------------:|:------------:|:------------:|:-----------:|-----------------:|
+| ChemTS              | 4.91 ± 0.38  | 5.41 ± 0.51  | 5.49 ± 0.44  | 5.58 ± 0.50 | 40.89 ± 1.57     |
+| Chemgrams           | 10.52 ± 0.66 | 11.49 ± 0.39 | 12.44 ± 0.49 | -           | 5948.89 ± 149.69 |
+| ChemTS - Only RNN   | 4.51 ± 0.27  | 4.62 ± 0.26  | 4.79 ± 0.25  | 4.79 ± 0.25 | 41.33 ± 1.42     |
+| Chemgrams - Only LM | 4.83 ± 0.34  | 4.95 ± 0.32  | 5.17 ± 0.33  | 5.17 ± 0.33 | 4713.86 ± 72.98  |
+
 
 ## Setup On OSX
 
