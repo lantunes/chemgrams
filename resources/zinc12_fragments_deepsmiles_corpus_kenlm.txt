@@ -1,0 +1,5015 @@
+O = C c c [nH] n c 5
+C = C c n c n o 5
+N # C / C = C / C = O ) N
+O = C n c n c c 5
+N # C / C = C \ C = O ) N
+C N = C N = C 5 C = O
+[nH] c c c n 5 ) O C 4
+C = C c c n o n 5
+C = C N C = N C 5 = O
+C C = O ) C = N ) C # N
+O = C c n c c [nH] 5
+O = c c n c c [nH] 6
+O = C c c c [nH] n 5
+O = C c c c n [nH] 5
+O = C n c c c n 5
+C = C c n o c n 5
+O C C C # N ) ) C # N
+C C = N C = O ) N = C 5
+C C = C C = O ) N = N 5
+O = C C = C N = N C 5
+C N = C C = N 5 ) ) C = O
+N # C C = N C C O 5
+N C = O ) C = C ) C # N
+O = C C = N C = N ) C 5
+[O-] [N+] = C C = N ) C = C 5
+N O [C@@H] C = C 5 ) ) C # N
+N O [C@H] C = C 5 ) ) C # N
+O = C C N = C C = N 5
+C C = N N = C 5 C = O
+N # C C C N = C = O
+C C = C N = N 5 ) ) C = O
+O = C C = N C C = N 5
+O = C c c [nH] c n 5
+O = C c c n c [nH] 5
+N c n c c n n 6
+N c n c n c n 6
+N # C C C # N ) ) N ) N
+C = C n c n n n 5
+N c c n c n n 6
+N c c c n n n 6
+[N-] = [N+] = c c c [nH] [nH] 5
+N = C n c c n n 5
+[N-] = [N+] = N C C C # N
+[N-] = [N+] = N [C@H] C # N ) ) C
+[N-] = [N+] = N [C@@H] C # N ) ) C
+C c c n n n n 6
+N = N c c [nH] n c 5
+N c c n n c n 6
+N = N c n c c [nH] 5
+C c n c n n n 6
+F C [NH+] C ) C ) ) F
+[NH3+] C C F ) F ) C
+F C C = S ) F
+S = C C F ) F
+F c c c c c c 6
+O C O S O
+C / C = C / [C@H] C # N ) ) O
+C / C = C \ [C@@H] C # N ) ) O
+[O-] C C C C 4 ) C # N
+C / C = C \ [C@H] C # N ) ) O
+N C = C C = O ) C C 5
+C / C = C / [C@@H] C # N ) ) O
+N # C C [O-] ) C C C 4
+C / C = C \ C # N ) ) / C O
+N [n+] c c c c n 6
+N [n+] c c c n c 6
+N # C C [NH2+] C C # N
+N = [N+] C C = N C = C 6
+C C C = C 4 N [N+] # N
+N = C C = C N C 5 = [NH2+]
+C C # C C N [N+] # N
+C = C C = C C C O 5
+C c c c c o 5 ) C
+C / C = C \ C = C \ C = O
+C [C@] C # C ) ) C = C ) ) O
+C C C = O ) C # C ) ) ) C
+O = C C = C C C C 5
+C C = C [C@H] [C@@H] C 6 ) O 3
+C C = C [C@@H] [C@H] C 6 ) O 3
+O C C C # C C = C
+C = C [C@@H] O [C@@H] 3 C = C
+C = C / C = C / C = O ) C
+C # C C C C = O ) C
+C / C = C / C O ) ) ) / C # C
+C / C = C \ C = O ) ) / C = C
+O C C C = C C = C 5
+O C C = C C = C C 5
+C / C = C / [C@@H] C # C ) ) O
+C / C = C / [C@H] C # C ) ) O
+O [C@H] C C C 3 ) ) ) C # C
+O [C@@H] C C C 3 ) ) ) C # C
+C c c o c c 5 C
+C C O / C = C / C # C
+C C O C = C = C = C
+C # C C C [C@H] C O 3
+C # C C C [C@@H] C O 3
+C O C C = C C = C 5
+O C C = C C C = C 5
+C C # C C C = O ) C
+C / C = C \ C = C / C = O
+C / C = C / C = C \ C = O
+C C C C = C C 6 ) O 3
+C [C@@H] C C C 4 = C = O
+C [C@H] C C C 4 = C = O
+C = C C O C C # C
+C C # C C C C = O
+C C c c o c c 5
+O = C [C@H] C C 3 C C 3
+O = C [C@@H] C C 3 C C 3
+C C C C = O ) C # C
+C C c c c c o 5
+C [C@@] C # C ) ) C = C ) ) O
+C C C # C C = O ) C
+O C C # C C = C ) C
+C c o c c c 5 C
+O C C # C C C C 3
+O = C / C = C \ C C C 3
+O = C / C = C / C C C 3
+O = C [C@] C C [C@H] 4 C 5
+C / C = C / C = C / C = O
+C = C [C@@H] O [C@H] 3 C = C
+C = C C [C@H] [C@@H] C 6 ) O 3
+O = C C C C C 4 ) C 4
+O = C C C C C 5 = C
+C = C C = O ) C C C 3
+O = C C C C 4 ) C C 3
+O = C C C C C # C
+O = C C C C = C ) C 4
+O [C@@H] C C = C C = C 6
+C = C C C C = C = O
+C = C / C = C \ C = O ) C
+O [C@H] C C = C C = C 6
+C C C = O ) C = C = C
+C C C = C O C = C 7
+C = C [C@H] O [C@@H] 3 C = C
+C / C = C \ C O ) ) ) / C # C
+O C C # C C C = C
+O = C / C = C \ C = C ) C
+C C C = O ) C C # C
+C = C / C = C / C = O ) ) \ C
+C = C / C = C / C = C ) ) \ O
+C C C = C [C@H] 5 C = O
+C C C = C [C@@H] 5 C = O
+C C = O ) C C C 3 C 4
+O = C [C@] [C@@] 3 C 3 ) C ) ) C
+O [C@@H] C = C ) ) C C # C
+O [C@H] C = C ) ) C C # C
+C C = C C = C C O 6
+C C O C # C C = C
+C O / C = C \ C ) ) / C # C
+C C # C [C@] C ) C O 3
+C C # C [C@@] C ) C O 3
+O = C = C C C C C 5
+C C C = C C = C O 7
+C = C O C = C = C ) ) C
+C = C / C = C / [C@@H] C O 3
+C = C / C = C / [C@H] C O 3
+C / C = C / C = O ) ) \ C = C
+C [C@@H] C # C ) ) O C = C
+C [C@H] C # C ) ) O C = C
+C C = O ) [C@H] C C = C 4
+C C = O ) C = C C C 4
+O = C C C [C@H] [C@@H] 5 C 3
+O = C C C [C@@H] [C@H] 5 C 3
+O = C [C@@] C C [C@@H] 4 C 5
+C = C C # C [C@H] O ) C
+C C = C = O ) ) C C = C
+C = C C C = C ) C = O
+C = C C / C = C / C = O
+O = C / C = C / C = C ) C
+C = C / C = C \ C = O ) ) / C
+O = C C C C = C C 5
+O = C / C = C \ C = C ) ) / C
+O = C C C = C ) C = C
+O = C C [C@@H] [C@H] C 5 ) C 3
+C c o c c c 5 ) C
+O = C C / C = C / C = C
+C C / C = C \ C = C = O
+C C / C = C / C = C = O
+C / C = C / C # C C O
+C / C = C \ C # C C O
+C O C = C C 5 ) C C 4
+C = C C O C = C = C
+C = C C C C = C O 6
+C O C = C = C C C 5
+C = C C O C C = C 6
+C = C C C = O ) ) C = C
+C C # C [C@@H] C [C@@H] 3 O
+C C # C [C@H] C [C@@H] 3 O
+C C # C [C@@H] C [C@H] 3 O
+C C # C [C@H] C [C@H] 3 O
+O [C@H] C # C ) ) C C = C
+O [C@@H] C # C ) ) C C = C
+O = C C C # C ) ) C ) C
+C = C O / C = C \ C = C
+C = C O / C = C / C = C
+C / C = C \ C C = C = O
+C / C = C / C C = C = O
+C C # C / C = C \ C O
+C C # C / C = C / C O
+C # C C C ) C O C 4
+C # C [C@H] C O C C 5
+C # C [C@@H] C O C C 5
+C O / C = C \ C # C C
+O = C C = C C [C@@H] 5 C
+C C = C C = O ) C C 5
+O = C C C C = C 5 C
+O = C C C C C = C 6
+O = C C C C = C C 6
+C / C = C \ [C@@H] C # C ) ) O
+C / C = C \ [C@H] C # C ) ) O
+C = C = C C C C = O
+N # C N C C C C 5
+C c [nH] c n c 5 C
+N # C / C = C / N C ) C
+N [C@@H] C [NH+] = C C = C 6
+C c [nH] n c c 5 ) C
+C c c n n c 5 ) C
+C n c c n c 5 C
+C C n c c c n 5
+C C C ) C = C N = N 5
+C = N [C@H] [C@H] C 5 ) [NH2+] C 4
+C = N [C@@H] [C@H] C 5 ) [NH2+] C 4
+C = N [C@@H] [C@@H] C 5 ) [NH2+] C 4
+C c c c n n 5 ) C
+C n n c c c 5 C
+N # C / C = C \ N C ) C
+N # C C C ) C [NH2+] C 4
+C n c n c c 5 C
+C n c n c c 5 ) C
+N [C@H] C [NH+] = C C = C 6
+C N C C = N C = C 6
+[NH3+] C c c [nH] c c 5
+C = N [C@H] [C@@H] C 5 ) [NH2+] C 4
+N # C C N C C C 3
+C C c c [nH+] c [nH] 5
+C = C C N C C # N
+C c n [nH] c c 5 C
+C c [nH] n c c 5 C
+N # C C N ) C C C 4
+N = C C N C C = C 6
+N # C [C@@H] C C C N 5
+N = C C C N C = C 6
+C C [C@H] C [C@@H] 5 N = N 5
+N c c [nH] c c 5 ) C
+N # C C C N C C 3
+C C c c [nH] n c 5
+N # C [C@H] C [NH2+] C C 5
+N # C [C@@H] C [NH2+] C C 5
+C N n c c c c 5
+N [C@@H] C C = C C = [NH+] 6
+N [C@H] C C = C C = [NH+] 6
+C c [nH] c c [nH+] 5 ) C
+C c [nH+] c c [nH] 5 ) C
+[NH3+] C C C C 3 ) ) C # N
+C [C@H] C [C@@H] 3 N C # N
+C [C@@H] C [C@@H] 3 N C # N
+N # C N C C C C 4
+N # C N C C C C 3
+C [C@H] C [C@H] 3 N C # N
+C [C@@H] C [C@H] 3 N C # N
+N # C [C@H] C C C N 5
+C N C C [C@@H] 4 C # N
+C N C C [C@H] 4 C # N
+C n c c c c 5 ) N
+C C = N N = C C 5 ) C
+C [C@@H] N = N C = C 5 ) C
+C [C@H] N = N C = C 5 ) C
+C / C = C / N C ) ) ) / C # N
+C C = C N = N [C@@H] 5 C
+C C = C N = N [C@H] 5 C
+C C C N = C C = N 5
+C C = N N = C [C@H] 5 C
+C C = N N = C [C@@H] 5 C
+N [C@@H] C C C 3 ) ) ) C # N
+N [C@H] C C C 3 ) ) ) C # N
+C N C C C 3 ) ) ) C # N
+N C n c c c c 5
+N = C C C C = N ) C 5
+C C / C = C \ C # N ) ) ) / N
+C / C = C / C # N ) ) ) / N C
+C / C = C \ C # N ) ) / C N
+C C / C = N / C ) ) / C # N
+C [C@@] N ) C = C C = [NH+] 5
+C [C@] N ) C = C C = [NH+] 5
+C = N C C N = C C 7
+C C C ) C = N N = C 5
+C [C@@H] C N = C C = N 6
+C [C@H] C N = C C = N 6
+N = C C = [NH+] C 3 C ) C
+C N C [NH+] = C C = C 6
+C N C # N ) ) C C = C
+N = C C C C = N C 6
+C n c c c c [nH] 6
+[N-] = [N+] = C C C C C 5
+C / N = C / C C C # N
+C = C C C N = N C 6
+C C = C C ) C N = N 5
+C C C = N N = C C 5
+[NH3+] C C = N C = C C 5
+C C c c c n [nH] 5
+C C c c c [nH] n 5
+[NH3+] C C C C 4 ) C # N
+C C c c [nH] c [nH+] 5
+[NH2+] C [C@H] C [C@@H] 5 C = C 5
+C / C = C / C # C ) ) ) ) C [NH3+]
+C = C C [NH2+] C C # C
+[NH2+] C [C@@H] C [C@H] 5 C = C 5
+C C [N+] 3 C C 3 C C 3
+C C [C@] [C@H] 4 [NH+] 3 C C 5
+C C C [C@H] 4 [NH+] 3 C C 5
+C C C [C@@H] 4 [NH+] 3 C C 5
+C C [C@@] [C@@H] 4 [NH+] 3 C C 5
+C = C C # [N+] C C ) C
+C C = C C = [NH+] [C@@H] 5 C
+C C = C C = [NH+] [C@H] 5 C
+C C = C C C [NH+] = C 6
+C C = C C ) C [NH+] = C 5
+C [N+] = C C C C = C 6
+C C = [N+] C = C ) ) C = C
+C c c c 3 c s 4
+C / C = C \ [C@@H] C = C ) ) C
+C C = C = C C C ) C
+C C C = C C C C 5
+C C = C C C C C 5
+C / C = C / [C@@H] C = C ) ) C
+C C C / C = C / C = C
+C C = C C C 4 ) C ) C
+C / C = C \ [C@H] C = C ) ) C
+C # C C C C C ) C
+C C # C C C ) C ) C
+C = C C C C C C 6
+C C / C = C \ C C = C
+C C / C = C / C C = C
+C [C@H] C # C ) ) C C C
+C [C@@H] C # C ) ) C C C
+C C C 3 C C C C 3
+C = C C C = C ) ) C ) C
+C C C C C # C C
+C = C C / C = C / C ) ) / C
+C C [C@@H] [C@H] 3 C C C 5
+C = C C / C = C \ C ) ) / C
+C / C = C / [C@H] C = C ) ) C
+C [C@H] C = C C [C@@H] 5 C
+C / C = C / C = C / C ) ) / C
+C C C C C = C = C
+C C C [C@@H] [C@H] C 5 ) C 3
+C C C C # C C C
+C C C = C ) C C C 3
+C = C / C = C \ C C ) C
+C = C / C = C / C C ) C
+C = C C C C = C ) C
+C C = C = C C ) C ) ) ) C
+C = C C C C C = C
+C C = C C C C C 6
+C C = C C = C ) C ) ) ) C
+C C / C = C / C [C@@H] / 3 C
+C C / C = C / C [C@H] / 3 C
+C C C C 4 ) C C C 4
+C = C = C C C ) C ) C
+C C = C C C [C@H] 5 C
+C C = C C C [C@@H] 5 C
+C [C@@H] C C C C 5 C 4
+C [C@H] C C C C 5 C 4
+C C # C C C C ) C
+C / C = C \ C = C ) C ) ) / C
+C / C = C / C = C \ C ) ) / C
+C / C = C / C = C ) C ) ) \ C
+C / C = C \ C = C / C ) ) \ C
+C / C = C \ C = C \ C ) ) \ C
+C / C = C \ C / C = C \ C
+C C = C ) C C ) C C 3
+C [C@@H] C C = C C 5 ) C
+C # C C C C ) C ) C
+C [C@@H] C C C C = C 6
+C [C@H] C C C C = C 6
+C C [C@@H] C C C = C 5
+C [C@H] C C = C C 5 ) C
+C = C C C C C C 5
+C C C [C@H] [C@@H] C 6 ) C 3
+C C = C C ) C C C 5
+C C C ) C C C = C 5
+C [C@@H] C = C C [C@H] 5 C
+C [C@@H] C = C C [C@@H] 5 C
+C [C@H] C = C C [C@H] 5 C
+C C C C C 5 C C 5
+C C = C ) C C C C 4
+C C C / C = C \ C = C
+C C [C@H] C C C = C 5
+C C C C C C # C
+C [C@H] C C C = C C 6
+C C C C = C C C 7
+C [C@@H] C C C = C C 6
+C C / C = C / C = C ) C
+C C C = C = C C C
+C [C@@H] C C ) C ) ) C # C
+C [C@H] C C ) C ) ) C # C
+C = C C C C C C 3
+C C C ) C C = C C 5
+C = C C C / C = C \ C
+C C / C = C / C ) ) / C = C
+C C / C = C \ C ) ) / C = C
+C = C C C / C = C / C
+C / C = C \ C = C ) C C
+C / C = C / C = C ) C C
+C [C@@H] C C C = C ) C 5
+C [C@H] C C C = C ) C 5
+C C = C C C C 3 ) ) ) ) C
+C / C = C / C C C C 3
+C / C = C \ C C C C 3
+C = C C [C@@H] C = C ) ) C
+C = C C [C@H] C = C ) ) C
+C C C C 3 ) ) C C C 3
+C C C C = C = C C
+C = C C C C C C 4
+C [C@@H] C C [C@H] [C@@H] 5 C 3
+C [C@H] C C [C@H] [C@@H] 5 C 3
+C C / C = C \ C = C / C
+C C / C = C / C = C \ C
+C C / C = C \ C = C \ C
+C C / C = C / C = C / C
+C = C C C C [C@H] 5 C
+C = C C C C [C@@H] 5 C
+C C C = C = C C ) C
+C C [C@H] C [C@H] 3 C = C
+C C [C@@H] C [C@H] 3 C = C
+C C [C@H] C [C@@H] 3 C = C
+C C [C@@H] C [C@@H] 3 C = C
+C C = C [C@H] [C@H] 3 C ) ) C
+C C = C [C@H] [C@@H] 3 C ) ) C
+C C = C [C@@H] [C@H] 3 C ) ) C
+C C C C = C 3 ) ) ) C ) C
+C C C C = C = C ) ) ) ) C
+C C C C 4 ) C C C 3
+C = C [C@H] C C 3 C ) C
+C = C [C@@H] C C 3 C ) C
+C C [C@@H] C C [C@H] 5 C 5
+C / C = C \ [C@@H] C [C@@H] 3 C
+C / C = C / [C@@H] C [C@@H] 3 C
+C / C = C \ [C@H] C [C@@H] 3 C
+C / C = C / [C@H] C [C@@H] 3 C
+C [C@@H] C = C = C ) ) ) C C
+C [C@H] C = C = C ) ) ) C C
+C = C [C@@H] C = C ) C ) ) C
+C = C [C@H] C = C ) C ) ) C
+C C C # C C C ) C
+C [C@H] C C ) ) C C # C
+C [C@@H] C C ) ) C C # C
+C C [C@H] C # C C ) ) ) C
+C C [C@@H] C # C C ) ) ) C
+C = C C C = C C ) C
+C / C = C / C C = C ) C
+C C C C # C ) ) C ) C
+C C C C C C 6 ) C 4
+C [C@@H] C C C = C 5 ) C
+C [C@H] C C C = C 5 ) C
+F C C = O ) Cl
+F C = O ) C Cl
+C P C Cl
+C P Cl ) C
+Cl C C O ) O
+O C O C Cl
+C C Cl ) F ) C
+F C C C Cl
+Cl S C = O
+C S C Cl
+Cl / C = C \ Cl
+Cl C = C ) Cl
+Cl / C = C / Cl
+[O-] [P@@] = O ) F ) C
+[O-] C C C = O ) C 4 = O
+O = C C # C C = O ) [O-]
+[O-] C = O ) C = O ) C # C
+O = C C = N N = C 5 [O-]
+C = C N = C C = P 6
+N C = N C = O ) N = N 5
+O = C = [N+] N = N C = N 5
+O = C c [n-] n n n 5
+N # [N+] c n n n [nH] 5
+N = N c [n-] n n n 5
+N O C C F ) F
+O = C c n c c o 5
+O = C C = C C = O ) N 5
+O = C c c c n o 5
+O = C c c o c n 5
+O = C c c o n c 5
+O = C c c c o n 5
+O = C c c n c o 5
+O = C = c c c [nH] o 5
+C C = O ) C = O ) C # N
+N C C C = O ) C 4 = O
+C = C C = O ) N = C = O
+O = C = C C N C 4 = O
+O = C = C C N = C = O
+O = c c n c c o 6
+N C = C C = O ) N = N 5
+C C = N C = O ) N = N 5
+O = C C = [NH+] C = N 5 ) N
+[O-] [n+] n c c c n 6
+O = N n c n c c 5
+O = C n c n c n 5
+C C = N ) N = O ) ) ) C # N
+O = N C N = C C = N 5
+O = C C = N N = N C 5
+O = C n c c n n 5
+N c n n c n n 6
+[O-] [S@] = O ) C F
+F c c c c n c 6
+F c c c c c n 6
+F c c c n c c 6
+C = C / C = C / C = O ) [O-]
+[O-] C = O ) C C # C C
+C = C / C = C \ C = O ) [O-]
+C C C # C C = O ) [O-]
+C # C C C C = O ) [O-]
+[O-] C = O ) C = C C C 3
+[O-] C = O ) [C@@H] C C 3 = C
+[O-] C = O ) [C@H] C C 3 = C
+[O-] C = O ) C = C C C 4
+[O-] C = O ) [C@@H] C # C ) ) C
+[O-] C = O ) [C@H] C # C ) ) C
+[O-] C = O ) C C C 3 C 4
+[O-] C = O ) [C@H] C = C 3 C
+[O-] C = O ) C = C = C C
+[O-] C = O ) C = C = C ) ) C
+[O-] C = O ) C C = C = C
+[O-] C = O ) [C@@H] C = C 3 C
+C n c c c n 5 ) ) O
+C c c [nH] n c 5 O
+O c n [nH] c c 5 ) C
+C n [nH] c c c 5 = O
+O c c [nH] c c 5 ) N
+[O-] [n+] c c [nH] c 5 C
+O c c n [nH] c 5 C
+N c c n c c [o+] 6
+O C C = N N = C C 5
+N c c c [nH] c 5 O
+C C c [n-] n n n 5
+C N [C@H] N = C 5 ) ) [N+] # N
+C N [C@@H] N = C 5 ) ) [N+] # N
+C / C = C \ N = N ) ) ) / [N+] # N
+C / C = C / N = N ) ) ) / [N+] # N
+N # C C C N [N+] # N
+S C C F ) F
+C c o n c c 5 ) C
+N # C [C@@H] C C C O 5
+N # C [C@H] C C C O 5
+N # C C C C = O ) C
+C C O / C = C \ C # N
+O [C@H] C = C C C = N 6
+O [C@@H] C = C C C = N 6
+O [C@H] C = C ) ) C C # N
+C C O / C = C / C # N
+C = C [C@@H] C C = O ) N 4
+O [C@@H] C = C ) ) C C # N
+C [C@] C C # N ) ) ) C O 3
+C = C [C@H] C C = O ) N 4
+C c n c c o 5 ) C
+C c o n c c 5 C
+C c o c c n 5 ) C
+C [C@@] C C # N ) ) ) C O 3
+C C C = O ) C C # N
+C N c c c c o 5
+O = C N C C C = C 6
+C / C = C \ C # N ) ) ) / C O
+C [C@H] C = O ) C ) ) C # N
+C [C@@H] C = O ) C ) ) C # N
+C C = O ) N C C # C
+C C = O ) N C C = C 4
+C c o c n c 5 C
+C c n o c c 5 C
+O = C = N C C ) C C 3
+O = C = N C C C C 4
+C [C@@H] C [C@@H] 3 N = C = O
+C [C@H] C [C@@H] 3 N = C = O
+C [C@@H] C [C@H] 3 N = C = O
+C [C@H] C [C@H] 3 N = C = O
+C = C N C = O ) ) C = C
+O C c c c c [nH] 5
+C C = C C = O ) N C 5
+C C C = O ) N = C = C
+C / C = C \ C = N \ C = O
+C / C = C / C = N / C = O
+C N C = O ) C C # C
+N = C C O C = C 5 ) C
+N = C C O C = C 5 C
+N # C [C@H] O C 3 C ) C
+N # C [C@@H] O C 3 C ) C
+C O n c c c c 5
+O = C C C # N ) ) C ) C
+C [C@@H] N = C C C 5 = O
+O C = C C = C N C 6
+C C O C = C ) C # N
+C N C C = C ) C 4 = O
+[C-] # [N+] [C@H] C = O ) C ) ) C
+[C-] # [N+] [C@@H] C = O ) C ) ) C
+C C C = N [C@@H] 5 C = O
+C C C = N [C@H] 5 C = O
+N # C C C ) C O C 4
+C [C@@H] C = O ) ) C C # N
+C [C@H] C = O ) ) C C # N
+N # C [C@H] C O C C 5
+N # C [C@@H] C O C C 5
+C C c n c c o 5
+C = C C O C C # N
+O = C N C [C@@H] [C@H] 5 C 3
+O = C N C [C@H] [C@@H] 5 C 3
+O = C = N C C C C 3
+C [C@@H] C # C ) ) N C = O
+O = C N C C = C 5 C
+O C C C C 3 ) ) C # N
+O C / C = C / C C # N
+C # C C C C = O ) N
+C C [C@H] C # N ) ) C = O
+C C [C@@H] C # N ) ) C = O
+C C C C = O ) C # N
+C / C = C / C N = C = O
+C [C@@H] O [C@@H] 3 C C # N
+C [C@H] O [C@@H] 3 C C # N
+C [C@@H] O [C@H] 3 C C # N
+C [C@H] O [C@H] 3 C C # N
+C C N C = O ) C # C
+O = C N C C = C C 5
+O C [C@H] C [C@@H] 3 C # N
+O C [C@@H] C [C@H] 3 C # N
+O C [C@H] C [C@H] 3 C # N
+O C [C@@H] C [C@@H] 3 C # N
+C = C C = N O ) ) C = C
+N = C C = C O [C@H] 5 C
+C C = C C = O ) C N 5
+O C c c [nH] c c 5
+C # C C O ) C [NH2+] C 4
+O N C C = C C = C 6
+C C C = O ) C # N ) ) ) C
+C O c c c c [nH] 5
+O = C C = N C C C 5
+C / C = C \ O C ) ) ) / C # N
+C / C = C / O C ) ) ) / C # N
+O = C C C N C = C 6
+N # C C C C O C 4
+C [C@@H] C = C C = N ) O 5
+C C = C C = N ) O C 5
+O = C C C = C N 5 ) C
+N # C O C = C C ) C
+C C N = C = C = O ) ) ) ) C
+N = C C O C C = C 6
+C = C C C N C 5 = O
+N [C@H] C = O ) ) C C # C
+N [C@@H] C = O ) ) C C # C
+O N C = C C C = C 6
+C C c c c n o 5
+O = C C C C C # N
+C [C@H] C # N ) ) C C = O
+C [C@@H] C # N ) ) C C = O
+C / C = C / C # N ) ) ) / C O
+C / C = C / C # N ) ) ) / O C
+C O C C = C ) C # N
+C [C@@H] C = C ) C # N ) ) ) O
+C [C@H] C = C ) C # N ) ) ) O
+N # C / C = C / [C@@H] O ) C
+N # C / C = C / [C@H] O ) C
+C = C O C C C # N
+C O C / C = C / C # N
+O C C C = C ) C # N
+O C C / C = C / C # N
+C O / C = C / C C # N
+O = C C N C C = C 6
+C [C@@H] C = O ) N ) ) C # C
+C [C@H] C = O ) N ) ) C # C
+C C c c n c o 5
+C / C = C \ C N = C = O
+C N C = O ) C # C ) ) ) C
+N C = C C = C C O 6
+C N C = O ) ) ) C C # C
+C N [C@H] C = C 5 ) ) C = O
+C / C = C / C = O ) C = N
+N C = O ) C C = C = C
+O = C C C C N = C 6
+O = C = N C = C C ) C
+C = C C C N = C = O
+C = C C = N C C O 5
+N = C O C C = C 5 C
+C C = O ) N [C@@H] [C@H] 3 C 3
+O = C C = C C N 5 C
+C n c n c n 5 ) C
+N # C C N ) C N C 4
+N = C C C N = N C 6
+C n c c n c 5 N
+C n c n c c 5 N
+C n n c c c 5 N
+C n c c c n 5 ) ) N
+C n c c c n 5 ) N
+C C / [NH+] = C / N C # N
+C c [nH] n c n 5 ) C
+C C n c c n n 5
+N c [nH] [nH+] c c 5 ) C
+C C = N [NH+] = C C 5 ) N
+[N-] = [N+] = N C C C = C
+C / C = [NH+] / C # N ) ) ) / N C
+C C n c n c n 5
+C N c c [nH] n c 5
+C C c n [nH] c n 5
+N C = [NH+] C = N C 5 ) ) C
+C N c [nH] c c [nH+] 5
+N N = C [C@@] C 5 ) C N 3
+N N = C [C@] C 5 ) C N 3
+C C C = [NH2+] ) N C # N
+C C n c n n c 5
+C c c [nH+] c [nH] 5 ) N
+C n c n n c 5 C
+C C [C@H] C # N ) ) N = N
+C C [C@@H] C # N ) ) N = N
+C n n c n c 5 C
+C N n c c c n 5
+C n n n c c 5 C
+C c n n n c 5 ) C
+N N C = C C C = N 6
+[NH3+] C C = C N = N C 5
+[N-] = [N+] = N [C@H] C = C ) ) C
+[N-] = [N+] = N [C@@H] C = C ) ) C
+[N-] = [N+] = N C / C = C \ C
+N c c [nH] n c 5 C
+[N-] = [N+] = N C C = C ) C
+[N-] = [N+] = N C / C = C / C
+[N-] = [N+] = N C C C C 3
+C n c c n c 5 ) ) N
+C C n n c c n 5
+C [C@H] N = C [NH+] = C 5 N
+C c c c n n 5 ) N
+N C C = N N = C C 5
+C c c n n n 5 ) C
+C N c c c [nH] n 5
+C [NH3+] ) C = C C N = N 5
+[NH3+] C C C = N N = C 5
+N n c c [nH+] c 5 C
+C N / C = [NH+] / C # N ) ) ) ) C
+C C = N N = C [C@@H] 5 N
+C C = N N = C [C@H] 5 N
+C C = N C = N [C@@H] 5 N
+C C = N C = N [C@H] 5 N
+N [C@H] N C = C C = N 6
+N [C@@H] N C = C C = N 6
+N C = C C = N C N 6
+N c c c c [nH] 5 ) N
+N c [nH] c c c 5 N
+N c [nH] c c c 5 ) N
+N c c n [nH] c 5 C
+C c c [nH] n c 5 N
+C c c n [nH] c 5 N
+[O-] C C C C 4 ) C C 3
+C = C C [O-] ) C C C 4
+C N C = C C = [NH+] C 5
+C [n+] c c [nH] c 5 C
+C n c c [n+] c 5 ) C
+C [n+] c c c n 5 C
+C = C C = [NH+] C C N 5
+[NH3+] C c c c c [nH] 5
+N # C C C [NH+] C C 3
+N # C [C@H] C C C [NH2+] 5
+N # C [C@@H] C C C [NH2+] 5
+C [N+] = C C C C 5 = N
+C C [n+] c [nH] c c 5
+C C n c [nH+] c c 5
+C # C C C C = [NH2+] ) N
+C C N C = C C = [NH+] 7
+N C = [NH+] [C@@H] [C@H] 4 C C 4
+N C = [NH+] [C@H] [C@@H] 4 C C 4
+C [C@H] C = C C = [NH2+] ) N 5
+C C = C C N C 5 = [NH2+]
+C / [NH+] = C / N C C = C / 5
+N C = [NH+] C = C C C 6
+C [C@@H] C N = C [NH+] = C 6
+C C = C C = [NH2+] ) N C 5
+C # C C N = C = S
+N # C S C # C C
+C # C C S C # N
+C = C C C C C = N
+C C C C # N ) ) C C
+C C C C C C # N
+N # C C C C C ) C
+C C N C # C ) ) C C
+C [C@@H] C # N ) ) C C C
+C [C@H] C # N ) ) C C C
+N # C C C C ) C ) C
+[NH3+] [C@H] C [C@H] 3 C C C 3
+C C [NH2+] C C C # C
+N = C C C / C = C / C
+C C # C C [NH2+] C C
+C C # C C [C@@H] [NH3+] ) C
+C C # C C [C@H] [NH3+] ) C
+[NH3+] [C@H] C [C@@H] 3 C C C 3
+[NH3+] [C@@H] C [C@H] 3 C C C 3
+C C C [C@H] [C@@H] C 6 ) [NH2+] 3
+[NH3+] [C@@H] C [C@@H] 3 C C C 3
+[NH3+] C C # C C C ) C
+C # C C [NH2+] C ) ) C ) C
+C C # C C [NH3+] ) C ) C
+C C C C # N ) ) C ) C
+C C = N C C C C 6
+C # C C C [NH+] C ) C
+[NH3+] [C@H] C C 3 C C C 4
+[NH3+] [C@@H] C C 3 C C C 4
+N = C C C C C C 6
+C C C C = C = N ) ) ) ) C
+C / C = C / C [NH3+] ) C C 3
+C [NH2+] C C C # C C
+C / C = N / C = C / C ) ) / C
+[C-] # [N+] C C C C C
+C C C [NH2+] C # C C
+C / C = C / C = C ) C ) ) ) / N
+C C [C@H] [NH2+] C ) ) C # C
+[NH3+] C [C@@H] [C@H] 3 C C C 5
+C C [C@@H] [NH2+] C ) ) C # C
+C C C = N C C C 5
+C C C C # C C [NH3+]
+C [C@@H] C C ) ) C C # N
+C C C C C # C [NH3+]
+C C # C C [NH+] C ) C
+C / C = N / C = C C ) C
+C [C@@H] C C C N = C 6
+C [C@H] C C C N = C 6
+C [C@H] C C ) C ) ) C # N
+C [C@@H] C C ) C ) ) C # N
+C [C@H] C N = C C 5 ) C
+C C C C = N ) C = C
+N = C C C C [C@H] 5 C
+C C / C = C / C = C / N
+C [C@H] [NH2+] C ) ) C C # C
+C [C@@H] [NH2+] C ) ) C C # C
+C [C@H] N = C [C@H] C 5 ) C
+C [C@H] N = C C [C@H] 5 C
+C [C@H] N = C C [C@@H] 5 C
+C [C@@H] N = C C [C@H] 5 C
+C [C@@H] N = C C [C@@H] 5 C
+C [C@@H] N = C [C@H] C 5 ) C
+C C [C@@H] [NH3+] ) C C # C
+C C [C@H] [NH3+] ) C C # C
+C N C C ) ) C C # C
+C [C@H] C C ) ) C C # N
+C C C ) C C C = N 5
+C = C = N C C ) C ) C
+C [C@@H] C # C C ) ) ) C [NH3+]
+C [C@H] C # C C ) ) ) C [NH3+]
+C / C = C / C = C / C [NH3+]
+C = C / C = C / [C@@H] [NH3+] ) C
+C = C / C = C / [C@H] [NH3+] ) C
+C C C # C C C [NH3+]
+C C C [C@H] [NH3+] ) C # C
+C C C [C@@H] [NH3+] ) C # C
+[NH3+] [C@@H] C C ) C ) ) C # C
+[NH3+] [C@H] C C ) C ) ) C # C
+C [C@H] [NH2+] C C ) ) ) C # C
+C [C@@H] [NH2+] C C ) ) ) C # C
+C [C@@H] C C C = N 5 ) C
+C [C@H] C C C = N 5 ) C
+C C C C C = N C 7
+[C-] # [N+] C C C C ) C
+C [C@H] C [C@H] 3 C = N ) C
+C [C@@H] C [C@H] 3 C = N ) C
+C [C@H] C [C@@H] 3 C = N ) C
+C [C@@H] C [C@@H] 3 C = N ) C
+[C-] # [N+] [C@@H] C C C ) ) ) C
+[C-] # [N+] [C@H] C C C ) ) ) C
+O [C@H] C Cl ) ) F
+O [C@@H] C Cl ) ) F
+O [C@@H] C F ) ) Cl
+C [C@] Cl ) F ) O
+C [C@@] Cl ) F ) O
+C P P ) F
+C P P ) F
+O = C C F ) F ) F
+F C = O ) C F ) F
+N = N C F ) F ) F
+[O-] C = O ) C = O ) C # N
+[O-] C = O ) C = N N = N 4
+C = C N = P N = C 6
+O C C F ) F ) O
+F C O O C F
+O = C C = C C = O ) O 5
+O = C C C C = O ) O 5
+O = C C = C = O ) ) C = O
+O = C [C@@H] O [C@H] 3 C = O
+O = C C = C O C 5 = O
+O = C N = C C = O ) N 5
+[O-] c c [nH+] n c 5 ) [O-]
+O = C c n c n o 5
+O = C c n o c n 5
+O = C c c n n o 5
+O = C c c n o n 5
+O = C c n n c o 5
+O = C [C@@H] C # N ) ) N = O
+O = C [C@H] C # N ) ) N = O
+O = c n c n c o 6
+O = c n n c c o 6
+O = C c c o n n 5
+O = C C = [N+] = [N-] ) ) C = O
+O = C N = N N = C 5 N
+[N-] = [N+] = C O C = [N+] = [N-]
+O = C n c n n n 5
+F C C F ) F ) C
+F C C C F ) F
+F C C C F ) ) F
+F C [C@H] F ) C ) ) F
+F C [C@@H] F ) C ) ) F
+C C C F ) F ) F
+F c n c c c n 6
+F c c n c n c 6
+F c c n c c n 6
+F c c c n c n 6
+[O-] C = O ) [C@H] C # N ) ) C
+[O-] C = O ) [C@@H] C # N ) ) C
+N # C C C C = O ) [O-]
+[O-] c n o c c 5 ) C
+C c n o c c 5 ) [O-]
+[O-] C = O ) [C@H] C # C ) ) N
+C O C = C N C 4 = O
+[O-] C = O ) [C@@H] C # C ) ) N
+C N C = O ) C C 4 = O
+[O-] c c o n c 5 C
+[NH3+] C C # C C = O ) [O-]
+[C-] # [N+] C C C = O ) [O-]
+C c c n o c 5 [O-]
+O c c o c c 5 N
+O [C@H] C = O ) ) C C # N
+O [C@@H] C = O ) ) C C # N
+[O-] C = O ) C = C ) C = N
+C c c [nH] c = O ) o 5
+C c n [nH] n c 5 [O-]
+C C C P C C 5
+C C C C C P 5
+[O-] C = C C # N ) ) N ) ) N
+C = C C = O ) N [N+] # N
+[NH2+] = c n c n c o 6
+O = [N+] C N = N C = C 6
+O = C N N = C C 5 ) N
+C O / N = C / C # N ) ) \ N
+C [NH3+] ) C = O ) N C # N
+O c c [nH] n c 5 N
+C O / C = N / C # N ) ) ) / N
+[O-] c n [n+] c [nH] 5 ) ) C
+C N c [n-] n n n 5
+N / N = N / C # N ) ) ) ) C = [NH2+]
+C S = O ) = O ) F
+F [n+] c c c c c 6
+C C O C = O ) C # C
+O [C@H] C = C C = O ) C 5
+C C = O ) O C C # C
+O = C O C C C = C 6
+O C c c c c o 5
+C [C@H] C = C C = O ) O 5
+O = C C C C = C O 6
+O = C / C = C / [C@H] C O 3
+O = C / C = C \ [C@H] C O 3
+O = C / C = C / [C@@H] C O 3
+O = C / C = C / C = O ) C
+C = C C C O C 5 = O
+O = C C O C C = C 6
+O = C O C C = C 5 C
+C C = C C = O ) O C 5
+C C # C C = O ) O C
+O C = C C C = C O 6
+O = C / C = C \ C = O ) C
+O [C@@H] C = C C = O ) C 5
+C C = C O C = C O 6
+C [C@@] C # C ) ) C = O ) ) O
+C [C@] C # C ) ) C = O ) ) O
+C [C@@H] C = C C = O ) O 5
+O = C C C = C O 5 ) C
+C = C O C = O ) C = C
+O = C C C [C@H] [C@@H] 5 O 3
+O = C C C [C@@H] [C@H] 5 O 3
+C = C C C C = O ) O 5
+O C c c o c c 5
+O = C C O C = C C 6
+O = C C C = C C O 6
+C O c c o c c 5
+C C C # C O C = O
+C C = O ) C C # C O
+C O C = C C = C O 7
+C C = C C = O ) O 4 ) ) C
+O = C C C C = O ) C 5
+O = C C = C C C O 5
+C O c c c c o 5
+C C C = C = O ) ) C = O
+O C O ) C = C C = C 5
+C [C@H] C # C ) ) O C = O
+C [C@@H] C # C ) ) O C = O
+O = C C C C = C 5 O
+O = C C = C O [C@@H] 5 C
+C O C C = O ) C # C
+O C = C C = C C O 6
+C O C = C C = O ) C 4
+O = C O / C = C / C = C
+O = C O / C = C \ C = C
+O = C / C = C \ C = O ) ) / C
+O C C # C O C = C
+C = C O C C = C ) O 5
+O = C / C = C \ [C@@H] C O 3
+C [C@] O [C@H] 3 [C@@H] 4 C = O
+C [C@] O [C@H] 3 [C@H] 4 C = O
+C [C@@H] C O 3 ) ) ) O C # C
+C [C@H] C O 3 ) ) ) O C # C
+C O C = O ) C C # C
+C = C O / C = C / C = O
+C = C O / C = C \ C = O
+O = C O C = C = C C
+C C = O ) O C = C = C
+C O C = O ) ) ) C C # C
+O = C C C C = C = O
+O = C C = C C O C 4
+O C C C C 3 C 4 3 ) ) ) ) O
+C # C C O ) C O C 4
+C C O C = C 5 C = O
+O [C@@H] C = C [C@@H] [C@H] 5 O 3
+O [C@@H] C = C [C@H] [C@@H] 5 O 3
+O [C@@H] C = C = C [C@H] 5 O
+O [C@@H] C = C = C [C@@H] 5 O
+O [C@H] C = C = C [C@@H] 5 O
+O = C O C = C ) C = C
+C C C = O ) O C # C
+C C / C = C \ O C \ 3 = O
+C C / C = C / O C / 3 = O
+C = C C C = O ) C = O
+C [C@@H] C C = O ) C 4 = O
+C [C@H] C C = O ) C 4 = O
+C C = C [C@@H] 4 O C = O
+C C = C [C@H] 4 O C = O
+C C # C C O C = O
+C [C@H] O C C 4 = C = O
+C [C@@H] O C C 4 = C = O
+O / C = C / C = C / C = O
+O = C C = O ) C C C 3
+O = C C O C C # C
+O = C C O C = C 5 ) C
+C O C = O ) C = C = C
+O [C@@H] C = O ) ) C C # C
+O = C C C O C = C 6
+O = C C C C 3 ) ) C = O
+C N C = O ) C C # N
+O = C N C C = C N 6
+C [C@H] C = O ) N ) ) C # N
+C C = O ) N C C # N
+O = N N C C = C C 5
+C N C = O ) ) ) C C # N
+O = C C C = C N N 6
+C C C = O ) N C # N
+O = C C = C C N 5 N
+O C n c n c c 5
+N c c o c c 5 N
+C O / N = C / C C # N
+C O n c n c c 5
+O = C C C C = N N 6
+N c c n c o 5 ) C
+C O c c [nH] n c 5
+O C c c [nH] n c 5
+O n c n c c 5 C
+N # C C C C = O ) N
+C C c n n c o 5
+C c c [nH] c = O ) [nH] 5
+C c n o c c 5 ) N
+C c n o n c 5 C
+O C n c c c n 5
+C [C@@H] C = O ) N ) ) C # N
+N C = O ) N C C # C
+O C c n c c [nH] 5
+C c c o c n 5 ) N
+O N c c c c [nH] 5
+N c n o c c 5 ) C
+C C C = C N 5 N = O
+C N c c c n o 5
+C N c c o n c 5
+O = C N N C C = C 6
+N c c c c o 5 ) N
+O C N = C C C = N 6
+N = C C O C = N 5 ) C
+C c n c o c 5 N
+N c c o n c 5 C
+C [C@H] O C = N C 5 = N
+[O-] [N+] C N = C [C@@H] 5 C 6
+[O-] [N+] C N = C [C@H] 5 C 6
+C O / N = C \ C C # N
+C n c c [nH] c 5 = O
+C = N N C C C 4 = O
+C N C = O ) C ) ) C # N
+O = N C C # N ) ) C ) C
+C O / C = C / C # N ) ) ) / N
+C C = N N [C@H] 5 C = O
+C N c c c o n 5
+C N c n c c o 5
+C O c c c [nH] n 5
+C C # C N C = O ) N
+N # C C N ) C O C 4
+C C = N C = O ) C N 5
+[O-] [N+] N C = C [C@H] 5 C 6
+N C = N O C = C C 6
+[O-] [n+] c c n c 5 ) C
+C [C@H] C # N ) ) N C = O
+C [C@@H] C # N ) ) N C = O
+C O N C [C@@H] 3 C # N
+[O-] [N+] N C = C [C@@H] 5 C 6
+N # C N C C O C 4
+N C C # C C = O ) N
+C n c c c n 5 ) O
+C c n n c o 5 ) C
+C [C@@H] O N = C N = C 6
+C [C@H] O N = C N = C 6
+C = C C N C = O ) N 5
+C N c c n c o 5
+C c c n o c 5 N
+[NH3+] N c c c c o 5
+O N C N = C C = C 6
+C c c n c o 5 ) N
+C [C@@H] N C = [NH+] 5 ) ) ) C = O
+C [C@H] N C = [NH+] 5 ) ) ) C = O
+C [C@H] N = N C = C 5 ) O
+C [C@@H] N = N C = C 5 ) O
+C O N C [C@H] 3 C # N
+C c c o n c 5 N
+C N [C@H] N = C 5 ) ) C = O
+[N-] = [N+] = C C = O ) C C
+C = N O C C C # N
+C O c n c c [nH] 5
+[O-] c c n c [nH+] 5 ) ) C
+N c c n o c 5 C
+C O / C = N / C C # N
+C N C = O ) ) C C # N
+O N C = C C C = N 6
+O = C C C N = C N 6
+O N C C = N C = C 6
+C = C N O C C # N
+O = C C N = C C N 6
+O = C N C N C = C 6
+C C N = C N 5 C = O
+O = N C C C C # N
+C [C@H] N C = N C 5 = O
+C [C@@H] N C = N C 5 = O
+C O C = N ) ) ) C C # N
+C / N = C \ C O C = N \ 5
+O C c c c [nH] n 5
+O C C = C N = N C 5
+O C C = C C N = N 5
+O C C C = N N = C 5
+C c o n c n 5 ) C
+O C c c c n [nH] 5
+[O-] [C@@H] C = C C = [NH+] 5 ) N
+[O-] [C@H] C = C C = [NH+] 5 ) N
+C C O / C = N \ C # N
+C C O / C = N / C # N
+N C = N C = O ) C C 5
+N c o c c c 5 N
+N C = C C = O ) N C 5
+N c o c c c 5 ) N
+C / C = N / O C ) ) ) / C # N
+C / C = N \ O C ) ) ) / C # N
+O C = C N = N C C 6
+O C c c n c [nH] 5
+O C c c [nH] c n 5
+C / C = N / C # N ) ) ) / O C
+C / C = N \ C # N ) ) ) / O C
+C N n c n n c 5
+N N c n c c [nH] 5
+C n c c n n [nH] 6
+C n c n c n 5 ) N
+C n n c n c 5 N
+C n n n n c 5 C
+C N c n c n [nH] 5
+C n n c c n 5 ) ) N
+C n n n c c 5 ) N
+C c n [nH] c n 5 ) N
+C n c n n c 5 N
+N N n c c c n 5
+C [NH3+] ) n c n c n 5
+N C C = N N = N C 5
+C C C = N N 5 N = N
+C [NH3+] ) c c n [nH] n 5
+C c n n n c 5 ) N
+C C n c n n n 5
+N n c c [nH+] c 5 N
+[NH3+] C c n [nH] c n 5
+N n n c c c [nH] 6
+N c [nH+] [nH] c c 5 ) N
+N n c n n c 5 C
+[NH3+] C n n c c n 5
+N C N ) C = N N = C 5
+N c c c n n 5 ) N
+N c n [nH] n c 5 C
+N c c c [nH+] n 5 N
+N C N ) C = C N = N 5
+C C n n n c n 5
+N N c c [nH+] c [nH] 5
+N N c c c [nH] n 5
+N c [nH] c c [nH+] 5 ) N
+N c n [nH] c c 5 N
+N c [nH] n c c 5 N
+N C = C N ) C N = [NH+] 5
+[NH3+] C [C@@H] C = N N = N 5
+[NH3+] C [C@H] C = N N = N 5
+C n n n c c 5 N
+C N C = N ) N C # N
+C S C F ) F
+F C S C F
+F C = C C C = C C 6
+F [C@@H] C C = C C = C 6
+F [C@H] C C = C C = C 6
+[NH3+] C c c c c o 5
+[NH3+] C c c o c c 5
+O = [N+] C C C C 5 = C
+O C = C [NH+] = C C C 6
+C C [n+] c o c c 5
+[NH3+] C c n c c [nH] 5
+[NH3+] C c c [nH] n c 5
+C [NH3+] ) c c [nH] c n 5
+C [NH3+] ) c c c [nH] n 5
+N N C C = [NH+] C = C 6
+C / C = [NH+] \ C # N ) ) ) / N C
+N = C C C N C = [NH+] 6
+C c c [nH] c [nH+] 5 ) N
+N C = [NH2+] ) N C C # C
+C [n+] c n n c 5 ) C
+N # C C C C = [NH2+] ) N
+N / C = [N+] / C C N = C / 5
+C N C = [NH2+] ) C ) ) C # N
+C C = C N ) [NH+] = N C 5
+C n c n [n+] c 5 ) C
+N # C S C C # N
+C [C@@H] C C O C = C 6
+C C = C C O C C 6
+C C = O ) C C ) C C 3
+C = C C C C = O ) C
+C C C C # C C O
+C C C [C@@H] C # C ) ) O
+C C C O C C # C
+C [C@H] C C O C = C 6
+C C C / C = C \ C O \ 3
+C O C = C C C C 5
+C C C / C = C / C = O
+O C / C = C / C C C 3
+O = C C C C C C 5
+C [C@@] C # C ) ) C C ) ) O
+C [C@] C # C ) ) C C ) ) O
+C C = C C ) C C O 5
+O C C C C C # C
+O = C C C / C = C / C
+C = C C C C C = O
+C C # C C C C O
+C O [C@@H] C C C = C 5
+C O [C@H] C C C = C 5
+C / C = C \ C C ) ) ) / C = O
+O C C C = C C C 4
+C C [C@@H] C # C C ) ) ) O
+C # C C C O ) C ) C
+O = C C = C ) C C ) C
+O C [C@H] C C C = C 5
+C C / C = C / C ) ) / C = O
+C C C C = C ) C = O
+C C C C # C O C
+C [C@@] C C C [C@@H] 5 O 6
+C [C@] C C C [C@H] 5 O 6
+O C C [C@@H] [C@H] C 5 ) C 3
+C C C C = C O C 7
+C = C C [C@H] C = C ) ) O
+C C [C@@H] C C # C ) ) ) O
+C / C = C \ C = O ) C ) ) / C
+C / C = C / C = O ) C ) ) \ C
+O [C@@H] C C C C = C 6
+C C = C O C C C 6
+C C [C@H] C C C 4 = O
+C [C@@H] C [C@@H] 3 C = O ) C
+C [C@H] C [C@@H] 3 C = O ) C
+C [C@@H] C [C@H] 3 C = O ) C
+O [C@H] C C ) C ) ) C # C
+C C / C = C \ C C = O
+C C O C # C C C
+C C / C = C \ C ) ) / C = O
+C C C / C = C \ C = O
+O = C C C / C = C \ C
+C [C@@H] C = C O 3 ) ) ) C C
+C [C@H] C = C O 3 ) ) ) C C
+C / C = C \ C = C / C O
+C / C = C / C = C \ C O
+C / C = C \ C = C \ C O
+C / C = C / C C C O / 5
+C / C = C \ C C C O \ 5
+C / C = C \ C = O ) ) ) / C C
+C C C = C ) C C = O
+O = C [C@@H] C C C 3 ) ) ) C
+O = C [C@H] C C C 3 ) ) ) C
+C / C = C / C C ) ) ) / C = O
+C = C C [C@@H] C = O ) ) C
+C = C C [C@H] C = O ) ) C
+C = C O [C@H] C = C ) ) C
+C = C O [C@@H] C = C ) ) C
+O C C C C = C = C
+O C C C C = C C 5
+O = C / C = C / C C ) C
+C [C@@H] C C C = O ) C 5
+O [C@@H] C C ) C ) ) C # C
+C = C C O C C = C
+O = C C C C [C@H] 5 C
+C C C O C 5 C C 5
+C [C@@] O ) C C C = C 5
+O C C C # C C C
+C = C C C [C@@H] C O 3
+C = C C C [C@H] C O 3
+C C [C@H] C C # C ) ) ) O
+O C [C@@H] C C C = C 5
+C C C [C@H] C # C ) ) O
+C C C # C [C@@H] O ) C
+C C C # C [C@H] O ) C
+C / C = C / C = C / C O
+O = C C C C [C@@H] 5 C
+C [C@H] C C C = O ) C 5
+C C = O ) C C C C 4
+C C [C@H] C # C C ) ) ) O
+C C # C C O ) C ) C
+C = C C [C@@H] C = C ) ) O
+C / C = C \ C = C ) ) ) / C O
+O [C@H] C C C C = C 6
+O [C@@H] C C [C@@H] [C@H] 5 C 3
+O [C@H] C C [C@@H] [C@H] 5 C 3
+C [C@] O ) C C C = C 5
+C O C C # C ) ) C ) C
+C = C C O C = C ) C
+O = C / C = C \ C C ) C
+O C C [C@@H] C C 3 = C
+O C C [C@H] C C 3 = C
+C C = O ) C C C C 3
+C C C [C@H] [C@@H] C 6 ) O 3
+C C C [C@H] [C@@H] C 6 ) O 3
+C = C O C C C C 3
+O = C C C C C C 6
+C = C O C / C = C / C
+O = C C C C C C 3
+O = C [C@H] C C 3 C ) C
+C C / C = C \ O C \ 3 ) ) ) ) C
+C C / C = C / O C / 3 ) ) ) ) C
+O C C = C C C C 5
+C = C C = O ) C C ) C
+C = C [C@@H] C O C C 5
+C = C C C O C C 6
+C = C C C C O C 6
+C = C [C@H] C O C C 5
+C [C@@H] O C = C C 5 ) C
+C [C@H] O C = C C 5 ) C
+C C = C [C@H] O C 3 ) ) ) ) C
+C C = C [C@@H] O C 3 ) ) ) ) C
+C [C@@H] C C = C [C@H] 5 O
+C [C@H] C C = C [C@H] 5 O
+C [C@@H] C C = C [C@@H] 5 O
+C [C@H] C C = C [C@@H] 5 O
+C C O [C@@H] [C@H] C 6 ) C 3
+O C C [C@@H] [C@H] C 6 ) C 3
+O C C [C@H] [C@@H] C 6 ) C 3
+C C O [C@H] [C@@H] C 6 ) C 3
+C O C = C ) C = C ) C
+C [C@H] C [C@H] 3 C = O ) C
+C [C@H] C O C = C 5 ) C
+C [C@@H] C O C = C 5 ) C
+C [C@H] C C C = C O 6
+C [C@@H] C C C = C O 6
+O C [C@@H] C C 3 C C 3
+C [C@@H] C C = C O 5 ) C
+O C [C@H] C C 3 C C 3
+C [C@H] C C = C O 5 ) C
+O [C@H] C C C = C C 6
+C C / C = C / C C = O
+C C / C = C / C = C / O
+C [C@@H] C O ) ) C C # C
+O = C C C C ) C C 3
+O C C C 3 ) ) C C C 3
+O = C [C@@H] C C 3 C ) C
+C C = C [C@H] C C 5 ) ) O
+C C = C [C@@H] C C 5 ) ) O
+C C C = O ) C = C ) C
+C C C C 4 ) [C@@H] C O 3
+C C C C 4 ) [C@H] C O 3
+C C C = O ) C C C 3
+C C / C = C / C = O ) C
+O = C C C C 4 ) C ) C
+C = C O C C = C ) C
+O [C@H] C C C = C ) C 5
+C C = C C C C O 6
+C C O C C # C C
+C [C@@H] C [C@@H] 3 [C@@H] C O 3
+C [C@H] C [C@@H] 3 [C@@H] C O 3
+C [C@@H] C [C@H] 3 [C@@H] C O 3
+C [C@H] C [C@H] 3 [C@@H] C O 3
+C C [C@@] C O 3 ) ) C = C
+C C [C@] C O 3 ) ) C = C
+C C C C C # C O
+C / C = C \ [C@@H] C = O ) ) C
+O = C C C ) C C C 4
+C C / C = C \ [C@H] C O 3
+C C / C = C / [C@@H] C O 3
+C C / C = C \ [C@@H] C O 3
+O C C = C = C C ) C
+O [C@@H] C C C = C C 6
+C [C@] C O 3 ) ) C C C 3
+C [C@@] C O 3 ) ) C C C 3
+C C C C C 5 ) C O 3
+C [C@@H] C [C@] 3 O [C@H] 3 C
+C [C@H] C [C@] 3 O [C@H] 3 C
+C [C@@H] C [C@@] 3 O [C@H] 3 C
+C [C@H] C [C@@] 3 O [C@H] 3 C
+C C [C@@H] C C C 4 = O
+C C C C C O 6 ) C 4
+C C = C C C [C@@H] 5 O
+C C = C C C [C@H] 5 O
+C C # C C [C@H] O ) C
+C C # C C [C@@H] O ) C
+C [C@@H] [C@@H] C ) C C 4 = O
+C [C@H] [C@@H] C ) C C 4 = O
+C [C@@H] [C@H] C ) C C 4 = O
+C [C@H] [C@H] C ) C C 4 = O
+C = C C O C C C 3
+C C [C@@H] C C 3 = O ) ) ) ) C
+C C [C@H] C C 3 = O ) ) ) ) C
+C # C C C [C@@H] O ) C
+C # C C C [C@H] O ) C
+O [C@@H] C C [C@H] [C@@H] 5 C 3
+C C C = C C O C 7
+C [C@H] C C [C@@H] 4 C = O
+C [C@@H] C C [C@H] 4 C = O
+C [C@@H] C C [C@@H] 4 C = O
+C [C@H] C C [C@H] 4 C = O
+C C [C@H] C = O ) ) C = C
+C C C C = O ) C = C
+C O C [C@H] C C = C 4
+C O C [C@@H] C C = C 4
+C / C = C / [C@H] C = C ) ) O
+C / C = C \ [C@H] C = C ) ) O
+C / C = C \ [C@@H] C = C ) ) O
+C / C = C / [C@@H] C = C ) ) O
+C O C / C = C \ C = C
+C O C / C = C / C = C
+C C O C C C # C
+O C C C = C C C 7
+C C C C 4 ) C O C 4
+C [C@H] C C = C = C ) ) ) ) O
+C [C@@H] C C = C = C ) ) ) ) O
+C [C@H] C = C = C ) ) ) O C
+C [C@@H] C = C = C ) ) ) O C
+O = C C [C@@H] C = C ) ) C
+O = C C [C@H] C = C ) ) C
+C / C = C / C = O ) ) ) / C C
+O = C C C = C C ) C
+O = C C / C = C / C ) ) / C
+O = C C C C = C ) C
+C = C C C = O ) ) C ) C
+C C C = C O 3 ) C C
+C C C C C 3 ) ) C = O
+C O C C = C = C C
+C C = C C O [C@H] 5 C
+C C = C C O [C@@H] 5 C
+C C / C = C / [C@H] C O 3
+C = C C C C C O 6
+O = C C [C@H] [C@H] 3 C ) ) C
+O = C C [C@H] [C@@H] 3 C ) ) C
+O = C C [C@@H] [C@H] 3 C ) ) C
+C C C C C = O ) C 4
+C [C@] C [C@H] 3 C ) ) ) C = O
+C [C@] C [C@@H] 3 C ) ) ) C = O
+C [C@@] C [C@H] 3 C ) ) ) C = O
+C [C@@] C [C@@H] 3 C ) ) ) C = O
+O = C C / C = C \ C ) ) / C
+C C = C = C C C O
+C = C O C C C C 4
+C / C = C \ C C = O ) C
+C / C = C / C C = O ) C
+C C = C = O ) ) C C C
+C C C = C = O ) ) C ) ) C
+C C [C@@H] C [C@@H] 3 C = O
+C C [C@H] C [C@@H] 3 C = O
+C C [C@@H] C [C@H] 3 C = O
+C C [C@H] C [C@H] 3 C = O
+C = C C C O C = C
+C C [C@H] C # C ) ) C O
+C C [C@@H] C # C ) ) C O
+C C C / C = C / C O / 3
+C O C C C = C = C
+C / C = C / C = C ) ) \ C O
+C / C = C \ C = C ) ) / C O
+C = C C C C O C 4
+C = C [C@@H] C C C 3 ) ) ) O
+C = C [C@H] C C C 3 ) ) ) O
+O = C C C C C C 4
+O [C@@H] C [C@H] 3 C C = C
+C [C@H] C = C = C ) ) ) C O
+C [C@@H] C = C = C ) ) ) C O
+O C C = C C C C 4
+C C O C C # C ) ) ) ) C
+C C = C C = O ) C ) ) ) C
+C C C = C C O C 5
+C C = C ) C = C ) C O
+O = C C C C 4 C ) C
+C [C@@H] C = C ) C ) ) C = O
+C / C = C / C = C / O ) ) / C
+C [C@H] C = C C 3 ) ) ) C O
+O C C C C C 4 ) C 4
+C / C = C / C = O ) C C
+C / C = C \ C = O ) C C
+O C C C C = C ) C 4
+C O C C C C # C
+C = C C N C [C@H] 5 [NH3+]
+C C N C # N ) ) C C
+N N = C C C C C 5
+N # C N C C ) C ) C
+N C C = C C [NH2+] C 7
+C N C C C = N ) C 5
+C C N = C = N C C
+C = C / C = N / N C ) C
+C C N N C 5 C C 5
+C [C@] C # N ) ) C C ) ) N
+C [C@@] C # N ) ) C C ) ) N
+C C N C C # N ) ) ) ) C
+C [NH2+] C C C C # N
+C [NH2+] C [C@@] C 5 ) C N 3
+C [C@H] N C ) C ) ) C # N
+C [C@@H] N C ) C ) ) C # N
+C C C N C C # N
+C [C@@H] C # N ) ) N C C
+C [C@H] C # N ) ) N C C
+C N C C # N ) ) C ) C
+C C C [C@H] C # N ) ) N
+C C C [C@@H] C # N ) ) N
+C = C C N C [C@@H] 5 [NH3+]
+N = N C C C C C 3
+C C C = N ) C = N ) C
+C [NH3+] ) [C@H] C C C = N 5
+C [NH3+] ) [C@@H] C C C = N 5
+C [C@H] N = C [C@@H] C 5 ) [NH3+]
+C [C@@H] N = C [C@@H] C 5 ) [NH3+]
+C [C@@H] N = C [C@H] C 5 ) [NH3+]
+C [C@H] N = C [C@H] C 5 ) [NH3+]
+C C [C@@H] C # N ) ) C [NH3+]
+C C [C@H] C # N ) ) C [NH3+]
+[N-] = [N+] = C C C C ) ) ) C
+C [NH2+] C C # C C [NH3+]
+[NH3+] C C C # C C [NH3+]
+C = C C N N C = C
+C / [NH+] = C / C = N / C ) ) / C
+C C C C = N C [NH2+] 7
+C C C N = C = N C
+C [C@@H] N = C [C@@H] N 5 ) C
+C [C@@H] C C = N C [NH2+] 6
+C [C@H] C C = N C [NH2+] 6
+C [C@H] N = C [C@@H] N 5 ) C
+C C C C N C # N
+C C C N C # N ) ) ) ) C
+C [C@H] N C # N ) ) ) C C
+C [C@@H] N C # N ) ) ) C C
+C N C C ) ) C C # N
+C C [C@@H] C # N ) ) N C
+C C [C@H] C # N ) ) N C
+C [NH2+] C [C@] C 5 ) C N 3
+[N-] = [N+] = C C C C C
+C N = C = N C C ) C
+C = C C N C [NH2+] C 6
+N [C@@H] C C ) C ) ) C # N
+N [C@H] C C ) C ) ) C # N
+[NH3+] N C C C C = C 6
+C C C = N C N C 5
+[NH3+] [C@H] C C C C = N 6
+[NH3+] [C@@H] C C C C = N 6
+C C [C@@H] N C C = N 5
+C [C@@H] C # N ) ) [C@H] [NH3+] ) C
+C [C@H] C # N ) ) [C@H] [NH3+] ) C
+C [C@@H] C # N ) ) [C@@H] [NH3+] ) C
+C [C@H] C # N ) ) [C@@H] [NH3+] ) C
+C C = N C C [NH2+] C 6
+[NH3+] C C = N C C C 5
+[NH3+] [C@@H] C C N = C C 6
+[NH3+] [C@H] C C N = C C 6
+N C [C@@H] [C@H] 3 C [NH2+] C 5
+N [NH+] C [C@@H] [C@H] C 5 ) C 3
+N = C C C [NH2+] C C 6
+N N C C C = C C 6
+[NH3+] C C C # N ) ) C ) C
+C N [C@@H] [C@H] 3 C [NH2+] C 5
+C N C [C@@H] [C@H] C 5 ) [NH2+] 3
+C [C@H] C N = C [C@H] 5 [NH3+]
+C [C@@H] C N = C [C@H] 5 [NH3+]
+C [C@H] C N = C [C@@H] 5 [NH3+]
+C [C@@H] C N = C [C@@H] 5 [NH3+]
+C = N N C C C C 5
+N # C C C [NH3+] ) C ) C
+C N N = C C [C@H] 5 C
+C N N = C C [C@@H] 5 C
+C C [C@@H] C [C@H] 5 N N 5
+[S-] n c c c c 5
+S C / C = C / C # N
+C [C@@H] C = C [C@H] [NH2+] 5 ) C
+C C # C C C C [NH3+]
+C [NH+] C C C = C C 6
+C [C@@H] C = C [C@@H] [NH2+] 5 ) C
+C # C C [N+] C ) C ) C
+C C [NH2+] C C # C ) ) ) ) C
+[NH2+] C C C C C 6 ) C 4
+C [N+] = C C ) C C C 5
+C = C = C C [NH+] C ) C
+C [C@@] [NH3+] ) C # C ) ) C C
+C C = C = C C ) ) ) C [NH3+]
+[NH3+] [C@@H] C C C 4 C C 3
+C C = [N+] C C C C 5
+C [C@@H] C = C [C@@H] [NH2+] 5 ) C
+C [C@H] C = C [C@@H] [NH2+] 5 ) C
+C C C [NH2+] C C # C
+C [C@] C [NH2+] C [C@H] 5 C 6
+C C C [NH2+] C 5 C C 5
+C = C C [NH2+] C C = C
+C C [C@H] C [C@@H] 5 [NH2+] C 5
+C [C@] [NH3+] ) C # C ) ) C C
+C C [C@@H] C [C@H] 5 [NH2+] C 5
+[NH3+] [C@H] C C C C = C 6
+[NH3+] C C C C = C ) C 4
+C C C C 4 ) C C [NH2+] 4
+C C = C C C [NH2+] C 6
+C [C@H] [C@H] [NH+] 3 C C C 5
+C [C@@H] [C@H] [NH+] 3 C C C 5
+C [C@@H] [C@@H] [NH+] 3 C C C 5
+[NH2+] C C [C@H] [C@@H] C 6 ) C 3
+[NH2+] C C [C@@H] [C@H] C 6 ) C 3
+[NH3+] C C C 3 ) ) C C C 3
+C C [C@H] C = C C [NH2+] 5
+C C [C@@H] C = C C [NH2+] 5
+C = C C C C 4 ) [NH2+] C
+C C C C 4 ) C [NH2+] C 4
+C C C 3 [NH2+] C C C 3
+C C [C@@H] C [C@H] C 6 ) [NH2+] 4
+C C [C@@H] [C@H] C 5 ) C [NH2+] 4
+C C [C@@H] [C@@H] C 5 ) C [NH2+] 4
+C C [C@H] [C@H] C 5 ) C [NH2+] 4
+C C [C@H] [C@@H] C 5 ) C [NH2+] 4
+C C C = C C [NH2+] C 4
+C C = C C [NH2+] C 4 ) ) ) ) C
+[NH3+] C C = C C C C 5
+C = C [C@@H] C [NH2+] C C 5
+C C C C [NH2+] 5 ) C C 3
+C C = C C [C@@H] C 5 ) [NH3+]
+C # C C C [C@@H] [NH3+] ) C
+C # C C C [C@H] [NH3+] ) C
+C C [C@@H] [C@H] 3 C [NH2+] C 5
+C = C C C C [NH2+] C 6
+[NH3+] C C C C 4 ) C C 3
+C C [C@H] [NH+] C 5 ) C C 4
+C C [C@@H] [NH+] C 5 ) C C 4
+C = C C C [C@H] C 5 ) [NH3+]
+C = C C C [NH2+] C C 6
+C [N+] = C C C [C@@H] 5 C
+[NH3+] [C@@H] C C [C@@H] [C@H] 5 C 3
+C C C C [N+] # C C
+[NH3+] [C@H] C C C 4 C C 3
+C [NH2+] [C@H] C C C = C 5
+C / C = C / C [N+] = C ) C
+C [NH2+] [C@@H] C C C = C 5
+C = C C C [C@@H] C 5 ) [NH3+]
+C C C = C C C [NH2+] 7
+[NH3+] [C@H] C C [C@@H] [C@H] 5 C 3
+C [N+] = C C C [C@H] 5 C
+C [NH2+] C C C C # C
+C = C [C@H] C [NH2+] C C 5
+C = C [C@H] C C C [NH2+] 5
+C = C [C@@H] C C C [NH2+] 5
+C [C@H] [C@@H] [NH+] 3 C C C 5
+[NH3+] [C@H] C C C = C C 6
+[NH3+] [C@@H] C C C C = C 6
+[NH3+] C / C = C / C C C 3
+C C [NH+] C C 5 C C 5
+C [N+] = C C C C C 6
+C [NH+] C C = C C 5 ) C
+C C = C C [C@H] C 5 ) [NH3+]
+[NH3+] [C@@H] C C C = C C 6
+C C = [N+] C C C 4 ) ) ) ) C
+C C = C [C@H] [NH2+] C 5 ) ) C
+C C = C [C@@H] [NH2+] C 5 ) ) C
+[NH3+] C C = C C C C 4
+C [NH2+] [C@@H] [C@H] C 5 ) C C 4
+C C C [C@H] [C@@H] [NH2+] 6 ) C 3
+C C C [C@@H] [C@H] [NH2+] 6 ) C 3
+C = C C [C@@H] 3 C C [NH3+]
+C = C C [C@H] 3 C C [NH3+]
+C = C C [NH2+] C C C 3
+C [C@@H] C C = C C [NH2+] 6
+C [C@H] C C = C C [NH2+] 6
+C [C@@] C [NH2+] C [C@@H] 5 C 6
+C [C@] [NH2+] C C [C@H] 5 C 6
+C [C@@] [NH2+] C C [C@@H] 5 C 6
+C / C = C / C [NH2+] C C / 5
+C C [C@H] [NH2+] 4 ) C C C 3
+C C [C@@H] [NH2+] 4 ) C C C 3
+C # C C C C C [NH3+]
+C C = C C [NH2+] C C 6
+[NH2+] C [C@H] [C@H] C 5 ) C C 4
+[NH2+] C [C@@H] [C@H] C 5 ) C C 4
+[NH2+] C [C@@H] [C@@H] C 5 ) C C 4
+C [C@@] C C C [NH+] 5 C 6
+C [C@] C C C [NH+] 5 C 6
+C [C@H] [NH2+] C [C@@H] [C@H] 5 C 3
+C [C@@H] [NH2+] C [C@@H] [C@H] 5 C 3
+C [NH2+] C C C 5 ) C C 3
+C [NH2+] C C C = C C 5
+C [NH3+] ) [C@H] C C C = C 5
+C [NH3+] ) [C@@H] C C C = C 5
+C = C / C = C / C C [NH3+]
+C = C C / C = C / C [NH3+]
+C [NH2+] [C@H] [C@H] C 5 ) C C 4
+C [NH2+] [C@H] [C@@H] C 5 ) C C 4
+C [NH2+] [C@@H] [C@@H] C 5 ) C C 4
+C [C@@H] C [C@H] [C@@H] [NH2+] 5 ) C 3
+C [C@H] C [C@H] [C@@H] [NH2+] 5 ) C 3
+[NH3+] C C [C@@H] [C@H] C 5 ) C 3
+C = [NH+] C C C C C 5
+C = C [C@@H] C C C 3 ) ) ) [NH3+]
+C = C [C@H] C C C 3 ) ) ) [NH3+]
+C C [NH2+] C C = C = C
+[NH3+] C C C C = C C 5
+C C = C [C@@H] C C 5 ) ) [NH3+]
+C C = C [C@H] C C 5 ) ) [NH3+]
+C / [NH+] = C / C = C C ) C
+C = C C [NH3+] ) C C C 4
+C [C@@H] [NH3+] ) C C = C C 3
+C [C@H] [NH3+] ) C C = C C 3
+C = C C C C [NH2+] C 4
+C S / C = C / C # C
+C S C # C C = C
+C c c s c c 5
+C c c c c s 5
+C = C S C C # C
+S C C = C C = C 6
+C C = C S C = C 6
+C / C = C / C = C = S
+C / C = C \ C = C = S
+S C C = C C = C 5
+C [C@H] C # C ) ) C = S
+C [C@@H] C # C ) ) C = S
+S = C C C C # C
+C C # C C C = S
+C C C ) C C 3 C ) C
+C = C C C C C ) C
+C [C@H] C = C ) ) C C C
+C [C@@H] C = C ) ) C C C
+C C C C = C ) C ) ) ) C
+C = C C C C ) C ) C
+C C / C = C \ C C ) C
+C / C = C / [C@H] C C ) ) C
+C C C C = C ) ) C ) C
+C C C = C C ) C ) ) ) C
+C / C = C / C C ) C ) ) \ C
+C / C = C \ C C ) C ) ) / C
+C / C = C \ [C@@H] C C ) ) C
+C C / C = C / C C ) ) \ C
+C [C@@H] C C C [C@@H] 5 C
+C [C@H] C C C [C@@H] 5 C
+C [C@@H] C C C [C@H] 5 C
+C / C = C \ [C@H] C C ) ) C
+C / C = C / [C@@H] C C ) ) C
+C C / C = C / C C ) C
+C / C = C \ C C ) C ) C
+C C = C ) C C ) C ) C
+C C [C@H] C = C ) C ) ) C
+C [C@@H] C C ) ) C C = C
+C [C@H] C C ) ) C C = C
+C C C / C = C \ C C
+C C C C / C = C \ C
+C C [C@@H] C = C ) C ) ) C
+C C C C / C = C / C
+C C C / C = C / C C
+C C C C C C C 5
+C / C = C \ C C C ) C
+C C C C C C C 4
+C C [C@@H] C [C@@H] 3 C C
+C C [C@@H] C [C@H] 3 C C
+C [C@@H] C C [C@H] C 5 ) C
+C C C / C = C / C ) ) / C
+C C [C@H] C [C@@H] 3 C C
+C C / C = C \ C C ) ) / C
+C C C C C C C 3
+C C C C = C ) C C
+C [C@H] C C [C@@H] C 5 ) C
+C [C@@H] C C [C@@H] C 5 ) C
+C C C C C = C ) C
+C C C = C C ) ) C C
+C [C@@H] C C C 4 C ) C
+C [C@H] C C C 4 C ) C
+C C C = C C ) C ) ) C
+C C C C C C C 6
+C C C C = C ) ) C C
+C C C C C ) C C 3
+C C C / C = C \ C ) ) / C
+C / C = C / C C C ) C
+C C [C@@] C ) C [C@H] 3 C
+C C [C@] C ) C [C@H] 3 C
+C C [C@@] C ) C [C@@H] 3 C
+C C [C@] C ) C [C@@H] 3 C
+C C C C C C 3 ) ) ) ) C
+C C C C C ) ) C C 3
+C C [C@@H] C C 3 C ) C
+C C [C@H] C C 3 C ) C
+C C C = C ) C C ) C
+C C C [C@@H] C [C@@H] 3 C
+C C C [C@H] C [C@@H] 3 C
+C C C [C@@H] C [C@H] 3 C
+C C C [C@H] C [C@H] 3 C
+C C C C C 3 ) ) ) C ) C
+C C [C@H] C C C 3 ) ) ) C
+C C [C@@H] C C C 3 ) ) ) C
+C C C ) C C C C 5
+C / C = C / C C ) C ) C
+C C C C C C 4 ) ) ) ) C
+F C = O ) O Cl
+C P O Cl
+F / C = C / Cl ) \ F
+Cl C = C F ) F
+F / C = C \ Cl ) / F
+O C [C@H] Cl ) F
+F [C@@H] C [NH3+] ) ) Cl
+F [C@H] C [NH3+] ) ) Cl
+Cl C = O ) Cl
+Cl C C Cl
+C C Cl ) Cl
+F C [C@@H] F ) [O-] ) ) F
+F C C F ) F ) [O-]
+F C [C@H] F ) [O-] ) ) F
+C = C N = N N = P 6
+O = C O N C = O ) C 5
+O = C C = N O C 5 = O
+N = N O C = O ) C # N
+O = C N = N C = O ) N 5
+F C C F ) F ) N
+N C C F ) F ) F
+F N [C@@H] F ) C ) ) F
+F N [C@H] F ) C ) ) F
+O = C / C = C / C = O ) [O-]
+[O-] C = O ) C = O ) C = C
+[O-] C = O ) [C@H] C # C ) ) O
+O = C C C = O ) ) C = O
+O C C # C C = O ) [O-]
+[O-] C = O ) [C@@H] C # C ) ) O
+[O-] / C = C / C = O ) C = O
+O = C C O C = C 5 O
+O = C / C = C \ C = O ) [O-]
+[O-] C = O ) [C@@H] C C 3 = O
+[O-] C = O ) [C@H] C C 3 = O
+C O C # C C = O ) [O-]
+O = C = C C = O ) [O-] ) ) C
+O = C C = C O [C@@H] 5 [O-]
+[O-] [C@@H] C C = O ) C 4 = O
+F c c c n n n 6
+C c n n o c 5 [O-]
+O = C N C C = O ) N 5
+[O-] n c c [n+] c 5 ) [O-]
+C c n o n c 5 [O-]
+C c n [nH] c = O ) o 5
+N c c o n c 5 [O-]
+[O-] c n o c c 5 ) N
+[O-] C = O ) C N C # N
+[O-] n c c c = O ) [nH] 5
+O / C = C / [N+] # N ) ) ) / C = O
+C c n o c n 5 ) [O-]
+O = c [nH] [nH] c c 5 [O-]
+N N C = O ) C C 4 = O
+[O-] C = O ) [C@@H] C # N ) ) N
+[O-] C = O ) [C@H] C # N ) ) N
+[O-] [C@H] N C = O ) C 4 = N
+[O-] C = O ) C C = [N+] = [N-]
+[O-] n c c [nH] c 5 = O
+N c c n o c 5 [O-]
+[O-] C = O ) n c c [nH] 4
+C C = P C = C N 5
+C n n n n c 5 [O-]
+N c [nH] n [nH+] c 5 [O-]
+[O-] c n n n n 5 ) C
+O C c [n-] n n n 5
+[S-] O C F ) F
+N C = O ) C = O ) C = C
+O = C C N = C O 5 ) C
+C O c c c n o 5
+C O c c o c n 5
+C O c n c c o 5
+O C c c n c o 5
+C C = O ) O C C # N
+O = C N C = C [C@@H] 5 O
+O = N / C = C / C = O ) ) \ C
+O = N / C = C \ C = O ) ) / C
+N C = O ) O C C # C
+O = C O C = C [C@@H] 5 N
+C O C = O ) C C # N
+O = C C C C = O ) N 5
+N [C@@H] C C = O ) C 4 = O
+O = C [C@@H] N = C = O ) ) ) C
+N [C@H] C C = O ) C 4 = O
+N [C@H] C = C C = O ) O 5
+N [C@@H] C = C C = O ) O 5
+O = C N C C = O ) C 5
+O C c c c n o 5
+O C c c c o n 5
+O C c c o n c 5
+O O n c c c c 5
+O = C N C C C 5 = O
+O N C = C C = O ) C 5
+O N c c c c o 5
+O = C C N = C C O 6
+[O-] C = O ) [C@@H] C = [NH+] 3 ) C
+[O-] C = O ) [C@H] C = [NH+] 3 ) C
+C C C = O ) N = C = O
+O C c n c c o 5
+O C c c o c n 5
+C N = C = O ) ) ) [C@H] C O 3
+C N = C = O ) ) ) [C@@H] C O 3
+C N C = O ) [C@H] [C@@H] 5 O 3
+O = C N C = O ) C = C
+O = C [C@H] N = C = O ) ) ) C
+O = C [C@H] C C = O ) N 4
+O = C [C@@H] C C = O ) N 4
+C O C = O ) C = C = N
+N O c c c c o 5
+O = C N C O C = C 6
+O = C C O C = N 5 ) C
+C C O C = O ) C # N
+C O N C = C 5 ) C = O
+O = C C N C = C 5 O
+O = C = C C = O ) N ) ) C
+O N c c o c c 5
+C = C C = O ) C N = O
+O = C C = N C C O 5
+C O C = C N 5 C = O
+[O-] [N+] O ) C = C C = C 5
+O C C # C C = O ) N
+O = N C = O ) C C C 3
+C C # C ) ) O N C = O
+N = C C C O C 5 = O
+[O-] [C@@H] C = C C = [NH+] 5 ) O
+[O-] [C@H] C = C C = [NH+] 5 ) O
+[C-] # [N+] C C = O ) O C
+C O c c o n c 5
+C c c o c = O ) [nH] 5
+O C c c n [nH] n 5
+O C n c n c n 5
+N C = O ) N C C # N
+N c n o n c 5 C
+[N-] = [N+] = N C C O C 4
+N C = N C = O ) N C 5
+N c c [nH] n c 5 O
+[N-] = [N+] = C C = O ) N C
+C C [NH+] = C N 5 N = O
+C c n n c o 5 ) N
+N C = N C = O ) C N 5
+N N c c c o n 5
+[O-] [n+] c c n n 5 ) C
+N N C = O ) C C # N
+[O-] [N+] = C [NH+] = C N C 6
+[O-] [n+] c c [nH] [nH] c 6
+C c n [nH] c = O ) [nH] 5
+N c n n o c 5 C
+N c o n c c 5 N
+N c n o c c 5 N
+[NH3+] C c c n n o 5
+C C N C # N ) ) N = O
+C N N = O ) ) C C # N
+N [C@H] N C = O ) C = N 5
+N [C@@H] N C = O ) C = N 5
+C C = O ) N C # N ) ) N
+[O-] c c [nH] n [n+] 5 C
+N [C@H] N = N C = C 5 ) O
+N [C@@H] N = N C = C 5 ) O
+[N-] = [N+] = N C [C@@H] C O 3
+O = C N C N = C N 6
+C N c n c n o 5
+C n c n [nH] c 5 = O
+C n n c [nH] c 5 = O
+N C = O ) C N C # N
+[O-] [n+] c c n n 5 C
+C c n o c n 5 ) N
+C N C = O ) N C # N
+N c o c c n 5 ) N
+O N / N = C / C C # N
+O N / N = C \ C C # N
+C N c n n c o 5
+N N C C = O ) C = N 5
+O C n c c n n 5
+N [C@@H] C = O ) N ) ) C # N
+C [NH3+] ) c c o n n 5
+N c n o c n 5 ) C
+N c o n c c 5 ) N
+C N C = O ) C = N N 6
+N [N+] = C C = O ) N C 5
+N N c n c c o 5
+O n c c [nH+] c 5 N
+O N C = [NH+] C C = N 6
+C C N = N N 5 C = O
+O C [C@@H] C = N N = N 5
+O C [C@H] C = N N = N 5
+C N c n o c n 5
+N / C = C \ C # N ) ) ) / N O
+N / C = N / O ) ) / C C # N
+O C c n c n [nH] 5
+N n n n n c 5 C
+N n c n n c 5 N
+[NH3+] C c [n-] n n n 5
+N n n c n c 5 N
+C n n n c n 5 ) N
+N c [nH] n c n 5 ) N
+C n n n n c 5 N
+N c n [nH+] c [nH] [nH] 6
+C c n n n n 5 ) N
+N n c n c n 5 ) N
+N N c n n c [nH] 5
+N c n [nH] n c 5 N
+N C N ) C = N N = N 5
+F [C@H] N C = C C = C 6
+F [C@@H] N C = C C = C 6
+C c c c c [nH] 5 ) F
+[O-] C = O ) [C@H] C = C ) ) C
+C = C C C C = O ) [O-]
+[O-] C = O ) / C = C / C ) ) / C
+[O-] C = O ) [C@H] C [C@H] 3 C
+[O-] C = O ) C C C C 4
+[O-] C = O ) C C ) C C 3
+[O-] C = O ) / C = C \ C ) ) / C
+[O-] C = O ) [C@@H] C [C@@H] 3 C
+[O-] C = O ) [C@H] C [C@@H] 3 C
+[O-] C = O ) C = C ) C C
+[O-] C = O ) [C@@H] C [C@H] 3 C
+C C = C ) C C = O ) [O-]
+C C / C = C \ C = O ) [O-]
+[O-] C = O ) C / C = C \ C
+C C = C C = O ) [O-] ) ) ) C
+C C / C = C / C = O ) [O-]
+[O-] C = O ) C / C = C / C
+[O-] C = O ) C C C C 3
+[O-] C = O ) [C@@H] C = C ) ) C
+[O-] [C@H] [C@H] O C [C@@H] 5 C 5
+[O-] [C@H] [C@@H] O C [C@H] 5 C 5
+O [C@H] C = C C = [NH2+] ) N 5
+O = C C C C = [NH2+] ) N 5
+O [C@@H] C = C C = [NH2+] ) N 5
+[NH3+] C c c o n c 5
+O [C@@H] N C = [NH+] C = C 6
+O [C@H] N C = [NH+] C = C 6
+C [NH3+] ) c c o c n 5
+C [NH3+] ) c c n c o 5
+C [NH3+] ) c c c n o 5
+[NH3+] C c n c c o 5
+C [NH3+] ) c c c o n 5
+O = C N [N-] C C C 5
+C N C [NH+] = C C 6 = O
+O N C C = C [NH+] = C 6
+C C C = O ) C = [N+] = N
+C n n n [n+] c 5 ) C
+C [NH3+] ) c n c n [nH] 5
+N N C C = N [NH+] = C 6
+C [n+] c n n n 5 ) C
+N n c c [nH+] c [nH] 6
+N # [N+] [NH2+] C C N C 4
+N = C N C [NH+] = C N 6
+C n c [n+] c n 5 ) ) N
+C [n+] c n c n 5 ) ) N
+S = C C = N N = N 5
+O = C C C C C N 6
+O = C C C C N 5 C
+C [C@@H] C [C@H] 3 C = O ) N
+C C = O ) N C C C 3
+C N C = O ) C ) ) C = C
+C = C C = O ) N C ) C
+C / C = C / C ) ) / C = O ) N
+C C C = C ) C = O ) N
+N # C C C O ) C ) C
+C N C = O ) C C C 3
+C C O C C C # N
+N = C C C C C O 6
+C [C@@H] C [C@@H] 3 C = O ) N
+C [C@H] C [C@@H] 3 C = O ) N
+C [C@H] C [C@H] 3 C = O ) N
+O = C N C C C C 5
+C [C@@H] C C C = O ) N 5
+C [C@H] C C C = O ) N 5
+C N C = O ) C = C ) C
+C C / C = C \ C = O ) N
+O = C N C C [C@@H] 5 C
+C = C O N = C C ) C
+C [C@@H] C O C = N 5 ) C
+C [C@H] C O C = N 5 ) C
+C C / C = C / C = O ) N
+C [C@@] [NH3+] ) C C = C O 5
+O C [C@@H] C [C@H] C 6 ) [NH2+] 4
+O [C@H] C C ) C ) ) C # N
+N C = O ) C C C C 4
+C O / N = C / C = C ) C
+O / N = C / C C C C 3
+C # C C O C C [NH3+]
+C [C@@H] [NH3+] ) [C@@H] C # C ) ) O
+C [C@@H] [NH3+] ) [C@H] C # C ) ) O
+C [C@H] [NH3+] ) [C@H] C # C ) ) O
+O = C N C C [C@H] 5 C
+C [C@H] [NH3+] ) [C@@H] C # C ) ) O
+[NH3+] [C@@H] C C O C = C 6
+N O C C C C # C
+C [C@] [NH3+] ) C C = C O 5
+C O / N = C \ C = C ) C
+O = C N C C C C 4
+C [C@@] C # C ) ) C [NH3+] ) ) O
+C [C@] C # C ) ) C [NH3+] ) ) O
+C [C@@H] C O ) ) C C # N
+C [C@H] C O ) ) C C # N
+C C [C@H] C C # N ) ) ) O
+C C [C@@H] C C # N ) ) ) O
+C / C = N \ O ) ) / C C = C
+C C [C@@H] C # N ) ) C O
+[NH3+] C [C@@H] [C@H] 3 C O C 5
+C C = O ) N C C = C
+C C = C C = O ) N ) ) ) C
+C = C C N C = O ) ) C
+C C C = N C C O 5
+C C C N = C = O ) ) ) ) C
+O = C = N C C ) C ) C
+C C C C N = C = O
+C [C@@H] N = C = O ) ) ) C C
+C C C ) C O C = N 5
+O = C / C = C / N C ) C
+C O C = N C C C 5
+C [C@H] N = C = O ) ) ) C C
+C = C C C C = O ) N
+C C C [NH2+] 4 ) C O C 4
+C / C = C \ C ) ) / C = O ) N
+C / C = C / C ) ) / C = N / O
+C C / C = C / N ) ) / C = O
+C C / C = C \ N ) ) / C = O
+C [C@H] C C = O ) N C 5
+C [C@@H] C C = O ) N C 5
+O [C@@H] C C ) C ) ) C # N
+C O C C C C # N
+C C O C C # N ) ) ) ) C
+O C C N C C # C
+O = C C C [NH+] C C 3
+C C C O 4 ) C [NH2+] C 4
+C C [C@H] C # N ) ) C O
+O = C [C@H] C C C [NH2+] 5
+O = C C [NH2+] C C C 3
+C C N C = O ) C = C
+O [C@H] C C C = N ) C 5
+O = C C C N [C@H] 5 C
+O = C C C [C@H] C 5 ) [NH3+]
+O = C C C [C@@H] C 5 ) [NH3+]
+C / C = C / C = O ) C ) ) ) / N
+C / C = C \ C = O ) C ) ) ) / N
+[O-] [N+] C ) C C = C C 5
+C C = O ) C C [NH2+] C 4
+C O C = N ) C C C 3
+C O N C C # C C
+C O N C C C # C
+C [C@@H] C [C@@H] 3 N C = O
+C [C@H] C [C@@H] 3 N C = O
+C [C@@H] C [C@H] 3 N C = O
+C [C@H] C [C@H] 3 N C = O
+C C C [C@H] C # N ) ) O
+C C C [C@@H] C # N ) ) O
+N O [C@@H] C C C = C 5
+N O [C@H] C C C = C 5
+C / C = C \ C ) ) / C = N / O
+C [C@H] C [C@@] 3 C = O ) ) [NH3+]
+C [C@@H] C [C@@] 3 C = O ) ) [NH3+]
+O = C [C@H] C C C 3 ) ) ) [NH3+]
+O = C N C C C C 3
+C [C@@H] C O C C = N 6
+C [C@H] C O C C = N 6
+C C N O C C = C 5
+O = C C [NH2+] C ) ) C C 3
+[NH2+] C [C@@H] C [C@H] C 6 ) O 4
+[NH3+] [C@H] C C O C = C 6
+C [C@@H] C N = C = C ) ) ) ) O
+C [C@H] C N = C = C ) ) ) ) O
+C O N C C = C C 5
+C = C C N C C O 6
+C C C C = N ) C = O
+C [NH3+] ) [C@H] O C C = C 5
+C C = C = N C C O
+C O C [C@H] C # C ) ) N
+C O C [C@@H] C # C ) ) N
+O / N = C / C C C C 4
+N # C C C [C@@H] O ) C
+N # C C C [C@H] O ) C
+O = C C C N 4 ) C ) C
+C C O [C@H] [C@@H] [NH2+] 6 ) C 3
+C C O [C@@H] [C@H] [NH2+] 6 ) C 3
+C C C # C C O N
+C [C@] C # N ) ) C C ) ) O
+C [C@@] C # N ) ) C C ) ) O
+C C [C@@H] C N C 4 = O
+C C = O ) ) / C = C / C [NH3+]
+N = C C C C C = O
+O C C C # N ) ) C ) C
+C [C@@H] [C@H] C ) N C 4 = O
+C [C@H] [C@H] C ) N C 4 = O
+C [C@@H] [C@@H] C ) N C 4 = O
+C [C@H] [C@@H] C ) N C 4 = O
+C C = O ) N C C C 4
+N C = O ) C C C C 3
+C / C = C / C = O ) N C
+C / C = C \ C O N = C
+C / C = C / C O N = C
+C [C@@H] C C = O ) C [NH2+] 5
+C [C@H] C C = O ) C [NH2+] 5
+[O-] / [N+] = C / C C C 3 ) ) ) ) / C
+[NH2+] C C [C@@H] [C@H] C 6 ) O 3
+[NH2+] C C [C@H] [C@@H] C 6 ) O 3
+C O C C # N ) ) C ) C
+C [C@@H] C C O C = [NH+] 6
+C [C@H] C C O C = [NH+] 6
+C [C@H] C O C = [NH+] C 6
+C [C@@H] C O C = [NH+] C 6
+O C C C C C # N
+C C C O C C # N
+C [C@H] C # N ) ) C O C
+C [C@@H] C # N ) ) C O C
+C [C@@H] C # N ) ) O C C
+C [C@H] C # N ) ) O C C
+C N / C = C / C = O ) C
+O C [C@@H] C = C C [NH2+] 5
+O C [C@H] C = C C [NH2+] 5
+C N O C C C = C 6
+O C C [C@@H] [C@H] C 6 ) [NH2+] 3
+O C C [C@H] [C@@H] C 6 ) [NH2+] 3
+C [C@H] O C ) ) C C # N
+C [C@@H] O C ) ) C C # N
+N C = O ) C C ) C C 3
+C C = O ) [C@H] C C [NH2+] 4
+C C = O ) [C@@H] C C [NH2+] 4
+O = C C = [N+] C ) C ) ) C
+O C [C@H] [C@@H] C 5 ) C [NH2+] 4
+O C [C@H] [C@H] C 5 ) C [NH2+] 4
+O C [C@@H] [C@@H] C 5 ) C [NH2+] 4
+O C [C@@H] [C@H] C 5 ) C [NH2+] 4
+C = C C O ) C [NH2+] C 4
+O C [C@@H] [NH3+] ) C C # C
+O C [C@H] [NH3+] ) C C # C
+C C [C@@H] C # N ) ) O C
+C C [C@H] C # N ) ) O C
+O [C@@H] C C C = N ) C 5
+[NH3+] C / C = C / C = O ) C
+[NH3+] C / C = C \ C = O ) C
+C / C = C / C = O ) C [NH3+]
+C [NH2+] C [C@@H] C # C ) ) O
+C [NH2+] C [C@H] C # C ) ) O
+O [C@H] C [NH3+] ) ) C C # C
+O [C@@H] C [NH3+] ) ) C C # C
+O = C C C C [NH2+] C 6
+O = C [C@H] C [NH2+] C C 5
+O = C [C@@H] C [NH2+] C C 5
+O N C [C@@H] [C@H] C 5 ) C 3
+C C C [C@@H] [C@H] [NH2+] 6 ) O 3
+C C C [C@H] [C@@H] [NH2+] 6 ) O 3
+O C C [C@@H] [C@H] C 5 ) [NH2+] 3
+O = C N C C C 3 ) ) ) C
+C O N C = C C C 4
+O [C@@H] C = C C [C@@H] 5 [NH3+]
+C C C = O ) [C@H] C [NH2+] 3
+C C C = O ) [C@@H] C [NH2+] 3
+C C C = C C O N 5
+C [C@@H] C # N ) ) [C@H] O ) C
+C [C@H] C # N ) ) [C@H] O ) C
+C [C@@H] C # N ) ) [C@@H] O ) C
+C [C@H] C # N ) ) [C@@H] O ) C
+O [C@@H] C C = C [C@@H] 5 [NH3+]
+O [C@@H] C C = C [C@H] 5 [NH3+]
+O [C@H] C C = C [C@@H] 5 [NH3+]
+O [C@H] C C = C [C@H] 5 [NH3+]
+O [C@@H] C = C C [C@H] 5 [NH3+]
+O [C@H] C = C C [C@H] 5 [NH3+]
+O [C@H] C = C C [C@@H] 5 [NH3+]
+C C [C@@H] C [C@H] 5 O N 5
+C C [C@H] C [C@@H] 5 O N 5
+O = C C [NH2+] C [C@H] 5 C
+O = C C [NH2+] C [C@@H] 5 C
+C C [C@@H] [C@@H] [NH2+] 5 ) C O 4
+C C [C@@H] [C@H] [NH2+] 5 ) C O 4
+C C [C@H] [C@@H] [NH2+] 5 ) C O 4
+C C [C@H] [C@H] [NH2+] 5 ) C O 4
+[NH2+] C [C@@H] [C@H] C 5 ) C O 4
+[NH2+] C [C@@H] [C@@H] C 5 ) C O 4
+[NH2+] C [C@H] [C@H] C 5 ) C O 4
+[NH2+] C [C@H] [C@@H] C 5 ) C O 4
+O = C / C = C \ N C ) C
+C = C C O N C = C
+C C O N C # C C
+C C C = C ) C N = O
+O C / C = C \ [C@H] C [NH2+] 3
+O C / C = C / [C@H] C [NH2+] 3
+O C / C = C \ [C@@H] C [NH2+] 3
+O C / C = C / [C@@H] C [NH2+] 3
+C C = C [C@H] O N 5 ) ) C
+C C = C [C@@H] O N 5 ) ) C
+C [C@@H] C O [C@@H] 4 C = N
+C [C@H] C O [C@@H] 4 C = N
+C C = C N O [C@@H] 5 C
+C C = C N O [C@H] 5 C
+C [C@@H] C # N ) ) C C O
+C [C@H] C # N ) ) C C O
+C C C = C ) N C = O
+C [C@@H] C C = C N O 6
+C [C@H] C C = C N O 6
+C C C C = C N O 7
+O = C [C@@H] / N = C / C ) ) ) C
+O = C [C@H] / N = C / C ) ) ) C
+N = C C = O ) C C ) C
+O = C N C / C = C \ C
+O = C N C / C = C / C
+C / C = N / C C = O ) C
+C = C O N C = C ) C
+C C C / C = N / C = O
+C C C ) C O N = C 5
+[NH3+] C C = O ) C C C 3
+C C [C@@H] C C = O ) N 4
+C C [C@H] C C = O ) N 4
+C C = C C ) C O N 5
+C C [C@H] O 4 ) [NH+] C C 3
+C C [C@@H] O 4 ) [NH+] C C 3
+C C C ) O N C = C 5
+C N C C = C ) O C 5
+C [NH2+] C C # C C O
+C C = N [C@H] O C 5 ) ) C
+C C = N [C@@H] O C 5 ) ) C
+C C [C@@H] N [C@H] C 6 ) O 4
+C C C C O C # N
+C [C@@H] O C # N ) ) ) C C
+C [C@H] O C # N ) ) ) C C
+[NH3+] [C@@H] [C@@H] [C@H] 3 C C O 5
+[NH3+] [C@@H] [C@H] [C@@H] 3 C C O 5
+O / N = C / C C C 3 ) ) ) \ C
+O / N = C \ C C C 3 ) ) ) / C
+O N = C C C C C 5
+O = N C C C C C 5
+C [C@H] C C C 3 ) ) ) N = O
+C [C@@H] C C C 3 ) ) ) N = O
+[O-] C = S ) C C # C
+[O-] C = S ) C # C C
+[N-] = [N+] = N C C C C
+C / N = C / C [NH3+] ) ) ) ) C = N
+C N C C = C N 5 N
+C [C@H] N N ) ) C C # N
+C [C@@H] N N ) ) C C # N
+C N N = C N C 5 ) C
+C [N+] = C C N [C@@H] 5 [NH3+]
+C [N+] = C C N [C@H] 5 [NH3+]
+C N N C C C = N 5
+N N C C C 5 ) [NH2+] C 3
+C C N C # N ) ) N ) ) C
+C [C@@H] C # N ) ) C N N
+C [C@H] C # N ) ) C N N
+C N C C C = N 5 ) N
+N # C C C C N [NH3+]
+N # C C N C C [NH3+]
+C C C N = [N+] = [N-] ) ) ) ) C
+[N-] = [N+] = N [C@H] C C ) ) C
+[N-] = [N+] = N [C@@H] C C ) ) C
+N C [C@@H] C # N ) ) C [NH3+]
+C C C ) N N = C N 5
+C N N C C C # N
+N # C C C N N ) C
+C C N C C N = N 5
+C C N = [N+] = [N-] ) ) ) C ) C
+N / N = C \ C N C C \ 5
+[S-] n c n c c 5
+[S-] / C = N \ C # N ) ) ) / C
+[O-] [C@@H] C C [C@H] 4 C C
+[O-] [C@H] C C [C@@H] 4 C C
+[O-] [C@H] C C [C@H] 4 C C
+[O-] [C@@H] C C [C@@H] 4 C C
+[O-] C C C C 4 ) C ) C
+C C C C C C 4 ) [O-]
+[O-] [C@H] C [C@H] [C@H] 4 C ) ) C
+[O-] [C@H] C [C@@H] [C@H] 4 C ) ) C
+[O-] [C@@H] C [C@H] [C@H] 4 C ) ) C
+[O-] [C@@H] C [C@@H] [C@H] 4 C ) ) C
+C C C [O-] ) C C C 4
+N # C C [N+] C ) C ) C
+C C [NH2+] C C C # N
+C C C = [NH+] C C N 5
+C C = [NH+] C C C N 6
+C # C C [N+] N ) C ) C
+C [C@H] C # N ) ) C [NH2+] C
+C [C@@H] C # N ) ) C [NH2+] C
+C C C ) N C = [NH+] C 5
+C C [N+] = C N C C 5
+C C [C@H] [NH3+] ) C C # N
+C C [C@@H] [NH3+] ) C C # N
+[NH2+] = C C C C C N 6
+C # C C N C C [NH3+]
+C [C@@H] C N C = [NH+] 5 ) C
+C [C@H] [NH2+] C ) ) C C # N
+C [C@@H] [NH2+] C ) ) C C # N
+C C C ) C N C = [NH+] 5
+C [C@@H] C [NH+] = C N 5 ) C
+C [C@H] C [NH+] = C N 5 ) C
+C [NH2+] [C@@H] C [C@H] 5 N C 5
+C [NH2+] [C@H] C [C@@H] 5 N C 5
+C C N C C [NH+] = C 5
+N C = [NH2+] ) C C C C 4
+N # C C C [NH+] C ) C
+C C [NH2+] C C # N ) ) ) ) C
+C [C@H] C N C = [NH+] 5 ) C
+C [C@@H] [NH+] C ) C ) ) C # N
+C N C C C C 5 = [NH2+]
+[NH3+] [C@@H] C C C = N C 6
+C N C = [NH2+] ) C C C 3
+[NH2+] C [C@H] [C@H] C 5 ) C N 4
+[NH2+] C [C@@H] [C@H] C 5 ) C N 4
+[NH2+] C [C@H] [C@@H] C 5 ) C N 4
+[NH2+] C [C@@H] [C@@H] C 5 ) C N 4
+[NH3+] C C = C = C C [NH3+]
+C / C = C \ C C = [NH2+] ) N
+N C = [NH2+] ) C C ) C C 3
+C C / C = C / C = [NH2+] ) N
+C C / C = C \ C = [NH2+] ) N
+C N C C [N+] = C 5 ) C
+C C = [NH2+] ) N C C C 3
+C C N = C = [N+] C ) C
+C N C C = [N+] C 5 ) C
+[NH2+] C [NH+] [C@H] C 5 ) C C 4
+[NH2+] C [C@@H] C [C@H] C 6 ) N 4
+C C = [NH+] C = C ) N ) ) ) C
+C [N+] C C N 4 C C 6
+C = C C C C = [NH2+] ) N
+N C = [NH+] C C C C 6
+[NH2+] C [NH+] [C@@H] C 5 ) C C 4
+C N / C = C / C = [NH+] / C
+N C C C 4 ) C [NH2+] C 4
+[NH3+] [C@H] C C C = N C 6
+N # C C C C C [NH3+]
+C N C C C [NH+] = C 6
+C [C@@H] C C = [NH+] C 5 ) ) N
+C [C@H] C C = [NH+] C 5 ) ) N
+C [C@@H] C C C = [NH+] 5 ) N
+C [C@H] C C C = [NH+] 5 ) N
+C [C@@H] C C [NH+] = C 5 N
+C [C@H] C C [NH+] = C 5 N
+N C = [NH2+] ) C C C C 3
+C / C = C / C C = [NH2+] ) N
+C C [NH+] C C ) ) [N+] # [C-]
+[NH3+] C C C N 4 C C 6
+C [N+] C ) C C N = C 5
+[NH3+] C C C C 4 ) C 4 ) [NH3+]
+N [C@] C [NH2+] C [C@H] 5 C 6
+N [C@@] C [NH2+] C [C@@H] 5 C 6
+C N C = [NH+] C C C 5
+C / [NH+] = C \ C C C N \ 5
+C [NH+] [C@H] [NH2+] C [C@@H] 5 C 5
+C [N+] N ) C C C = C 5
+C [C@@H] C [C@@H] 3 C = [NH2+] ) N
+C [C@H] C [C@@H] 3 C = [NH2+] ) N
+C C = C ) C C = [NH2+] ) N
+[C-] # [N+] C C [NH+] C ) C
+N c c s c c 5
+S = C = N C C C 3
+N # C C C S C 4
+C C # N ) ) [C@H] C S 3
+C C # N ) ) [C@@H] C S 3
+C = C C S C # N
+N c c c c s 5
+C c c c n s 5
+C c c s n c 5
+C c c s c n 5
+C N C = S ) C = C 5
+C c c c s n 5
+C c n c c s 5
+C c c n c s 5
+C = C C [NH+] = C = S
+C C = C S C = N 6
+C S C = N C = C 6
+S C C = N C = C 6
+C C # C C = S ) N
+C S / C = C \ C # N
+S N C = C C = C 6
+C S C = C C = N 6
+C S C = N ) C = C 5
+C S C = C ) C # N
+C S / C = C / C # N
+S c c c c [nH] 5
+S c c [nH] c c 5
+S C C = C = C N 6
+C = c c c [nH] s 5
+S = C C C C # N
+S C C = C C = N 6
+C [C@] C C ) ) C [C@H] 3 [NH3+]
+C [C@@] C C ) ) C [C@H] 3 [NH3+]
+C [C@] C C ) ) C [C@@H] 3 [NH3+]
+C [C@@] C C ) ) C [C@@H] 3 [NH3+]
+C C C [C@@H] C [C@@H] 3 [NH3+]
+C C C [C@@H] C [C@H] 3 [NH3+]
+C C C [C@H] C [C@H] 3 [NH3+]
+C C [C@H] C [C@@H] 3 [NH3+] ) ) ) ) C
+C C [C@H] C [C@H] 3 [NH3+] ) ) ) ) C
+C C [C@@H] C [C@H] 3 [NH3+] ) ) ) ) C
+C C [C@@H] C [C@@H] 3 [NH3+] ) ) ) ) C
+C / C = C / C [NH+] C ) C
+C / C = C \ C [NH+] C ) C
+C C C [C@@H] [NH2+] C 3 ) ) ) ) C
+C C C [C@H] [NH2+] C 3 ) ) ) ) C
+C C [C@@H] C = N ) C ) ) C
+C [C@H] C = N ) ) C C C
+C [C@H] C C ) ) C C = N
+C [C@@H] C C ) ) C C = N
+C [C@@H] C = N ) ) C C C
+C C C C = N ) ) C C
+C [C@@H] [C@@H] C 3 C ) C ) ) [NH3+]
+C C N = C C ) C ) ) ) C
+C [C@@H] [C@H] C 3 C ) C ) ) [NH3+]
+C [C@H] [C@@H] C 3 C ) C ) ) [NH3+]
+C C C [C@H] C [C@@H] 3 [NH3+]
+C [C@@] [NH3+] ) C C 3 C ) C
+C C [C@] [NH3+] ) C [C@@H] 3 C
+C C [C@] [NH3+] ) C [C@H] 3 C
+C C [C@@] [NH3+] ) C [C@H] 3 C
+C [C@] [NH3+] ) C C 3 C ) C
+C C [C@@] [NH3+] ) C [C@@H] 3 C
+C [C@H] [C@H] C 3 C ) C ) ) [NH3+]
+C C C C C C = N
+C C C C C = N ) C
+N = C C C C ) C ) C
+C C C C / N = C / C
+C C C C = N ) C C
+C C C = N C ) ) C C
+C C / N = C \ C C ) C
+C C [C@@H] C [C@@] 3 C ) [NH3+]
+C C [C@H] C [C@@] 3 C ) [NH3+]
+C C [C@@H] C [C@] 3 C ) [NH3+]
+C C [C@H] C [C@] 3 C ) [NH3+]
+C C / N = C / C C ) ) \ C
+C C C C [NH+] C C 3
+C / C = N \ C C ) C ) C
+C / C = N / C C ) C ) C
+C C C / C = N / C ) ) / C
+C C C # C C S
+C C # C C C S
+C = C C C = C ) ) S
+C C [C@@H] C # C ) ) S
+C C [C@H] C # C ) ) S
+C [C@H] C # C ) ) C S
+C [C@@H] C # C ) ) C S
+[S-] [C@H] Cl ) F
+[S-] [C@@H] Cl ) F
+C P = O ) F ) F
+F C = C F ) F ) ) F
+N # C / N = N / [N+] = O ) [O-]
+O C C F ) F ) F
+C O C F ) F ) F
+F C O C F ) F
+F C = N C = O ) N = C 5
+O = C N = C N = C 5 F
+O = C C = O ) C = O ) N
+O = C C N = O ) ) C = O
+[O-] c c o c = O ) [nH] 5
+[O-] C C [N+] = O ) [N-] N 5
+[O-] C = O ) C N N = N 3
+O C O ) C = N N = N 5
+N # C N N C = O ) [O-]
+N c n c = O ) [nH] o 5
+[O-] C = O ) n c n [nH] 4
+N c n o n c 5 [O-]
+N c n o c n 5 ) [O-]
+O = C N = N [N+] = O ) C 5
+[O-] C = O ) C N = [N+] = [N-]
+C c p c n [nH] 5
+P c n c c [nH] 5
+[NH3+] C C F ) F ) F
+O [C@@H] C = C C = O ) O 5
+O [C@H] C = C C = O ) O 5
+O C C [C@] [C@@H] 5 O 3 ) ) O 3
+O = C O C = O ) C = C
+O = C O C C C 5 = O
+C c c o c = O ) o 5
+C O C = C O 5 ) ) C = O
+O = C C C = C O O 6
+O = C O C [C@@H] [C@H] 5 O 3
+O = C O C [C@H] [C@@H] 5 O 3
+O = C O C C = O ) C 5
+C C = O ) O C = C O 3
+O = C N N C = O ) C 5
+C O C = O ) N C # N
+C O c n c n o 5
+C O c n n c o 5
+C O c n o c n 5
+[N-] = [N+] = C C = O ) O C
+O = C C O C = N 5 ) N
+O = C = N C C = O ) N
+O = C O N = C C 5 ) N
+O C c n c n o 5
+[O-] [N+] = O ) / N = C / C = C
+[O-] C C N N [O+] 5 ) ) C
+O = C C N = C O 5 ) N
+C n c n o c 5 = O
+O = C N C N C 5 = O
+N n c c o c 5 = O
+N C = N C = O ) O C 5
+C C = O ) O N C # N
+C N C = O ) O C = N 6
+O C O ) C = C N = N 5
+C O N = C N C 6 = O
+C [C@@H] N = N C = O ) O 5
+C [C@H] N = N C = O ) O 5
+O C c c n o n 5
+O C c n o c n 5
+O = c [nH] n c [nH] [nH] 6
+[N-] = [N+] = N C C = O ) N
+O C n n n c n 5
+N c n o n c 5 N
+[O-] [n+] c c [nH] n 5 ) ) N
+N n c n [nH] c 5 = O
+[N-] = [N+] = N C = O ) C N
+N n n c [nH] c 5 = O
+N N N = O ) ) C C # N
+N c o n c n 5 ) N
+O = C C N = N N 5 N
+[O-] c c n n [nH+] 5 ) ) N
+O C n c n n n 5
+N c n [nH] c = O ) [nH] 5
+P C C = [NH+] C = C 6
+N n n n n c 5 N
+N C N ) N = N N = N 5
+C c c c c o 5 ) F
+O = C C C C = C 5 F
+F C / C = C / C = C = O
+F C / C = C \ C = C = O
+C # C C F ) C O C 4
+C n c c n c 5 F
+F c c [nH] c n 5 ) C
+F C n c n c c 5
+F c c [nH] n c 5 C
+F C c c [nH] n c 5
+C n c c c n 5 ) ) F
+[O-] C = O ) [C@H] C = [NH2+] ) ) C
+C N C = O ) C = C ) ) ) O
+[O-] C = O ) C = [NH2+] ) C C
+[O-] C = O ) C / [NH+] = C / C
+O = C C N / C = C / [O-]
+C / C = C / C = O ) N O
+[O-] C = O ) [C@H] C [NH+] 3 C
+[O-] C = O ) [C@@H] C [NH+] 3 C
+[O-] C = O ) C C = [NH2+] ) C
+[O-] C = O ) N C = C ) ) C
+[O-] C = O ) [C@@H] C = [NH2+] ) ) C
+C / C = N \ O ) ) / C = O ) C
+C / C = N / O ) ) / C = O ) C
+N = C C C C = O ) [O-]
+[O-] C = O ) N C C = C
+[O-] C = O ) N C C C 3
+[O-] C = O ) N C C C 4
+C C C = O ) / C = N / O
+O C C = N C C O 5
+C [NH3+] ) c n n c o 5
+N C = O ) [C@@H] [NH3+] ) C # N
+N C = O ) [C@H] [NH3+] ) C # N
+O c n [nH] c c 5 [NH3+]
+[NH3+] C c n o c n 5
+C [NH3+] ) c c n o n 5
+C [NH3+] ) c n c n o 5
+C [NH2+] [N+] # N ) ) ) [C@@H] C O 3
+C [n+] c c o n 5 ) ) N
+C = C O C N [N+] # N
+C [NH2+] [N+] # N ) ) ) [C@H] C O 3
+O = [NH+] C = N C C N 5
+C = C C O N [N+] # N
+C [P@H] = C C = C C 5
+N # C S O C # N
+N # C S N = C = O
+C O C = O ) C = C ) C
+O C C # C [C@H] O ) C
+C C C = O ) O C = C
+C [C@@H] C C C = O ) O 5
+C O C C C 5 C O 5
+C C = C ) O C = O ) C
+C [C@@H] [C@H] C ) O C 4 = O
+C [C@H] [C@H] C ) O C 4 = O
+C [C@@H] [C@@H] C ) O C 4 = O
+C [C@H] [C@@H] C ) O C 4 = O
+O = C C C C O C 6
+C O C = O ) C C = C
+O [C@@H] C C [C@@H] [C@H] 5 O 3
+O C [C@H] 3 C [C@H] O C 3
+O C [C@@H] 3 C [C@@H] O C 3
+C [C@@] C O 3 ) ) [C@@H] C O 3
+C [C@] C O 3 ) ) [C@@H] C O 3
+C [C@@] C O 3 ) ) [C@H] C O 3
+C [C@] C O 3 ) ) [C@H] C O 3
+C C = O ) [C@@] C ) C O 3
+C O / C = C / C = O ) C
+C O / C = C \ C = O ) C
+O C C # C [C@@H] O ) C
+O [C@@H] C = C [C@H] C 5 ) O
+O [C@H] C = C [C@@H] C 5 ) O
+O = C C C C [C@@H] 5 O
+C C O C = O ) C = C
+C = C C O C C O 6
+C = C O C O C = C
+C = C O C [C@@H] C O 3
+C = C O C [C@H] C O 3
+O C C O C C # C
+O = C C C C [C@H] 5 O
+C C = O ) [C@] C ) C O 3
+C C [C@H] O [C@@H] 5 O C 5
+C C [C@@H] O [C@H] 5 O C 5
+C [C@@H] C C = O ) O C 5
+O = C O C C [C@@H] 5 C
+C [C@H] C C C = O ) O 5
+O = C C C C C = O
+C C = O ) O C C = C
+O = C O C C [C@H] 5 C
+C C = C O C C O 6
+C / C = C \ C = O ) O C
+C / C = C \ C = O ) ) ) / C O
+C / C = C / C = O ) ) ) / C O
+C O C / C = C \ C = O
+O [C@@H] O [C@@H] 3 C C = C
+O [C@@H] O [C@H] 3 C C = C
+O [C@H] O [C@@H] 3 C C = C
+O [C@H] O [C@H] 3 C C = C
+C = C [C@] C = O ) ) O ) C
+C = C [C@@] C = O ) ) O ) C
+O C [C@H] O C C = C 5
+C O C = O ) C C C 3
+C = C C O C C O 5
+C / C = C / C = O ) O C
+O = C [C@@H] C C C O 5
+O = C [C@H] C O C C 5
+O = C C C O [C@H] 5 C
+O = C C C O [C@@H] 5 C
+C O C C = C C O 7
+O [C@@H] C C [C@H] [C@@H] 5 O 3
+C [C@H] C C = O ) O C 5
+O = C [C@@H] C O C C 5
+O = C [C@H] C C C O 5
+O [C@H] C C [C@@H] [C@H] 5 O 3
+C / C = C / O ) ) / C = O ) C
+C C C C = O ) ) C = O
+O = C C C = O ) ) C ) C
+C C O / C = C \ C = O
+C [C@] C C 3 = O ) ) ) O C
+C [C@@] C C 3 = O ) ) ) O C
+O C [C@@H] C O C = C 5
+O C O ) C C = C C 5
+O C [C@H] C O C = C 5
+O [C@@H] C O C C = C 6
+O = C O C C 4 C ) C
+O = C / C = C \ [C@@H] O ) C
+O = C / C = C \ [C@H] O ) C
+O C C = C = C C O
+C O [C@H] C = O ) ) C = C
+C O [C@@H] C = O ) ) C = C
+C C = O ) C C = O ) C
+C O C [C@@] C 5 ) C O 3
+C O C [C@] C 5 ) C O 3
+C O C C = C ) C = O
+C O C C = O ) C = C
+O [C@@H] C = C [C@@H] C 5 ) O
+C O C C # C ) ) O C
+C O / C = C \ O [C@@H] \ 3 C
+C O / C = C / O [C@@H] / 3 C
+C O / C = C / O [C@H] / 3 C
+O [C@] C C O [C@H] 5 C 6
+O [C@@] C C O [C@@H] 5 C 6
+C O / C = C \ O [C@H] \ 3 C
+C C O [C@H] [C@@H] O 6 ) C 3
+O [C@@H] C = C C [C@@H] 5 O
+O [C@@H] C = C C [C@H] 5 O
+O [C@H] C = C C [C@H] 5 O
+O [C@H] C = C C [C@@H] 5 O
+C [C@@H] C O [C@@H] 4 C = O
+C [C@@H] C O [C@H] 4 C = O
+C [C@H] C O [C@@H] 4 C = O
+C [C@H] C O [C@H] 4 C = O
+C / C = C \ O C ) ) ) / C = O
+C O / C = C / C ) ) / C = O
+O = C C C O C C 6
+O = C C C C C O 6
+C C [C@H] C C = O ) O 4
+O C C C 4 ) C O C 4
+C = C C O ) C O C 4
+O = C C C ) C O C 4
+O = C C O C 4 C ) C
+C C = O ) C O ) C C 3
+C O C = C ) C = O ) C
+C O C C # C C O
+C [C@@H] C = C ) C = O ) ) ) O
+C [C@H] C = C ) C = O ) ) ) O
+C C = O ) C [C@@H] C O 3
+O [C@H] O C C C = C 6
+O [C@@H] O C C C = C 6
+C C [C@@H] C O C 4 = O
+C C [C@H] C O C 4 = O
+C C = C = O ) ) C O C
+C C C = C C O O 7
+O C C [C@@H] [C@H] C 6 ) O 3
+O C C [C@H] [C@@H] C 6 ) O 3
+O = C [C@@H] C = O ) C ) ) C
+O = C C C O 4 ) C ) C
+C C = O ) C [C@H] C O 3
+O C # C C O ) C ) C
+O C C C C = O ) C 4
+C C C [C@@H] O C 3 = O
+C C C [C@H] O C 3 = O
+O = C O C = C C ) C
+O [C@@H] C C C = O ) C 5
+O [C@H] C C C = O ) C 5
+C = C C O C C = O
+O C C [C@@H] [C@H] C 5 ) O 3
+C [C@@H] O C 3 O [C@@H] 3 C
+C [C@@H] O C 3 O [C@H] 3 C
+C [C@H] O C 3 O [C@@H] 3 C
+O C C C = O ) C = C
+O C [C@@H] C C [C@H] 5 O 5
+C C C O C = C O 5
+O [C@@H] [C@@H] C O 3 ) ) ) C = C
+C [C@] C C ) ) O C 3 = O
+C [C@@] C C ) ) O C 3 = O
+C O [C@@H] C C C 4 = O
+C O [C@H] C C C 4 = O
+C O C = C C O C 4
+O [C@H] [C@H] C O 3 ) ) ) C = C
+C O C C C = O ) C 4
+C C C = O ) C = O ) C
+C C O / C = C / C = O
+C O C / C = C / C = O
+C C O C = C ) C = O
+O = C C C C = O ) C
+O = C C [C@@H] C = O ) ) C
+O = C C [C@H] C = O ) ) C
+C / C = C / C O ) ) ) / C = O
+O C C / C = C / C = O
+C / C = C \ C = O ) ) ) / O C
+O = C / C = C / [C@@H] O ) C
+O = C / C = C / [C@H] O ) C
+C O / C = C / C C = O
+C O / C = C \ C C = O
+O = C C O C [C@H] 5 C
+O = C C O C [C@@H] 5 C
+O = C O C C ) C C 3
+C / C = C \ C O ) ) ) / C = O
+O = C O / C = C \ C ) ) / C
+O = C O / C = C / C ) ) / C
+C O C C C = C = O
+C = C C C = C ) ) O ) O
+O = C [C@@H] O C 3 C ) C
+O = C [C@H] O C 3 C ) C
+O C / C = C \ C = O ) C
+O C / C = C / C = O ) C
+O C [C@@H] C C = C O 5
+O = C O [C@H] C = C ) ) C
+O = C O [C@@H] C = C ) ) C
+C = C [C@@H] C O O 3 ) ) ) C
+C = C [C@H] C O O 3 ) ) ) C
+C = C C O [C@@H] C O 3
+C = C C O [C@H] C O 3
+C [C@@H] C [C@@H] 3 O C = O
+C [C@H] C [C@@H] 3 O C = O
+C [C@@H] C [C@H] 3 O C = O
+C [C@H] C [C@H] 3 O C = O
+C C C = C = O ) ) C O
+C O / C = C \ C ) ) / C = O
+O [C@H] C O C C = C 6
+O = C C C C O C 4
+O C [C@@H] 3 C [C@H] O C 3
+O C [C@@H] C C C 4 = O
+O C [C@H] C C C 4 = O
+C [C@H] C C O 4 ) ) ) ) C = O
+O C C C C 3 ) ) C = O
+C O C C C 3 ) ) C = O
+C / C = C / [C@H] C = O ) ) O
+O C C = O ) C C C 3
+C C = C ) [C@H] C = O ) ) O
+C [C@@H] C C O 4 ) ) ) ) C = O
+C = C C = C = C = C C 5 = C 8
+C O [C@H] C N N = C 5
+C N C = O ) N C = C
+N N C = O ) C C C 3
+C / C = C / C = O ) N N
+N / C = C \ C = O ) ) ) / C [NH3+]
+N C = O ) N C C C 3
+C / C = N / N C = O ) ) C
+N # C C O C C [NH3+]
+C C O N [C@H] 5 C = N
+C [C@@H] N N C = O ) C 5
+C / C = N \ N C = O ) ) C
+O = C C C N N 5 C
+C C N N = O ) ) C = C
+C N N = O ) ) C C = C
+C O [C@@H] C N N = C 5
+O = C N N C [C@H] 5 C
+C N C C C = O ) N 5
+C [C@H] N N C = O ) C 5
+O = C N N C [C@@H] 5 C
+N C = O ) [C@@H] C [C@@H] 3 [NH3+]
+N C = O ) [C@H] C [C@@H] 3 [NH3+]
+N C = O ) [C@@H] C [C@H] 3 [NH3+]
+N C = O ) [C@H] C [C@H] 3 [NH3+]
+C / C = C \ C = O ) N N
+O = C C C C N 5 N
+C [C@H] O N ) ) C C # N
+C [C@@H] O N ) ) C C # N
+O = C N C C C N 6
+C / N = [N+] / C = C ) C ) ) \ [O-]
+N C = O ) N C C = C
+O = C N C C N 5 C
+O = C N N = C C ) C
+O = N N C C C C 5
+C C C = O ) N N = C
+C C [C@H] C # N ) ) O N
+C C [C@@H] C # N ) ) O N
+C C O N [C@@H] 5 C = N
+O = C N C C [C@H] 5 [NH3+]
+O = C N C C [C@@H] 5 [NH3+]
+C C = C ) N C = O ) N
+O = C C C N N C 6
+C C C = N N C O 5
+C O N C C C # N
+C [C@@H] C # N ) ) N O C
+C C O N C C # N
+C [C@H] C # N ) ) N O C
+O = C N C N [C@H] 5 C
+O = C C C N [C@H] 5 [NH3+]
+O = C C C N [C@@H] 5 [NH3+]
+C [C@@H] N C = O ) [C@@H] 4 [NH3+]
+C C = C ) C = O ) N N
+C N C C = C O N 6
+C C O [C@@H] C # N ) ) N
+C C O [C@H] C # N ) ) N
+O = C C C C N N 6
+C O / C = N / C C = N
+C / C = N / O / N = C / C
+C [NH3+] ) C = N O C C 5
+O N N C C C = C 6
+N / C = N \ O ) ) / C C = C
+C [C@@H] C N C = O ) N 5
+C [NH3+] ) [C@@H] C C = N O 5
+C [NH3+] ) [C@H] C C = N O 5
+C [C@@H] C C = N O 5 ) ) N
+C [C@H] C C = N O 5 ) ) N
+C C = N ) O C = N ) C
+C [C@@H] N C # N ) ) ) C O
+C O C C N C # N
+C [C@H] C N C # N ) ) ) ) O
+C [C@@H] C N C # N ) ) ) ) O
+[N-] = [N+] = C C O C C
+C O C N = C = N C
+C O [C@H] C # N ) ) C [NH3+]
+C O [C@@H] C # N ) ) C [NH3+]
+O C C C N C # N
+C [C@H] N C # N ) ) ) C O
+C [C@H] C N C = O ) N 5
+N O C C C C # N
+C [C@@H] C N C 4 = O ) ) N
+C [C@H] C N C 4 = O ) ) N
+O = C / C = N / N C ) C
+O C C N C C # N
+[O-] [C@H] C # N ) ) [C@H] [NH3+] ) C
+[O-] [C@H] C # N ) ) [C@@H] [NH3+] ) C
+[O-] [C@@H] C # N ) ) [C@@H] [NH3+] ) C
+[O-] [C@@H] C # N ) ) [C@H] [NH3+] ) C
+C [C@H] C = O ) N ) ) C = N
+C [C@@H] C = O ) N ) ) C = N
+C C = N ) C C = O ) N
+O = C C N C N C 6
+O / N = C / C C C 3 ) ) ) \ N
+O / N = C \ C C C 3 ) ) ) / N
+O N C = [NH2+] ) C C C 3
+C [C@@H] C C = O ) N 4 N
+C [C@H] C C = O ) N 4 N
+N [C@H] O N = C [C@@H] 5 C
+N [C@@H] O N = C [C@@H] 5 C
+C [C@H] N C = O ) [C@H] 4 [NH3+]
+C [C@H] N C = O ) [C@@H] 4 [NH3+]
+C [C@@H] N C = O ) [C@H] 4 [NH3+]
+O N C C C C 5 = [NH2+]
+N C = O ) C [NH3+] ) C C 3
+O = C C C [C@@H] N 5 ) [NH3+]
+O = C C C [C@H] N 5 ) [NH3+]
+C N C [C@@H] C 4 = O ) ) [NH3+]
+O = N N C C C 3 ) ) ) C
+C C = O ) C = N ) C N
+N O C [C@@] C 5 ) C N 3
+N O C [C@] C 5 ) C N 3
+N C C = N C C O 5
+O = C C N C N 5 C
+C / C = N / C = O ) ) ) ) C [NH3+]
+C O C [C@@H] C # N ) ) N
+C O C [C@H] C # N ) ) N
+C N C C = N ) C O 5
+O C = N C C N C 6
+C C N C O C = N 5
+O = C / N = C / N C ) C
+C O N [C@H] C N = C 4
+C O N [C@@H] C N = C 4
+C [NH3+] ) [C@H] O N C = C 5
+C [NH3+] ) [C@@H] O N C = C 5
+N = C C N C C O 6
+C C C = N ) C = O ) N
+O C N C C C = N 5
+N C = O ) C = C ) C [NH3+]
+C C = N ) C = O ) C N
+C [NH+] C C = O ) N C 5
+N N C C C = O ) C 5
+C [NH3+] ) [C@@H] C C = O ) N 4
+C N C = O ) N C C 3
+O = C / C = N \ N C ) C
+N = N [C@@H] C C C O 5
+N = N [C@H] C C C O 5
+C C = N ) N C = O ) C
+C O N = C C N C 4
+O C C C C ) N = N 3
+O / N = C / C C C N / 5
+O / N = C \ C C C N \ 5
+C [C@] C # N ) ) C O ) ) N
+C [C@@] C # N ) ) C O ) ) N
+O / N = C \ C [NH2+] C C \ 5
+O c c s n c 5
+O = c s c c [nH] 5
+[O-] c c n c s 5
+C C = O ) ) S C # N
+[O-] c c c n s 5
+[S-] c c c n o 5
+[S-] c c c o n 5
+N N = C N C C N 5
+C N N N = N [C@@H] 5 C
+C N N N = N [C@H] 5 C
+C / N = N / C = N / N ) ) / C
+N N N = N C [C@@H] 5 C
+N N N = N C [C@H] 5 C
+C N C C = N N 5 N
+C C [C@H] N N N = N 5
+N N C = N N C 5 ) C
+C C N C N N = N 5
+N C = C [C@H] N = [NH+] 5 ) ) [NH3+]
+N C = C [C@@H] N = [NH+] 5 ) ) [NH3+]
+[S-] c c n [nH] n 5
+[S-] c n n c [nH] 5
+S n c c n n 5
+S [C@@H] C = N N = N 5
+S [C@H] C = N N = N 5
+C C C C = C = C F
+F C C C C = C = C
+F C C C C C # C
+O = C C C C [C@@H] 5 [NH3+]
+O = C C C [NH2+] C C 6
+O = C C C C [C@H] 5 [NH3+]
+O = C [C@@H] C C C [NH2+] 5
+C [NH+] C C C = O ) C 5
+C [NH2+] [C@@H] C [C@H] 5 O C 5
+C [NH2+] [C@H] C [C@@H] 5 O C 5
+O [C@] C [NH2+] C [C@H] 5 C 6
+O [C@@] C [NH2+] C [C@@H] 5 C 6
+O = C C [NH3+] ) C C C 4
+C [N+] = C C ) O C C 5
+C [C@H] [NH2+] C C ) ) ) C = O
+[NH3+] C C C C = O ) C 4
+O C [C@@H] C C [N-] C 5
+O C [C@H] C C [N-] C 5
+C C [C@H] [NH2+] C ) ) C = O
+C C C [C@H] [NH3+] ) C = O
+C [C@@H] O C = [N+] C 5 ) C
+C / C = C / N C ) C ) ) \ [O-]
+C C [C@H] C [N+] # C ) ) ) O
+C [N+] = C C O C C 6
+C C [C@@H] C [N+] # C ) ) ) O
+[O-] / C = C / [NH+] C C ) ) C
+O C C C 4 ) C [NH2+] C 4
+C [C@H] O C = [N+] C 5 ) C
+O = C C C C C 4 ) [NH3+]
+C C [N+] = C O C C 5
+O C [C@@H] [C@H] 3 C [NH2+] C 5
+C [N+] = C [C@@H] C C 5 ) ) O
+S c c c c o 5
+C S C = O ) C = C 5
+S O C = C C = C 6
+C O C = S ) C = C 5
+C = C O C = C S 5
+C S C = C C 5 = O
+C O C = C C 5 = S
+O = s c c c c 5
+C C = C = O ) ) C = S
+O C = C S C = C 6
+C = C C [NH+] = C N ) N
+N C = [NH2+] ) N C C = C
+C N C = [NH+] C C N 5
+C N C C [NH+] = C 5 N
+N C = [NH+] C C C N 6
+[NH3+] [C@H] C N C = [NH+] C 6
+N C = [NH2+] ) [C@H] C C N 4
+N C = [NH2+] ) C C [NH2+] C 4
+[NH2+] = C N C C C N 6
+[NH2+] C [C@H] N [C@@H] 5 C [NH2+] 5
+[NH2+] C [C@@H] N [C@H] 5 C [NH2+] 5
+N C = [NH2+] ) N C C C 3
+[NH3+] [C@@H] C N C = [NH+] C 6
+C N C N C = [NH+] C 6
+N C = [NH2+] ) N C C C 4
+C N C # N ) ) ) C C [NH3+]
+N / C = [NH+] \ N ) ) / C C = C
+N / C = [NH+] / N ) ) / C C = C
+N C = [NH2+] ) [C@@H] C C N 4
+N [N+] C C N 4 C C 6
+N C = [NH+] C C C 3 ) ) ) ) N
+N N C = [NH+] C C C 5
+C [C@@H] C N 3 C = [NH2+] ) N
+C [C@H] C N 3 C = [NH2+] ) N
+C [C@@H] C [NH+] = C N 5 ) N
+C [C@H] C [NH+] = C N 5 ) N
+N N C = [NH2+] ) C C C 3
+C = N C = S ) N = C
+N c n c c s 5
+C c n s c n 5
+N c c n c s 5
+C c c s n n 5
+N C = S ) C C # N
+N c c s n c 5
+N c c c s n 5
+[S-] / C = [NH+] \ C # C ) ) ) / N
+C N C = S ) C # N
+N c c s c n 5
+C c n n c s 5
+C c c n s n 5
+C N C # N ) ) C = S
+C S C = C N = N 6
+S N C = C C = N 6
+N c c c n s 5
+C c c n n s 5
+C C = N S C = N 6
+N = C S C = N C 6
+N S C = N C = C 6
+C N N S C # C 5
+S = c [nH] c c [nH] 5
+C C [C@@H] C = O ) C ) ) C
+C [C@H] [C@H] C [C@H] 3 C ) ) ) ) O
+C [C@] C = C ) ) C C ) ) O
+C [C@@H] C C C O C 6
+C C C C = O ) C ) ) ) C
+C C O C C C 3 ) ) ) ) C
+C = C O C C C ) C
+C [C@H] [C@@H] C [C@H] 3 C ) ) ) ) O
+C C = C [C@H] O ) C ) ) ) C
+C C C / C = C / C O
+C C [C@@H] O C 3 ) ) ) C ) C
+O C C C C C C 5
+C C = O ) C C ) C ) C
+C [C@H] C C = C ) C ) ) ) O
+C [C@H] C C C O C 6
+O C C C C C = C
+C [C@@H] C C = C ) C ) ) ) O
+O C C C C C C 6
+C C = C [C@@H] O ) C ) ) ) C
+C O C C C C C 5
+C / C = C \ [C@@H] O ) C ) ) / C
+O = C C C C C ) C
+C / C = C / [C@@H] O ) C ) ) \ C
+C C C C C 3 ) ) ) O ) C
+C [C@@H] C = O ) ) C C C
+C [C@H] C C [C@@H] O 5 ) C
+C C / C = C / C O ) ) \ C
+C C C C O C C 6
+C / C = C / [C@H] O ) C ) ) \ C
+C [C@@H] C C ) ) C C = O
+C / C = C \ [C@H] C C ) ) O
+C C C [C@H] O C 3 ) ) ) ) C
+C C C C C ) ) O C 3
+O C C C = C C ) C
+C / C = C / C ) ) / C C O
+C = C C C O ) C ) C
+C C = C ) C O ) C ) C
+O C C C C = C ) C
+C [C@@H] C C C C O 6
+C [C@H] C C C C O 6
+C C C C C C = O
+C C C C = O ) ) C C
+C C C C O C = C
+C [C@H] C = O ) ) C C C
+C C C C [C@@H] C O 3
+C C C C [C@H] C O 3
+C [C@@H] C C [C@H] O 5 ) C
+C = C O C C ) C ) C
+C C [C@@] O ) C [C@@H] 3 C
+C C O C / C = C / C
+C O C C = C C ) C
+C C [C@@H] C C = C ) ) ) O
+C C [C@@H] O [C@H] 3 C C
+C C [C@H] O [C@@H] 3 C C
+C / C = C \ C C C O
+C C C ) C C C O 5
+C / C = C \ [C@H] O ) C ) ) / C
+O C C C C ) C C 3
+C O C C C C C 3
+O = C C C C ) C ) C
+C C [C@@] O ) C [C@H] 3 C
+C C C [C@@H] C C O 4
+C C C [C@H] C C O 4
+C C [C@@H] C [C@@H] O 4 ) C
+C C [C@@H] C [C@H] O 4 ) C
+C C [C@H] C [C@@H] O 4 ) C
+C C [C@H] C [C@H] O 4 ) C
+C [C@H] C C ) ) C C = O
+C = C C C [C@@H] O ) C
+C = C C C [C@H] O ) C
+C C O / C = C / C C
+C [C@H] C C [C@H] C 5 ) O
+C C [C@@H] C [C@@H] 3 C O
+C C [C@@H] C [C@H] 3 C O
+C C [C@H] C C = C ) ) ) O
+C C [C@H] C [C@@H] 3 C O
+C C [C@H] C [C@H] 3 C O
+C [C@H] C C [C@@H] C 5 ) O
+C = C [C@H] C C ) C ) ) O
+C [C@@H] C C C C 4 ) ) ) ) O
+C [C@H] C C C C 4 ) ) ) ) O
+C [C@H] [C@@H] C [C@@H] 3 C ) ) ) ) O
+C C O C C C C 4
+C [C@H] / C = C \ C ) ) ) C O
+C [C@@H] / C = C \ C ) ) ) C O
+C C C / C = C \ C O
+C C O C / C = C \ C
+C C O C C C = C
+C C C C O ) ) C C 3
+O C C C = C ) C C
+C C [C@H] C = C ) ) O C
+C C [C@@H] C = C ) ) O C
+C O C / C = C \ C C
+O C C / C = C / C C
+C C [C@H] O C 3 ) ) ) C ) C
+C C C [C@H] C = C ) ) O
+C C [C@H] C = C ) C ) ) O
+C C O ) C C C C 5
+C C C O C C = C
+C C C [C@@H] O C 3 ) ) ) ) C
+C / C = C / [C@@H] C C ) ) O
+O [C@@H] C C C [C@H] 5 C
+O [C@@H] C C C [C@@H] 5 C
+O [C@H] C C C [C@@H] 5 C
+O [C@H] C C C [C@H] 5 C
+C [C@@] C = C ) ) C C ) ) O
+C C [C@@H] C = C ) C ) ) O
+C C C [C@@H] C = C ) ) O
+C = C [C@@H] C C ) C ) ) O
+C C C ) O C 3 C ) C
+C C [C@H] C = O ) C ) ) C
+C C C = O ) C C ) C
+C C C C = O ) C C
+C C C C C = O ) C
+C C C C C O C 7
+O C C / C = C \ C C
+C [C@@H] C C [C@H] C 5 ) O
+C [C@@H] C C [C@@H] C 5 ) O
+C C / C = C \ C ) ) / C O
+C O C C C C C 4
+C [C@H] O C C [C@H] 5 C
+C / C = C / C C C O
+C / C = C \ [C@@H] C C ) ) O
+C / C = C / [C@H] C C ) ) O
+C C O C C C C 3
+C C C C = O ) ) C ) C
+O C [C@H] C C 3 C ) C
+O C [C@@H] C C 3 C ) C
+C [C@] C C ) ) C C O 4
+C [C@@] C C ) ) C C O 4
+C [C@@H] / C = C / C ) ) ) C O
+C [C@H] [C@H] O ) C ) ) C = C
+C [C@H] [C@@H] O ) C ) ) C = C
+C [C@@H] [C@H] O ) C ) ) C = C
+C [C@@H] [C@@H] O ) C ) ) C = C
+C / C = C \ C ) ) / C C O
+C [C@H] O C = C ) ) ) C C
+C [C@@H] O C = C ) ) ) C C
+C C [C@@H] C = C ) ) C O
+C C [C@H] C = C ) ) C O
+C [C@@H] O C C [C@@H] 5 C
+C C C C ) C O C 4
+C C [C@] C ) C O 3 ) ) ) C
+C O C C = C ) C C
+C O C C C = C ) C
+C [C@H] C C C C 3 ) ) ) ) O
+O C C C ) C C C 4
+C [C@@H] C C [C@@H] O 5 ) C
+C / C = C / C O ) C ) C
+C [C@@H] C C [C@H] 4 C O
+C [C@H] C C [C@@H] 4 C O
+C [C@H] C C [C@H] 4 C O
+C [C@@H] C C [C@@H] 4 C O
+C O C C C C = C
+C C C C C O C 4
+C C [C@H] C C C O 5
+C C [C@@H] C C C O 5
+C [C@@H] C O ) ) C C = C
+C [C@H] C O ) ) C C = C
+C [C@@H] O C C 4 C ) C
+C [C@H] O C C 4 C ) C
+O C [C@@H] C C C 3 ) ) ) C
+C C [C@@] C ) C O 3 ) ) ) C
+C C [C@@H] C O [C@H] 4 C
+C C C C O ) C C 3
+C C C O ) C C 3 ) ) ) C
+C C [C@@H] O C [C@H] 4 C
+O C [C@H] C C C 3 ) ) ) C
+C C / C = C \ C O ) ) / C
+C [C@@H] C C C C 3 ) ) ) ) O
+C / C = C / C [C@@H] O ) C
+O C / C = C / C C ) C
+C C [C@@H] O [C@H] 3 C ) ) ) ) C
+C C [C@] O ) C [C@@H] 3 C
+C C [C@] O ) C [C@H] 3 C
+C [C@@H] C C ) C C 3 ) ) ) O
+C [C@H] C C ) C C 3 ) ) ) O
+C [C@@H] [C@H] C [C@@H] 3 C ) ) ) ) O
+C [C@@H] [C@H] C [C@H] 3 C ) ) ) ) O
+C [C@@H] [C@@H] C [C@@H] 3 C ) ) ) ) O
+C C [C@H] C O [C@H] 4 C
+C C [C@@H] C O [C@@H] 4 C
+C C [C@H] C O [C@@H] 4 C
+C C [C@@H] C C C 3 ) ) ) O
+C C [C@H] C C C 3 ) ) ) O
+C [C@H] [C@H] C [C@@H] 3 C ) ) ) ) O
+C / C = C / C [C@H] O ) C
+C C C [C@@] C ) C O 3
+C C C [C@] C ) C O 3
+C [C@H] [C@H] C O 3 ) ) ) C C
+C [C@H] [C@@H] C O 3 ) ) ) C C
+C [C@@H] [C@@H] C O 3 ) ) ) C C
+C [C@@H] [C@H] C O 3 ) ) ) C C
+O = C [C@H] C C ) C ) ) C
+O C C C C C C 4
+C [C@@H] [C@@H] C [C@H] 3 C ) ) ) ) O
+O C C C C C C 3
+O = C [C@@H] C C ) C ) ) C
+C C O C C = C ) C
+O C C C C C 4 ) C
+C C O C = C ) C C
+C / C = C \ O C C ) C
+C / C = C / O C C ) C
+C C C = C ) [C@@H] O ) C
+C C C = C ) [C@H] O ) C
+C [C@@H] O C C [C@H] 5 C
+C [C@H] O C C [C@@H] 5 C
+C C / C = C / [C@H] O ) C
+C C / C = C / [C@@H] O ) C
+C [C@@H] C O C [C@H] 5 C
+C [C@H] C O C [C@@H] 5 C
+C [C@@H] C O C [C@@H] 5 C
+C C [C@H] C ) O [C@@H] 4 C
+C C [C@@H] C ) O [C@@H] 4 C
+C C [C@H] C ) O [C@H] 4 C
+C C C [C@H] O [C@H] 3 C
+C C C [C@@H] O [C@H] 3 C
+C C C [C@H] O [C@@H] 3 C
+C C C [C@@H] O [C@@H] 3 C
+C C C ) C O C C 5
+C [C@H] C = C ) ) C C O
+C [C@@H] C = C ) ) C C O
+C O C C C ) C C 3
+O C / C = C / C C ) ) \ C
+C C [C@@H] C [C@@] 3 C ) O
+C C [C@H] C [C@@] 3 C ) O
+C C [C@@H] C [C@] 3 C ) O
+C C [C@H] C [C@] 3 C ) O
+C [C@@H] O C [C@@H] C 5 ) C
+C [C@@H] O C [C@H] C 5 ) C
+C [C@H] O C [C@@H] C 5 ) C
+C [C@H] O C [C@H] C 5 ) C
+C [C@H] O C ) ) C C = C
+C [C@@H] O C ) ) C C = C
+O C C C = C ) ) C ) C
+C / C = C \ C O ) C ) C
+C / C = C / [C@H] O C ) ) C
+C / C = C / [C@@H] O C ) ) C
+C C [C@H] O C 3 C ) C
+C C [C@@H] O C 3 C ) C
+C C O / C = C \ C C
+C [C@@H] C O C 4 C ) C
+C [C@H] C O C 4 C ) C
+C C C C O C 4 ) ) ) ) C
+C C C O / C = C \ C
+C C [C@@H] O [C@@H] 3 C ) ) ) ) C
+C C [C@H] O [C@@H] 3 C ) ) ) ) C
+C C [C@H] O [C@H] 3 C ) ) ) ) C
+C C C [C@H] C [C@H] 3 O
+C C C [C@@H] C [C@H] 3 O
+C C C [C@H] C [C@@H] 3 O
+C C C [C@@H] C [C@@H] 3 O
+C = C C O C C ) C
+C N N = C C ) C ) ) ) C
+C C C / C = N / N ) ) ) ) C
+C C / C = N \ N C ) C
+C C / C = N / N C ) C
+[NH3+] [C@@H] C [C@@H] 3 N C ) C
+[NH3+] [C@H] C [C@@H] 3 N C ) C
+[NH3+] [C@H] C [C@H] 3 N C ) C
+N [NH+] C C C [C@@H] 5 C
+C C / N = N / C C ) C
+[NH3+] C [C@@H] [C@H] 3 C [NH2+] C 5
+[NH3+] [C@H] [C@@H] C 3 C ) C ) ) [NH3+]
+C C N C C [NH2+] C 4
+C = [NH+] C C C [NH+] = C
+C C C / N = N / C C
+C C C [NH+] N [C@@H] 3 C
+N [NH2+] C C C C C 5
+C C C [NH+] N [C@H] 3 C
+N [NH+] C C C C C 6
+C N C C [NH2+] C C 6
+C [C@H] C C C 3 ) ) ) [NH2+] N
+C [C@@H] C C C 3 ) ) ) [NH2+] N
+C [C@@H] C [C@@H] 3 C [NH2+] N
+C [C@H] C [C@@H] 3 C [NH2+] N
+C [C@@H] C [C@H] 3 C [NH2+] N
+C [C@H] C [C@H] 3 C [NH2+] N
+N [NH2+] C C C C C 4
+C C C C N [NH2+] C 7
+[NH3+] C C C 3 ) ) C [NH2+] C
+[NH3+] [C@@H] C [C@H] 3 N C ) C
+C [NH2+] C C = N ) C C
+C C N C N 3 C C
+[NH3+] C [C@@H] C C [N-] C 5
+C [C@H] [N-] C C [NH2+] C 6
+C [C@@H] [N-] C C [NH2+] C 6
+[NH3+] C [C@H] C C [N-] C 5
+C / C = N \ N C C ) ) C
+C / C = N / N C C ) ) C
+C C [NH+] [N-] C C C 5
+C = C C N C C [NH3+]
+C [NH+] C C C C 3 ) ) ) ) N
+C C [NH+] C C C 3 ) ) ) N
+[NH3+] [C@@H] [C@H] C 3 C ) C ) ) [NH3+]
+N / N = C / C C ) C ) C
+C C [C@@] C N ) ) C [NH2+] 3
+C C [C@] C N ) ) C [NH2+] 3
+C / C = N \ N ) ) / C C C
+C [NH2+] C C N C 4 ) C
+C N C C [NH2+] C 4 ) ) ) ) C
+N [NH+] C C C [C@H] 5 C
+C C N C C C 4 ) [NH3+]
+N [NH2+] C C C C = C
+C N C C C C N 6
+N [NH2+] C C C C C 3
+C N C C C 4 ) C ) [NH3+]
+C N N = C ) ) C C C
+C [C@@H] N C [C@@] 4 C ) [NH3+]
+C [NH+] C C C N C 6
+C [C@H] [C@@H] C N 4 C ) ) ) [NH3+]
+C [C@@H] [C@H] C N 4 C ) ) ) [NH3+]
+C [C@@H] C C [NH+] C 5 ) N
+C [C@H] C C [NH+] C 5 ) N
+C [NH2+] [C@H] C = N ) C ) ) C
+C [NH2+] [C@@H] C = N ) C ) ) C
+C C C ) C N N C 5
+N = N C C C ) C ) C
+C N [NH+] C C C C 5
+C [C@H] N C [C@] 4 C ) [NH3+]
+C [C@@] [NH3+] ) C [C@@] 3 C ) [NH3+]
+C [NH+] C C [C@@H] 4 C [NH3+]
+C [NH+] C C [C@H] 4 C [NH3+]
+C N C C ) C [NH2+] C 4
+C N / N = C / C C ) C
+C C / N = C / [C@H] [NH3+] ) C
+[NH3+] N C C = C C ) C
+C [n+] c s c c 5
+C [n+] c c c s 5
+S [N-] C C = C C 6
+[N-] C C C = C S 6
+S C C C C # N
+C C [C@@H] C # N ) ) S
+N # C C S ) C ) C
+C C [C@H] C # N ) ) S
+C [C@@H] C C # N ) ) ) S
+C [C@H] C C # N ) ) ) S
+C [C@H] C # N ) ) C S
+C [C@@H] C # N ) ) C S
+C C [C@H] C C C [NH2+] 5
+C [NH+] C C C [C@H] 5 C
+C [C@@H] C C [C@@H] [NH2+] 5 ) C
+C [NH+] C C C [C@@H] 5 C
+C C C C C [NH2+] C 7
+C = C C [N+] C ) C ) C
+C C C C [NH2+] C C 6
+C [C@H] C C C [NH2+] C 6
+C [C@] [NH3+] ) C = C ) ) C C
+C C C [C@@H] [NH3+] ) C = C
+C C C ) C C C [NH2+] 5
+C [C@@H] C C [C@H] [NH2+] 5 ) C
+C [NH2+] C C C C = C
+C [N+] C ) C C 3 C ) C
+C [C@@H] [C@H] [N+] 3 C ) C ) ) C
+C / C = [NH+] / C C ) C ) C
+C [N+] C ) C C C C 5
+C [N+] C C C 3 ) ) ) C ) C
+C C [NH+] C C 3 ) ) ) C ) C
+C [NH+] C C = C ) C ) ) ) C
+C [C@H] C C C C [NH2+] 6
+C C C ) [NH2+] C 3 C ) C
+C C C [C@H] [NH3+] ) C = C
+C C [NH+] = C C ) C ) ) ) C
+C [C@@] [NH3+] ) C = C ) ) C C
+C C [NH+] C C C C 5
+C [C@@H] C C [NH+] C 5 ) C
+C C [N+] C C ) ) C C 3
+C [NH+] C C C C 3 ) ) ) ) C
+C [C@H] [C@@H] [N+] 3 C ) C ) ) C
+C C [NH2+] C C C C 4
+C [C@H] C C [C@@H] [NH2+] 5 ) C
+[NH3+] C C C ) C C C 4
+C [C@@H] C C [C@@H] [NH2+] 5 ) C
+C [C@H] C C C 3 ) ) ) [NH2+] C
+C [C@@H] C C C 3 ) ) ) [NH2+] C
+C C C C ) C [NH2+] C 4
+C C [NH2+] [C@H] C [C@H] 3 C
+C C [NH2+] [C@@H] C [C@H] 3 C
+C C [NH2+] [C@H] C [C@@H] 3 C
+C [C@H] C C [NH+] C 5 ) C
+C [C@@H] [NH2+] C C [C@@H] 5 C
+C [C@@H] [NH2+] C C [C@H] 5 C
+C [C@H] [NH2+] C C [C@@H] 5 C
+C [C@H] [NH2+] C C [C@H] 5 C
+C [NH2+] C C C C C 3
+C [C@@H] C C C [NH2+] C 6
+[NH3+] [C@H] C C C [C@H] 5 C
+[NH3+] [C@H] C C C [C@@H] 5 C
+[NH3+] [C@@H] C C C [C@H] 5 C
+[NH3+] [C@@H] C C C [C@@H] 5 C
+C [NH+] C C C C C 6
+C [C@@H] C C C C [NH2+] 6
+C C [NH2+] C C = C ) C
+C [NH2+] C C C C C 5
+[NH3+] C C C C C C 5
+C C [C@@H] C C C [NH2+] 5
+C C / C = C / [C@H] [NH3+] ) C
+C [C@@H] C [NH2+] C [C@H] 5 C
+C [C@H] C [NH2+] C [C@@H] 5 C
+C [C@@H] C [NH2+] C [C@@H] 5 C
+C C / C = C \ [C@H] [NH3+] ) C
+[NH3+] C C C = C C ) C
+[NH3+] C C C C C C 6
+[NH3+] C C C C 4 ) C ) C
+C [NH2+] [C@H] C C [C@@H] 4 C
+C C C C [NH3+] ) C C 3
+C C C C [NH3+] ) ) C C 3
+C = C C [NH2+] C C ) C
+C C C [NH3+] ) C C 3 ) ) ) C
+C C C [NH2+] C C C 3
+C C C C C 3 ) ) ) [NH3+] ) C
+[NH3+] C [C@@H] C C C 3 ) ) ) C
+[NH3+] C [C@H] C C C 3 ) ) ) C
+C = C [C@@H] C C ) C ) ) [NH3+]
+C C [NH2+] C C C C 3
+C C C [NH2+] C C = C
+C C [NH2+] C C C 3 ) ) ) ) C
+C [C@H] C C ) C C 3 ) ) ) [NH3+]
+C [C@@H] C C ) C C 3 ) ) ) [NH3+]
+C C [C@@H] C C [NH2+] 4 ) ) ) ) C
+C C [C@H] C C [NH2+] 4 ) ) ) ) C
+C [C@H] C C C C 4 ) ) ) ) [NH3+]
+C [C@@H] C C C C 4 ) ) ) ) [NH3+]
+C [C@@H] C C [NH2+] 4 ) C ) C
+C [C@H] C C [NH2+] 4 ) C ) C
+C [C@H] C C [C@H] C 5 ) [NH3+]
+C [C@@H] C C [C@@H] C 5 ) [NH3+]
+C [C@@H] C C [C@H] C 5 ) [NH3+]
+C [C@H] C C [C@@H] C 5 ) [NH3+]
+C = C C C [C@H] [NH3+] ) C
+C = C C C [C@@H] [NH3+] ) C
+[NH3+] C [C@H] C C 3 C ) C
+[NH3+] C [C@@H] C C 3 C ) C
+C [C@H] [NH2+] C C ) ) ) C = C
+C [C@@H] [NH2+] C C ) ) ) C = C
+C C [NH3+] ) C C C C 5
+C C [C@@H] C [C@@H] 3 C [NH3+]
+C / C = C \ C [NH3+] ) C ) C
+C [NH2+] C C C ) C C 3
+[NH3+] C C C C ) C C 3
+C C C = [N+] C ) C ) ) ) C
+C C [NH2+] C ) ) C C C 4
+C [NH2+] C C C C C 4
+C [NH2+] [C@H] C C [C@H] 4 C
+C [NH2+] [C@@H] C C [C@H] 4 C
+C [NH2+] [C@@H] C C [C@@H] 4 C
+C C C C C C 4 ) [NH3+]
+C C C = [N+] C ) C ) ) C
+C C [NH2+] C C C = C
+C C [N+] = C C ) ) C C
+C C C C [NH+] C 4 ) C
+C C / C = [N+] / C C ) ) \ C
+C = C C C [NH3+] ) C ) C
+C [C@H] C = C ) ) C [NH2+] C
+C [NH2+] C C / C = C / C
+C [C@@H] C = C ) ) C [NH2+] C
+C C C C [NH2+] C 4 ) ) ) ) C
+C C [C@@H] [NH2+] C ) ) C = C
+C C [C@H] [NH2+] C ) ) C = C
+C [C@@H] [C@@H] [N+] 3 C ) C ) ) C
+C = C C C C C [NH3+]
+C C [C@H] C [C@@H] 3 C [NH3+]
+C C [C@@H] C [C@H] 3 C [NH3+]
+C C [C@H] C [C@H] 3 C [NH3+]
+C C / C = C / C [NH3+] ) ) ) / C
+C [NH2+] C C C C 4 ) C
+C [C@H] C C [C@H] 4 C [NH3+]
+C [C@@H] C C [C@@H] 4 C [NH3+]
+C [C@@H] C C [C@H] 4 C [NH3+]
+C [C@H] C C [C@@H] 4 C [NH3+]
+C [NH2+] C C = C ) C C
+C C / C = C / C C [NH3+]
+[NH3+] C / C = C / C C ) C
+C C [C@H] C C [C@@H] 4 [NH3+]
+C C [C@H] C C [C@H] 4 [NH3+]
+C C [C@@H] C C [C@@H] 4 [NH3+]
+C C [C@@H] C C [C@H] 4 [NH3+]
+C [C@@H] C [C@@H] 3 [C@@H] [NH3+] ) C
+C [C@H] C [C@@H] 3 [C@@H] [NH3+] ) C
+C [C@@H] C [C@H] 3 [C@@H] [NH3+] ) C
+C [NH2+] C [C@H] C [C@H] 3 C
+C [NH2+] C [C@H] C [C@@H] 3 C
+C [NH2+] C [C@@H] C [C@H] 3 C
+C [NH2+] C [C@@H] C [C@@H] 3 C
+C C [NH2+] [C@@H] C [C@@H] 3 C
+C C [C@@H] C C C 3 ) ) ) [NH3+]
+C C [C@H] C C C 3 ) ) ) [NH3+]
+C [C@@H] [NH2+] C [C@@H] C 5 ) C
+C [C@@H] [NH2+] C [C@H] C 5 ) C
+C [C@H] [NH2+] C [C@@H] C 5 ) C
+C [C@H] [NH2+] C [C@H] C 5 ) C
+C [C@H] C = C ) C ) ) C [NH3+]
+C [C@@H] C = C ) C ) ) C [NH3+]
+C [NH+] C C C 4 ) C ) C
+C / C = C / [C@@H] [NH3+] ) C ) ) \ C
+C / C = C / [C@H] [NH3+] ) C ) ) \ C
+C C C C C [NH+] = C
+C [C@H] C [C@H] 3 [C@@H] [NH3+] ) C
+C C [C@H] C [NH2+] C C 5
+C C [C@@H] C [NH2+] C C 5
+C [NH2+] C C C = C ) C
+C [C@H] [NH2+] C ) ) C C = C
+C [C@@H] [NH2+] C ) ) C C = C
+[NH3+] C C C C C C 3
+C [C@H] C [C@@H] [C@@H] 4 C ) ) [NH3+]
+C = C C C [NH+] C ) C
+C C C ) C [NH2+] C C 5
+C [C@@H] C [C@@H] [C@@H] 4 C ) ) [NH3+]
+C [C@@H] C [C@H] [C@@H] 4 C ) ) [NH3+]
+C [C@@H] C [C@H] 3 C C [NH3+]
+C [C@@H] C [C@@H] 3 C C [NH3+]
+C [C@H] C [C@@H] 3 C C [NH3+]
+C [C@H] C [C@H] 3 C C [NH3+]
+[NH3+] C C [C@H] [C@H] 3 C ) ) C
+[NH3+] C C [C@H] [C@@H] 3 C ) ) C
+[NH3+] C C [C@@H] [C@H] 3 C ) ) C
+C C C [NH2+] C ) ) C C 3
+C C [C@H] [NH3+] ) C C = C
+C C [C@@H] [NH3+] ) C C = C
+C C [C@@H] C [C@@H] 3 [NH2+] C
+C C [C@H] C [C@@H] 3 [NH2+] C
+C C [C@@H] C [C@H] 3 [NH2+] C
+C C [C@H] C [C@H] 3 [NH2+] C
+C [NH2+] C / C = C / C C
+C [C@@H] C C C C 3 ) ) ) ) [NH3+]
+C [C@H] C C C C 3 ) ) ) ) [NH3+]
+C C [C@H] C = C ) C ) ) [NH3+]
+C C [C@@H] C = C ) C ) ) [NH3+]
+C C C [C@@H] C C [NH2+] 4
+C C C [C@H] C C [NH2+] 4
+[NH3+] C C C C C C 4
+C / C = C \ C ) ) / C C [NH3+]
+C C C = C ) C C [NH3+]
+C C = C ) C [C@@H] [NH3+] ) C
+C C = C ) C [C@H] [NH3+] ) C
+C / C = C / C [C@H] [NH3+] ) C
+C / C = C / C [C@@H] [NH3+] ) C
+C [NH2+] [C@H] C C 3 C ) C
+C [NH2+] [C@@H] C C 3 C ) C
+C C = C ) C [NH3+] ) C ) C
+C = C [C@H] C C ) C ) ) [NH3+]
+[NH3+] C C C C C 4 ) C
+C C C [NH3+] ) C C C 4
+C C / C = C / [C@@H] [NH3+] ) C
+C C / C = C \ [C@@H] [NH3+] ) C
+C [C@H] C [C@H] [C@@H] 4 C ) ) [NH3+]
+C / C = C / [C@H] [NH2+] C ) ) C
+C / C = C / [C@@H] [NH2+] C ) ) C
+C [NH2+] C / C = C / C ) ) / C
+C [NH2+] C C = C C ) C
+[NH3+] C C = C C ) C ) ) C
+C [C@H] C [NH3+] ) ) C C = C
+C [C@@H] C [NH3+] ) ) C C = C
+C / C = C / C [NH3+] ) C ) C
+C C C / C = C / C [NH3+]
+C / C = C / C ) ) / C C [NH3+]
+C [C@@] C [NH3+] ) ) C [C@H] 3 C
+C [C@@] C [NH3+] ) ) C [C@@H] 3 C
+C [C@] C [NH3+] ) ) C [C@H] 3 C
+C [C@] C [NH3+] ) ) C [C@@H] 3 C
+C / C = C \ C [C@H] [NH3+] ) C
+C / C = C \ C [C@@H] [NH3+] ) C
+C C C C C [NH2+] C 4
+C = [NH+] C C C C ) C
+[NH3+] C C C C = C ) C
+C C = C [C@@H] [NH3+] ) C ) ) ) C
+C C = C [C@H] [NH3+] ) C ) ) ) C
+C [C@@H] C [C@@H] 3 [C@H] [NH3+] ) C
+C [C@H] C [C@@H] 3 [C@H] [NH3+] ) C
+C [C@@H] C [C@H] 3 [C@H] [NH3+] ) C
+C [C@H] C [C@H] 3 [C@H] [NH3+] ) C
+C [NH2+] [C@H] C = C ) C ) ) C
+C [NH2+] [C@@H] C = C ) C ) ) C
+C [C@@] C C ) ) C C [NH2+] 4
+C [C@] C C ) ) C C [NH2+] 4
+C C C C = [N+] C ) C
+C C C C C 4 ) C ) [NH3+]
+S [C@H] C C C = C 5
+C C S C C # C
+C C S C = C C 6
+S [C@@H] C C C = C 5
+C C = S ) C C = C
+C [C@@H] C S C = C 5
+C [C@H] C S C = C 5
+C C = C C C S 5
+C C [C@@H] [C@H] C 5 ) S 3
+S = C C / C = C / C
+C C S C = C = C
+C C S C # C C
+S = C C C C C 5
+C / C = C / C = S ) ) \ C
+S = C C C C C 4
+S = C C / C = C \ C
+C / C = C \ C = S ) ) / C
+S C C C = C C 6
+C C C = C = S ) ) ) C
+C S C C = C = C
+C S C C C # C
+C [C@@H] C C = C S 5
+C [C@H] C C = C S 5
+C = C [C@@H] C = S ) ) C
+C = C [C@H] C = S ) ) C
+C S C C # C C
+C C C C C ) ) C C
+C C C C C ) C ) ) ) C
+C C C C ) C ) C ) ) C
+C C C C C ) C ) C
+C C C C C ) ) C ) C
+C C C [C@H] C C ) ) C
+C C C [C@@H] C C ) ) C
+F C [C@@H] Cl ) F
+F C [C@H] Cl ) F
+Cl C C F ) F
+C C Cl ) F ) F
+Cl C C # N ) ) C # N
+Cl [C+] C = C C = N 5
+Cl / C = C / C C = C 3
+Cl C C = C C = C 5
+Cl C = C C C = C 5
+N O C F ) F ) F
+O = C C = O ) C = O ) [O-]
+[O-] c o o c = O ) c 5
+[O-] c n o [nH] c 5 = O
+[O-] [C@@H] [N+] = O ) [O-] ) ) C # N
+[O-] [n+] n o c c 5 ) [O-]
+P O C = C C = N 6
+C C = C O N = P 6
+[O-] C = O ) n n n [nH] 4
+[O-] [n+] c c [nH] c 5 F
+C O C = O ) N = C = O
+O = C N C = O ) ) C = O
+O = C O C C = O ) N 5
+O = C N C C = O ) O 5
+O = C = N O C = O ) C
+O = C N C = C [O-] ) [O-]
+O = C = C C [N+] = O ) [O-]
+O N c n o c n 5
+O = c [nH] [nH] c = O ) [nH] 5
+[O-] [n+] c c o n 5 ) ) N
+[N-] = [N+] = N C O C = O
+[O-] C C N N [O+] 5 ) ) N
+O n c n [nH] c 5 = O
+O C O ) N = N C = N 5
+[N-] = [N+] = N C = O ) O C
+N c n [nH] c = O ) o 5
+F C c n c c o 5
+F [C@H] C [C@H] 3 N = C = O
+O = C C C C = O ) [O-]
+[O-] C = O ) C C = O ) C
+[O-] C = O ) [C@H] C = C ) ) O
+[O-] C = O ) [C@@H] C = C ) ) O
+[O-] C = O ) O C C = C
+O = C [C@@H] C = O ) [O-] ) ) C
+O = C [C@H] C = O ) [O-] ) ) C
+C O / C = C / C = O ) [O-]
+[O-] C = O ) C = O ) C C
+[O-] C = O ) C O ) C C 3
+[O-] C = O ) [C@@H] C C O 4
+[O-] C = O ) [C@H] C C O 4
+C O / C = C \ C = O ) [O-]
+[O-] C = O ) C C O C 4
+O C / C = C \ C = O ) [O-]
+[O-] C = O ) [C@@H] O [C@H] 3 C
+[O-] C = O ) [C@H] O [C@@H] 3 C
+[O-] C = O ) [C@H] O [C@H] 3 C
+[O-] C = O ) [C@] C ) C O 3
+[O-] C = O ) [C@@] C ) C O 3
+[O-] C = O ) [C@@H] O [C@@H] 3 C
+O C C = O ) C C = O
+C C = O ) C = O ) C O
+[O-] C = O ) / C = C / C ) ) / O
+O C / C = C / C = O ) [O-]
+C O C = O ) C = O ) C
+O = C C O C C O 5
+[O-] C = O ) C = C ) C O
+[O-] / C = C / C = O ) ) \ O C
+[O-] C = O ) C = C ) O C
+[O-] C = O ) [C@H] C [C@H] 3 O
+[O-] C = O ) [C@@H] C [C@H] 3 O
+[O-] C = O ) [C@H] C [C@@H] 3 O
+[O-] C = O ) [C@@H] C [C@@H] 3 O
+F n n c c c [nH] 6
+F C c n c n [nH] 5
+N c c [nH] n c 5 F
+F C = N [NH+] = C C 5 ) N
+O = C C N C N 5 O
+O = C O N C = [NH2+] ) C 5
+[O-] C = O ) / C = N / N C
+N C = C C = O ) [O-] ) ) ) N
+[O-] C = O ) C = N ) C [NH3+]
+C C = C O ) O ) ) [N+] # N
+[O-] C = N O C [C@@H] 5 [NH3+]
+[O-] C = N O C [C@H] 5 [NH3+]
+N [C@@H] C O N = C 5 O
+O N C [C@@H] C 4 = O ) ) [NH3+]
+O = [N+] C N C = O ) C 5
+N N C = O ) C C = O
+O = [N+] C C N C 5 = O
+O = C [C@@H] C = O ) N ) ) N
+O N C [C@H] C 4 = O ) ) [NH3+]
+[O-] C = O ) / C = N / N ) ) / C
+C [N+] = N O C = O ) C 5
+N C N [O+] N C 5 ) N
+N C = O ) C N = [N+] = N
+N # [N+] N N C = O ) C
+C [NH3+] ) C = O ) N [N+] # N
+O = N [C@H] C = O ) C ) ) C
+C C = O ) C C = O ) N
+C O C = C C O N 5
+C [C@H] O C N C 5 = O
+O C N C = O ) C = C
+O [C@H] C C = O ) N C 5
+O [C@@H] C C = O ) N C 5
+[O-] C = O ) [C@@H] [NH3+] ) C = C
+O = C O C C N 5 C
+[O-] C = O ) [C@H] C C [NH2+] 4
+O C / C = C / C = O ) N
+C [C@H] C N C = O ) O 5
+N C = O ) O C C = C
+[O-] [N+] = O ) C C = C ) C
+O [C@@H] C C C = O ) N 5
+[O-] C = O ) [C@H] [NH3+] ) C = C
+O [C@H] C C C = O ) N 5
+C C / C = C / [N+] = O ) [O-]
+C [C@@H] O C N C 5 = O
+C [C@@H] C N C = O ) O 5
+C [C@] C O 3 ) ) C = O ) N
+[NH3+] C / C = C \ C = O ) [O-]
+C O N C C C 4 = O
+[O-] C = O ) C [NH3+] ) C C 3
+O = C C N C C O 6
+[O-] C = O ) [C@@H] C C [NH2+] 4
+O = C C O C C N 6
+C [C@@] C O 3 ) ) C = O ) N
+C O C C N = C = O
+O = C N C C [C@@H] 5 O
+[O-] C = O ) C = C ) C [NH3+]
+O = C C C C N = O
+C [C@@H] C C = O ) O N 5
+C [C@H] C C = O ) O N 5
+C C C = O ) C = O ) N
+C C = C [N+] = O ) [O-] ) ) ) C
+[O-] C = O ) C C [NH2+] C 4
+N C C = C O C O 5
+C [C@H] C O C = O ) N 5
+C [C@@H] C O C = O ) N 5
+C C C = O ) N C = O
+O / N = C \ C O C C \ 5
+C C = O ) N C = O ) C
+O N C = O ) C C C 3
+O = C C N C = O ) C
+O C C O C C # N
+C [C@] O ) N O C = C 5
+C C O C N = C = O
+[O-] C = O ) [C@H] C [C@H] 3 [NH3+]
+[O-] C = O ) [C@H] C [C@@H] 3 [NH3+]
+[O-] C = O ) [C@@H] C [C@H] 3 [NH3+]
+[O-] C = O ) [C@@H] C [C@@H] 3 [NH3+]
+C O C = O ) / C = C / N
+C O C = O ) / C = C \ N
+O [C@H] C O ) ) C C # N
+[O-] [N+] = O ) / C = C / C ) ) / C
+C C C = O ) N = O ) ) ) C
+O = C N C C C 4 ) O
+O = C C C C O N 6
+C C = O ) C = O ) ) ) C [NH3+]
+C = C N O C C O 6
+C C = O ) O C C = N
+C C / C = C \ [N+] = O ) [O-]
+O = C C O C [C@@H] 5 N
+O = C C O C [C@H] 5 N
+O C N C C C 4 = O
+O = C N C C C O 6
+C O N C = O ) C = C
+O O C C # N ) ) C ) C
+C [C@H] N O C C 5 = O
+C [C@@H] N O C C 5 = O
+N O C C = O ) C = C
+C [C@@H] N C = O ) C O 5
+C [C@H] N C = O ) C O 5
+C O N = C C O C 4
+O [C@H] C = N C [C@H] 5 O
+O [C@@H] C = N C [C@@H] 5 O
+C C = N C [C@H] O 5 ) O
+C C O [C@H] [C@@H] N 6 ) O 3
+O = C C C C N 5 O
+O O N C C C = C 5
+C N C = O ) C C = O
+O C [C@@H] C C = O ) N 4
+C O C C # N ) ) O C
+O C [C@@H] C N = C O 5
+C C O [C@@H] [C@H] N 6 ) O 3
+C N [C@@H] O C 3 = O ) ) ) ) C
+C N [C@H] O C 3 = O ) ) ) ) C
+O C [C@H] C N = C O 5
+[O-] C = O ) / C = [NH+] / C ) ) / C
+C O C = O ) N C C 3
+[O-] [N+] = O ) / C = C \ C ) ) / C
+O = C N C C [C@H] 5 O
+O = C C O C N 5 C
+N # C C C C O ) O
+C C C C 3 ) ) [N+] = O ) [O-]
+C N C = O ) C = O ) C
+O C N C = O ) ) C = C
+[O-] [N+] = O ) C C C C 4
+O [C@H] C C N 4 C = O
+C [C@H] O C = O ) [C@H] 4 N
+C [C@@H] O C = O ) [C@H] 4 N
+C [C@H] O C = O ) [C@@H] 4 N
+C [C@@H] O C = O ) [C@@H] 4 N
+N [C@@H] C C C = O ) O 5
+C C N C = O ) ) C = O
+O = C O C C [C@@H] 5 N
+O = C C N C = O ) ) C
+O = C O C C [C@H] 5 N
+N C = O ) C = C ) C O
+O = C C C C = O ) N
+C O C = O ) [C@H] C N 3
+C C = N O [C@@H] C 5 ) O
+C C = N O [C@H] C 5 ) O
+C C C = O ) O C = N
+C O C = O ) [C@@H] C N 3
+[NH3+] C / C = C / C = O ) [O-]
+C / C = C / C = O ) O N
+O = C N C C O C 4
+O = C C C O N 5 C
+C [C@] N ) C O C 4 = O
+C [C@@] N ) C O C 4 = O
+N [C@H] C C C = O ) O 5
+C C = O ) C / C = N / O
+C [C@@] O ) N O C = C 5
+O [C@@H] C O ) ) C C # N
+C C = N C [C@@H] O 5 ) O
+C C = N ) C O C = O
+O = C C C O C N 6
+[O-] [N+] = O ) C / C = C / C
+[O-] [N+] = O ) C / C = C \ C
+C N C = O ) O C = C
+O = C O C [NH3+] ) C C 3
+C O [C@@H] O N C = C 5
+C C = O ) O N C = C
+C O C = O ) C = N ) C
+O C [C@H] C C = O ) N 4
+C O [C@H] O N C = C 5
+O [C@@H] C C N 4 C = O
+O = C N C C = O ) C
+C / C = C / O C = O ) N
+C / C = C \ O C = O ) N
+O = C N O C C C 3
+C = C C C O N 5 O
+O = C C = O ) N C ) C
+[O-] [N+] = O ) C = C ) C C
+C C O N [C@H] 5 C = O
+C C O N [C@@H] 5 C = O
+C = C C C [N+] = O ) [O-]
+C O C N [C@H] 5 C = O
+C O C N [C@@H] 5 C = O
+C [C@@H] C = O ) C = O ) ) ) N
+C [C@H] C = O ) C = O ) ) ) N
+O C C C N = C = O
+C N O C = O ) C = C
+C C = O ) C [C@@H] N O 3
+C C = O ) C [C@H] N O 3
+C C N C = O ) C = O
+C C C = O ) O N = C
+N = C C O C O C 6
+O = C C O ) C [NH2+] C 4
+C O N C = C ) C = O
+O = C O N C C C 4
+O = C N [C@H] C = O ) ) C
+O = C N [C@@H] C = O ) ) C
+O = C O N = C C ) C
+O = C C [NH2+] C [C@@H] 5 O
+O = C C [NH2+] C [C@H] 5 O
+O = C C C N C = O
+O C [C@H] O N C = C 5
+O C [C@@H] O N C = C 5
+N C = O ) C [C@H] C O 3
+N C = O ) C [C@@H] C O 3
+C O C O C C # N
+[O-] [N+] = O ) C C C C 3
+C O C = O ) C [NH+] = C
+[O-] C = O ) C = C = S
+N # C C C C C 4 C C 4
+N # C c c c c c 5 ) c 3
+N # C c c c 3 c c c 5
+C / C = N \ N C = O ) N
+N C = N C = O ) C ) ) ) N
+C / C = N / N C = O ) N
+O = C N N C [C@H] 5 [NH3+]
+O = C N N C [C@@H] 5 [NH3+]
+N C = C C = O ) N ) ) ) N
+C C = O ) / C = [NH+] \ N ) ) / N
+[N-] = [N+] = N C C C O
+C N C C = N ) O N 5
+N N C C O C 5 = [NH2+]
+O = C N N [C@H] C 5 ) [NH3+]
+O = C N N [C@@H] C 5 ) [NH3+]
+[N-] = [N+] = N C C O C
+[N-] = [N+] = N C [C@@H] O ) C
+[N-] = [N+] = N C [C@H] O ) C
+O = C C N C N N 6
+C N [C@@H] N C 5 = O ) ) ) [NH3+]
+N C = O ) N C C = N
+N = N C C C N = O
+O = C N C C N 5 N
+C [C@H] N N C = O ) N 5
+C [C@@H] N N C = O ) N 5
+O = C N C C N N 6
+C N [C@H] N C 5 = O ) ) ) [NH3+]
+C C = O ) N / C = N / N
+C C = O ) N / C = N \ N
+[O-] c c n s n 5
+[S-] c n n c o 5
+[O-] c n n c s 5
+[O-] c n s c n 5
+[S-] c n c n o 5
+[S-] c c n n o 5
+[O-] c n c n s 5
+[NH2+] = c [nH] [nH] c = [NH2+] ) [nH] 5
+N N N C C N = N 5
+N # [N+] N S C # N
+[S-] c n [nH] n n 5
+[S-] n c n n n 5
+F C = C C C [NH2+] C 6
+F C C N C C # C
+F C = C C N C C 6
+F C C C C C # N
+F C C C # N ) ) C ) C
+C C C C = O ) [O-] ) ) ) C
+[O-] C = O ) [C@@H] C C ) ) C
+[O-] C = O ) [C@H] C C ) ) C
+[O-] C = O ) C C ) C ) C
+C C C C C = O ) [O-]
+O C C C C C 4 ) [O-]
+C O C C C C 4 ) [O-]
+[NH3+] [C@@H] O N C C = C 6
+[NH3+] [C@H] O N C C = C 6
+O [C@H] C [NH3+] ) ) C C # N
+O [C@@H] C [NH3+] ) ) C C # N
+N C = O ) [C@@H] C C [NH2+] 4
+N C = O ) [C@H] C C [NH2+] 4
+O = C C [NH2+] C C N 6
+C [C@@H] C N C 5 = O ) ) ) ) [NH3+]
+C [C@H] C N C 5 = O ) ) ) ) [NH3+]
+N C = O ) C C [NH2+] C 4
+C O C = [NH+] C C N 5
+O [N+] = C N ) C C C 5
+C [C@@H] C O C = [NH+] 5 ) N
+C [C@H] C O C = [NH+] 5 ) N
+C [C@@H] C [NH+] = C O 5 ) N
+C [C@H] C [NH+] = C O 5 ) N
+O [C@H] C N C = [NH+] C 6
+O [C@@H] C N C = [NH+] C 6
+N C = [NH+] C C O C 6
+C N C = [NH+] C C O 5
+C [C@H] C [N+] = C N 5 ) ) O
+C [C@@H] C [N+] = C N 5 ) ) O
+C O N C = C ) [NH+] = C
+O = C C C C = [NH2+] ) N
+O C = [NH2+] ) N C C C 4
+O C N C C [NH+] = C 5
+O [C@@H] C C C = [NH2+] ) N 5
+O [C@H] C C C = [NH2+] ) N 5
+O C [C@H] C N C = [NH+] 5
+O C [C@@H] C N C = [NH+] 5
+[NH2+] = C N C C C O 6
+C N C C O C 5 = [NH2+]
+S = c o c c [nH] 5
+C S C = N C 5 = O
+O = c c c s [nH] 5
+C C = O ) N = C = S
+N = c o c c s 5
+[O-] [n+] c s c c 5
+C = C S N = C = O
+O = s c c c n 5
+C S C = O ) N = C 5
+S N C = C = C O 6
+S O C = C C = N 6
+O S C = C C = N 6
+S O C = N C = C 6
+O C = C S C = N 6
+[N-] = [N+] = N C C C [NH3+]
+N C = [NH+] C N C N 6
+N N C = [NH+] C C N 5
+C / C = N \ N C = [NH2+] ) N
+C / C = N / N C = [NH2+] ) N
+[N-] = [N+] = N [C@@H] C [NH3+] ) ) C
+N N N C C [NH+] = C 5
+[N-] = [N+] = N C C [NH2+] C
+N N C C [NH+] = C 5 N
+[N-] = [N+] = N [C@H] C [NH3+] ) ) C
+N C / C = N / N C = [NH2+]
+N C / C = N \ N C = [NH2+]
+N C = [NH2+] ) N C C = N
+S = c n c [nH] [nH] 5
+N c n n c s 5
+N c c n n s 5
+N c c s n n 5
+S c c n [nH] n 5
+N C = S ) N C # N
+N = C C N = N S 5
+N c n c n s 5
+N c c n s n 5
+C c n n n s 5
+N c n s c n 5
+O = C N C C ) C ) C
+O C C C = N ) C C
+C O / N = C / C C ) C
+C C C C = O ) N C
+O = C N C C C ) C
+C C C C N C = O
+C C C = O ) N C ) C
+C [C@@H] N C = O ) ) ) C C
+C [C@H] N C = O ) ) ) C C
+N O C C = C C ) C
+C [C@@] [NH3+] ) C = C ) ) C O
+O N C C C C C 6
+C C N C = O ) C C
+C O C = N ) C C ) C
+C C C / C = N / O C
+C N C C C [C@@H] 5 O
+C N C C C [C@H] 5 O
+C [C@@H] O C C C [NH2+] 6
+N = C C O C C ) C
+C [C@@H] C = O ) N ) ) C C
+C C O [C@H] C [C@H] 3 [NH3+]
+C C O [C@@H] C [C@H] 3 [NH3+]
+C C O [C@@H] C [C@@H] 3 [NH3+]
+C C C O N = C ) ) ) ) C
+C C = C ) [C@H] C [NH3+] ) ) O
+C C = C ) [C@@H] C [NH3+] ) ) O
+O N C C C [C@@H] 5 C
+C [C@] [NH3+] ) C = C ) ) C O
+C [C@H] C = O ) N ) ) C C
+C O / N = C \ C C ) C
+C C C / C = N \ O C
+O C [NH2+] C C C C 4
+C O C C [C@H] C [NH2+] 3
+C O C C [C@@H] C [NH2+] 3
+O N C C C C C 5
+[O-] [N+] C ) C C C C 5
+N O C C C C C 3
+N O [C@@H] C C C 3 ) ) ) C
+N O [C@H] C C C 3 ) ) ) C
+C / C = C \ [C@H] [NH3+] ) C O
+C / C = C / [C@H] [NH3+] ) C O
+C / C = C \ [C@@H] [NH3+] ) C O
+C C C = N O ) ) C C
+C C C C = O ) N ) ) ) C
+C C N C = O ) C ) ) ) C
+C C N C = O ) ) C C
+C C C C C = O ) N
+C N C = O ) C C ) C
+C C C N C = O ) C
+C O C [NH2+] C C C 3
+O C N C C C C 5
+[O-] C C C C 4 ) [NH2+] C
+[NH3+] C C C C 4 ) [O-] ) C
+O = C C C [NH+] C ) C
+C [C@H] O C C C [NH2+] 6
+C C O N C C C 3
+C [C@@H] O C [C@@H] [NH2+] 5 ) C
+C C [C@H] O C C [NH2+] 5
+C [C@H] O C [C@@H] [NH2+] 5 ) C
+C [C@@H] O C [C@H] [NH2+] 5 ) C
+C [C@@H] [NH2+] C [C@H] O 5 ) C
+C [C@@H] [NH2+] C [C@@H] O 5 ) C
+C C [C@@H] O C C [NH2+] 5
+[NH3+] C C = O ) C C ) C
+C [C@H] O C [C@H] [NH2+] 5 ) C
+C [C@H] [NH2+] C [C@H] O 5 ) C
+C [C@H] [NH2+] C [C@@H] O 5 ) C
+O C C C [NH+] C C 3
+C N C C O C C 6
+C [NH+] C [C@H] O C 3 ) ) ) ) C
+C [NH+] C [C@@H] O C 3 ) ) ) ) C
+C [C@] C [C@@H] 3 C ) ) ) O N
+O C C C C [NH2+] C 7
+[NH3+] C C O ) C C C 4
+N O C C C C C 5
+O C C [NH2+] C C = C
+C C O [C@H] C [C@@H] 3 [NH3+]
+C / C = C / [C@@H] [NH3+] ) C O
+C C C / C = C \ O N
+C C C / C = C / O N
+C O N C C = C ) C
+C C O N C C = C
+C C N C = O ) C ) ) C
+C [NH2+] [C@H] C = O ) C ) ) C
+C [C@@H] [NH+] = C ) ) O C C
+C [C@H] [NH+] = C ) ) O C C
+C [C@H] [NH3+] ) [C@@H] C = C ) ) O
+C [C@@H] [NH3+] ) [C@H] C = C ) ) O
+C [C@@H] [NH3+] ) [C@@H] C = C ) ) O
+C [C@H] O C [C@H] C 5 ) [NH3+]
+C [C@@H] O C [C@@H] C 5 ) [NH3+]
+C C C C = O ) C [NH3+]
+C C [NH2+] C C O C 4
+C O N C C C = C
+C N C C C C 3 ) ) ) ) O
+C C C [NH3+] ) C O C 4
+O N C C C C C 3
+C O N C C C C 3
+C [C@] C = C ) ) C [NH3+] ) ) O
+C [C@@] C = C ) ) C [NH3+] ) ) O
+O C C [NH3+] ) C C C 4
+C C C C = N ) O C
+C C O C = N ) C C
+[O-] [C@H] [NH+] C C C 4 ) ) ) ) C
+[O-] [C@@H] [NH+] C C C 4 ) ) ) ) C
+C C C C C N = O
+C C C C / C = N / O
+C C [C@@H] [NH2+] C ) ) C = O
+C [C@H] [NH2+] C O [C@@H] 5 C
+C [C@@H] [NH2+] C O [C@H] 5 C
+C [C@@H] [NH2+] C O [C@@H] 5 C
+C / C = N \ C C C O
+C [NH2+] [C@@H] C O C C 5
+C [C@H] O C [C@@H] C 5 ) [NH3+]
+C [C@@H] O C [C@H] C 5 ) [NH3+]
+N C = O ) C C ) C ) C
+[NH3+] [C@@H] C O C [C@H] 5 C
+C O C C ) C [NH2+] C 4
+C [NH2+] [C@H] C O C C 5
+C O C [C@H] [NH3+] ) C = C
+C O C [C@@H] [NH3+] ) C = C
+C [NH2+] C C = O ) C C
+C O C C [NH+] C 4 ) C
+C [C@H] [NH2+] C O [C@H] 5 C
+O = C C [NH2+] C ) ) C ) C
+N O C C C C = C
+C C O / C = N \ C ) ) / C
+C [C@H] [NH3+] ) C O C = C
+C [C@@H] [NH3+] ) C O C = C
+C C C / C = N / O ) ) ) ) C
+O N C C C [C@H] 5 C
+[NH3+] [C@@H] C C C C O 6
+[NH3+] [C@H] C C C C O 6
+[NH3+] C [C@H] C C C 3 ) ) ) O
+[NH3+] C [C@@H] C C C 3 ) ) ) O
+C N C = O ) ) C C C
+C = C N O C C ) C
+C [C@@H] [NH2+] C C C 3 ) ) ) ) O
+C [C@H] [NH2+] C C C 3 ) ) ) ) O
+C C C ) O C [NH2+] C 5
+[O-] / C = C \ [NH+] C ) C ) ) / C
+C [C@@H] N = O ) ) C C C
+C [C@H] N = O ) ) C C C
+O C [C@@H] [NH3+] ) C C = C
+C C C O ) C [NH2+] C 4
+C [C@] [NH3+] ) C C C O 5
+C [C@@] [NH3+] ) C C C O 5
+C C O C [NH3+] ) C C 3
+O C C C [NH3+] ) C C 3
+C [C@@H] C [C@@] 3 C O ) ) [NH3+]
+C [C@H] C [C@@] 3 C O ) ) [NH3+]
+C [C@@H] C [C@] 3 C O ) ) [NH3+]
+C [C@H] C [C@] 3 C O ) ) [NH3+]
+O C C [C@H] C [C@H] 3 [NH3+]
+O C C [C@@H] C [C@H] 3 [NH3+]
+O C C [C@H] C [C@@H] 3 [NH3+]
+O C C [C@@H] C [C@@H] 3 [NH3+]
+C [C@@H] C C [C@@H] O 5 ) [NH3+]
+C [C@@] C [C@H] 3 C O ) ) ) ) [NH3+]
+O C [NH3+] ) C C C C 5
+C [C@@H] C [C@@H] [C@@H] 4 O ) ) [NH3+]
+C [C@H] C [C@@H] [C@@H] 4 O ) ) [NH3+]
+C [C@@H] C [C@H] [C@@H] 4 O ) ) [NH3+]
+C [C@H] C [C@H] [C@@H] 4 O ) ) [NH3+]
+C [C@@H] C [C@@H] [C@@H] 4 [NH3+] ) ) O
+C [C@H] C [C@@H] [C@@H] 4 [NH3+] ) ) O
+C [C@@H] C [C@H] [C@@H] 4 [NH3+] ) ) O
+C [C@H] C [C@H] [C@@H] 4 [NH3+] ) ) O
+[NH3+] [C@H] C C [C@@] 4 C ) O
+C O C [C@H] C [C@H] 3 [NH3+]
+[NH3+] [C@H] C C [C@] 4 C ) O
+[NH3+] [C@@H] C C [C@] 4 C ) O
+[NH3+] [C@@H] C C [C@@] 4 C ) O
+C C [C@@H] C = C ) ) N O
+C C [C@H] C = C ) ) N O
+C [C@@H] C [NH+] 3 C C O
+C [C@H] C [NH+] 3 C C O
+O C [C@H] C C C 3 ) ) ) [NH3+]
+O C [C@@H] C C C 3 ) ) ) [NH3+]
+C O C C [NH3+] ) C C 3
+C O C / C = N / C C
+C C [C@@H] O N [C@@H] 4 C
+C C [C@H] O N [C@@H] 4 C
+C C [C@@H] O N [C@H] 4 C
+C C [C@H] O N [C@H] 4 C
+N O C C C C C 4
+O [C@@H] C C C C [NH2+] 6
+O C [C@H] [NH3+] ) C C = C
+C C C = C ) C O N
+C [C@H] [NH3+] ) [C@H] C = C ) ) O
+O = C C C [NH3+] ) C ) C
+C C O C C [NH2+] C 4
+C O [C@@H] C [NH2+] C C 5
+C O [C@H] C [NH2+] C C 5
+C C C C O N = C
+C C [NH2+] C C = O ) C
+[NH3+] C C C C C 4 ) [O-]
+C [C@@H] [NH2+] C C ) ) ) C = O
+C C [C@@H] [NH3+] ) O C = C
+C C [C@H] [NH3+] ) O C = C
+C C C [C@@H] [NH3+] ) C = O
+C C [C@@H] C [NH2+] C O 5
+C C [C@H] C [NH2+] C O 5
+C / C = C / [C@@H] C [NH3+] ) ) O
+C / C = C / [C@H] C [NH3+] ) ) O
+C [NH2+] C C O C = C
+C [C@H] C = O ) C ) ) C [NH3+]
+C [C@@H] C = O ) C ) ) C [NH3+]
+O = C [C@@H] C C ) C ) ) [NH3+]
+[O-] [C@H] C C [C@H] 4 C [NH3+]
+[O-] [C@@H] C C [C@H] 4 C [NH3+]
+[O-] [C@H] C C [C@@H] 4 C [NH3+]
+[O-] [C@@H] C C [C@@H] 4 C [NH3+]
+C [C@@] [NH3+] ) C O C C 5
+C [C@] [NH3+] ) C O C C 5
+[NH3+] [C@H] C O C [C@H] 5 C
+[NH3+] [C@H] C O C [C@@H] 5 C
+[NH3+] [C@@H] C O C [C@@H] 5 C
+C C [NH2+] C ) ) C O C 4
+C [NH2+] [C@@H] C = O ) C ) ) C
+C O N / C = C \ C ) ) / C
+C O N / C = C / C ) ) / C
+C [C@@] [NH3+] ) C = O ) ) C C
+C [C@] [NH3+] ) C = O ) ) C C
+C C O N / C = C \ C
+C C O N / C = C / C
+C C O N C = C ) C
+C C [C@@H] C = O ) C ) ) [NH3+]
+C C [C@H] C = O ) C ) ) [NH3+]
+O [C@H] C [NH3+] ) ) C C = C
+O [C@@H] C [NH3+] ) ) C C = C
+C O C / C = C / C [NH3+]
+C [NH2+] C [C@@H] C = C ) ) O
+C [NH2+] C [C@H] C = C ) ) O
+C O N / C = C \ C C
+C O N / C = C / C C
+[NH3+] C C C = O ) ) C ) C
+N O C = C ) C C ) C
+C = N O C C ) C ) C
+O = C N C C ) C ) ) C
+C C O C / C = N / C
+C C O C C C = N
+C C C O N C = C
+O [C@H] C C C C [NH2+] 6
+C C C [C@H] O N 3 C
+C C C [C@@H] O N 3 C
+C C [C@@] C ) O N 3 C
+C C [C@] C ) O N 3 C
+C C C / C = C / N O
+[O-] / C = C / [N+] C ) C ) C
+C O N C C C C 4
+[O-] C C C C 4 ) C ) [NH3+]
+C O [C@@H] C C C [NH2+] 5
+C O [C@H] C C C [NH2+] 5
+C C C C N O C 7
+C [NH2+] C C = C ) O C
+C / C = N \ O ) ) / C C C
+C O C C C C = N
+C C / C = N \ O ) ) / C ) ) C
+C [C@H] C C [C@H] [NH2+] 5 ) O
+C [C@H] C C [C@@H] [NH2+] 5 ) O
+C C N O [C@@H] 3 C ) ) ) ) C
+C [C@@H] / C = N \ O ) ) ) C C
+C [C@H] / C = N \ O ) ) ) C C
+O = N C C C ) C ) C
+O / N = C / C C ) C ) C
+C C N O [C@H] 3 C ) ) ) ) C
+C [C@@H] C O ) C C 3 ) ) ) [NH3+]
+C [C@H] C O ) C C 3 ) ) ) [NH3+]
+[S-] C = C C C O 5
+[O-] C = S ) C C C 3
+[S-] C = O ) / C = C / C
+[S-] C = O ) C C = C
+[NH3+] C C = [NH+] C C N 5
+[NH3+] [C@H] C N C [C@H] 5 N
+C C N / N = N / C C
+N [NH+] C C [N-] C C 6
+[NH3+] [C@H] [N-] C C [NH2+] C 6
+[NH3+] [C@@H] [N-] C C [NH2+] C 6
+C [C@H] [NH3+] ) [C@@H] C = N ) ) N
+C [C@@H] [NH3+] ) [C@@H] C = N ) ) N
+C C [NH+] [N+] # N ) ) C C
+[NH3+] [C@H] C N C [C@@H] 5 N
+C C [NH2+] [N+] # N ) ) ) C ) C
+C C C [NH2+] [N+] # N ) ) ) ) C
+N [NH+] C C C N C 6
+N N [NH+] C C C C 5
+C C C C [NH2+] [N+] # N
+[NH3+] C C N C N C 6
+N N [C@H] C [NH2+] C C 5
+N N [C@@H] C [NH2+] C C 5
+C [n+] c c s n 5
+C C = S ) N C = [NH+] 5
+N [n+] c s c c 5
+S [C@@H] N C C = N 5
+C C [O+] C C C C 5
+[NH3+] C C C C 3 ) ) C [NH3+]
+N C = [NH2+] ) C C ) C ) C
+[NH3+] [C@@H] C N C [C@@H] 5 C
+C C N / C = [NH+] / C C
+C C C C C = [NH2+] ) N
+C [C@@H] C = [NH2+] ) N ) ) C C
+C C N / C = [NH+] \ C C
+[NH3+] C C C N C 4 ) C
+C [NH+] C C [NH+] C 5 ) C
+[NH3+] C C C = [N+] C ) C
+C [C@@H] N C C [C@@H] 5 [NH3+]
+C [C@H] N C C [C@@H] 5 [NH3+]
+[NH3+] [C@H] C N C [C@@H] 5 C
+C [C@H] C = [NH2+] ) N ) ) C C
+C C C C = [NH2+] ) N ) ) ) C
+C = [NH+] C C [NH+] C ) C
+C C N C = [NH2+] ) C ) ) ) C
+[NH3+] [C@@H] C C C C N 6
+[NH3+] [C@H] C C C C N 6
+[NH3+] [C@@H] C C C N C 6
+[NH3+] [C@H] C C C N C 6
+[NH3+] [C@H] C C C [C@@H] 5 [NH3+]
+[NH3+] [C@@H] C C C [C@H] 5 [NH3+]
+[NH3+] C C C N C C 6
+[NH3+] C C [NH2+] C C C 3
+[NH3+] [C@H] C C C [C@H] 5 N
+C [C@@H] N C C [C@H] 5 [NH3+]
+C [C@H] N C C [C@H] 5 [NH3+]
+C C N C = [NH2+] ) C ) ) C
+C C C C = [NH2+] ) N C
+C C C = [NH2+] ) N C ) C
+C N C = [NH2+] ) C C ) C
+C [NH+] C [NH2+] C [C@@H] 5 C
+C [NH+] C [NH2+] C [C@H] 5 C
+C C N C C [NH2+] C 7
+C N C = [N+] C ) C ) ) ) C
+C [NH2+] [C@@H] C N C C 5
+C C N C = [NH2+] ) C C
+C C C N C = [NH2+] ) C
+C / C = N / C C C [NH3+]
+C [NH2+] C C [NH+] C C 3
+C [C@@H] C C [NH2+] C 4 ) ) ) ) [NH3+]
+C [C@H] C C [NH2+] C 4 ) ) ) ) [NH3+]
+[NH3+] C C C C 4 ) [NH2+] C
+[NH3+] [C@@H] C N C [C@H] 5 C
+C [C@H] N C [C@@H] C 5 ) [NH3+]
+[NH3+] [C@@H] C N C 4 C ) C
+[NH3+] [C@H] C N C 4 C ) C
+[NH3+] [C@H] C N C [C@H] 5 C
+[NH3+] C [C@H] C C C 3 ) ) ) [NH3+]
+[NH3+] C [C@@H] C C C 3 ) ) ) [NH3+]
+C [C@@] [NH3+] ) C N C C 5
+C [C@] [NH3+] ) C N C C 5
+C N C C [C@H] C 5 ) [NH3+]
+C N C C [C@@H] C 5 ) [NH3+]
+C [C@H] N C [C@H] C 5 ) [NH3+]
+[NH3+] C C [NH+] C C C 4
+[NH3+] C [C@H] C C C [NH2+] 5
+C C C N ) C [NH2+] C 4
+C C [C@H] N C [C@H] 4 [NH3+]
+C [C@@H] N C [C@@H] C 5 ) [NH3+]
+C [C@@H] N C [C@H] C 5 ) [NH3+]
+C [C@@H] C C [C@@H] N 5 ) [NH3+]
+C [C@H] C C [C@@H] N 5 ) [NH3+]
+C [C@@H] C C [C@H] N 5 ) [NH3+]
+C [C@H] C C [C@H] N 5 ) [NH3+]
+[NH3+] C C C [NH3+] ) C C 3
+[NH3+] C C [NH3+] ) C C C 4
+C [C@@H] C [C@@H] [C@@H] 4 [NH3+] ) ) [NH3+]
+C [C@H] C [C@@H] [C@@H] 4 [NH3+] ) ) [NH3+]
+C [C@@H] C [C@H] [C@@H] 4 [NH3+] ) ) [NH3+]
+C [C@H] C [C@H] [C@@H] 4 [NH3+] ) ) [NH3+]
+C = C C [C@H] [NH3+] ) C [NH3+]
+C = C C [C@@H] [NH3+] ) C [NH3+]
+[NH3+] C [C@@H] C C C [NH2+] 5
+C [C@@H] [NH3+] ) N C C = C
+C [C@H] [NH3+] ) N C C = C
+[NH3+] [C@H] C C [C@@] 4 C ) N
+C [C@H] [NH+] = C ) ) N C C
+C [C@@H] [NH+] = C ) ) N C C
+C C C [N+] C ) C N 3
+C [N+] N ) C C C C 5
+[NH3+] C N C C C 3 ) ) ) C
+C C [N+] C ) C N 3 ) ) ) C
+C C [C@@H] [NH3+] ) C C = N
+C C [C@H] [NH3+] ) C C = N
+N = C C C C C [NH3+]
+C [NH2+] [C@H] C N C C 5
+C [NH2+] C / C = C \ C [NH3+]
+C [NH2+] C / C = C / C [NH3+]
+C [NH2+] C C C [NH2+] C 4
+N C C C ) C [NH2+] C 4
+[NH3+] C C C [NH+] C C 3
+C N / C = [NH+] \ C C ) ) ) / C
+C C C N = C = S
+C C N = C = S ) ) ) C
+S = C C C C N 5
+C C C S C # N
+C C S C # N ) ) ) C
+N C = S ) C C C 3
+C C = N C C S 5
+C C S C C # N
+C S C C C # N
+C [C@@H] S C C = N 5
+C [C@H] S C C = N 5
+C C C = N C S 6
+C C C = C N S 6
+C N C = C = S ) ) ) C
+C [C@@H] C N 3 C = S
+C [C@H] C N 3 C = S
+C / C = C / C = S ) N
+C C = C ) C = S ) N
+C C = C C N S 5
+C S C = C [C@H] 5 [NH3+]
+C S C = C [C@@H] 5 [NH3+]
+C [C@@H] C # N ) ) S C
+C [C@H] C # N ) ) S C
+C C C = S ) C = N
+C C S C C = N 6
+C = C C N C = S
+N = C C C C S 5
+S C C = C C ) C
+C # C C [S+] C ) C
+S C C C C C 5
+Cl C C = C ) C # N
+C / C = C / Cl ) ) / C # N
+Cl / C = C / C C # N
+Cl C = C ) C C # N
+Cl c c c c [nH] 5
+Cl n c c c c 5
+C / C = C \ C # N ) ) ) / Cl
+C / C = C \ Cl ) ) / C # N
+C / C = C \ C # N ) ) / Cl
+Cl c c [nH] c c 5
+F C P ) F ) F
+C = C C = O ) P = O
+F C C F ) F ) F
+F C C F ) F ) ) F
+[O-] C = O ) [C@H] C # N ) ) F
+[O-] C = O ) [C@@H] C # N ) ) F
+[O-] c n o c c 5 ) F
+[O-] C = O ) C C = O ) [O-]
+O = C O C O C 5 = O
+O = c [nH] o c = O ) [nH] 5
+N O C = O ) N = C = O
+F n c c c = O ) [nH] 5
+F n [nH] c c c 5 = O
+F c c [nH] n c 5 O
+[O-] [N+] = C C = N [C@@H] 5 F
+O = C N C C = O ) [O-]
+[O-] C = O ) C = O ) N C
+[O-] C = O ) / C = N \ O ) ) / C
+[O-] C = O ) N C = O ) C
+[O-] C = O ) C C = O ) N
+[O-] C = O ) / C = N / O ) ) / C
+[O-] C = O ) O [C@@H] C N 3
+[O-] C = O ) C = N ) O C
+O = C C N C = O ) ) O
+[O-] C = O ) C O C = N
+O / N = C / C O C O / 5
+O / N = C \ C O C O \ 5
+[O-] / C = C \ [N+] = O ) [O-] ) ) ) / C
+[O-] / [N+] = C \ C = O ) C ) ) ) / O
+[O-] C = O ) / N = C / O C
+O = C [C@H] C = O ) [O-] ) ) N
+O = C [C@@H] C = O ) [O-] ) ) N
+[O-] C = O ) C = N ) C O
+[O-] C = O ) C = N ) C O
+[O-] C = O ) / C = N \ O C
+O = N C C C = O ) [O-]
+[O-] C = O ) O [C@H] C N 3
+[O-] C = O ) [C@H] C N 3 O
+[O-] C = O ) [C@@H] C N 3 O
+[O-] C = O ) / C = N / O C
+O = [N+] C C O C 5 = O
+O [N+] = C O C = O ) C 5
+N C = O ) C = O ) C O
+C O c n [nH+] n o 5
+C C = C ) C = O ) P
+O = [N+] C N N C 5 = O
+C / C = C / C = O ) P
+C C O P = C C 6
+O = P C C C C 4
+O P C C C = C 5
+O P C C C = C 5
+O = P C C ) C C 3
+O [C@H] C # N ) ) C C F
+O [C@@H] C # N ) ) C C F
+O [C@@H] C C = O ) O C 5
+O [C@H] C C = O ) O C 5
+C O C = O ) C C = O
+C C O C = O ) C = O
+O = C C O C C O 6
+O = C C O C C = O
+C [C@@H] C O C = O ) O 5
+O C C C = O ) C = O
+C O C O C 5 C O 5
+C O C = O ) [C@@H] C O 3
+O = C O C C C O 6
+O = C O C C [C@H] 5 O
+O = C O C C [C@@H] 5 O
+O C C = O ) O C = C
+O = C C O C = O ) C
+C [C@H] C O C = O ) O 5
+C C = O ) O C = O ) C
+C [C@H] C O 3 ) ) ) O C = O
+C [C@@H] C O 3 ) ) ) O C = O
+O [C@@H] O C [C@H] [C@@H] 5 O 3
+O C O C = O ) C = C
+C O C = O ) [C@H] C O 3
+O = C C C O [C@H] 5 O
+O = C C C O [C@@H] 5 O
+C C O O [C@@H] 5 C = O
+C C O O [C@H] 5 C = O
+C [C@H] O O C = O ) C 5
+C [C@@H] O O C = O ) C 5
+C O C O C = C O 5
+O = C O [C@H] C = O ) ) C
+O = C O [C@@H] C = O ) ) C
+C C = C ) C = O ) O O
+C C O [C@H] 4 O C = O
+C C O [C@@H] 4 O C = O
+C C = O ) C C O O 3
+O = C C [C@@H] C = O ) ) O
+O = C C [C@H] C = O ) ) O
+O = C O C O ) C C 3
+O [C@@H] O C [C@@H] [C@H] 5 O 3
+O [C@@H] C C C = O ) O 5
+O [C@H] C C C = O ) O 5
+N C = O ) C C = O ) N
+[O-] C = O ) C C = [NH2+] ) N
+[O-] C = O ) C N C = [NH2+]
+O = C N N C = O ) ) C
+C C = O ) N C = O ) N
+O = C N C N C = O
+O = C N C C = O ) N
+O = C O C C N 5 N
+O = N N C = O ) C ) ) C
+O = N N C O C C 5
+O = C N C O C N 6
+C N C = O ) C = O ) N
+C O / C = N / C = O ) N
+[O-] C = O ) C / [NH+] = C / N
+C N C = O ) N C = O
+O / N = C \ C = N \ O ) ) \ C
+C C = O ) C = O ) N N
+O = C N C C O N 6
+O [N+] = C N C [C@@H] 5 O
+O [N+] = C N C [C@H] 5 O
+C O C = O ) C = [NH2+] ) N
+O [C@@H] C N C = O ) N 5
+O [C@H] C N C = O ) N 5
+N [C@@H] C N C = O ) O 5
+N [C@H] C N C = O ) O 5
+C O C O N C # N
+C C N N = O ) ) C = O
+[O-] [N+] = O ) N C C C 4
+C O N = C = N O C
+O N [C@H] C C = O ) N 4
+O N [C@@H] C C = O ) N 4
+O / N = C / C / C = N / O
+O N C C N [C@H] 5 O 3
+O N C C N [C@@H] 5 O 3
+N C C = O ) C = O ) N
+C [C@H] N N C = O ) O 5
+C [C@@H] N N C = O ) O 5
+C / C = N / O ) ) / C = O ) N
+O = C C O N C N 6
+[O-] C = O ) C = [NH2+] ) N C
+N N C = O ) [C@@H] C O 3
+N N C = O ) [C@H] C O 3
+O = C N C = O ) N ) ) C
+O = N [C@H] C = O ) N ) ) C
+O = N [C@@H] C = O ) N ) ) C
+C N N C = O ) ) C = O
+N [C@H] C O C = O ) N 5
+N [C@@H] C O C = O ) N 5
+O = C N N C = O ) C
+O C C = [N+] = [N-] ) ) C O
+[O-] [N+] = O ) C C = N ) C
+O / N = C \ C = N / O ) ) \ C
+O / N = C / C = N \ O ) ) / C
+O / N = C / C = N / O ) ) / C
+C N C C C 5 C N C 6 5
+C N C = N ) N ) ) N = O
+C N N N C = O ) N 5
+C N C = [N+] = O ) ) [NH+] = N
+N N N C C = N ) O 5
+N C = N C = O ) N ) ) ) N
+N / [NH+] = C / C = O ) N ) ) \ N
+N # [N+] N N C = [NH2+] ) N
+N = N / C = N / N N ) N
+F C C C C 3 ) ) C = O
+F C = O ) C C C C 4
+F [C@@H] C C C = O ) C 5
+F [C@H] C C C = O ) C 5
+F C C C C = O ) C 4
+C C = O ) C F ) C C 3
+F C C = O ) C C C 3
+O = C C C C C 4 ) F
+O = C O C C [C@H] 5 [NH3+]
+O = C O C C [C@@H] 5 [NH3+]
+C C C C = O ) N O
+C [C@@H] C O C 5 = O ) ) ) ) [NH3+]
+C [C@H] C O C 5 = O ) ) ) ) [NH3+]
+C C N C = O ) [O-] ) ) ) C
+C C O C = N ) C O
+[O-] C = O ) N C C ) ) C
+C O C = [N+] = C O C
+[O-] C = O ) N C C C
+O = [N+] C C O [C@H] 5 C
+C C = O ) N C = [NH2+] ) N
+N C = O ) C C = [NH2+] ) N
+O = C N C [NH2+] C N 6
+C [C@@H] C [NH2+] [N+] # N ) ) ) ) O
+C C [C@H] C C P 4
+C C [C@@H] C C P 4
+C [C@H] [NH2+] [N+] # N ) ) ) C O
+O = C N N C = [NH2+] ) C
+C [C@H] C [NH2+] [N+] # N ) ) ) ) O
+P C C C C C 5
+C O C C [NH2+] [N+] # N
+O [N+] = C N ) N C C 5
+C P C C = C ) C
+C C C O N [N+] # N
+C S C = O ) N = N 5
+S = C C N = N O 5
+N C = S ) [NH+] = C = O
+C N N C = [NH+] N 5 ) ) N
+[NH2+] = C N N C = [NH2+] ) N
+N C = [NH+] C = N ) N ) ) ) N
+N N C N [NH+] = C 5 N
+N = N C = S ) N = N
+N c n n n s 5
+S [n+] c [nH] n n 5
+F C C C [N-] C C 6
+C C C C O C = O
+F c c c c s 5
+O [C@@H] C C [C@H] C 5 ) O
+O [C@@H] C C [C@@H] C 5 ) O
+C [C@H] O C [C@H] O 5 ) C
+C [C@@H] O C [C@H] O 5 ) C
+C [C@H] C C O C O 6
+C C O C C O C 7
+C C O C = O ) C ) ) ) C
+C O [C@@H] C C C O 5
+O C C C ) C O C 4
+C [C@@H] O C [C@@H] O 5 ) C
+C [C@@H] O C ) ) C C = O
+C C C C O C O 7
+C O C C O C = C
+C [C@@H] O C = O ) ) ) C C
+C O C [C@H] C = C ) ) O
+O C C O C C = C
+C [C@H] O C [C@@H] O 5 ) C
+C [C@@H] C = O ) C ) ) C O
+C O C = O ) C C ) C
+O = C O C C ) C ) C
+C C O C = O ) C C
+O [C@H] C C [C@@H] C 5 ) O
+O [C@H] C C C C O 6
+C [C@H] O C ) ) C C = O
+O C O C C C = C
+O C [C@@H] C C C O 5
+C O C C = C ) ) O C
+C C = C ) [C@@H] C O ) ) O
+C C = C ) [C@H] C O ) ) O
+C [C@H] C = O ) C ) ) C O
+O C C C C C = O
+C O [C@@H] O C 3 C ) C
+C [C@@H] C = O ) ) C O C
+O C C C O C = C
+C C C C = O ) O C
+C O [C@H] C C C O 5
+C C [C@@H] C = O ) C ) ) O
+C C [C@H] C = O ) C ) ) O
+C [C@H] O C = O ) ) ) C C
+O [C@@H] C C O [C@@H] 5 C
+O [C@H] C C O [C@@H] 5 C
+O [C@@H] C C O [C@H] 5 C
+O [C@H] C C O [C@H] 5 C
+O = C [C@H] C C ) C ) ) O
+O C C O ) C C C 4
+C [C@H] C = O ) ) C O C
+O = C O C C C ) C
+O C C C O C C 6
+C C C = O ) [C@H] O ) C
+C C C = O ) [C@@H] O ) C
+O [C@@H] C C [C@@H] C 5 ) O
+C O C / C = C \ C O
+C [C@@H] C = O ) ) O C C
+C O [C@H] C C C 3 ) ) ) O
+C O [C@@H] C C C 3 ) ) ) O
+O C [C@H] O C 3 C ) C
+C / C = C \ O C ) ) ) / C O
+C [C@@H] C O C C O 6
+C O C C = O ) C C
+C O [C@H] C = O ) C ) ) C
+C O [C@@H] C = O ) C ) ) C
+O = C C C O ) C ) C
+C [C@H] C O C C O 6
+O C / C = C \ C O ) ) / C
+O C C C = C ) C O
+C C [C@@H] [C@H] C O 3 ) ) ) O
+C [C@] C O ) ) C C O 4
+C [C@@] C O ) ) C C O 4
+O C [C@H] C C C O 5
+O C [C@H] C O C C 5
+C C C ) O C C O 5
+O [C@H] C C C [C@@H] 5 O
+O [C@@H] C C C [C@H] 5 O
+O C C C C = O ) C
+C [C@H] C C = O ) C ) ) ) O
+C O C C C = O ) C
+O C C C = O ) ) C ) C
+C [C@H] C = O ) ) O C C
+C C O C C C = O
+C C = O ) C O ) C ) C
+C C C O C = O ) C
+C C O C [C@H] C O 3
+C [C@@H] C C = O ) C ) ) ) O
+O [C@@H] C C C C O 6
+C C O C [C@@H] C O 3
+C O C [C@@H] C = C ) ) O
+C O [C@H] O C 3 C ) C
+O C C C O ) ) C C 3
+C [C@@H] C C O C O 6
+O C [C@@H] C O C C 5
+C C [C@@H] [C@@H] C O 3 ) ) ) O
+C C [C@H] [C@@H] C O 3 ) ) ) O
+O [C@H] C O [C@@H] C 5 ) C
+O C C C C C 3 ) ) ) ) O
+C [C@@H] O C O [C@@H] 5 C
+C [C@H] O C O [C@@H] 5 C
+C [C@@H] O C O [C@H] 5 C
+C [C@H] O [C@H] 3 C C O
+C C [C@H] C C = O ) ) ) O
+C [C@] O ) C O C C 5
+C [C@@] O ) C O C C 5
+C [C@@] C = C ) ) C O ) ) O
+C C [C@@H] C C = O ) ) ) O
+C [C@] C = C ) ) C O ) ) O
+O = C C C [C@@H] O ) C
+O = C C C [C@H] O ) C
+O C [C@@H] C C C 3 ) ) ) O
+O C [C@@H] O C 3 C ) C
+O C C O C C C 3
+C [C@@H] [C@H] C O 3 ) ) ) C O
+O C [C@H] C C C 3 ) ) ) O
+C C [C@H] [C@H] C O 3 ) ) ) O
+C C C C = O ) C O
+C [C@@H] [C@@H] C O 3 ) ) ) C O
+C [C@H] [C@H] C O 3 ) ) ) C O
+C O C C [C@H] C O 3
+C O C C [C@@H] C O 3
+C C [C@@H] C O C O 5
+C C [C@H] C O C O 5
+C [C@H] [C@@H] C O 3 ) ) ) C O
+C C O O C = C ) C
+C C [C@@H] C O O 3 ) ) ) C
+O C O ) C C C C 5
+C C C O C O C 6
+C C O C O ) C C 3
+O [C@H] C O C 4 C ) C
+O [C@@H] C O C 4 C ) C
+C C [C@H] C O O 3 ) ) ) C
+C [C@] O ) C C C O 5
+O C C [C@H] C C O 4
+O [C@@H] C O [C@@H] C 5 ) C
+C [C@@H] C C [C@@H] O 5 ) O
+C C C O C C O 5
+C O C C = O ) ) C ) C
+C O C / C = C / O C
+O C C C = C ) ) C O
+C C O / C = C \ O C
+O [C@@H] C C C [C@@H] 5 O
+C C O / C = C / O C
+C O / C = C \ O C ) ) / C
+C O / C = C / O C ) ) \ C
+C C O C C = O ) C
+O [C@H] C C C O C 6
+O [C@@H] C C C O C 6
+C C O C = C ) O ) ) ) C
+C O C [C@] C ) C O 3
+C O C [C@@] C ) C O 3
+C [C@@H] O C [C@] 4 C ) O
+C [C@@H] O C [C@@] 4 C ) O
+C [C@H] O C [C@] 4 C ) O
+C [C@H] O C [C@@] 4 C ) O
+C O C [C@@H] O [C@@H] 3 C
+C O C [C@@H] O [C@H] 3 C
+C O C [C@H] O [C@@H] 3 C
+C O C [C@H] O [C@H] 3 C
+C O [C@@] C ) O [C@@H] 3 C
+C O [C@@] C ) O [C@H] 3 C
+C O [C@] C ) O [C@@H] 3 C
+C O [C@] C ) O [C@H] 3 C
+C C O / C = C / C ) ) / O
+O = C C O C C ) C
+C O C C C C = O
+C / C = C / O C ) ) ) / C O
+F c c s c c 5
+C [C@H] C C C O O 6
+C [C@@H] C C C O O 6
+C C C O ) C O C 4
+C C C O C C = O
+O C C = C C ) C ) ) ) O
+C [C@@H] [C@@H] O ) C ) ) C = O
+C [C@H] [C@@H] O ) C ) ) C = O
+C [C@@H] [C@H] O ) C ) ) C = O
+C [C@H] [C@H] O ) C ) ) C = O
+C C C [C@@H] C = O ) ) O
+C C C [C@H] C = O ) ) O
+O [C@H] C O C [C@H] 5 C
+O [C@@H] C O C [C@@H] 5 C
+O [C@H] C O C [C@@H] 5 C
+O [C@@H] C O C [C@H] 5 C
+C C C ) C C 3 O ) O
+C [C@@H] O [C@@H] 3 C C O
+C [C@@H] O [C@H] 3 C C O
+C [C@H] O [C@@H] 3 C C O
+O C C C C O C 4
+C [C@@] C = O ) ) C C ) ) O
+C [C@] C = O ) ) C C ) ) O
+C C [C@@H] C = O ) ) O C
+C C [C@H] C = O ) ) O C
+C [C@H] C O ) ) C C = O
+C [C@@H] C O ) ) C C = O
+C [C@H] [C@H] O [C@H] 3 C ) ) ) ) O
+C [C@H] [C@H] O [C@@H] 3 C ) ) ) ) O
+C [C@H] [C@@H] O [C@@H] 3 C ) ) ) ) O
+C [C@H] [C@@H] O [C@H] 3 C ) ) ) ) O
+O C C C C C 4 ) ) ) ) O
+C C [C@H] C = O ) ) C O
+C C [C@@H] C = O ) ) C O
+C C = C ) C O ) O ) C
+C O C C ) C O C 4
+O C C C = O ) C C
+C C O [C@@H] C C O 4
+C C O [C@H] C C O 4
+C = C O C O ) C ) C
+C C / C = C \ C O ) O
+C C / C = C / C O ) O
+C [C@@H] C [C@@H] C O 3 ) ) ) ) O
+C [C@H] C [C@@H] C O 3 ) ) ) ) O
+C [C@@H] C [C@H] C O 3 ) ) ) ) O
+C [C@H] C [C@H] C O 3 ) ) ) ) O
+O C O C C C C 3
+O C C C O ) C C 3
+C [C@H] O C C = C ) ) ) ) O
+C [C@@H] O C C = C ) ) ) ) O
+C O C O C C = C
+C O [C@H] C = C ) ) C O
+C O [C@@H] C = C ) ) C O
+C C O C C C O 6
+O [C@@H] C O [C@H] C 5 ) C
+O [C@H] C O [C@H] C 5 ) C
+C O C = C C ) C ) ) O
+O C C = O ) C C ) C
+C C O C = C ) C O
+O C C / C = C / C O
+C # C c c c c c c 6
+C # C C C # C C ) ) ) C # C
+c c c c c c 6 ) C = C 4
+C = C C = C C = C C 5 = C 8
+C = C c c c c c 5 c 3
+C C N C = O ) N ) ) ) C
+C C N N = O ) ) C C
+C C [C@H] C = N ) O ) ) N
+C N N C = O ) C ) ) ) C
+O = C N N C C ) C
+C C [C@@H] C = N ) O ) ) N
+C C C C N N = O
+C O N C C = N ) C
+C C N C = O ) ) N C
+N N C = O ) C C ) C
+C N C = O ) N C ) C
+C C C C = O ) N N
+C C C N C = O ) N
+N [NH+] C C O C C 6
+O [C@H] C [NH2+] C C N 6
+O [C@@H] C [NH2+] C C N 6
+C N C = O ) [C@H] [NH3+] ) C
+C [C@H] [NH2+] C ) ) C = O ) N
+C [C@@H] [NH2+] C ) ) C = O ) N

@@ -47,7 +47,6 @@ RUN cmake .. && \
     /opt/conda/envs/chemgrams_env/bin/pip install networkx
 
 WORKDIR /root
-COPY models/ chemgrams/models/
 COPY resources/ chemgrams/resources/
 COPY chemgrams/ chemgrams/chemgrams/
 COPY examples/ chemgrams/examples/

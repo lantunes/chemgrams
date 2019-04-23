@@ -14,7 +14,7 @@ THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 logger.info(os.path.basename(__file__))
-logger.info("KenLMDeepSMILESLanguageModel('../models/zinc12_fragments_deepsmiles_klm_6gram_190421.klm', vocab)")
+logger.info("KenLMDeepSMILESLanguageModel('../resources/zinc12_fragments_deepsmiles_klm_6gram_190421.klm', vocab)")
 logger.info("width = 24, max_depth = 100, start_state = ['<s>'], c = 5")
 logger.info("score: -1.0 if invalid; -1.0 if seen previously; tanimoto distance from abilify if valid")
 logger.info("LanguageModelMCTSWithPUCTTerminating")
@@ -25,8 +25,8 @@ logger.info("keep_top_n = 100000")
 
 logger.info("loading language model...")
 
-vocab = get_arpa_vocab('../models/zinc12_fragments_deepsmiles_klm_6gram_190421.arpa')
-lm = KenLMDeepSMILESLanguageModel('../models/zinc12_fragments_deepsmiles_klm_6gram_190421.klm', vocab)
+vocab = get_arpa_vocab('../resources/zinc12_fragments_deepsmiles_klm_6gram_190421.arpa')
+lm = KenLMDeepSMILESLanguageModel('../resources/zinc12_fragments_deepsmiles_klm_6gram_190421.klm', vocab)
 
 abilify = "Clc4cccc(N3CCN(CCCCOc2ccc1c(NC(=O)CC1)c2)CC3)c4Cl"
 scorer = TanimotoScorer(abilify)

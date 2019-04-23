@@ -14,7 +14,7 @@ THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 if __name__ == '__main__':
 
     logger.info(os.path.basename(__file__))
-    logger.info("KenLMDeepSMILESLanguageModel('../models/chemts_250k_deepsmiles_klm_6gram_190414.klm', vocab)")
+    logger.info("KenLMDeepSMILESLanguageModel('../resources/chemts_250k_deepsmiles_klm_6gram_190414.klm', vocab)")
     logger.info("width = 24, max_depth = 100, start_state = ['<s>'], c = 5")
     logger.info("score: -1.0 if invalid; -1.0 if seen previously; tanimoto distance from abilify if valid")
     logger.info("LanguageModelMCTSWithPUCTTerminating")
@@ -22,8 +22,8 @@ if __name__ == '__main__':
 
     logger.info("loading language model...")
 
-    vocab = get_arpa_vocab('../models/chemts_250k_deepsmiles_klm_6gram_190414.arpa')
-    lm = KenLMDeepSMILESLanguageModel('../models/chemts_250k_deepsmiles_klm_6gram_190414.klm', vocab)
+    vocab = get_arpa_vocab('../resources/chemts_250k_deepsmiles_klm_6gram_190414.arpa')
+    lm = KenLMDeepSMILESLanguageModel('../resources/chemts_250k_deepsmiles_klm_6gram_190414.klm', vocab)
 
     num_simulations = 500000
     width = 12
