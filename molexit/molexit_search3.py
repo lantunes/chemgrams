@@ -20,7 +20,7 @@ logger.info("score: -1.0 if invalid; -1.0 if seen previously; tanimoto distance 
 logger.info("LanguageModelMCTSWithPUCTTerminating")
 logger.info("TanimotoScorer(abilify)")
 logger.info("num_iterations = 15")
-logger.info("simulations_per_iteraton = 50000")
+logger.info("simulations_per_iteration = 50000")
 logger.info("keep_top_n = 5000")
 
 logger.info("loading language model...")
@@ -50,14 +50,14 @@ def smiles_to_deepsmiles(smiles):
 
 
 num_iterations = 15
-simulations_per_iteraton = 50000
+simulations_per_iteration = 50000
 keep_top_n = 5000
 
 all_smiles = {}
 
 for n in range(num_iterations):
 
-    num_simulations = simulations_per_iteraton
+    num_simulations = simulations_per_iteration
     width = 12
     max_depth = 35
     start_state = ["<s>"]

@@ -9,6 +9,8 @@ from rdkit import rdBase
 rdBase.DisableLog('rdApp.error')
 rdBase.DisableLog('rdApp.warning')
 from molexit import KenLMTrainer
+from chemgrams.sascorer import sascorer
+
 logger = get_logger('chemgrams.log')
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -18,7 +20,7 @@ logger.info("KenLMDeepSMILESLanguageModel('../models/zinc12_fragments_deepsmiles
 logger.info("width = 12, max_depth = 35, start_state = ['<s>'], c = 5")
 logger.info("score: -1.0 if invalid; -1.0 if seen previously; tanimoto distance from abilify if valid")
 logger.info("LanguageModelMCTSWithPUCTTerminating")
-logger.info("TanimotoScorer(abilify)")
+logger.info("TanimotoScorer(abilify, radius=6)")
 logger.info("num_iterations = 100")
 logger.info("simulations_per_iteration = 50000")
 logger.info("keep_top_n = 5000")
@@ -29,7 +31,7 @@ vocab = get_arpa_vocab('../models/zinc12_fragments_deepsmiles_klm_6gram_190421.a
 lm = KenLMDeepSMILESLanguageModel('../models/zinc12_fragments_deepsmiles_klm_6gram_190421.klm', vocab)
 
 abilify = "Clc4cccc(N3CCN(CCCCOc2ccc1c(NC(=O)CC1)c2)CC3)c4Cl"
-scorer = TanimotoScorer(abilify)
+scorer = TanimotoScorer(abilify, radius=6)
 
 converter = Converter(rings=True, branches=True)
 env = os.environ.copy()
@@ -85,7 +87,13 @@ for n in range(num_iterations):
         if smiles in seen_smiles:
             score = -1.0
         else:
-            score = scorer.score(smiles)
+            # synthetic accessibility score is a number between 1 (easy to make) and 10 (very difficult to make)
+            sascore = sascorer.calculateScore(Chem.MolFromSmiles(smiles)) / 10.
+
+            distance_score = scorer.score(smiles)
+
+            score = (0.75*distance_score) + (0.25*(1-sascore))
+
             seen_smiles.add(smiles)
             all_smiles[smiles] = (score, generated)
 

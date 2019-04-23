@@ -56,5 +56,7 @@ COPY setup.py chemgrams/
 WORKDIR /root/chemgrams
 RUN /opt/conda/envs/chemgrams_env/bin/python setup.py install
 
+ENV PATH="/root/kenlm/kenlm-master/build/bin:${PATH}"
+
 WORKDIR /root/chemgrams/examples
 CMD [ "/opt/conda/envs/chemgrams_env/bin/python", "lm_mcts_sequence_jscore_penalty_demo.py" ]
