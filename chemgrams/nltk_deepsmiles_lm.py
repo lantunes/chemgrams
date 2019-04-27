@@ -4,11 +4,11 @@ from nltk.lm import Laplace
 from nltk.lm.preprocessing import flatten
 from nltk.util import everygrams
 from deepsmiles import Converter
-
+from .language_model import ChemgramsLanguageModel
 from .deepsmiles_tokenizer import DeepSMILESTokenizer
 
 
-class NLTKDeepSMILESLanguageModel:
+class NLTKDeepSMILESLanguageModel(ChemgramsLanguageModel):
     def __init__(self, smiles_corpus, n=3):
         self._converter = Converter(rings=True, branches=True)
         tokens = []

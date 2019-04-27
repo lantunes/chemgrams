@@ -18,13 +18,13 @@ THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 logger.info(os.path.basename(__file__))
 logger.info("KenLMDeepSMILESLanguageModel('../resources/zinc12_fragments_deepsmiles_klm_6gram_190421.klm', vocab)")
-logger.info("width = 12, max_depth = 35, start_state = ['<s>'], c = 5")
+logger.info("width = 12, max_depth = 50, start_state = ['<s>'], c = 5")
 logger.info("score: -1.0 if invalid; -1.0 if seen previously; tanimoto distance from abilify if valid")
 logger.info("LanguageModelMCTSWithPUCTTerminating")
 logger.info("TanimotoScorer(abilify, radius=6)")
-logger.info("num_iterations = 100")
-logger.info("simulations_per_iteration = 50000")
-logger.info("keep_top_n = 5000")
+logger.info("num_iterations = 300")
+logger.info("simulations_per_iteration = 200000")
+logger.info("keep_top_n = 20000")
 
 logger.info("loading language model...")
 
@@ -54,9 +54,9 @@ def smiles_to_deepsmiles(smiles):
     return converter.encode(canonical)
 
 
-num_iterations = 100
-simulations_per_iteration = 50000
-keep_top_n = 5000
+num_iterations = 300
+simulations_per_iteration = 200000
+keep_top_n = 20000
 
 all_smiles = {}
 
@@ -64,7 +64,7 @@ for n in range(num_iterations):
 
     num_simulations = simulations_per_iteration
     width = 12
-    max_depth = 35
+    max_depth = 50
     start_state = ["<s>"]
     c = 5
 

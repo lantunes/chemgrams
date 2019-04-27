@@ -1,4 +1,3 @@
-import kenlm
 import re
 
 import numpy as np
@@ -7,11 +6,10 @@ from .deepsmiles_tokenizer import DeepSMILESTokenizer
 from .language_model import ChemgramsLanguageModel
 
 
-class KenLMDeepSMILESLanguageModel(ChemgramsLanguageModel):
-    def __init__(self, kenlm_bin_path, vocab):
-        self._lm = kenlm.Model(kenlm_bin_path)
+class EmptyDeepSMILESLanguageModel(ChemgramsLanguageModel):
+    def __init__(self, vocab, n=3):
         self._vocab = vocab
-        self._n = self._lm.order
+        self._n = n
         self._tokenize_pattern = re.compile(r'(<s>)|(</s>)')
 
     def tokenize(self, text):
@@ -41,25 +39,7 @@ class KenLMDeepSMILESLanguageModel(ChemgramsLanguageModel):
         return tokenized
 
     def score(self, char, context=None):
-        tokenized = self._tokenize_context(context)
-        if tokenized is None:
-            tokenized = []
-        sequence = tokenized + [char]
-        bos = True
-        eos = True
-
-        if len(sequence) > 0 and sequence[0] == '<s>':
-            sequence = sequence[1:]
-        else:
-            bos = False
-
-        if len(sequence) > 0 and sequence[-1] == '</s>':
-            sequence = sequence[:-1]
-        else:
-            eos = False
-
-        score = self._lm.score(' '.join(sequence), bos=bos, eos=eos)
-        return 10**score  # KenLM scores are log10(prob)
+        return np.random.uniform(0, 1)
 
     def vocab(self, with_unk=True):
         if not with_unk:
@@ -99,17 +79,7 @@ class KenLMDeepSMILESLanguageModel(ChemgramsLanguageModel):
         return [prob_factor * p for p in probs]
 
     def perplexity(self, text):
-        """
-        Do not include <s> or </s>.
-        :param text: the text to evaluate, without <s> and </s>
-        :return: the perplexity
-        """
-        sequence = self._tokenize_context(text)
-        if len(sequence) > 0 and sequence[0] == '<s>':
-            sequence = sequence[1:]
-        if len(sequence) > 0 and sequence[-1] == '</s>':
-            sequence = sequence[:-1]
-        return self._lm.perplexity(' '.join(sequence))
+        return 1.0
 
     def generate(self, num_chars=1, text_seed=None, random_seed=None):
         context = self._tokenize_context(text_seed)
