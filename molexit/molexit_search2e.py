@@ -16,9 +16,8 @@ logger = get_logger('chemgrams.log')
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
-vocab = ['<s>', '</s>', 'O', '=', 'C', 'c', '[nH]', 'n', '5', 'o', 'N', '#', '/', ')', '\\', '4', '6', '[O-]', '[N+]',
-         '[C@@H]', '[C@H]', '[N-]', 'F', '[NH+]', '[NH3+]', 'S', '[n+]', '[NH2+]', '[C@]', '3', '[C@@]', '7', '[nH+]',
-         's', 'Cl', '[o+]', '[O+]', '8']
+vocab = ['<s>', '</s>', 'O', 'o', 'N', 'n', '[nH]', 'C', 'c', '=', '3', '4', '5', '6', '7', '8',  '#', '/', ')', '\\',
+         '[C@@H]', '[C@H]', '[C@]', '[C@@]', 'S', 's', 'F', 'Cl']
 
 logger.info(os.path.basename(__file__))
 logger.info("vocab = " + str(vocab))
