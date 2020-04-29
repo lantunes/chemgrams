@@ -14,7 +14,7 @@ The manuscript describing Chemgrams is currently in preparation, and will
 be submitted to a journal for peer review. A link to the paper will be
 posted here as soon as it becomes available.
 
-Comparison against ChemTS:
+Comparison against ChemTS (each value represents the maximum J score over 10 trials):
 
 | Method              | 2h           | 4h           | 6h           |  8h         |  Molecules/Min    |
 |---------------------|:------------:|:------------:|:------------:|:-----------:|------------------:|
