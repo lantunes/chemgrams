@@ -17,13 +17,13 @@ THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 logger.info(os.path.basename(__file__))
 logger.info("KenLMDeepSMILESLanguageModel('../resources/zinc12_fragments_deepsmiles_klm_6gram_190421.klm', vocab)")
-logger.info("width = 12, max_depth = 35, start_state = ['<s>'], c = 5")
+logger.info("width = 12, max_depth = 50, start_state = ['<s>'], c = 5")
 logger.info("score: -1.0 if invalid; -1.0 if seen previously; tanimoto distance from abilify if valid")
 logger.info("LanguageModelMCTSWithPUCTTerminating")
-logger.info("QueryScorer(abilify)")
-logger.info("num_iterations = 100")
-logger.info("simulations_per_iteration = 50000")
-logger.info("keep_top_n = 5000")
+logger.info("QueryScorer(abilify, k=1.0)")
+logger.info("num_iterations = 300")
+logger.info("simulations_per_iteration = 100000")
+logger.info("keep_top_n = 10000")
 
 logger.info("loading language model...")
 
@@ -31,7 +31,7 @@ vocab = get_arpa_vocab('../resources/zinc12_fragments_deepsmiles_klm_6gram_19042
 lm = KenLMDeepSMILESLanguageModel('../resources/zinc12_fragments_deepsmiles_klm_6gram_190421.klm', vocab)
 
 abilify = "Clc4cccc(N3CCN(CCCCOc2ccc1c(NC(=O)CC1)c2)CC3)c4Cl"
-scorer = QueryScorer(abilify)
+scorer = QueryScorer(abilify, k=1.0)
 
 converter = Converter(rings=True, branches=True)
 env = os.environ.copy()
@@ -51,9 +51,9 @@ def smiles_to_deepsmiles(smiles):
     return converter.encode(canonical)
 
 
-num_iterations = 100
-simulations_per_iteration = 50000
-keep_top_n = 5000
+num_iterations = 300
+simulations_per_iteration = 100000
+keep_top_n = 10000
 
 all_smiles = {}
 
@@ -61,7 +61,7 @@ for n in range(num_iterations):
 
     num_simulations = simulations_per_iteration
     width = 12
-    max_depth = 35
+    max_depth = 50
     start_state = ["<s>"]
     c = 5
 
