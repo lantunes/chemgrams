@@ -14,7 +14,15 @@ The manuscript describing Chemgrams is currently in preparation, and will
 be submitted to a journal for peer review. A link to the paper will be
 posted here as soon as it becomes available.
 
-Comparison against ChemTS (each value represents the maximum J score over 10 trials):
+In the comparisons below, the values represent a _J_ score, defined as:
+```
+J(S) = logP(S) − SA(S) − RingPenalty(S)
+```
+for a molecule S, and SA is the synthetic accessibility score. Also, a
+6-gram language model of DeepSMILES strings was used, created from the
+same corpus that the ChemTS model was trained on.
+
+Comparison against ChemTS (each value represents the maximum _J_ score, over 10 trials):
 
 | Method              | 2h           | 4h           | 6h           |  8h         |  Molecules/Min    |
 |---------------------|:------------:|:------------:|:------------:|:-----------:|------------------:|
