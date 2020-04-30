@@ -13,13 +13,13 @@ logger = get_logger('chemgrams.log')
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 logger.info("LM-only")
-logger.info("KenLMSMILESLanguageModel(n=6, 'chemts_250k_smiles_klm_6gram_200429.klm')")
+logger.info("KenLMSMILESLanguageModel(n=10, 'chemts_250k_smiles_klm_10gram_200429.klm')")
 logger.info("num_chars=100, text_seed='<s>'")
 logger.info("JScorer")
 
 
-vocab = get_arpa_vocab('../resources/chemts_250k_smiles_klm_6gram_200429.arpa')
-lm = KenLMSMILESLanguageModel('../resources/chemts_250k_smiles_klm_6gram_200429.klm', vocab)
+vocab = get_arpa_vocab('../resources/chemts_250k_smiles_klm_10gram_200429.arpa')
+lm = KenLMSMILESLanguageModel('../resources/chemts_250k_smiles_klm_10gram_200429.klm', vocab)
 
 sa_scores = np.loadtxt(os.path.join(THIS_DIR, '..', 'resources', 'chemts_sa_scores.txt'))
 logp_values = np.loadtxt(os.path.join(THIS_DIR, '..', 'resources', 'chemts_logp_values.txt'))
