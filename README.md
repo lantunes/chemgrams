@@ -59,10 +59,10 @@ molecules is presented in the table, as well as the percentage of unique
 generated molecules (since the same molecule can be generated multiple
 times), and the best _J_ score achieved.
 
-| Syntax     | % valid | % unique | Best J |
-|------------|---------|----------|--------|
-| SMILES     |  7.22   |  4.23    | 3.46   |
-| DeepSMILES | 21.45   | 16.39    | 4.09   |
+| Syntax     | % valid | % unique | Best _J_ |
+|------------|---------|----------|----------|
+| SMILES     |  7.22   |  4.23    | 3.46     |
+| DeepSMILES | 21.45   | 16.39    | 4.09     |
 
 The analysis indicates that using the DeepSMILES syntax, rather than the
 SMILES syntax, results in a greater chance that a valid molecule will be
