@@ -4,7 +4,8 @@ Chemgrams
 Chemgrams are N-gram language models of [DeepSMILES](https://chemrxiv.org/articles/DeepSMILES_An_Adaptation_of_SMILES_for_Use_in_Machine-Learning_of_Chemical_Structures/7097960/1) _(N. O'Boyle, 2018)_, a SMILES-like syntax.
 Chemgrams can be combined with Monte Carlo Tree Search (MCTS) to search
 chemical space for molecules with desired properties. Chemgrams also
-refers to this Python software library.
+refers to this Python software library. The [KenLM](https://kheafield.com/code/kenlm/)
+toolkit is used for rapid language model estimation and sampling.
 
 Chemgrams has been compared to existing, state-of-the-art methods for
 generating novel molecules with desired properties, such as [ChemTS](https://arxiv.org/abs/1710.00616) _(K. Tsuda et al., 2017)_, and
@@ -21,7 +22,8 @@ J(S) = logP(S) − SA(S) − RingPenalty(S)
 for a molecule _S_, and _SA_ is the synthetic accessibility score. Also, a
 6-gram language model (with modified Kneser-Ney smoothing without pruning)
 of DeepSMILES strings was used, created from the same corpus that the
-ChemTS model was trained on.
+ChemTS model was trained on. The language model informs a search using
+MCTS with PUCT.
 
 ### Chemgrams vs. ChemTS
 
