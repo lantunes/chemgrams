@@ -1,14 +1,14 @@
 Chemgrams
 =========
 
-Chemgrams are N-gram language models of [DeepSMILES](https://chemrxiv.org/articles/DeepSMILES_An_Adaptation_of_SMILES_for_Use_in_Machine-Learning_of_Chemical_Structures/7097960/1), a SMILES-like syntax.
+Chemgrams are N-gram language models of [DeepSMILES](https://chemrxiv.org/articles/DeepSMILES_An_Adaptation_of_SMILES_for_Use_in_Machine-Learning_of_Chemical_Structures/7097960/1) _(N. O'Boyle, 2018)_, a SMILES-like syntax.
 Chemgrams can be combined with Monte Carlo Tree Search (MCTS) to search
 chemical space for molecules with desired properties. Chemgrams also
 refers to this Python software library.
 
 Chemgrams has been compared to existing, state-of-the-art methods for
-generating novel molecules with desired properties, such as ChemTS (https://arxiv.org/abs/1710.00616), and
-GB-GA (https://pubs.rsc.org/en/content/articlelanding/2019/sc/c8sc05372c#!divAbstract).
+generating novel molecules with desired properties, such as [ChemTS](https://arxiv.org/abs/1710.00616) _(K. Tsuda et al., 2017)_, and
+[GB-GA](https://pubs.rsc.org/en/content/articlelanding/2019/sc/c8sc05372c#!divAbstract) _(J. H. Jensen, 2019)_.
 
 _The manuscript describing Chemgrams is currently in preparation, and will
 be submitted to a journal for peer review. A link to the paper will be
