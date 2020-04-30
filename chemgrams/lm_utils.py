@@ -1,15 +1,8 @@
-import pickle
 from rdkit import Chem
 import deepsmiles
 
 
 class DeepSMILESLanguageModelUtils:
-
-    @staticmethod
-    def get_lm(file_path):
-        with open(file_path, 'rb') as pickle_in:
-            lm = pickle.load(pickle_in)
-        return lm
 
     @staticmethod
     def sanitize(smi):
@@ -33,9 +26,6 @@ class DeepSMILESLanguageModelUtils:
 
 
 class SMILESLanguageModelUtils:
-    @staticmethod
-    def get_lm(file_path):
-        return DeepSMILESLanguageModelUtils.get_lm(file_path)
 
     @staticmethod
     def sanitize(smi):

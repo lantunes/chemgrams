@@ -42,7 +42,6 @@ RUN cmake -DKENLM_MAX_ORDER=10 .. && \
     make -j 4 && \
     conda install -n chemgrams_env pip && \
     /opt/conda/envs/chemgrams_env/bin/pip install https://github.com/kpu/kenlm/archive/master.zip --install-option="--max_order=10" && \
-    /opt/conda/envs/chemgrams_env/bin/pip install nltk==3.4 && \
     /opt/conda/envs/chemgrams_env/bin/pip install deepsmiles && \
     /opt/conda/envs/chemgrams_env/bin/pip install networkx
 

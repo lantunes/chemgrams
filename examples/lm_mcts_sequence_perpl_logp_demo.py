@@ -12,12 +12,13 @@ logger = logger()
 if __name__ == '__main__':
 
     logger.info("loading language model...")
-    lm = DeepSMILESLanguageModelUtils.get_lm("../models/chembl_25_deepsmiles_nltklm_5gram_190330.pkl")
+    vocab = get_arpa_vocab('../resources/chemts_250k_deepsmiles_klm_10gram_200429.arpa')
+    lm = KenLMDeepSMILESLanguageModel('../resources/chemts_250k_deepsmiles_klm_10gram_200429.klm', vocab)
 
     num_simulations = 1000
     width = 6
     text_length = 25
-    start_state = ["<M>"]
+    start_state = ["<s>"]
 
     # # maximizing logP
     # logp_max = 10.143
@@ -33,7 +34,7 @@ if __name__ == '__main__':
     def eval_function(text):
         generated = ''.join(text)
         try:
-            decoded = DeepSMILESLanguageModelUtils.decode(generated)
+            decoded = DeepSMILESLanguageModelUtils.decode(generated, start='<s>', end='</s>')
             DeepSMILESLanguageModelUtils.sanitize(decoded)
         except Exception:
             return 0
@@ -44,7 +45,7 @@ if __name__ == '__main__':
         perplexity = lm.perplexity(text)
         perplexity_reward = perplexity / (1 + perplexity)
 
-        decoded = DeepSMILESLanguageModelUtils.decode(generated)
+        decoded = DeepSMILESLanguageModelUtils.decode(generated, start='<s>', end='</s>')
         smiles = DeepSMILESLanguageModelUtils.sanitize(decoded)
         mol = Chem.MolFromSmiles(smiles)
         logp = factor * MolLogP(mol)
@@ -67,7 +68,7 @@ if __name__ == '__main__':
     generated_text = ''.join(best[0])
     logger.info("generated text: %s (score: %s, perplexity: %s)" % (generated_text, str(best[1]), lm.perplexity(generated_text)))
 
-    decoded = DeepSMILESLanguageModelUtils.decode(generated_text)
+    decoded = DeepSMILESLanguageModelUtils.decode(generated_text, start='<s>', end='</s>')
     smiles = DeepSMILESLanguageModelUtils.sanitize(decoded)
 
     mol = Chem.MolFromSmiles(smiles)

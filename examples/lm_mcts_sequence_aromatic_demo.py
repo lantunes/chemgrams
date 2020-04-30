@@ -11,7 +11,6 @@ logger = logger()
 if __name__ == '__main__':
 
     logger.info("loading language model...")
-    # lm = DeepSMILESLanguageModelUtils.get_lm("../models/chembl_25_deepsmiles_nltklm_5gram_190330.pkl")
 
     vocab = get_arpa_vocab('../models/chembl_25_deepsmiles_klm_6gram_190413.arpa')
     lm = KenLMDeepSMILESLanguageModel('../models/chembl_25_deepsmiles_klm_6gram_190413.klm', vocab)
