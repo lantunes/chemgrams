@@ -11,7 +11,6 @@ class TestSMILESTokenizer(unittest.TestCase):
         with open(os.path.join(THIS_DIR, 'resources', 'smiles.txt'), 'r') as content_file:
             lines = content_file.readlines()
         all_smiles = [line.strip() for line in lines]
-
         for smiles in all_smiles:
             SMILESTokenizer(smiles)
 

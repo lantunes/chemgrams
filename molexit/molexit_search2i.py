@@ -5,7 +5,8 @@ from rdkit import rdBase
 
 from chemgrams import *
 from chemgrams.logger import get_logger, log_top_best
-
+import pybel
+from deepsmiles import Converter
 rdBase.DisableLog('rdApp.error')
 rdBase.DisableLog('rdApp.warning')
 from chemgrams.queryscorer import QueryScorer
@@ -51,7 +52,7 @@ def log_best(j, all_best, n_valid, lggr):
 
 
 def smiles_to_deepsmiles(smiles):
-    canonical = pybel.readstring("smi", smiles).write("can").strip()
+    canonical = pybel.readstring("smi", smiles).write("can").strip()  # TODO do we need to canonicalize?
     return converter.encode(canonical)
 
 

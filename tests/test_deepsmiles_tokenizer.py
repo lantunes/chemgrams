@@ -1,6 +1,5 @@
 import unittest
 import deepsmiles as ds
-import pybel
 from chemgrams import DeepSMILESTokenizer, DeepSMILESToken
 import os
 
@@ -13,11 +12,9 @@ class TestDeepSMILESTokenizer(unittest.TestCase):
         with open(os.path.join(THIS_DIR, 'resources', 'smiles.txt'), 'r') as content_file:
             lines = content_file.readlines()
         all_smiles = [line.strip() for line in lines]
-
         converter = ds.Converter(rings=True, branches=True)
         for smiles in all_smiles:
-            canonical = pybel.readstring("smi", smiles).write("can").strip()
-            deepsmiles = converter.encode(canonical)
+            deepsmiles = converter.encode(smiles)
             DeepSMILESTokenizer(deepsmiles)
 
     def test_molecule1(self):
