@@ -8,7 +8,7 @@ from deepsmiles import Converter
 from rdkit import rdBase
 rdBase.DisableLog('rdApp.error')
 rdBase.DisableLog('rdApp.warning')
-from molexit import KenLMTrainer
+from chemgrams.training import KenLMTrainer
 from chemgrams.sascorer import sascorer
 
 logger = get_logger('chemgrams.log')
@@ -36,7 +36,7 @@ scorer = TanimotoScorer(abilify, radius=6)
 converter = Converter(rings=True, branches=True)
 env = os.environ.copy()
 env["PATH"] = "/Users/luis/kenlm/build/bin:" + env["PATH"]
-lm_trainer = KenLMTrainer('../utils/train_kenlm.sh', env)
+lm_trainer = KenLMTrainer(env)
 
 
 def log_best(j, all_best, n_valid, lggr):
@@ -133,7 +133,7 @@ for n in range(num_iterations):
             f.write("\n")
 
     logger.info('training new LM...')
-    lm_trainer.train(dataset, '../models/molexit', name)
+    lm_trainer.train(6, dataset, '../models/molexit', name)
 
     vocab = get_arpa_vocab('../models/molexit/%s.arpa' % name)
     lm = KenLMDeepSMILESLanguageModel('../models/molexit/%s.klm' % name, vocab)

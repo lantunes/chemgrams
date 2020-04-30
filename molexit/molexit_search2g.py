@@ -137,7 +137,7 @@ for n in range(num_iterations):
             f.write("\n")
 
     logger.info('training new LM...')
-    lm_trainer.train(dataset, '../models/molexit', name)
+    lm_trainer.train(6, dataset, '../models/molexit', name)
 
     vocab = get_arpa_vocab('../models/molexit/%s.arpa' % name)
     lm = KenLMDeepSMILESLanguageModel('../models/molexit/%s.klm' % name, vocab)
