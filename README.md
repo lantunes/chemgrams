@@ -1,7 +1,7 @@
 Chemgrams
 =========
 
-Chemgrams are N-gram language models of DeepSMILES, a SMILES-like syntax.
+Chemgrams are N-gram language models of [DeepSMILES](https://chemrxiv.org/articles/DeepSMILES_An_Adaptation_of_SMILES_for_Use_in_Machine-Learning_of_Chemical_Structures/7097960/1), a SMILES-like syntax.
 Chemgrams can be combined with Monte Carlo Tree Search (MCTS) to search
 chemical space for molecules with desired properties. Chemgrams also
 refers to this Python software library.
