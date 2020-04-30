@@ -58,16 +58,16 @@ The table below summarizes the results of comparing an N-gram language
 model based on SMILES syntax to an N-gram language model based on DeepSMILES
 syntax. A total of 100,000 attempts were made to generate a molecule using
 each model. The percentage of generated strings which represented valid
-molecules is presented in the table, as well as the percentage of unique
-generated molecules (since the same molecule can be generated multiple
-times), and the best _J_ score achieved.
+molecules is presented in the table, as well as the percentage of the
+generated valid molecules which are unique (since the same molecule can
+be generated multiple times), and the best _J_ score achieved.
 
 | Syntax     | LM order | % valid | % unique | Best _J_ |
 |------------|----------|---------|----------|----------|
-| SMILES     | 6        |  7.22   |  4.23    | 3.46     |
-| SMILES     | 10       | 17.78   | 14.99    | 4.30     |
-| DeepSMILES | 6        | 21.45   | 16.39    | 4.09     |
-| DeepSMILES | 10       | 55.62   | 47.50    | 5.56     |
+| SMILES     | 6        |  7.22   | 58.59    | 3.46     |
+| SMILES     | 10       | 17.78   | 84.31    | 4.30     |
+| DeepSMILES | 6        | 21.45   | 76.41    | 4.09     |
+| DeepSMILES | 10       | 55.62   | 85.40    | 5.56     |
 
 The analysis indicates that using the DeepSMILES syntax, rather than the
 SMILES syntax, results in a greater chance that a valid molecule will be
