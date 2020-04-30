@@ -30,3 +30,17 @@ class DeepSMILESLanguageModelUtils:
         generated = DeepSMILESLanguageModelUtils.extract(generated, start, end)
         converter = deepsmiles.Converter(rings=True, branches=True)
         return converter.decode(generated)
+
+
+class SMILESLanguageModelUtils:
+    @staticmethod
+    def get_lm(file_path):
+        return DeepSMILESLanguageModelUtils.get_lm(file_path)
+
+    @staticmethod
+    def sanitize(smi):
+        return DeepSMILESLanguageModelUtils.sanitize(smi)
+
+    @staticmethod
+    def extract(generated_raw, start='<M>', end='</M>'):
+        return DeepSMILESLanguageModelUtils.extract(generated_raw, start, end)
