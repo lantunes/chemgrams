@@ -85,6 +85,7 @@ The perplexities of the models were computed for a test corpus of
 | SMILES     | 10       |  8.443     |
 | DeepSMILES | 6        |  3.748 *   |
 | DeepSMILES | 10       |  3.637 *   |
+
 _* the SMILES string was first converted to DeepSMILES before scoring_
 
 ## Setup On OSX
