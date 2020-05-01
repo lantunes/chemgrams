@@ -22,9 +22,9 @@ J(S) = logP(S) − SA(S) − RingPenalty(S)
 ```
 for a molecule _S_, and _SA_ is the synthetic accessibility score. Also, a
 6-gram language model (with modified Kneser-Ney smoothing without pruning)
-of DeepSMILES strings was used, created from the same corpus that the
-ChemTS model was trained on. The language model informs a search using
-MCTS with PUCT.
+of DeepSMILES strings was used, estimated from the same corpus that the
+ChemTS model was trained on (~250,000 SMILES strings). The language model
+informs a search using MCTS with PUCT.
 
 ### Chemgrams vs. ChemTS
 
@@ -75,6 +75,17 @@ generated, and that a greater fraction of the generated valid molecules
 will be unique. An interesting consequence is that a higher score is
 attained, likely because more valid and unique molecules are generated
 in a given number of attempts.
+
+The perplexities of the models were computed for a test corpus of
+~50,000 held out SMILES strings:
+
+| Syntax     | LM order | Perplexity |
+|------------|----------|------------|
+| SMILES     | 6        |  9.429     |
+| SMILES     | 10       |  8.443     |
+| DeepSMILES | 6        |  3.748 *   |
+| DeepSMILES | 10       |  3.637 *   |
+_* the SMILES string was first converted to DeepSMILES before scoring_
 
 ## Setup On OSX
 

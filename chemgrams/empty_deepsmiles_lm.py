@@ -99,3 +99,6 @@ class EmptyDeepSMILESLanguageModel(ChemgramsLanguageModel):
 
     def order(self):
         return self._n
+
+    def log_prob(self, sentence):
+        return 0.0

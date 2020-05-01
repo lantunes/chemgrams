@@ -28,3 +28,6 @@ class ChemgramsLanguageModel:
 
     def generate(self, num_chars=1, text_seed=None, random_seed=None):
         raise NotImplementedError
+
+    def log_prob(self, sentence):
+        raise NotImplementedError
