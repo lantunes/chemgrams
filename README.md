@@ -134,16 +134,7 @@ $ pip install https://github.com/kpu/kenlm/archive/master.zip --install-option="
 
 ```
 
-NOTE: To have KenLM support language models with the default maximum order of up to 6,
-replace the cmake step above with:
-```
-cmake ..
-```
-and replace the pip install step above with:
-```
-pip install https://github.com/kpu/kenlm/archive/master.zip
-```
-
+_NOTE: The settings above create a KenLM installation where the default maximum order of a language model is 10._
 
 ### Docker Image
 
