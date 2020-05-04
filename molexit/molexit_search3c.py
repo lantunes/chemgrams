@@ -8,8 +8,9 @@ from deepsmiles import Converter
 from rdkit import rdBase
 rdBase.DisableLog('rdApp.error')
 rdBase.DisableLog('rdApp.warning')
-from chemgrams.training import KenLMTrainer
 from chemgrams.sascorer import sascorer
+from chemgrams.cyclescorer import CycleScorer
+from chemgrams.training import KenLMTrainer
 logger = get_logger('chemgrams.log')
 from pathlib import Path
 import shutil
@@ -17,22 +18,24 @@ THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 logger.info(os.path.basename(__file__))
-logger.info("KenLMDeepSMILESLanguageModel('../resources/zinc12_fragments_deepsmiles_klm_6gram_190421.klm', vocab)")
-logger.info("width = 12, max_depth = 35, start_state = ['<s>'], c = 5")
+logger.info("KenLMDeepSMILESLanguageModel('../resources/zinc12_fragments_deepsmiles_klm_10gram_200502.klm', vocab)")
+logger.info("width = 12, max_depth = 50, start_state = ['<s>'], c = 5")
 logger.info("score: -1.0 if invalid; -1.0 if seen previously; tanimoto distance from abilify if valid")
 logger.info("LanguageModelMCTSWithPUCTTerminating")
 logger.info("TanimotoScorer(abilify, radius=6)")
 logger.info("num_iterations = 100")
-logger.info("simulations_per_iteration = 50000")
-logger.info("keep_top_n = 5000")
+logger.info("simulations_per_iteration = 200000")
+logger.info("keep_top_n = 20000")
 
 logger.info("loading language model...")
 
-vocab = get_arpa_vocab('../resources/zinc12_fragments_deepsmiles_klm_6gram_190421.arpa')
-lm = KenLMDeepSMILESLanguageModel('../resources/zinc12_fragments_deepsmiles_klm_6gram_190421.klm', vocab)
+vocab = get_arpa_vocab('../resources/zinc12_fragments_deepsmiles_klm_10gram_200502.arpa')
+lm = KenLMDeepSMILESLanguageModel('../resources/zinc12_fragments_deepsmiles_klm_10gram_200502.klm', vocab)
 
 abilify = "Clc4cccc(N3CCN(CCCCOc2ccc1c(NC(=O)CC1)c2)CC3)c4Cl"
-scorer = TanimotoScorer(abilify, radius=6)
+distance_scorer = TanimotoScorer(abilify, radius=6)
+
+cycle_scorer = CycleScorer()
 
 converter = Converter(rings=True, branches=True)
 env = os.environ.copy()
@@ -58,8 +61,8 @@ if os.path.exists(path) and os.path.isdir(path):
 path.mkdir(parents=True, exist_ok=True)
 
 num_iterations = 100
-simulations_per_iteration = 50000
-keep_top_n = 5000
+simulations_per_iteration = 200000
+keep_top_n = 20000
 
 all_smiles = {}
 
@@ -67,7 +70,7 @@ for n in range(num_iterations):
 
     num_simulations = simulations_per_iteration
     width = 12
-    max_depth = 35
+    max_depth = 50
     start_state = ["<s>"]
     c = 5
 
@@ -96,9 +99,13 @@ for n in range(num_iterations):
             # synthetic accessibility score is a number between 1 (easy to make) and 10 (very difficult to make)
             sascore = sascorer.calculateScore(Chem.MolFromSmiles(smiles)) / 10.
 
-            distance_score = scorer.score(smiles)
+            # cycle score, squashed between 0 and 1
+            cyclescore = cycle_scorer.score(smiles)
+            cyclescore = cyclescore / (1 + cyclescore)
 
-            score = (0.75*distance_score) + (0.25*(1-sascore))
+            distance_score = distance_scorer.score(smiles)
+
+            score = (0.75*distance_score) + (0.15*(1-sascore)) + (0.10*(1-cyclescore))
 
             seen_smiles.add(smiles)
             all_smiles[smiles] = (score, generated)
@@ -123,7 +130,7 @@ for n in range(num_iterations):
     logger.info("best generated text: %s" % generated_text)
     decoded = DeepSMILESLanguageModelUtils.decode(generated_text, start='<s>', end='</s>')
     smiles = DeepSMILESLanguageModelUtils.sanitize(decoded)
-    logger.info("best SMILES: %s, J: %s (%s seconds)" % (smiles, scorer.score(smiles), str((end - start))))
+    logger.info("best SMILES: %s, J: %s (%s seconds)" % (smiles, distance_scorer.score(smiles), str((end - start))))
 
     log_top_best(all_smiles, 5, logger)
 
@@ -139,7 +146,7 @@ for n in range(num_iterations):
             f.write("\n")
 
     logger.info('training new LM...')
-    lm_trainer.train(6, dataset, '../models/molexit', name)
+    lm_trainer.train(10, dataset, '../models/molexit', name)
 
     vocab = get_arpa_vocab('../models/molexit/%s.arpa' % name)
     lm = KenLMDeepSMILESLanguageModel('../models/molexit/%s.klm' % name, vocab)

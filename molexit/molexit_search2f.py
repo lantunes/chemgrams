@@ -11,8 +11,9 @@ rdBase.DisableLog('rdApp.warning')
 from chemgrams.sascorer import sascorer
 from chemgrams.cyclescorer import CycleScorer
 from chemgrams.training import KenLMTrainer
-
 logger = get_logger('chemgrams.log')
+from pathlib import Path
+import shutil
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
@@ -53,6 +54,11 @@ def smiles_to_deepsmiles(smiles):
     canonical = pybel.readstring("smi", smiles).write("can").strip()  # TODO do we need to canonicalize?
     return converter.encode(canonical)
 
+logger.info("deleting any existing molexit directory, and creating a new one...")
+path = Path("../models/molexit/")
+if os.path.exists(path) and os.path.isdir(path):
+    shutil.rmtree(path)
+path.mkdir(parents=True, exist_ok=True)
 
 num_iterations = 100
 simulations_per_iteration = 50000

@@ -8,6 +8,6 @@ class KenLMTrainer:
         self._env = env
 
     def train(self, order, corpus_file_path, output_dir, output_file_name):
-        ret = subprocess.call(['sh', self._shell_script_path, order, corpus_file_path, output_dir, output_file_name], env=self._env)
+        ret = subprocess.call(['sh', self._shell_script_path, str(order), corpus_file_path, output_dir, output_file_name], env=self._env)
         if ret != 0:
             raise Exception("error code received training LM: %d" % ret)
