@@ -51,7 +51,7 @@ def log_best(j, all_best, n_valid, lggr):
 
 
 def smiles_to_deepsmiles(smiles):
-    canonical = pybel.readstring("smi", smiles).write("can").strip()  # TODO do we need to canonicalize?
+    canonical = pybel.readstring("smi", smiles).write("can").strip()
     return converter.encode(canonical)
 
 logger.info("deleting any existing molexit directory, and creating a new one...")
