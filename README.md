@@ -33,11 +33,13 @@ Comparison against ChemTS (each value represents the maximum _J_ score, over 10 
 | Method               | 2h           | 4h           | 6h           |  8h         |  Valid Molecules/min. |
 |----------------------|:------------:|:------------:|:------------:|:-----------:|----------------------:|
 | ChemTS               | 4.91 ± 0.38  | 5.41 ± 0.51  | 5.49 ± 0.44  | 5.58 ± 0.50 | 40.89 ± 1.57          |
-| Chemgrams(n=6)+MCTS  | 10.52 ± 0.66 | 11.49 ± 0.39 | 12.44 ± 0.49 | -           | 2,581.85 ± 60.99      |
-| Chemgrams(n=10)+MCTS | 10.90 ± 0.54 | 12.55 ± 0.56 | 13.36 ± 0.74 | -           | 3,226.45 ± 111.69     |
+| Chemgrams(n=6)+MCTS  | 10.52 ± 0.66 | 11.49 ± 0.39 | 12.44 ± 0.49 | N/A *       | 2,581.85 ± 60.99      |
+| Chemgrams(n=10)+MCTS | 10.90 ± 0.54 | 12.55 ± 0.56 | 13.36 ± 0.74 | N/A *       | 3,226.45 ± 111.69     |
 | ChemTS - Only RNN    | 4.51 ± 0.27  | 4.62 ± 0.26  | 4.79 ± 0.25  | 4.79 ± 0.25 | 41.33 ± 1.42          |
 | Chemgrams(n=6)       | 4.83 ± 0.34  | 4.95 ± 0.32  | 5.17 ± 0.33  | 5.17 ± 0.33 | 1,016.44 ± 16.10      |
 | Chemgrams(n=10)      | 6.18 ± 0.43  | 6.55 ± 0.39  | 6.74 ± 0.45  | 6.75 ± 0.43 | 2,137.12 ± 21.70      |
+
+_* due to memory limitations, and the large number of molecules generated, search was halted earlier_
 
 ### Chemgrams vs. GB-GA
 
