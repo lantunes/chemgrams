@@ -21,7 +21,7 @@ In the tables below, the values represent a _J_ score, defined as:
 J(S) = logP(S) − SA(S) − RingPenalty(S)
 ```
 for a molecule _S_, and _SA_ is the synthetic accessibility score. Also, a
-6-gram language model (with modified Kneser-Ney smoothing without pruning)
+6- or 10-gram language model (with modified Kneser-Ney smoothing without pruning)
 of DeepSMILES strings was used, estimated from the same corpus that the
 ChemTS model was trained on (~250,000 SMILES strings). The language model
 informs a search using MCTS with PUCT.
@@ -30,12 +30,13 @@ informs a search using MCTS with PUCT.
 
 Comparison against ChemTS (each value represents the maximum _J_ score, over 10 trials):
 
-| Method              | 2h           | 4h           | 6h           |  8h         |  Molecules/Min    |
-|---------------------|:------------:|:------------:|:------------:|:-----------:|------------------:|
-| ChemTS              | 4.91 ± 0.38  | 5.41 ± 0.51  | 5.49 ± 0.44  | 5.58 ± 0.50 | 40.89 ± 1.57      |
-| Chemgrams(n=6)+MCTS | 10.52 ± 0.66 | 11.49 ± 0.39 | 12.44 ± 0.49 | -           | 5,948.89 ± 149.69 |
-| ChemTS - Only RNN   | 4.51 ± 0.27  | 4.62 ± 0.26  | 4.79 ± 0.25  | 4.79 ± 0.25 | 41.33 ± 1.42      |
-| Chemgrams(n=6)      | 4.83 ± 0.34  | 4.95 ± 0.32  | 5.17 ± 0.33  | 5.17 ± 0.33 | 4,713.86 ± 72.98  |
+| Method              | 2h           | 4h           | 6h           |  8h         |  Valid Molecules/min  |
+|---------------------|:------------:|:------------:|:------------:|:-----------:|----------------------:|
+| ChemTS              | 4.91 ± 0.38  | 5.41 ± 0.51  | 5.49 ± 0.44  | 5.58 ± 0.50 | 40.89 ± 1.57          |
+| Chemgrams(n=6)+MCTS | 10.52 ± 0.66 | 11.49 ± 0.39 | 12.44 ± 0.49 | -           | 2,581.85 ± 60.99      |
+| ChemTS - Only RNN   | 4.51 ± 0.27  | 4.62 ± 0.26  | 4.79 ± 0.25  | 4.79 ± 0.25 | 41.33 ± 1.42          |
+| Chemgrams(n=6)      | 4.83 ± 0.34  | 4.95 ± 0.32  | 5.17 ± 0.33  | 5.17 ± 0.33 | 1,016.44 ± 16.10      |
+| Chemgrams(n=10)     | 6.18 ± 0.43  | 6.55 ± 0.39  | 6.74 ± 0.45  | 6.75 ± 0.43 | 2,137.12 ± 21.70      |
 
 ### Chemgrams vs. GB-GA
 
@@ -188,6 +189,8 @@ $ source activate chemgrams_env
 $ pip install deepsmiles
 
 $ pip install networkx
+
+$ pip install numpy
 
 $ which python3
 /Users/me/anaconda/envs/chemgrams_env/bin/python3

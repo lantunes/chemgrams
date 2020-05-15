@@ -43,7 +43,8 @@ RUN cmake -DKENLM_MAX_ORDER=10 .. && \
     conda install -n chemgrams_env pip && \
     /opt/conda/envs/chemgrams_env/bin/pip install https://github.com/kpu/kenlm/archive/master.zip --install-option="--max_order=10" && \
     /opt/conda/envs/chemgrams_env/bin/pip install deepsmiles && \
-    /opt/conda/envs/chemgrams_env/bin/pip install networkx
+    /opt/conda/envs/chemgrams_env/bin/pip install networkx && \
+    /opt/conda/envs/chemgrams_env/bin/pip install numpy
 
 WORKDIR /root
 COPY resources/ chemgrams/resources/
@@ -57,4 +58,4 @@ RUN /opt/conda/envs/chemgrams_env/bin/python setup.py install
 ENV PATH="/root/kenlm/kenlm-master/build/bin:${PATH}"
 
 WORKDIR /root/chemgrams/examples
-CMD [ "/opt/conda/envs/chemgrams_env/bin/python", "lm_mcts_sequence_jscore_penalty_demo.py" ]
+CMD [ "/opt/conda/envs/chemgrams_env/bin/python", "kenlm_deepsmiles_lm_timed_demo.py" ]
