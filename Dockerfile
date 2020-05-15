@@ -58,4 +58,4 @@ RUN /opt/conda/envs/chemgrams_env/bin/python setup.py install
 ENV PATH="/root/kenlm/kenlm-master/build/bin:${PATH}"
 
 WORKDIR /root/chemgrams/examples
-CMD [ "/opt/conda/envs/chemgrams_env/bin/python", "kenlm_deepsmiles_lm_timed_demo.py" ]
+CMD [ "/opt/conda/envs/chemgrams_env/bin/python", "lm_mcts_sequence_jscore_penalty_timed_demo.py" ]
