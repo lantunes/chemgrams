@@ -102,7 +102,7 @@ of ~250,000 molecules). The results are presented in the following table:
 | Method                | # Generated | # Valid          | # Unique         | # Seen in Training     | Time Required |
 |:---------------------:|:-----------:|-----------------:|-----------------:|:----------------------:|:-------------:|
 | Chemgrams(n=10)       | 500,000     | 278,638 (55.73%) | 215,087 (43.02%) | 419 (0.19% of Unique)  |  ~122 minutes |
-| Chemgrams(n=10)+MCTS *| 500,000     | 283,537 (56.71%) | 261,903 (53.38%) |  22 (0.008% of Unique) |   ~87 minutes |
+| Chemgrams(n=10)+MCTS* | 500,000     | 283,537 (56.71%) | 261,903 (53.38%) |  22 (0.008% of Unique) |   ~87 minutes |
 
 _* a reward of 1.0 was given if the molecule was valid, and -1.0 if it was either invalid or already generated_
 
