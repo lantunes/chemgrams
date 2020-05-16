@@ -122,7 +122,9 @@ is strong overlap between the original and generated corpora.
 <img src="https://raw.githubusercontent.com/lantunes/chemgrams/master/assets/kenlm_mcts_deepsmiles_10gram_tsne.png" width="60%"/>
 
 The image above is a t-SNE plot for a sampling of the molecules generated
-using the LM and MCTS.
+using the LM and MCTS. This plot demonstrates that the character of
+the generated molecules has drifted away from that of the corpus used to
+create the LM.
 
 ### Influence of the Corpus
 
