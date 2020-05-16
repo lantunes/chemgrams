@@ -92,6 +92,38 @@ The perplexities of the models were computed for a test corpus of
 
 _* the SMILES string was first converted to DeepSMILES before scoring_
 
+### Generated Corpus Characteristics
+
+A number of attempts were made to generate a molecule using either
+the 10-gram DeepSMILES Language Model, or MCTS informed by the 10-gram
+DeepSMILES Language Model, estimated from the ChemTS corpus (which consists
+of ~250,000 molecules). The results are presented in the following table:
+
+| Method                | # Generated | # Valid          | # Unique         | # Seen in Training     | Time Required |
+|:---------------------:|:-----------:|-----------------:|-----------------:|:----------------------:|:-------------:|
+| Chemgrams(n=10)       | 500,000     | 278,638 (55.73%) | 215,087 (43.02%) | 419 (0.19% of Unique)  |  ~122 minutes |
+| Chemgrams(n=10)+MCTS* | 500,000     | 283,537 (56.71%) | 261,903 (53.38%) |  22 (0.008% of Unique) |   ~87 minutes |
+
+_* a reward of 1.0 was given if the molecule was valid, and -1.0 if it was either invalid or already generated_
+
+When MCTS is used, the uniqueness of the generated molecules increases,
+and much fewer of the molecules seen in training are generated. However,
+the distribution of molecules generated using LM-informed MCTS, as
+characterized by seven physico-chemical descriptors, has drifted away
+from the characteristics of the molecules of the original corpus used to
+create the LM. This can be visualized with the following t-SNE plots:
+
+<img src="https://raw.githubusercontent.com/lantunes/chemgrams/master/assets/kenlm_deepsmiles_10gram_tsne.png" width="50%"/>
+
+The image above is a t-SNE plot for a sampling of the molecules generated
+using the LM alone, described by seven physico-chemical properties. There
+is strong overlap between the original and generated corpora.
+
+<img src="https://raw.githubusercontent.com/lantunes/chemgrams/master/assets/kenlm_mcts_deepsmiles_10gram_tsne.png" width="50%"/>
+
+The image above is a t-SNE plot for a sampling the molecules generated
+using the LM and MCTS.
+
 ### Influence of the Corpus
 
 The syntax error rate and the fraction of unique molecules also depends
