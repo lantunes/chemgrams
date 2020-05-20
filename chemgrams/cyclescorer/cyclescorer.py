@@ -16,6 +16,9 @@ class CycleScorer:
 
     def score(self, smiles):
         mol = Chem.MolFromSmiles(smiles)
+        return self.score_mol(mol)
+
+    def score_mol(self, mol):
         cycle_list = nx.cycle_basis(nx.Graph(rdmolops.GetAdjacencyMatrix(mol)))
         if len(cycle_list) == 0:
             cycle_length = 0

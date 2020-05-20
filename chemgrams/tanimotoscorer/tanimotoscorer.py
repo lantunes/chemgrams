@@ -12,6 +12,9 @@ class TanimotoScorer:
 
     def score(self, smiles):
         mol = Chem.MolFromSmiles(smiles)
+        return self.score_mol(mol)
+
+    def score_mol(self, mol):
         mol_fp = AllChem.GetMorganFingerprint(mol, self._radius)
         return DataStructs.DiceSimilarity(self._target_fp, mol_fp)
 
