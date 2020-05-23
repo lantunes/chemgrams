@@ -130,6 +130,7 @@ for n in range(num_iterations):
     logger.info("writing dataset...")
     name = 'molexit-%d' % n
     dataset = '../models/molexit/%s.txt' % name
+    dataset_scores = []
     with open(dataset, 'w') as f:
         for smi in list(reversed(sorted(all_smiles.items(), key=lambda kv: kv[1][0])))[:keep_top_n]:
             dsmi = smiles_to_deepsmiles(smi[0].strip())
@@ -137,7 +138,9 @@ for n in range(num_iterations):
             tokens = tok.get_tokens()
             f.write(' '.join([t.value for t in tokens]))
             f.write("\n")
+            dataset_scores.append(smi[1][0])
 
+    logger.info('dataset: size: %s, mean score: %s' % (len(dataset_scores), np.mean(dataset_scores)))
     logger.info('training new LM...')
     lm_trainer.train(10, dataset, '../models/molexit', name)
 
