@@ -12,8 +12,6 @@ from chemgrams.tanimotoscorer import TanimotoScorer
 
 rdBase.DisableLog('rdApp.error')
 rdBase.DisableLog('rdApp.warning')
-from chemgrams.sascorer import sascorer
-from chemgrams.cyclescorer import CycleScorer
 from chemgrams.training import KenLMTrainer
 logger = get_logger('chemgrams.log')
 from pathlib import Path
@@ -22,10 +20,7 @@ THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 logger.info(os.path.basename(__file__))
 logger.info("KenLMDeepSMILESLanguageModel('../models/chembl_25_deepsmiles_klm_10gram_200503.klm', vocab)")
-logger.info("width = 12, max_depth = 50, start_state = ['<s>'], c = 100")
-logger.info("score: -1.0 if invalid; -1.0 if seen in iteration; tanimoto distance from abilify if valid")
-logger.info("LanguageModelMCTSWithPUCTTerminating")
-logger.info("TanimotoScorer(abilify, radius=6)")
+logger.info("TanimotoScorer(abilify, radius=6); distance only (no SA or cycle scoring)")
 logger.info("num_iterations = 100")
 logger.info("time per iteration = 45 min.")
 logger.info("keep_top_n = 20000 of all (including duplicates)")
@@ -36,16 +31,10 @@ lm = KenLMDeepSMILESLanguageModel('../models/chembl_25_deepsmiles_klm_10gram_200
 abilify = "Clc4cccc(N3CCN(CCCCOc2ccc1c(NC(=O)CC1)c2)CC3)c4Cl"
 distance_scorer = TanimotoScorer(abilify, radius=6)
 
-cycle_scorer = CycleScorer()
-
 converter = Converter(rings=True, branches=True)
 env = os.environ.copy()
 env["PATH"] = "/Users/luis/kenlm/build/bin:" + env["PATH"]
 lm_trainer = KenLMTrainer(env)
-
-
-class StopTreeSearch(Exception):
-    pass
 
 
 def smiles_to_deepsmiles(smiles):
@@ -62,7 +51,6 @@ num_iterations = 100
 keep_top_n = 20000
 TIME_PER_ITERATION = 45*60  # 45 minutes in seconds
 LOG_INTERVAL = 5*60.0  # 5 minutes in seconds
-num_simulations = 15000000  # much more than 8 hours
 
 all_unique = {}
 all_valid = []
@@ -70,16 +58,10 @@ all_valid = []
 for n in range(num_iterations):
     num_valid = 0
     simulations = 0
-
-    width = 12
-    max_depth = 50
-    start_state = ["<s>"]
-    c = 100
-    seen = set()
-
     current_best_score = None
     current_best_smiles = None
     beats_current = lambda sc: sc > current_best_score
+    seen = set()
 
     logger.info("searching...")
 
@@ -98,69 +80,36 @@ for n in range(num_iterations):
 
     start = time.time()
     elapsed = time.time() - start
-
-    def eval_function(text):
-        global simulations, num_valid, all_unique, elapsed, current_best_score, current_best_smiles, beats_current
-
-        if elapsed >= TIME_PER_ITERATION:
-            raise StopTreeSearch()
-
+    while elapsed < TIME_PER_ITERATION:
         simulations += 1
-
-        generated = ''.join(text)
         try:
+            generated = lm.generate(num_chars=100, text_seed='<s>')
+
             decoded = DeepSMILESLanguageModelUtils.decode(generated, start='<s>', end='</s>')
-            smiles = DeepSMILESLanguageModelUtils.sanitize(decoded)
-            mol = Chem.MolFromSmiles(smiles)
-            if mol is None: raise Exception
-        except Exception:
-            elapsed = time.time() - start
-            return -1.0
+            sanitized = DeepSMILESLanguageModelUtils.sanitize(decoded)
+            mol = Chem.MolFromSmiles(sanitized)
 
-        num_valid += 1
+            num_valid += 1
 
-        # synthetic accessibility score is a number between 1 (easy to make) and 10 (very difficult to make)
-        sascore = sascorer.calculateScore(mol) / 10.
+            score = distance_scorer.score_mol(mol)
 
-        # cycle score, squashed between 0 and 1
-        cyclescore = cycle_scorer.score_mol(mol)
-        cyclescore = cyclescore / (1 + cyclescore)
+            all_unique[sanitized] = (score, generated)
+            seen.add(sanitized)
+            all_valid.append((sanitized, score))
+            if score == 1.0:
+                logger.info("FOUND!")
 
-        distance_score = distance_scorer.score_mol(mol)
+            if current_best_score is None or beats_current(score):
+                current_best_score = score
+                current_best_smiles = sanitized
 
-        score = (0.75 * distance_score) + (0.15 * (1 - sascore)) + (0.10 * (1 - cyclescore))
-
-        seen.add(smiles)
-        all_unique[smiles] = (score, generated)
-
-        if current_best_score is None or beats_current(score):
-            current_best_score = score
-            current_best_smiles = smiles
-
-        all_valid.append((smiles, score))
-
-        if distance_score == 1.0:
-            logger.info("FOUND!")
-
-        ret_score = -1.0 if smiles in seen else score
-
-        # rescale score from [0,1] to [-1,1]
-        ret_score = (ret_score * 2) + (-1) if ret_score >= 0. else ret_score
+        except Exception as e:
+            pass
 
         elapsed = time.time() - start
-        return ret_score
-
-    mcts = LanguageModelMCTSWithPUCTTerminating(lm, width, max_depth, eval_function, cpuct=c, terminating_symbol='</s>')
-    state = start_state
-
-    try:
-        mcts.search(state, num_simulations)
-    except StopTreeSearch:
-        pass
 
     t.cancel()
     end = time.time()
-
     logger.info("--done--")
     logger.info("num simulations: %s" % simulations)
     logger.info("num valid (in this iteration): %d" % num_valid)

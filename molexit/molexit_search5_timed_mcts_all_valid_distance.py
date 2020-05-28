@@ -12,8 +12,6 @@ from chemgrams.tanimotoscorer import TanimotoScorer
 
 rdBase.DisableLog('rdApp.error')
 rdBase.DisableLog('rdApp.warning')
-from chemgrams.sascorer import sascorer
-from chemgrams.cyclescorer import CycleScorer
 from chemgrams.training import KenLMTrainer
 logger = get_logger('chemgrams.log')
 from pathlib import Path
@@ -25,7 +23,7 @@ logger.info("KenLMDeepSMILESLanguageModel('../models/chembl_25_deepsmiles_klm_10
 logger.info("width = 12, max_depth = 50, start_state = ['<s>'], c = 100")
 logger.info("score: -1.0 if invalid; -1.0 if seen in iteration; tanimoto distance from abilify if valid")
 logger.info("LanguageModelMCTSWithPUCTTerminating")
-logger.info("TanimotoScorer(abilify, radius=6)")
+logger.info("TanimotoScorer(abilify, radius=6); distance only (no SA or cycle scoring)")
 logger.info("num_iterations = 100")
 logger.info("time per iteration = 45 min.")
 logger.info("keep_top_n = 20000 of all (including duplicates)")
@@ -35,8 +33,6 @@ lm = KenLMDeepSMILESLanguageModel('../models/chembl_25_deepsmiles_klm_10gram_200
 
 abilify = "Clc4cccc(N3CCN(CCCCOc2ccc1c(NC(=O)CC1)c2)CC3)c4Cl"
 distance_scorer = TanimotoScorer(abilify, radius=6)
-
-cycle_scorer = CycleScorer()
 
 converter = Converter(rings=True, branches=True)
 env = os.environ.copy()
@@ -119,16 +115,7 @@ for n in range(num_iterations):
 
         num_valid += 1
 
-        # synthetic accessibility score is a number between 1 (easy to make) and 10 (very difficult to make)
-        sascore = sascorer.calculateScore(mol) / 10.
-
-        # cycle score, squashed between 0 and 1
-        cyclescore = cycle_scorer.score_mol(mol)
-        cyclescore = cyclescore / (1 + cyclescore)
-
-        distance_score = distance_scorer.score_mol(mol)
-
-        score = (0.75 * distance_score) + (0.15 * (1 - sascore)) + (0.10 * (1 - cyclescore))
+        score = distance_scorer.score_mol(mol)
 
         seen.add(smiles)
         all_unique[smiles] = (score, generated)
@@ -139,13 +126,10 @@ for n in range(num_iterations):
 
         all_valid.append((smiles, score))
 
-        if distance_score == 1.0:
+        if score == 1.0:
             logger.info("FOUND!")
 
         ret_score = -1.0 if smiles in seen else score
-
-        # rescale score from [0,1] to [-1,1]
-        ret_score = (ret_score * 2) + (-1) if ret_score >= 0. else ret_score
 
         elapsed = time.time() - start
         return ret_score
