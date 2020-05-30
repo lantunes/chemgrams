@@ -109,7 +109,7 @@ _* a reward of 1.0 was given if the molecule was valid, and -1.0 if it was eithe
 
 _^ a reward of -1.0 was given if the molecule was invalid or already generated, otherwise the score was: log(p_prior(m)) + σ,
   where σ is a tuning parameter, set to 2, and log(p_prior(m)) is the log probability of the generated molecule according to
-  the language model_
+  the language model (the score was scaled to [-1,1])_
 
 When MCTS is used, the uniqueness of the generated molecules increases,
 and much fewer of the molecules seen in training are generated. However,
