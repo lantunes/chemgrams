@@ -106,9 +106,10 @@ of ~250,000 molecules). The results are presented in the following table:
 | Chemgrams(n=10)+MCTS^ | 500,000     | 242,440 (48.49%) | 228,922 (45.78%) |  82 (0.036% of Unique) |  ~103 minutes |
 
 _* a reward of 1.0 was given if the molecule was valid, and -1.0 if it was either invalid or already generated_
-^ a reward of -1.0 was given of the molecules was invalid or already generated, otherwise the score was: log(p_prior(s)) + _σ_,
-  where _σ_ is a tuning parameter, set to 2, and log(p_prior(s)) is the log probability of the generated sequence according to
-  the language model
+
+_^ a reward of -1.0 was given of the molecules was invalid or already generated, otherwise the score was: log(p_prior(s)) + σ,
+  where σ is a tuning parameter, set to 2, and log(p_prior(s)) is the log probability of the generated sequence according to
+  the language model_
 
 When MCTS is used, the uniqueness of the generated molecules increases,
 and much fewer of the molecules seen in training are generated. However,
@@ -136,7 +137,7 @@ language model (as in [Olivecrona et al. 2017](https://jcheminf.biomedcentral.co
 The resulting t-SNE plot below demonstrates that the generated molecules
 lie closer to the corpus used to create the language model:
 
-<img src="https://raw.githubusercontent.com/lantunes/chemgrams/master/assets/kenlm_mcts_deepsmiles_prior_10gram_tsne.png" width="60%"/>
+<img src="https://raw.githubusercontent.com/lantunes/chemgrams/master/assets/kenlm_mcts_deepsmiles_prior_10gram_tsne.png" width="48%"/>
 
 ### Influence of the Corpus
 
