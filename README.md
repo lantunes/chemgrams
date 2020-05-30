@@ -107,8 +107,8 @@ of ~250,000 molecules). The results are presented in the following table:
 
 _* a reward of 1.0 was given if the molecule was valid, and -1.0 if it was either invalid or already generated_
 
-_^ a reward of -1.0 was given of the molecules was invalid or already generated, otherwise the score was: log(p_prior(s)) + σ,
-  where σ is a tuning parameter, set to 2, and log(p_prior(s)) is the log probability of the generated sequence according to
+_^ a reward of -1.0 was given if the molecule was invalid or already generated, otherwise the score was: log(p_prior(m)) + σ,
+  where σ is a tuning parameter, set to 2, and log(p_prior(m)) is the log probability of the generated molecule according to
   the language model_
 
 When MCTS is used, the uniqueness of the generated molecules increases,
