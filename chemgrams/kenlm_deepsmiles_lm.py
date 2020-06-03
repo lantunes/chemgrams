@@ -133,8 +133,9 @@ class KenLMDeepSMILESLanguageModel(ChemgramsLanguageModel):
     def log_prob(self, sentence):
         """
         Returns the log10 probability of a sentence. A sentence should be tokenized and in KenLM format,
-        e.g. "C C ( C ) O C"
-        :param sentence:
+        e.g. "C C C ) O C"
+        NOTE: the sentence must NOT include the start and end tokens (i.e. '<s>' and '</s>')
+        :param sentence: a string in KenLM format, not including start and end tokens, e.g. "C C C ) O C"
         :return: returns the log base 10 probability of a sentence
         """
         return self._lm.score(sentence)

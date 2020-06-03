@@ -27,6 +27,28 @@ class DeepSMILESLanguageModelUtils:
         converter = deepsmiles.Converter(rings=True, branches=True)
         return converter.decode(generated)
 
+    @staticmethod
+    def extract_sentence(generated_tokens, start='<s>', end='</s>', join_on=''):
+        """
+        Takes a list of generated tokens, that may or may not contain start and end tokens,
+        and returns a string, joined on join_on, excluding any start and end tokens.
+        :param generated_tokens: a list of tokens; e.g. ['<s>', 'C', 'C', 'O', '</s>']
+        :param start: the beginning-of-sentence token
+        :param end: the end-of-sentence token
+        :param join_on: the string on which to join the tokens
+        :return: a string, joined on the join string, excluding the start and end tokens
+                 e.g. if join_on=' ' and generated_tokens=['<s>', 'C', 'C', 'O', '</s>'], then 'C C O' will be returned
+        """
+        sequence = list(generated_tokens)
+
+        if len(sequence) > 0 and sequence[0] == start:
+            sequence = sequence[1:]
+
+        if len(sequence) > 0 and sequence[-1] == end:
+            sequence = sequence[:-1]
+
+        return join_on.join(sequence)
+
 
 class SMILESLanguageModelUtils:
 
