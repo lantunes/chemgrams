@@ -1,1 +1,1 @@
-from .jscorer import *
+from .jscorer import JScorer

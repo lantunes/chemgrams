@@ -1,1 +1,1 @@
-from .queryscorer import *
+from .queryscorer import QueryScorer

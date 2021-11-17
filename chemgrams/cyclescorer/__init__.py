@@ -1,1 +1,1 @@
-from .cyclescorer import *
+from .cyclescorer import CycleScorer

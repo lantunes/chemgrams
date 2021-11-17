@@ -1,1 +1,1 @@
-from .qedscorer import *
+from .qedscorer import QEDScorer

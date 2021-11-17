@@ -1,1 +1,1 @@
-from .tanimotoscorer import *
+from .tanimotoscorer import TanimotoScorer

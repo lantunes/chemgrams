@@ -1,1 +1,1 @@
-from .kenlm_trainer import *
+from .kenlm_trainer import KenLMTrainer
