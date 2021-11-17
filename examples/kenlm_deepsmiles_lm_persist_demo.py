@@ -1,9 +1,9 @@
 import os
 import time
 
+from chemgrams import get_arpa_vocab, KenLMDeepSMILESLanguageModel, DeepSMILESLanguageModelUtils
 from chemgrams.logger import get_logger
 
-from chemgrams import *
 from rdkit import rdBase
 rdBase.DisableLog('rdApp.error')
 rdBase.DisableLog('rdApp.warning')

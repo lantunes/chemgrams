@@ -20,6 +20,7 @@ if __name__ == '__main__':
     logger.info("KenLMDeepSMILESLanguageModel('../resources/chemts_250k_deepsmiles_klm_10gram_200429.klm', vocab)")
     logger.info("width = 24, max_depth = 100, start_state = ['<s>'], c = 5")
     logger.info("score: -1.0 if invalid; -1.0 if seen previously; 1.0 if valid")
+    logger.info("ret_score = prior_log_prob + sigma*score; sigma = 2")
     logger.info("LanguageModelMCTSWithPUCTTerminating")
 
     LOG_INTERVAL = 60.0
@@ -27,7 +28,7 @@ if __name__ == '__main__':
     logger.info("loading language model...")
 
     vocab = get_arpa_vocab('../resources/chemts_250k_deepsmiles_klm_10gram_200429.arpa')
-    lm = KenLMDeepSMILESLanguageModel('../resources/chemts_250k_deepsmiles_klm_10gram_200429.klm', vocab)
+    prior = KenLMDeepSMILESLanguageModel('../resources/chemts_250k_deepsmiles_klm_10gram_200429.klm', vocab)
 
     num_simulations = 500000  # about enough to get ~250,000 valid molecules
 
@@ -35,6 +36,7 @@ if __name__ == '__main__':
     max_depth = 100
     start_state = ["<s>"]
     c = 5
+    sigma = 2
 
     all_smiles = set()
     num_valid = 0
@@ -68,14 +70,33 @@ if __name__ == '__main__':
         num_valid += 1
 
         if smiles in all_smiles:
-            score = -1.0
+            return -1.0
         else:
+            # the score in this case is simply 1.0, since the molecule is valid and hasn't been generated yet;
+            #  but it could be anything, such as whether the generated sequence contains sulfur, etc.
             score = 1.0
             all_smiles.add(smiles)
 
-        return score
+        # As in "Molecular de-novo design through deep reinforcement learning", by Olivecrona et al., we are adding
+        #  the prior's log probability of the generated sequence to the score.
+        prior_log_prob = prior.log_prob(DeepSMILESLanguageModelUtils.extract_sentence(text, join_on=' ', start='<s>', end='</s>'))
 
-    mcts = LanguageModelMCTSWithPUCTTerminating(lm, width, max_depth, eval_function, cpuct=c, terminating_symbol='</s>')
+        tot_score = prior_log_prob + sigma*score
+
+        # rescale the score
+        # in practice, the log probs are rarely less than -45; so the min tot_score can be: -45 + (sigma*-1.0)
+        rescale_min = -45 - sigma
+        if tot_score < rescale_min:
+            logger.info("WARNING: total score lower than %s" % rescale_min)
+        # because probabilities are in the range [0,1], the max log prob is log(1) i.e. 0
+        #  so the max tot_score can be: 0 + sigma*1.0
+        rescale_max = sigma
+        # scaling x into [a,b]: (b-a)*((x - min(x))/(max(x) - min(x))+a
+        ret_score = (1 - (-1)) * ((tot_score - rescale_min)/(rescale_max - rescale_min)) + (-1)
+
+        return ret_score
+
+    mcts = LanguageModelMCTSWithPUCTTerminating(prior, width, max_depth, eval_function, cpuct=c, terminating_symbol='</s>')
     state = start_state
 
     logger.info("beginning search...")

@@ -1,5 +1,6 @@
-from chemgrams import *
+from chemgrams import get_arpa_vocab, KenLMDeepSMILESLanguageModel
 from chemgrams import DeepSMILESTokenizer
+
 import pybel
 from deepsmiles import Converter
 

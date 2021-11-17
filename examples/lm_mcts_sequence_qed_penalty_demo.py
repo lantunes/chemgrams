@@ -1,7 +1,11 @@
 import os
 import time
-from chemgrams import *
+import numpy as np
+
+from chemgrams import get_arpa_vocab, KenLMDeepSMILESLanguageModel, DeepSMILESLanguageModelUtils, \
+    LanguageModelMCTSWithPUCTTerminating
 from chemgrams.qedscorer import QEDScorer
+
 from rdkit.RDLogger import logger
 from rdkit import rdBase
 rdBase.DisableLog('rdApp.error')

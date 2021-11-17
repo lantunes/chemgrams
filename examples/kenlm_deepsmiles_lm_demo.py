@@ -1,10 +1,12 @@
 import os
 import time
+import numpy as np
 
+from chemgrams import get_arpa_vocab, KenLMDeepSMILESLanguageModel, SMILESLanguageModelUtils, \
+    DeepSMILESLanguageModelUtils
+from chemgrams.jscorer import JScorer
 from chemgrams.logger import get_logger, log_top_best
 
-from chemgrams import *
-from chemgrams.jscorer import JScorer
 from rdkit import rdBase
 rdBase.DisableLog('rdApp.error')
 rdBase.DisableLog('rdApp.warning')
@@ -30,11 +32,15 @@ current_best_score = None
 current_best_smiles = None
 beats_current = lambda score: score > current_best_score
 
+corpus_smiles = set()
+with open('../resources/chemts_250k_smiles_corpus.txt', 'r') as f:
+    [corpus_smiles.add(SMILESLanguageModelUtils.sanitize(line.strip())) for line in f.readlines()]
+
 all_smiles = {}
 num_valid = 0
 
 start = time.time()
-for i in range(3000000): # ~8 hours
+for i in range(100000):
     try:
         generated = lm.generate(num_chars=100, text_seed='<s>')
 
@@ -56,10 +62,11 @@ for i in range(3000000): # ~8 hours
     except Exception as e:
         pass
 
-    if (i+1) % 50000 == 0:
+    if (i+1) % 500 == 0:
         logger.info("--iteration: %d--" % (i+1))
         logger.info("num valid: %d" % num_valid)
         logger.info("num unique: %s" % len(all_smiles))
+        logger.info("corpus overlap: %s %%" % ((len(corpus_smiles.intersection(all_smiles.keys())) / len(all_smiles)) * 100))
         log_top_best(all_smiles, 5, logger)
 
 end = time.time()
@@ -67,6 +74,7 @@ end = time.time()
 logger.info("--done--")
 logger.info("num valid: %d" % num_valid)
 logger.info("num unique: %s" % len(all_smiles))
+logger.info("corpus overlap: %s %%" % ((len(corpus_smiles.intersection(all_smiles.keys())) / len(all_smiles))*100))
 logger.info("best: %s , score: %s (%s seconds)" % (current_best_smiles, str(current_best_score), str((end - start))))
 
 log_top_best(all_smiles, 5, logger)

@@ -1,11 +1,14 @@
 import os
 import time
-from chemgrams import *
+
+from chemgrams import get_arpa_vocab, KenLMDeepSMILESLanguageModel, DeepSMILESLanguageModelUtils, \
+    LanguageModelMCTSWithPUCTTerminating
 from chemgrams.tanimotoscorer import TanimotoScorer
 from chemgrams.sascorer import sascorer
 from chemgrams.cyclescorer import CycleScorer
 from chemgrams.logger import get_logger, log_top_best
-from rdkit import rdBase
+
+from rdkit import rdBase, Chem
 rdBase.DisableLog('rdApp.error')
 rdBase.DisableLog('rdApp.warning')
 

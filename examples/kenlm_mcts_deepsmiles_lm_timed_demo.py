@@ -1,8 +1,11 @@
 import os
 import time
 from threading import Timer
-from chemgrams import *
+
+from chemgrams import get_arpa_vocab, KenLMDeepSMILESLanguageModel, StopTreeSearch, DeepSMILESLanguageModelUtils, \
+    LanguageModelMCTSWithPUCTTerminating
 from chemgrams.logger import get_logger
+
 from rdkit import rdBase
 rdBase.DisableLog('rdApp.error')
 rdBase.DisableLog('rdApp.warning')
@@ -10,9 +13,6 @@ rdBase.DisableLog('rdApp.warning')
 logger = get_logger('chemgrams.log')
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
-
-class StopTreeSearch(Exception):
-    pass
 
 if __name__ == '__main__':
 

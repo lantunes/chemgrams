@@ -1,12 +1,13 @@
 import os
 import time
 from threading import Timer
+import numpy as np
 
+from chemgrams import get_arpa_vocab, KenLMDeepSMILESLanguageModel, DeepSMILESLanguageModelUtils
+from chemgrams.tanimotoscorer import TanimotoScorer
 from chemgrams.logger import get_logger, log_top_best
 
-from chemgrams import *
-from chemgrams.tanimotoscorer import TanimotoScorer
-from rdkit import rdBase
+from rdkit import rdBase, Chem
 rdBase.DisableLog('rdApp.error')
 rdBase.DisableLog('rdApp.warning')
 
@@ -24,6 +25,8 @@ TIME_LIMIT = 3 * 60 * 60  # three hours in seconds
 
 LOG_INTERVAL = 1 * 60 * 60  # one hour in seconds
 # LOG_INTERVAL = 30.0  # 30 seconds
+
+KEEP_TOP_N = 20000
 
 vocab = get_arpa_vocab('../resources/chembl_25_deepsmiles_klm_10gram_200503.arpa')
 lm = KenLMDeepSMILESLanguageModel('../resources/chembl_25_deepsmiles_klm_10gram_200503.klm', vocab)
@@ -98,6 +101,6 @@ logger.info("best: %s , score: %s (%s seconds)" % (current_best_smiles, str(curr
 log_top_best(all_unique, 5, logger)
 
 all_valid_scores = []
-for smi in all_valid:
+for smi in list(reversed(sorted(all_valid, key=lambda i: i[1])))[:KEEP_TOP_N]:
     all_valid_scores.append(smi[1])
 logger.info('all valid: size: %s, mean score: %s' % (len(all_valid_scores), np.mean(all_valid_scores)))

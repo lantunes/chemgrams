@@ -1,7 +1,9 @@
 from rdkit.Chem.Crippen import MolLogP
 from rdkit.RDLogger import logger
+from rdkit import Chem
 
-from chemgrams import *
+from chemgrams import get_arpa_vocab, EmptyDeepSMILESLanguageModel, DeepSMILESLanguageModelUtils
+
 from rdkit import rdBase
 rdBase.DisableLog('rdApp.error')
 rdBase.DisableLog('rdApp.warning')
