@@ -18,8 +18,10 @@ class QueryScorer:
 
     def score(self, smiles):
         mol = Chem.MolFromSmiles(smiles)
+        return self.score_mol(mol)
 
-        fp = AllChem.GetMorganFingerprint(mol, 2, useCounts=True, useFeatures=True)
+    def score_mol(self, mol):
+        fp = AllChem.GetMorganFingerprint(mol, self._radius, useCounts=True, useFeatures=True)
         score = DataStructs.TanimotoSimilarity(self._target_fp, fp)
         score = min(score, self._k) / self._k
         return -1.0 + (2*float(score))

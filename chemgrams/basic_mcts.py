@@ -110,3 +110,7 @@ class _Node:
         if self.visits == 0.0:
             return math.inf
         return self._average_value() + self._c*sqrt(log(self.parent.visits)/self.visits)
+
+
+class StopTreeSearch(Exception):
+    pass

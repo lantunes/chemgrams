@@ -1,5 +1,6 @@
 from rdkit import Chem
 import deepsmiles
+import selfies as sf
 
 
 class DeepSMILESLanguageModelUtils:
@@ -59,3 +60,19 @@ class SMILESLanguageModelUtils:
     @staticmethod
     def extract(generated_raw, start='<M>', end='</M>'):
         return DeepSMILESLanguageModelUtils.extract(generated_raw, start, end)
+
+
+class SELFIESLanguageModelUtils:
+
+    @staticmethod
+    def sanitize(smi):
+        return DeepSMILESLanguageModelUtils.sanitize(smi)
+
+    @staticmethod
+    def extract(generated_raw, start='<M>', end='</M>'):
+        return DeepSMILESLanguageModelUtils.extract(generated_raw, start, end)
+
+    @staticmethod
+    def decode(generated, start='<M>', end='</M>'):
+        generated = SELFIESLanguageModelUtils.extract(generated, start, end)
+        return sf.decoder(generated)
