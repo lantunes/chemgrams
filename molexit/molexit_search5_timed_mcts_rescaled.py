@@ -9,6 +9,8 @@ from chemgrams import get_arpa_vocab, KenLMDeepSMILESLanguageModel, StopTreeSear
     LanguageModelMCTSWithPUCTTerminating, DeepSMILESTokenizer
 from chemgrams.logger import get_logger, log_top_best
 from chemgrams.tanimotoscorer import TanimotoScorer
+from chemgrams.sascorer import sascorer
+from chemgrams.cyclescorer import CycleScorer
 from chemgrams.training import KenLMTrainer
 
 import pybel
@@ -21,24 +23,22 @@ logger = get_logger('chemgrams.log')
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 logger.info(os.path.basename(__file__))
-logger.info("KenLMDeepSMILESLanguageModel('../resources/chembl_25_deepsmiles_klm_10gram_200503.klm', vocab)")
-logger.info("width = 12, max_depth = 50, start_state = ['<s>'], c = 100")
-# logger.info("score: -1.0 if invalid; -1.0 if seen in iteration; tanimoto distance from abilify if valid; rescaling from [0,1] to [-1,1]")
-logger.info("score: -1.0 if invalid; -1.0 if seen in iteration; tanimoto distance from celecoxib if valid; rescaling from [0,1] to [-1,1]")
+logger.info("KenLMDeepSMILESLanguageModel('../models/chembl_25_deepsmiles_klm_10gram_200503.klm', vocab)")
+logger.info("width = 12, max_depth = 50, start_state = ['<s>'], c = 2")
+logger.info("score: -1.0 if invalid; -1.0 if seen in all smiles; tanimoto distance from abilify if valid")
 logger.info("LanguageModelMCTSWithPUCTTerminating")
-# logger.info("TanimotoScorer(abilify, radius=6); distance only (no SA or cycle scoring)")
-logger.info("TanimotoScorer(celecoxib, radius=6); distance only (no SA or cycle scoring)")
+logger.info("TanimotoScorer(abilify, radius=6)")
 logger.info("num_iterations = 100")
 logger.info("time per iteration = 45 min.")
-logger.info("keep_top_n = 200000 of all (including duplicates)")
+logger.info("keep_top_n = 20000")
 
-vocab = get_arpa_vocab('../resources/chembl_25_deepsmiles_klm_10gram_200503.arpa')
-lm = KenLMDeepSMILESLanguageModel('../resources/chembl_25_deepsmiles_klm_10gram_200503.klm', vocab)
+vocab = get_arpa_vocab('../models/chembl_25_deepsmiles_klm_10gram_200503.arpa')
+lm = KenLMDeepSMILESLanguageModel('../models/chembl_25_deepsmiles_klm_10gram_200503.klm', vocab)
 
-# abilify = "Clc4cccc(N3CCN(CCCCOc2ccc1c(NC(=O)CC1)c2)CC3)c4Cl"
-# distance_scorer = TanimotoScorer(abilify, radius=6)
-celecoxib = "O=S(=O)(c3ccc(n1nc(cc1c2ccc(cc2)C)C(F)(F)F)cc3)N"
-distance_scorer = TanimotoScorer(celecoxib, radius=6)
+abilify = "Clc4cccc(N3CCN(CCCCOc2ccc1c(NC(=O)CC1)c2)CC3)c4Cl"
+distance_scorer = TanimotoScorer(abilify, radius=6)
+
+cycle_scorer = CycleScorer()
 
 converter = Converter(rings=True, branches=True)
 env = os.environ.copy()
@@ -57,13 +57,12 @@ if os.path.exists(path) and os.path.isdir(path):
 path.mkdir(parents=True, exist_ok=True)
 
 num_iterations = 100
-keep_top_n = 200000
-TIME_PER_ITERATION = 45*60  # 45 minutes (in seconds)
+keep_top_n = 20000
+TIME_PER_ITERATION = 45*60  # 45 minutes in seconds
 LOG_INTERVAL = 5*60.0  # 5 minutes in seconds
 num_simulations = 15000000  # much more than 8 hours
 
-all_unique = {}
-all_valid = []
+all_smiles = {}
 
 for n in range(num_iterations):
     num_valid = 0
@@ -72,12 +71,8 @@ for n in range(num_iterations):
     width = 12
     max_depth = 50
     start_state = ["<s>"]
-    c = 100
+    c = 2
     seen = set()
-
-    current_best_score = None
-    current_best_smiles = None
-    beats_current = lambda sc: sc > current_best_score
 
     logger.info("searching...")
 
@@ -86,9 +81,9 @@ for n in range(num_iterations):
         logger.info("--results--")
         logger.info("num simulations: %s" % simulations)
         logger.info("num valid (in this iteration): %d" % num_valid)
-        logger.info("num unique (over all iterations): %s" % len(all_unique))
+        logger.info("num unique (over all iterations): %s" % len(all_smiles))
         logger.info("num unique (in this iteration): %s" % len(seen))
-        log_top_best(all_unique, 5, logger)
+        log_top_best(all_smiles, 5, logger)
         t = Timer(LOG_INTERVAL, log_progress)
         t.start()
     t = Timer(LOG_INTERVAL, log_progress)
@@ -98,7 +93,7 @@ for n in range(num_iterations):
     elapsed = time.time() - start
 
     def eval_function(text):
-        global simulations, num_valid, all_unique, elapsed, current_best_score, current_best_smiles, beats_current
+        global simulations, num_valid, all_smiles, elapsed
 
         if elapsed >= TIME_PER_ITERATION:
             raise StopTreeSearch()
@@ -117,23 +112,27 @@ for n in range(num_iterations):
 
         num_valid += 1
 
-        score = distance_scorer.score_mol(mol)
+        if smiles in seen:
+            score = -1.0
+        else:
+            # synthetic accessibility score is a number between 1 (easy to make) and 10 (very difficult to make)
+            sascore = sascorer.calculateScore(mol) / 10.
 
-        if current_best_score is None or beats_current(score):
-            current_best_score = score
-            current_best_smiles = smiles
+            # cycle score, squashed between 0 and 1
+            cyclescore = cycle_scorer.score_mol(mol)
+            cyclescore = cyclescore / (1 + cyclescore)
 
-        if score == 1.0:
-            logger.info("FOUND!")
+            distance_score = distance_scorer.score_mol(mol)
 
-        ret_score = -1.0 if smiles in seen else score
+            score = (0.75 * distance_score) + (0.15 * (1 - sascore)) + (0.10 * (1 - cyclescore))
+
+            seen.add(smiles)
+            all_smiles[smiles] = (score, generated)
+            if distance_score == 1.0:
+                logger.info("FOUND!")
 
         # rescale score from [0,1] to [-1,1]
-        ret_score = (ret_score * 2) + (-1) if ret_score >= 0. else ret_score
-
-        all_unique[smiles] = (score, generated)
-        all_valid.append((smiles, score))
-        seen.add(smiles)
+        ret_score = (score * 2) + (-1) if score >= 0. else score
 
         elapsed = time.time() - start
         return ret_score
@@ -152,28 +151,30 @@ for n in range(num_iterations):
     logger.info("--done--")
     logger.info("num simulations: %s" % simulations)
     logger.info("num valid (in this iteration): %d" % num_valid)
-    logger.info("num valid (over all iterations): %d" % len(all_valid))
-    logger.info("num unique (over all iterations): %s" % len(all_unique))
+    logger.info("num unique (over all iterations): %s" % len(all_smiles))
     logger.info("num unique (in this iteration): %s" % len(seen))
-    logger.info("best SMILES: %s, J: %s (%s seconds)" % (current_best_smiles, current_best_score, str((end - start))))
 
-    log_top_best(all_unique, 5, logger)
+    best = mcts.get_best_sequence()
+    generated_text = ''.join(best[0])
+    logger.info("best generated text: %s" % generated_text)
+    decoded = DeepSMILESLanguageModelUtils.decode(generated_text, start='<s>', end='</s>')
+    smiles = DeepSMILESLanguageModelUtils.sanitize(decoded)
+    logger.info("best SMILES: %s, J: %s (%s seconds)" % (smiles, distance_scorer.score(smiles), str((end - start))))
+
+    log_top_best(all_smiles, 5, logger)
 
     logger.info("writing dataset...")
     name = 'molexit-%d' % n
     dataset = '../models/molexit/%s.txt' % name
     dataset_scores = []
     with open(dataset, 'w') as f:
-        for smi in list(reversed(sorted(all_valid, key=lambda i: i[1])))[:keep_top_n]:
-            try:
-                dsmi = smiles_to_deepsmiles(smi[0].strip())
-                tok = DeepSMILESTokenizer(dsmi)
-                tokens = tok.get_tokens()
-                f.write(' '.join([t.value for t in tokens]))
-                f.write("\n")
-                dataset_scores.append(smi[1])
-            except Exception:
-                pass
+        for smi in list(reversed(sorted(all_smiles.items(), key=lambda kv: kv[1][0])))[:keep_top_n]:
+            dsmi = smiles_to_deepsmiles(smi[0].strip())
+            tok = DeepSMILESTokenizer(dsmi)
+            tokens = tok.get_tokens()
+            f.write(' '.join([t.value for t in tokens]))
+            f.write("\n")
+            dataset_scores.append(smi[1][0])
 
     logger.info('dataset: size: %s, mean score: %s' % (len(dataset_scores), np.mean(dataset_scores)))
     logger.info('training new LM...')

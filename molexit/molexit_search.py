@@ -1,19 +1,22 @@
 import os
 import time
-from chemgrams import *
+from pathlib import Path
+import shutil
+
+from chemgrams import get_arpa_vocab, KenLMDeepSMILESLanguageModel, LanguageModelMCTSWithPUCTTerminating, \
+    DeepSMILESLanguageModelUtils, DeepSMILESTokenizer
 from chemgrams.tanimotoscorer import TanimotoScorer
 from chemgrams.logger import get_logger, log_top_best
+from chemgrams.training import KenLMTrainer
+
 import pybel
 from deepsmiles import Converter
 from rdkit import rdBase
 rdBase.DisableLog('rdApp.error')
 rdBase.DisableLog('rdApp.warning')
-from chemgrams.training import KenLMTrainer
 logger = get_logger('chemgrams.log')
-from pathlib import Path
-import shutil
-THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
+THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 logger.info(os.path.basename(__file__))
 logger.info("KenLMDeepSMILESLanguageModel('../resources/zinc12_fragments_deepsmiles_klm_6gram_190421.klm', vocab)")

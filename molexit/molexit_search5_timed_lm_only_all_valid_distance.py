@@ -1,35 +1,36 @@
 import os
 import time
+from pathlib import Path
+import shutil
 from threading import Timer
+import numpy as np
+
+from chemgrams import get_arpa_vocab, KenLMDeepSMILESLanguageModel, DeepSMILESLanguageModelUtils, DeepSMILESTokenizer
+from chemgrams.logger import get_logger, log_top_best
+from chemgrams.tanimotoscorer import TanimotoScorer
+from chemgrams.training import KenLMTrainer
 
 import pybel
 from deepsmiles import Converter
-from rdkit import rdBase
-
-from chemgrams import *
-from chemgrams.logger import get_logger, log_top_best
-from chemgrams.tanimotoscorer import TanimotoScorer
-
+from rdkit import rdBase, Chem
 rdBase.DisableLog('rdApp.error')
 rdBase.DisableLog('rdApp.warning')
-from chemgrams.training import KenLMTrainer
 logger = get_logger('chemgrams.log')
-from pathlib import Path
-import shutil
+
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 logger.info(os.path.basename(__file__))
-logger.info("KenLMDeepSMILESLanguageModel('../models/chembl_25_deepsmiles_klm_10gram_200503.klm', vocab)")
-logger.info("TanimotoScorer(abilify, radius=6); distance only (no SA or cycle scoring)")
+logger.info("KenLMDeepSMILESLanguageModel('../resources/chembl_25_deepsmiles_klm_10gram_200503.klm', vocab)")
+logger.info("TanimotoScorer(celecoxib, radius=6); distance only (no SA or cycle scoring)")
 logger.info("num_iterations = 100")
 logger.info("time per iteration = 45 min.")
 logger.info("keep_top_n = 20000 of all (including duplicates)")
 
-vocab = get_arpa_vocab('../models/chembl_25_deepsmiles_klm_10gram_200503.arpa')
-lm = KenLMDeepSMILESLanguageModel('../models/chembl_25_deepsmiles_klm_10gram_200503.klm', vocab)
+vocab = get_arpa_vocab('../resources/chembl_25_deepsmiles_klm_10gram_200503.arpa')
+lm = KenLMDeepSMILESLanguageModel('../resources/chembl_25_deepsmiles_klm_10gram_200503.klm', vocab)
 
-abilify = "Clc4cccc(N3CCN(CCCCOc2ccc1c(NC(=O)CC1)c2)CC3)c4Cl"
-distance_scorer = TanimotoScorer(abilify, radius=6)
+celecoxib = "O=S(=O)(c3ccc(n1nc(cc1c2ccc(cc2)C)C(F)(F)F)cc3)N"
+distance_scorer = TanimotoScorer(celecoxib, radius=6)
 
 converter = Converter(rings=True, branches=True)
 env = os.environ.copy()

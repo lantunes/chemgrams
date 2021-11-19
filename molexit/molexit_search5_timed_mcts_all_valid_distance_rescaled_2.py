@@ -22,23 +22,19 @@ THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 logger.info(os.path.basename(__file__))
 logger.info("KenLMDeepSMILESLanguageModel('../resources/chembl_25_deepsmiles_klm_10gram_200503.klm', vocab)")
-logger.info("width = 12, max_depth = 50, start_state = ['<s>'], c = 100")
-# logger.info("score: -1.0 if invalid; -1.0 if seen in iteration; tanimoto distance from abilify if valid; rescaling from [0,1] to [-1,1]")
-logger.info("score: -1.0 if invalid; -1.0 if seen in iteration; tanimoto distance from celecoxib if valid; rescaling from [0,1] to [-1,1]")
+logger.info("width = 12, max_depth = 50, start_state = ['<s>'], c = 5")
+logger.info("score: -1.0 if invalid; -1.0 if seen in iteration; tanimoto distance from abilify if valid; rescaling from [0,1] to [-1,1]")
 logger.info("LanguageModelMCTSWithPUCTTerminating")
-# logger.info("TanimotoScorer(abilify, radius=6); distance only (no SA or cycle scoring)")
-logger.info("TanimotoScorer(celecoxib, radius=6); distance only (no SA or cycle scoring)")
+logger.info("TanimotoScorer(abilify, radius=6); distance only (no SA or cycle scoring)")
 logger.info("num_iterations = 100")
 logger.info("time per iteration = 45 min.")
-logger.info("keep_top_n = 200000 of all (including duplicates)")
+logger.info("keep_top_n = 20000 of all valid in current iteration (including duplicates)")
 
 vocab = get_arpa_vocab('../resources/chembl_25_deepsmiles_klm_10gram_200503.arpa')
 lm = KenLMDeepSMILESLanguageModel('../resources/chembl_25_deepsmiles_klm_10gram_200503.klm', vocab)
 
-# abilify = "Clc4cccc(N3CCN(CCCCOc2ccc1c(NC(=O)CC1)c2)CC3)c4Cl"
-# distance_scorer = TanimotoScorer(abilify, radius=6)
-celecoxib = "O=S(=O)(c3ccc(n1nc(cc1c2ccc(cc2)C)C(F)(F)F)cc3)N"
-distance_scorer = TanimotoScorer(celecoxib, radius=6)
+abilify = "Clc4cccc(N3CCN(CCCCOc2ccc1c(NC(=O)CC1)c2)CC3)c4Cl"
+distance_scorer = TanimotoScorer(abilify, radius=6)
 
 converter = Converter(rings=True, branches=True)
 env = os.environ.copy()
@@ -57,27 +53,32 @@ if os.path.exists(path) and os.path.isdir(path):
 path.mkdir(parents=True, exist_ok=True)
 
 num_iterations = 100
-keep_top_n = 200000
-TIME_PER_ITERATION = 45*60  # 45 minutes (in seconds)
+keep_top_n = 20000
+TIME_PER_ITERATION = 1000*60  # 45 minutes in seconds
 LOG_INTERVAL = 5*60.0  # 5 minutes in seconds
 num_simulations = 15000000  # much more than 8 hours
 
 all_unique = {}
-all_valid = []
+
+c_sched = [5] #[2, 5, 8, 11, 15]
+c_default = 5
+max_gen = 300000
 
 for n in range(num_iterations):
-    num_valid = 0
+    all_valid = []
     simulations = 0
 
     width = 12
     max_depth = 50
     start_state = ["<s>"]
-    c = 100
+    c = c_sched[n] if n < len(c_sched) else c_default
     seen = set()
 
     current_best_score = None
     current_best_smiles = None
     beats_current = lambda sc: sc > current_best_score
+
+    time_limit = TIME_PER_ITERATION #if n == 0 else 7*60
 
     logger.info("searching...")
 
@@ -85,7 +86,7 @@ for n in range(num_iterations):
         global t
         logger.info("--results--")
         logger.info("num simulations: %s" % simulations)
-        logger.info("num valid (in this iteration): %d" % num_valid)
+        logger.info("num valid (in this iteration): %d" % len(all_valid))
         logger.info("num unique (over all iterations): %s" % len(all_unique))
         logger.info("num unique (in this iteration): %s" % len(seen))
         log_top_best(all_unique, 5, logger)
@@ -98,9 +99,9 @@ for n in range(num_iterations):
     elapsed = time.time() - start
 
     def eval_function(text):
-        global simulations, num_valid, all_unique, elapsed, current_best_score, current_best_smiles, beats_current
+        global simulations, all_unique, elapsed, current_best_score, current_best_smiles, beats_current
 
-        if elapsed >= TIME_PER_ITERATION:
+        if elapsed >= time_limit or len(all_valid) == max_gen:
             raise StopTreeSearch()
 
         simulations += 1
@@ -114,8 +115,6 @@ for n in range(num_iterations):
         except Exception:
             elapsed = time.time() - start
             return -1.0
-
-        num_valid += 1
 
         score = distance_scorer.score_mol(mol)
 
@@ -151,8 +150,7 @@ for n in range(num_iterations):
 
     logger.info("--done--")
     logger.info("num simulations: %s" % simulations)
-    logger.info("num valid (in this iteration): %d" % num_valid)
-    logger.info("num valid (over all iterations): %d" % len(all_valid))
+    logger.info("num valid (in this iteration): %d" % len(all_valid))
     logger.info("num unique (over all iterations): %s" % len(all_unique))
     logger.info("num unique (in this iteration): %s" % len(seen))
     logger.info("best SMILES: %s, J: %s (%s seconds)" % (current_best_smiles, current_best_score, str((end - start))))
@@ -175,7 +173,17 @@ for n in range(num_iterations):
             except Exception:
                 pass
 
-    logger.info('dataset: size: %s, mean score: %s' % (len(dataset_scores), np.mean(dataset_scores)))
+    with open('../models/molexit/%s-iteration-valid-top-scores.txt' % name, 'w') as f:
+        [f.write('%s\n' % s) for s in dataset_scores]
+
+    logger.info('dataset: size: %s, mean score: %s, std: %s' % (len(dataset_scores), np.mean(dataset_scores), np.std(dataset_scores)))
+
+    all_valid_scores = []
+    for smi in all_valid:
+        all_valid_scores.append(smi[1])
+    with open('../models/molexit/%s-iteration-valid-all-scores.txt' % name, 'w') as f:
+        [f.write('%s\n' % s) for s in all_valid_scores]
+
     logger.info('training new LM...')
     lm_trainer.train(10, dataset, '../models/molexit', name)
 

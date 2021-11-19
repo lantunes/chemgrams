@@ -1,30 +1,33 @@
 import os
 import time
-from chemgrams import *
+from pathlib import Path
+import shutil
+
+from chemgrams import get_arpa_vocab, KenLMDeepSMILESLanguageModel, DeepSMILESLanguageModelUtils, \
+    LanguageModelMCTSWithPUCTTerminating, DeepSMILESTokenizer
 from chemgrams.tanimotoscorer import TanimotoScorer
 from chemgrams.logger import get_logger, log_top_best
-import pybel
-from deepsmiles import Converter
-from rdkit import rdBase
-rdBase.DisableLog('rdApp.error')
-rdBase.DisableLog('rdApp.warning')
 from chemgrams.sascorer import sascorer
 from chemgrams.cyclescorer import CycleScorer
 from chemgrams.training import KenLMTrainer
-logger = get_logger('chemgrams.log')
-from pathlib import Path
-import shutil
-THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
+import pybel
+from deepsmiles import Converter
+from rdkit import rdBase, Chem
+rdBase.DisableLog('rdApp.error')
+rdBase.DisableLog('rdApp.warning')
+logger = get_logger('chemgrams.log')
+
+THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 logger.info(os.path.basename(__file__))
 logger.info("KenLMDeepSMILESLanguageModel('../models/chembl_25_deepsmiles_klm_10gram_200503.klm', vocab)")
-logger.info("width = 12, max_depth = 50, start_state = ['<s>'], c = 5")
+logger.info("width = 12, max_depth = 50, start_state = ['<s>'], c = 100")
 logger.info("score: -1.0 if invalid; -1.0 if seen previously; tanimoto distance from abilify if valid")
 logger.info("LanguageModelMCTSWithPUCTTerminating")
 logger.info("TanimotoScorer(abilify, radius=6)")
 logger.info("num_iterations = 100")
-logger.info("simulations_per_iteration = 200000")
+logger.info("simulations_per_iteration = 400000")
 logger.info("keep_top_n = 20000")
 
 logger.info("loading language model...")
@@ -43,10 +46,12 @@ env["PATH"] = "/Users/luis/kenlm/build/bin:" + env["PATH"]
 lm_trainer = KenLMTrainer(env)
 
 
-def log_best(j, all_best, n_valid, lggr):
-    if j % 10000 == 0:
+def log_best(j, all_best, n_valid, seen, lggr):
+    if j % 50000 == 0:
         lggr.info("--iteration: %d--" % j)
-        lggr.info("num valid: %d" % n_valid)
+        lggr.info("num valid (in this iteration): %d" % n_valid)
+        logger.info("num unique (over all iterations): %s" % len(all_best))
+        logger.info("num unique (in this iteration): %s" % len(seen))
         log_top_best(all_best, 5, lggr)
 
 
@@ -61,7 +66,7 @@ if os.path.exists(path) and os.path.isdir(path):
 path.mkdir(parents=True, exist_ok=True)
 
 num_iterations = 100
-simulations_per_iteration = 200000
+simulations_per_iteration = 400000
 keep_top_n = 20000
 
 all_smiles = {}
@@ -72,7 +77,7 @@ for n in range(num_iterations):
     width = 12
     max_depth = 50
     start_state = ["<s>"]
-    c = 5
+    c = 100
 
     seen_smiles = set()
 
@@ -87,23 +92,24 @@ for n in range(num_iterations):
         try:
             decoded = DeepSMILESLanguageModelUtils.decode(generated, start='<s>', end='</s>')
             smiles = DeepSMILESLanguageModelUtils.sanitize(decoded)
+            mol = Chem.MolFromSmiles(smiles)
         except Exception:
-            log_best(i, all_smiles, num_valid, logger)
+            log_best(i, all_smiles, num_valid, seen_smiles, logger)
             return -1.0
 
         num_valid += 1
 
-        if smiles in seen_smiles:
+        if mol is None or smiles in seen_smiles:
             score = -1.0
         else:
             # synthetic accessibility score is a number between 1 (easy to make) and 10 (very difficult to make)
-            sascore = sascorer.calculateScore(Chem.MolFromSmiles(smiles)) / 10.
+            sascore = sascorer.calculateScore(mol) / 10.
 
             # cycle score, squashed between 0 and 1
-            cyclescore = cycle_scorer.score(smiles)
+            cyclescore = cycle_scorer.score_mol(mol)
             cyclescore = cyclescore / (1 + cyclescore)
 
-            distance_score = distance_scorer.score(smiles)
+            distance_score = distance_scorer.score_mol(mol)
 
             score = (0.75*distance_score) + (0.15*(1-sascore)) + (0.10*(1-cyclescore))
 
@@ -111,7 +117,7 @@ for n in range(num_iterations):
             all_smiles[smiles] = (score, generated)
 
         logger.debug("%s, %s" % (smiles, str(score)))
-        log_best(i, all_smiles, num_valid, logger)
+        log_best(i, all_smiles, num_valid, seen_smiles, logger)
         return score
 
     mcts = LanguageModelMCTSWithPUCTTerminating(lm, width, max_depth, eval_function, cpuct=c, terminating_symbol='</s>')

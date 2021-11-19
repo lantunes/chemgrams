@@ -3,12 +3,13 @@ import time
 from pathlib import Path
 import shutil
 
-from chemgrams import get_arpa_vocab, KenLMDeepSMILESLanguageModel, DeepSMILESLanguageModelUtils, \
-    LanguageModelMCTSWithPUCTTerminating, DeepSMILESTokenizer
+from chemgrams import get_arpa_vocab, KenLMSELFIESLanguageModel, SELFIESLanguageModelUtils, \
+    LanguageModelMCTSWithPUCTTerminating
 from chemgrams.tanimotoscorer import TanimotoScorer
 from chemgrams.logger import get_logger, log_top_best
 from chemgrams.training import KenLMTrainer
 
+import selfies as sf
 import pybel
 from deepsmiles import Converter
 from rdkit import rdBase
@@ -19,22 +20,22 @@ logger = get_logger('chemgrams.log')
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 logger.info(os.path.basename(__file__))
-logger.info("KenLMDeepSMILESLanguageModel('../resources/zinc12_fragments_deepsmiles_klm_6gram_190421.klm', vocab)")
+logger.info("KenLMSELFIESLanguageModel('../resources/zinc12_fragments_selfies_klm_10gram_210908.klm', vocab)")
 logger.info("width = 12, max_depth = 35, start_state = ['<s>'], c = 5")
 logger.info("score: -1.0 if invalid; -1.0 if seen previously; tanimoto distance from abilify if valid")
 logger.info("LanguageModelMCTSWithPUCTTerminating")
-logger.info("TanimotoScorer(abilify)")
+logger.info("TanimotoScorer(abilify, radius=6)")
 logger.info("num_iterations = 100")
 logger.info("simulations_per_iteration = 50000")
-logger.info("keep_top_n = 5000")
+logger.info("keep_top_n = 1500")
 
 logger.info("loading language model...")
 
-vocab = get_arpa_vocab('../resources/zinc12_fragments_deepsmiles_klm_6gram_190421.arpa')
-lm = KenLMDeepSMILESLanguageModel('../resources/zinc12_fragments_deepsmiles_klm_6gram_190421.klm', vocab)
+vocab = get_arpa_vocab('../resources/zinc12_fragments_selfies_klm_10gram_210908.arpa')
+lm = KenLMSELFIESLanguageModel('../resources/zinc12_fragments_selfies_klm_10gram_210908.klm', vocab)
 
 abilify = "Clc4cccc(N3CCN(CCCCOc2ccc1c(NC(=O)CC1)c2)CC3)c4Cl"
-scorer = TanimotoScorer(abilify)
+scorer = TanimotoScorer(abilify, radius=6)
 
 converter = Converter(rings=True, branches=True)
 env = os.environ.copy()
@@ -43,15 +44,15 @@ lm_trainer = KenLMTrainer(env)
 
 
 def log_best(j, all_best, n_valid, lggr):
-    if j % 10000 == 0:
+    if j % 1000 == 0:
         lggr.info("--iteration: %d--" % j)
         lggr.info("num valid: %d" % n_valid)
         log_top_best(all_best, 5, lggr)
 
 
-def smiles_to_deepsmiles(smiles):
+def smiles_to_selfies(smiles):
     canonical = pybel.readstring("smi", smiles).write("can").strip()  # TODO do we need to canonicalize?
-    return converter.encode(canonical)
+    return sf.encoder(canonical)
 
 logger.info("deleting any existing molexit directory, and creating a new one...")
 path = Path("../models/molexit/")
@@ -61,7 +62,7 @@ path.mkdir(parents=True, exist_ok=True)
 
 num_iterations = 100
 simulations_per_iteration = 50000
-keep_top_n = 5000
+keep_top_n = 1500
 
 all_smiles = {}
 
@@ -73,8 +74,6 @@ for n in range(num_iterations):
     start_state = ["<s>"]
     c = 5
 
-    seen_smiles = set()
-
     num_valid = 0
     i = 0
 
@@ -84,19 +83,18 @@ for n in range(num_iterations):
 
         generated = ''.join(text)
         try:
-            decoded = DeepSMILESLanguageModelUtils.decode(generated, start='<s>', end='</s>')
-            smiles = DeepSMILESLanguageModelUtils.sanitize(decoded)
+            decoded = SELFIESLanguageModelUtils.decode(generated, start='<s>', end='</s>')
+            smiles = SELFIESLanguageModelUtils.sanitize(decoded)
         except Exception:
             log_best(i, all_smiles, num_valid, logger)
             return -1.0
 
         num_valid += 1
 
-        if smiles in seen_smiles:
+        if smiles in all_smiles:
             score = -1.0
         else:
             score = scorer.score(smiles)
-            seen_smiles.add(smiles)
             all_smiles[smiles] = (score, generated)
 
         logger.debug("%s, %s" % (smiles, str(score)))
@@ -117,8 +115,8 @@ for n in range(num_iterations):
     best = mcts.get_best_sequence()
     generated_text = ''.join(best[0])
     logger.info("best generated text: %s" % generated_text)
-    decoded = DeepSMILESLanguageModelUtils.decode(generated_text, start='<s>', end='</s>')
-    smiles = DeepSMILESLanguageModelUtils.sanitize(decoded)
+    decoded = SELFIESLanguageModelUtils.decode(generated_text, start='<s>', end='</s>')
+    smiles = SELFIESLanguageModelUtils.sanitize(decoded)
     logger.info("best SMILES: %s, J: %s (%s seconds)" % (smiles, scorer.score(smiles), str((end - start))))
 
     log_top_best(all_smiles, 5, logger)
@@ -128,14 +126,16 @@ for n in range(num_iterations):
     dataset = '../models/molexit/%s.txt' % name
     with open(dataset, 'w') as f:
         for smi in list(reversed(sorted(all_smiles.items(), key=lambda kv: kv[1][0])))[:keep_top_n]:
-            dsmi = smiles_to_deepsmiles(smi[0].strip())
-            tok = DeepSMILESTokenizer(dsmi)
-            tokens = tok.get_tokens()
-            f.write(' '.join([t.value for t in tokens]))
+            ssmi = smiles_to_selfies(smi[0].strip())
+            if ssmi is None:
+                logger.info("WARNING: could not convert: %s" % smi[0].strip())
+                continue
+            tokens = sf.split_selfies(ssmi)
+            f.write(' '.join(tokens))
             f.write("\n")
 
     logger.info('training new LM...')
-    lm_trainer.train(6, dataset, '../models/molexit', name)
+    lm_trainer.train(10, dataset, '../models/molexit', name)
 
     vocab = get_arpa_vocab('../models/molexit/%s.arpa' % name)
-    lm = KenLMDeepSMILESLanguageModel('../models/molexit/%s.klm' % name, vocab)
+    lm = KenLMSELFIESLanguageModel('../models/molexit/%s.klm' % name, vocab)

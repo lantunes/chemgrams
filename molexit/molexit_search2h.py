@@ -1,21 +1,22 @@
 import os
 import time
-
-from rdkit import rdBase
-
-from chemgrams import *
-from chemgrams.logger import get_logger, log_top_best
-import pybel
-from deepsmiles import Converter
-rdBase.DisableLog('rdApp.error')
-rdBase.DisableLog('rdApp.warning')
-from chemgrams.queryscorer import QueryScorer
-from chemgrams.training import KenLMTrainer
-logger = get_logger('chemgrams.log')
 from pathlib import Path
 import shutil
-THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
+from chemgrams import get_arpa_vocab, EmptyDeepSMILESLanguageModel, DeepSMILESLanguageModelUtils, \
+    LanguageModelMCTSWithPUCTTerminating, KenLMDeepSMILESLanguageModel, DeepSMILESTokenizer
+from chemgrams.logger import get_logger, log_top_best
+from chemgrams.queryscorer import QueryScorer
+from chemgrams.training import KenLMTrainer
+
+import pybel
+from deepsmiles import Converter
+from rdkit import rdBase
+rdBase.DisableLog('rdApp.error')
+rdBase.DisableLog('rdApp.warning')
+logger = get_logger('chemgrams.log')
+
+THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 vocab = ['<s>', '</s>', 'O', 'o', 'N', 'n', '[nH]', 'C', 'c', '=', '3', '4', '5', '6', '7', '8',  '#', '/', ')', '\\',
          '[C@@H]', '[C@H]', '[C@]', '[C@@]', 'S', 's', 'F', 'Cl']

@@ -22,23 +22,19 @@ THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 logger.info(os.path.basename(__file__))
 logger.info("KenLMDeepSMILESLanguageModel('../resources/chembl_25_deepsmiles_klm_10gram_200503.klm', vocab)")
-logger.info("width = 12, max_depth = 50, start_state = ['<s>'], c = 100")
-# logger.info("score: -1.0 if invalid; -1.0 if seen in iteration; tanimoto distance from abilify if valid; rescaling from [0,1] to [-1,1]")
-logger.info("score: -1.0 if invalid; -1.0 if seen in iteration; tanimoto distance from celecoxib if valid; rescaling from [0,1] to [-1,1]")
+logger.info("width = 12, max_depth = 50, start_state = ['<s>'], c = 15")
+logger.info("score: -1.0 if invalid; -1.0 if seen in iteration; tanimoto distance from abilify if valid; rescaling from [0,1] to [-1,1]")
 logger.info("LanguageModelMCTSWithPUCTTerminating")
-# logger.info("TanimotoScorer(abilify, radius=6); distance only (no SA or cycle scoring)")
-logger.info("TanimotoScorer(celecoxib, radius=6); distance only (no SA or cycle scoring)")
+logger.info("TanimotoScorer(abilify, radius=6); distance only (no SA or cycle scoring)")
 logger.info("num_iterations = 100")
 logger.info("time per iteration = 45 min.")
-logger.info("keep_top_n = 200000 of all (including duplicates)")
+logger.info("keep_top_n = 20000 unique")
 
 vocab = get_arpa_vocab('../resources/chembl_25_deepsmiles_klm_10gram_200503.arpa')
 lm = KenLMDeepSMILESLanguageModel('../resources/chembl_25_deepsmiles_klm_10gram_200503.klm', vocab)
 
-# abilify = "Clc4cccc(N3CCN(CCCCOc2ccc1c(NC(=O)CC1)c2)CC3)c4Cl"
-# distance_scorer = TanimotoScorer(abilify, radius=6)
-celecoxib = "O=S(=O)(c3ccc(n1nc(cc1c2ccc(cc2)C)C(F)(F)F)cc3)N"
-distance_scorer = TanimotoScorer(celecoxib, radius=6)
+abilify = "Clc4cccc(N3CCN(CCCCOc2ccc1c(NC(=O)CC1)c2)CC3)c4Cl"
+distance_scorer = TanimotoScorer(abilify, radius=6)
 
 converter = Converter(rings=True, branches=True)
 env = os.environ.copy()
@@ -57,8 +53,8 @@ if os.path.exists(path) and os.path.isdir(path):
 path.mkdir(parents=True, exist_ok=True)
 
 num_iterations = 100
-keep_top_n = 200000
-TIME_PER_ITERATION = 45*60  # 45 minutes (in seconds)
+keep_top_n = 20000
+TIME_PER_ITERATION = 45*60  # 45 minutes in seconds
 LOG_INTERVAL = 5*60.0  # 5 minutes in seconds
 num_simulations = 15000000  # much more than 8 hours
 
@@ -72,7 +68,7 @@ for n in range(num_iterations):
     width = 12
     max_depth = 50
     start_state = ["<s>"]
-    c = 100
+    c = 15
     seen = set()
 
     current_best_score = None
@@ -164,16 +160,19 @@ for n in range(num_iterations):
     dataset = '../models/molexit/%s.txt' % name
     dataset_scores = []
     with open(dataset, 'w') as f:
-        for smi in list(reversed(sorted(all_valid, key=lambda i: i[1])))[:keep_top_n]:
+        for smi in list(reversed(sorted(all_unique.items(), key=lambda kv: kv[1][0])))[:keep_top_n]:
             try:
                 dsmi = smiles_to_deepsmiles(smi[0].strip())
                 tok = DeepSMILESTokenizer(dsmi)
                 tokens = tok.get_tokens()
                 f.write(' '.join([t.value for t in tokens]))
                 f.write("\n")
-                dataset_scores.append(smi[1])
+                dataset_scores.append(smi[1][0])
             except Exception:
                 pass
+
+    with open('../models/molexit/%s-iteration-seen-top-scores.txt' % name, 'w') as f:
+        [f.write('%s\n' % s) for s in dataset_scores]
 
     logger.info('dataset: size: %s, mean score: %s' % (len(dataset_scores), np.mean(dataset_scores)))
     logger.info('training new LM...')

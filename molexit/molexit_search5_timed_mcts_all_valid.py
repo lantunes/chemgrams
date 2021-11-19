@@ -1,23 +1,25 @@
 import os
 import time
+from pathlib import Path
+import shutil
 from threading import Timer
+import numpy as np
 
-import pybel
-from deepsmiles import Converter
-from rdkit import rdBase
-
-from chemgrams import *
+from chemgrams import get_arpa_vocab, KenLMDeepSMILESLanguageModel, StopTreeSearch, DeepSMILESLanguageModelUtils, \
+    LanguageModelMCTSWithPUCTTerminating, DeepSMILESTokenizer
 from chemgrams.logger import get_logger, log_top_best
 from chemgrams.tanimotoscorer import TanimotoScorer
-
-rdBase.DisableLog('rdApp.error')
-rdBase.DisableLog('rdApp.warning')
 from chemgrams.sascorer import sascorer
 from chemgrams.cyclescorer import CycleScorer
 from chemgrams.training import KenLMTrainer
+
+import pybel
+from deepsmiles import Converter
+from rdkit import rdBase, Chem
+rdBase.DisableLog('rdApp.error')
+rdBase.DisableLog('rdApp.warning')
 logger = get_logger('chemgrams.log')
-from pathlib import Path
-import shutil
+
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 logger.info(os.path.basename(__file__))
@@ -42,10 +44,6 @@ converter = Converter(rings=True, branches=True)
 env = os.environ.copy()
 env["PATH"] = "/Users/luis/kenlm/build/bin:" + env["PATH"]
 lm_trainer = KenLMTrainer(env)
-
-
-class StopTreeSearch(Exception):
-    pass
 
 
 def smiles_to_deepsmiles(smiles):

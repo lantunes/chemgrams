@@ -9,36 +9,35 @@ from chemgrams import get_arpa_vocab, KenLMDeepSMILESLanguageModel, StopTreeSear
     LanguageModelMCTSWithPUCTTerminating, DeepSMILESTokenizer
 from chemgrams.logger import get_logger, log_top_best
 from chemgrams.tanimotoscorer import TanimotoScorer
-from chemgrams.training import KenLMTrainer
 
 import pybel
 from deepsmiles import Converter
 from rdkit import rdBase, Chem
 rdBase.DisableLog('rdApp.error')
 rdBase.DisableLog('rdApp.warning')
+from chemgrams.training import KenLMTrainer
 logger = get_logger('chemgrams.log')
 
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 logger.info(os.path.basename(__file__))
 logger.info("KenLMDeepSMILESLanguageModel('../resources/chembl_25_deepsmiles_klm_10gram_200503.klm', vocab)")
-logger.info("width = 12, max_depth = 50, start_state = ['<s>'], c = 100")
-# logger.info("score: -1.0 if invalid; -1.0 if seen in iteration; tanimoto distance from abilify if valid; rescaling from [0,1] to [-1,1]")
-logger.info("score: -1.0 if invalid; -1.0 if seen in iteration; tanimoto distance from celecoxib if valid; rescaling from [0,1] to [-1,1]")
+logger.info("width = 12, max_depth = 50, start_state = ['<s>'], c = 5")
+logger.info("score: -1.0 if invalid; -1.0 if seen in iteration; tanimoto distance from abilify if valid; rescaling from [0,1] to [-1,1]")
+logger.info("score = log(prob_prior(m)) + sigma*distance_score; sigma = 10")
 logger.info("LanguageModelMCTSWithPUCTTerminating")
-# logger.info("TanimotoScorer(abilify, radius=6); distance only (no SA or cycle scoring)")
-logger.info("TanimotoScorer(celecoxib, radius=6); distance only (no SA or cycle scoring)")
+logger.info("TanimotoScorer(abilify, radius=6); distance only (no SA or cycle scoring)")
 logger.info("num_iterations = 100")
 logger.info("time per iteration = 45 min.")
-logger.info("keep_top_n = 200000 of all (including duplicates)")
+logger.info("keep_top_n = 250000 of all (including duplicates)")
 
 vocab = get_arpa_vocab('../resources/chembl_25_deepsmiles_klm_10gram_200503.arpa')
-lm = KenLMDeepSMILESLanguageModel('../resources/chembl_25_deepsmiles_klm_10gram_200503.klm', vocab)
+prior = KenLMDeepSMILESLanguageModel('../resources/chembl_25_deepsmiles_klm_10gram_200503.klm', vocab)
 
-# abilify = "Clc4cccc(N3CCN(CCCCOc2ccc1c(NC(=O)CC1)c2)CC3)c4Cl"
-# distance_scorer = TanimotoScorer(abilify, radius=6)
-celecoxib = "O=S(=O)(c3ccc(n1nc(cc1c2ccc(cc2)C)C(F)(F)F)cc3)N"
-distance_scorer = TanimotoScorer(celecoxib, radius=6)
+lm = prior
+
+abilify = "Clc4cccc(N3CCN(CCCCOc2ccc1c(NC(=O)CC1)c2)CC3)c4Cl"
+distance_scorer = TanimotoScorer(abilify, radius=6)
 
 converter = Converter(rings=True, branches=True)
 env = os.environ.copy()
@@ -57,8 +56,8 @@ if os.path.exists(path) and os.path.isdir(path):
 path.mkdir(parents=True, exist_ok=True)
 
 num_iterations = 100
-keep_top_n = 200000
-TIME_PER_ITERATION = 45*60  # 45 minutes (in seconds)
+keep_top_n = 250000
+TIME_PER_ITERATION = 45*60  # 45 minutes in seconds
 LOG_INTERVAL = 5*60.0  # 5 minutes in seconds
 num_simulations = 15000000  # much more than 8 hours
 
@@ -72,7 +71,8 @@ for n in range(num_iterations):
     width = 12
     max_depth = 50
     start_state = ["<s>"]
-    c = 100
+    c = 5
+    sigma = 10
     seen = set()
 
     current_best_score = None
@@ -117,22 +117,37 @@ for n in range(num_iterations):
 
         num_valid += 1
 
-        score = distance_scorer.score_mol(mol)
-
-        if current_best_score is None or beats_current(score):
-            current_best_score = score
-            current_best_smiles = smiles
-
-        if score == 1.0:
+        distance_score = distance_scorer.score_mol(mol)
+        if distance_score == 1.0:
             logger.info("FOUND!")
 
-        ret_score = -1.0 if smiles in seen else score
+        # As in "Molecular de-novo design through deep reinforcement learning", by Olivecrona et al., we are adding
+        #  the prior's log probability of the generated sequence to the score.
+        prior_log_prob = prior.log_prob(
+            DeepSMILESLanguageModelUtils.extract_sentence(text, join_on=' ', start='<s>', end='</s>'))
 
-        # rescale score from [0,1] to [-1,1]
-        ret_score = (ret_score * 2) + (-1) if ret_score >= 0. else ret_score
+        # tot_score = prior_log_prob + sigma * ((distance_score * 2) + (-1))  # rescale the distance score from [0,1] to [-1,1]
+        tot_score = prior_log_prob + sigma * distance_score
 
-        all_unique[smiles] = (score, generated)
-        all_valid.append((smiles, score))
+        # rescale the score
+        # in practice, the log probs are rarely less than -45; so the min tot_score can be: -45 + (sigma*-1.0)
+        rescale_min = -45 - sigma
+        if tot_score < rescale_min:
+            logger.info("WARNING: total score lower than %s" % rescale_min)
+        # because probabilities are in the range [0,1], the max log prob is log(1) i.e. 0
+        #  so the max tot_score can be: 0 + sigma*1.0
+        rescale_max = sigma
+        # scaling x into [a,b]: (b-a)*((x - min(x))/(max(x) - min(x))+a
+        ret_score = (1 - (-1)) * ((tot_score - rescale_min) / (rescale_max - rescale_min)) + (-1)
+
+        ret_score = -1.0 if smiles in seen else ret_score
+
+        if current_best_score is None or beats_current(distance_score):
+            current_best_score = distance_score
+            current_best_smiles = smiles
+
+        all_unique[smiles] = (distance_score, generated)
+        all_valid.append((smiles, distance_score))
         seen.add(smiles)
 
         elapsed = time.time() - start
