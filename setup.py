@@ -20,4 +20,4 @@ setup(name="chemgrams",
       package_data={'chemgrams.sascorer': ['fpscores.pkl.gz'], 'chemgrams.training' : ['train_kenlm.sh']},
       include_package_data=True,
       python_requires='>3.5.2',
-      install_requires=["deepsmiles", "networkx", "numpy", "selfies"])
+      install_requires=["deepsmiles", "networkx", "numpy", "selfies", "rdkit-pypi"])
