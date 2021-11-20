@@ -12,10 +12,6 @@ Chemgrams has been compared to existing, state-of-the-art methods for
 generating novel molecules with desired properties, such as [ChemTS](https://arxiv.org/abs/1710.00616) _(K. Tsuda et al., 2017)_, and
 [GB-GA](https://pubs.rsc.org/en/content/articlelanding/2019/sc/c8sc05372c#!divAbstract) _(J. H. Jensen, 2019)_.
 
-_The manuscript describing Chemgrams is currently in preparation, and will
-be submitted to a journal for peer review. A link to the paper will be
-posted here as soon as it becomes available._
-
 In the tables below, the values represent a _J_ score, defined as:
 ```
 J(S) = logP(S) − SA(S) − RingPenalty(S)

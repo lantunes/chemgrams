@@ -11,7 +11,7 @@ from chemgrams.logger import get_logger, log_top_best
 from chemgrams.tanimotoscorer import TanimotoScorer
 from chemgrams.training import KenLMTrainer
 
-import pybel
+from openbabel import pybel
 from deepsmiles import Converter
 from rdkit import rdBase, Chem
 rdBase.DisableLog('rdApp.error')

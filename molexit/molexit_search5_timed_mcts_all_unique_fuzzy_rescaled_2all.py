@@ -12,7 +12,7 @@ from chemgrams.tanimotoscorer import TanimotoScorer
 from chemgrams.queryscorer import QueryScorer
 from chemgrams.training import KenLMTrainer
 
-import pybel
+from openbabel import pybel
 from deepsmiles import Converter
 from rdkit import rdBase, Chem
 rdBase.DisableLog('rdApp.error')

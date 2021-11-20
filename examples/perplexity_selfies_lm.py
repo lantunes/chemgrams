@@ -1,7 +1,7 @@
 from chemgrams import get_arpa_vocab, KenLMSELFIESLanguageModel
 
 import selfies as sf
-import pybel
+from openbabel import pybel
 
 
 if __name__ == "__main__":

@@ -10,7 +10,7 @@ from chemgrams import get_arpa_vocab, KenLMDeepSMILESLanguageModel, StopTreeSear
 from chemgrams.logger import get_logger, log_top_best
 from chemgrams.tanimotoscorer import TanimotoScorer
 
-import pybel
+from openbabel import pybel
 from deepsmiles import Converter
 from rdkit import rdBase, Chem
 rdBase.DisableLog('rdApp.error')

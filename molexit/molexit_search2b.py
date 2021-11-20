@@ -10,7 +10,7 @@ from chemgrams.logger import get_logger, log_top_best
 from chemgrams.training import KenLMTrainer
 from chemgrams.sascorer import sascorer
 
-import pybel
+from openbabel import pybel
 from deepsmiles import Converter
 from rdkit import rdBase, Chem
 rdBase.DisableLog('rdApp.error')

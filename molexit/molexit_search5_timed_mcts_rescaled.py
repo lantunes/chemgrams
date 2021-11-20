@@ -13,7 +13,7 @@ from chemgrams.sascorer import sascorer
 from chemgrams.cyclescorer import CycleScorer
 from chemgrams.training import KenLMTrainer
 
-import pybel
+from openbabel import pybel
 from deepsmiles import Converter
 from rdkit import rdBase, Chem
 rdBase.DisableLog('rdApp.error')

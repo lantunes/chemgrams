@@ -1,7 +1,7 @@
 from chemgrams import get_arpa_vocab, KenLMDeepSMILESLanguageModel
 from chemgrams import DeepSMILESTokenizer
 
-import pybel
+from openbabel import pybel
 from deepsmiles import Converter
 
 if __name__ == "__main__":
