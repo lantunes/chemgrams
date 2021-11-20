@@ -1,0 +1,16 @@
+name: chemgrams_env
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.7
+  - numpy>=1.19
+  - guacamol=0.5.2
+  - selfies=2.0.0
+  - deepsmiles=1.0.1
+  - networkx=2.6.3
+  - rdkit=2021.09.2
+  - pip
+  - pip:
+      - https://github.com/kpu/kenlm/archive/master.zip --install-option="--max_order=10"
